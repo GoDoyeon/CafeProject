@@ -5,19 +5,23 @@
 
 
 $maincolor : #EEDEFF;
-@mixin scenery__bg__LeftRight{
-  width: 340px;
-  height: 680px;
-  position: absolute;
-  top: 50%;
-  margin-top: -340px;
-  background-color: indianred;
+@mixin scenery__bg__Slide {
+  width: 50%;
+  height: 100%;
+  float: left;
 }
 
-@mixin scenery__bg__UpDownBox{
-  width: 680px;
+@mixin scenery__bg__smallSlide{
+  width: 340px;
+  height: 100%;
+  float: left;
+}
+
+@mixin scenery__bg__smollContainer{
+  width: 340px;
   height: 340px;
-  background-color: indigo;
+  position: relative;
+  overflow: hidden;
 }
 
 *{
@@ -48,7 +52,6 @@ header{
 
 .main__home{
   height: 600px;
-  background-color: silver;
 }
 
 // width 100%
@@ -56,6 +59,7 @@ header{
   height: 1000px;
   position: relative;
   overflow: hidden;
+  background: olive;
 
 }
 
@@ -63,19 +67,14 @@ header{
   height: 1200px;
   position: relative;
   margin: 0 auto;
-  background-color: sandybrown;
+  background: orangered;
 }
 
 .main__scenery{
   height: 1000px;
-  background-color: pink;
-  position: relative;
-
+  
   .scenery__box{
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    background-color: green;
+    height: 1000px;
 
     .scenery__bg__left{
       width: 34%;
@@ -83,62 +82,151 @@ header{
       float: left;
       overflow: hidden;
       position: relative;
-      background-color: greenyellow;
 
-      .box__left{
-        right: 0;
-        @include scenery__bg__LeftRight;
+      .scenery__bg__bigBox{
+        width: 200%;
+        height: 100%;
+        position: absolute;
+        transition: 0.5s ease-out;
 
-        .box__up{
-          @include scenery__bg__UpDownBox;
+        .scenery__bg__bigSlide1{
+          @include scenery__bg__Slide;
+          background: url('../img/05/scenery1_1.png') center no-repeat;
+          background-size: cover;
         }
 
-        .box__down{
-          @include scenery__bg__UpDownBox;
+        .scenery__bg__bigSlide2{
+          @include scenery__bg__Slide;
+          background: url('../img/05/scenery2_1.png') center no-repeat;
+          background-size: cover;
+        }
+      }
 
+      .scenery__bg__smallBox{
+        width: 340px;
+        height: 680px;
+        right: 0;
+        top: 50%;
+        margin-top: -340px;
+        position: absolute;
+
+        .scenery__bg__up__container{
+          @include scenery__bg__smollContainer;
+
+          .scenery__bg__up{
+            width: 680px;
+            height: 340px;
+            position: absolute;
+            transition: 0.5s ease-out;
+            
+            .scenery__bg__smallSlide1{
+              @include scenery__bg__smallSlide;
+              background: url('../img/05/scenery1_1_small.png') center no-repeat;
+              background-size: cover;
+            }
+    
+            .scenery__bg__smallSlide2{
+              @include scenery__bg__smallSlide;
+              background: url('../img/05/scenery2_1_small.png') center no-repeat;
+              background-size: cover;
+            }
+          }
+
+
+        }
+        .scenery__bg__down{
+          width: 340px;
+          height: 340px;
+
+          .scenery__bg__small{
+            width: 340px;
+            height: 340px;
+            position: absolute;
+            background: url('../img/05/coffee1.png') center no-repeat;
+            background-size: cover;
+          }
+          
         }
 
       }
-  }
+    }
     .scenery__bg__right{
       width: 66%;
       height: 100%;
       float: left;
       overflow: hidden;
       position: relative;
-      background-color: grey;
 
-      .scenery__tit{
-        width: 790px;
+      .scenery__bg__bigBox{
+        width: 200%;
         height: 100%;
-        padding-left: 400px;
         position: absolute;
-        background-color: plum;
-    
-        .tit{
-          padding-top: 360px;
-          height: 500px;
+        transition: 0.5s ease-out;
+
+        .scenery__bg__bigSlide1{
+          @include scenery__bg__Slide;
+          background: url('../img/05/scenery1_2.png') center no-repeat;
+          background-size: cover;
         }
-        .sub__tit{
-          padding-bottom: 360px;
-          height: 500px;
+
+        .scenery__bg__bigSlide2{
+          @include scenery__bg__Slide;
+          background: url('../img/05/scenery2_2.png') center no-repeat;
+          background-size: cover;
         }
       }
 
-      .box__right{
+      .scenery__bg__smallBox{
+        width: 340px;
+        height: 680px;
         left: 0;
-        overflow: hidden;
-        @include scenery__bg__LeftRight;
+        top: 50%;
+        margin-top: -340px;
+        position: absolute;
 
-        .box__up{
-          @include scenery__bg__UpDownBox;
+        .scenery__bg__up{
+          width: 340px;
+          height: 340px;
+
+          .scenery__bg__small{
+            width: 340px;
+            height: 340px;
+            position: absolute;
+            background: url('../img/05/coffee1.png') center no-repeat;
+            background-size: cover;
+          }
+        }
+        .scenery__bg__down__container{
+         @include scenery__bg__smollContainer;
+
+         .scenery__bg__down{
+          width: 680px;
+          height: 340px;
+          position: absolute;
+          transition: 0.5s ease-out;
+
+          .scenery__bg__smallSlide1{
+            @include scenery__bg__smallSlide;
+            background: url('../img/05/scenery1_2_small.png') center no-repeat;
+            background-size: cover;
+          }
+  
+          .scenery__bg__smallSlide2{
+            @include scenery__bg__smallSlide;
+            background: url('../img/05/scenery2_2_small.png') center no-repeat;
+            background-size: cover;
+          }
+
+        }
         }
 
-        .box__down{
-          @include scenery__bg__UpDownBox;
-        }
+        
+          
+        
+
       }
     }
+
   }
 }
 
@@ -146,28 +234,29 @@ header{
   height: 1000px;
   position: relative;
   overflow: hidden;
-  background-color: powderblue;
 
   .best__tit{
     width: 600px;
     height: 420px;
     padding: 240px 0px 60px 360px;
-    background-color: khaki;
-
-    // .tit{
-      
-    // }
-    // .sub__tit{
-
-    // }
   }
 
   .best__bg{
-    height: 1160px;
-    background-color: lavenderblush;
+    width: 100%;
+    height: 580px;
+    position: relative;
+    overflow: hidden;
+    background: url("../img/06/best_1_1.png") center no-repeat;
+    background-size: cover;
 
-    .best__inner{
+    .best__inner__bg{
+      width: 100%;
       height: 580px;
+      position: absolute;
+      top: 580px;
+      background: url("../img/06/bg.png") center no-repeat;
+      background-size: cover;
+      transition: 0.5s ease-out;
     }
   }
 
@@ -175,10 +264,21 @@ header{
     width: 360px;
     height: 580px;
     position: absolute;
+    overflow: hidden;
     top: 210px;
     left: 60%;
-    z-index: 999;
-    background-color: lightcyan;
+    background: url("../img/06/best_1_1.png") center no-repeat;
+    background-size: cover;
+
+    .best__header{
+      width: 360px;
+      height: 580px;
+      position: absolute;
+      top: 580px;
+      background: url("../img/06/bg.png") center no-repeat;
+      background-size: cover;
+      transition: 0.5s ease-out;
+    }
   }
 
 }

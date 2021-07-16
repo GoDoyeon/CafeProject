@@ -27,33 +27,28 @@ header {
 
 .main__home {
   height: 600px;
-  background-color: silver;
 }
 
 .main__horoscope {
   height: 1000px;
   position: relative;
   overflow: hidden;
+  background: olive;
 }
 
 .main__new {
   height: 1200px;
   position: relative;
   margin: 0 auto;
-  background-color: sandybrown;
+  background: orangered;
 }
 
 .main__scenery {
   height: 1000px;
-  background-color: pink;
-  position: relative;
 }
 
 .main__scenery .scenery__box {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  background-color: green;
+  height: 1000px;
 }
 
 .main__scenery .scenery__box .scenery__bg__left {
@@ -62,29 +57,81 @@ header {
   float: left;
   overflow: hidden;
   position: relative;
-  background-color: greenyellow;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .box__left {
-  right: 0;
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__bigBox {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-out;
+}
+
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__bigBox .scenery__bg__bigSlide1 {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: url("../img/05/scenery1_1.png") center no-repeat;
+  background-size: cover;
+}
+
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__bigBox .scenery__bg__bigSlide2 {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: url("../img/05/scenery2_1.png") center no-repeat;
+  background-size: cover;
+}
+
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox {
   width: 340px;
   height: 680px;
-  position: absolute;
+  right: 0;
   top: 50%;
   margin-top: -340px;
-  background-color: indianred;
+  position: absolute;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .box__left .box__up {
-  width: 680px;
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
+  width: 340px;
   height: 340px;
-  background-color: indigo;
+  position: relative;
+  overflow: hidden;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .box__left .box__down {
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
   width: 680px;
   height: 340px;
-  background-color: indigo;
+  position: absolute;
+  transition: 0.5s ease-out;
+}
+
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
+  width: 340px;
+  height: 100%;
+  float: left;
+  background: url("../img/05/scenery1_1_small.png") center no-repeat;
+  background-size: cover;
+}
+
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
+  width: 340px;
+  height: 100%;
+  float: left;
+  background: url("../img/05/scenery2_1_small.png") center no-repeat;
+  background-size: cover;
+}
+
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
+  width: 340px;
+  height: 340px;
+}
+
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
+  width: 340px;
+  height: 340px;
+  position: absolute;
+  background: url("../img/05/coffee1.png") center no-repeat;
+  background-size: cover;
 }
 
 .main__scenery .scenery__box .scenery__bg__right {
@@ -93,81 +140,133 @@ header {
   float: left;
   overflow: hidden;
   position: relative;
-  background-color: grey;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__tit {
-  width: 790px;
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox {
+  width: 200%;
   height: 100%;
-  padding-left: 400px;
   position: absolute;
-  background-color: plum;
+  transition: 0.5s ease-out;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__tit .tit {
-  padding-top: 360px;
-  height: 500px;
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox .scenery__bg__bigSlide1 {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: url("../img/05/scenery1_2.png") center no-repeat;
+  background-size: cover;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__tit .sub__tit {
-  padding-bottom: 360px;
-  height: 500px;
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox .scenery__bg__bigSlide2 {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: url("../img/05/scenery2_2.png") center no-repeat;
+  background-size: cover;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .box__right {
-  left: 0;
-  overflow: hidden;
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox {
   width: 340px;
   height: 680px;
-  position: absolute;
+  left: 0;
   top: 50%;
   margin-top: -340px;
-  background-color: indianred;
+  position: absolute;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .box__right .box__up {
-  width: 680px;
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
+  width: 340px;
   height: 340px;
-  background-color: indigo;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .box__right .box__down {
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
+  width: 340px;
+  height: 340px;
+  position: absolute;
+  background: url("../img/05/coffee1.png") center no-repeat;
+  background-size: cover;
+}
+
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
+  width: 340px;
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
   width: 680px;
   height: 340px;
-  background-color: indigo;
+  position: absolute;
+  transition: 0.5s ease-out;
+}
+
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
+  width: 340px;
+  height: 100%;
+  float: left;
+  background: url("../img/05/scenery1_2_small.png") center no-repeat;
+  background-size: cover;
+}
+
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
+  width: 340px;
+  height: 100%;
+  float: left;
+  background: url("../img/05/scenery2_2_small.png") center no-repeat;
+  background-size: cover;
 }
 
 .main__best {
   height: 1000px;
   position: relative;
   overflow: hidden;
-  background-color: powderblue;
 }
 
 .main__best .best__tit {
   width: 600px;
   height: 420px;
   padding: 240px 0px 60px 360px;
-  background-color: khaki;
 }
 
 .main__best .best__bg {
-  height: 1160px;
-  background-color: lavenderblush;
+  width: 100%;
+  height: 580px;
+  position: relative;
+  overflow: hidden;
+  background: url("../img/06/best_1_1.png") center no-repeat;
+  background-size: cover;
 }
 
-.main__best .best__bg .best__inner {
+.main__best .best__bg .best__inner__bg {
+  width: 100%;
   height: 580px;
+  position: absolute;
+  top: 580px;
+  background: url("../img/06/bg.png") center no-repeat;
+  background-size: cover;
+  transition: 0.5s ease-out;
 }
 
 .main__best .best__box {
   width: 360px;
   height: 580px;
   position: absolute;
+  overflow: hidden;
   top: 210px;
   left: 60%;
-  z-index: 999;
-  background-color: lightcyan;
+  background: url("../img/06/best_1_1.png") center no-repeat;
+  background-size: cover;
+}
+
+.main__best .best__box .best__header {
+  width: 360px;
+  height: 580px;
+  position: absolute;
+  top: 580px;
+  background: url("../img/06/bg.png") center no-repeat;
+  background-size: cover;
+  transition: 0.5s ease-out;
 }
 
 footer {
