@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
 
+//font-family: 'Frank Ruhl Libre', serif;
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
@@ -12,14 +14,14 @@ $maincolor : #EEDEFF;
 }
 
 @mixin scenery__bg__smallSlide{
-  width: 340px;
+  width: 21.25rem;
   height: 100%;
   float: left;
 }
 
 @mixin scenery__bg__smollContainer{
-  width: 340px;
-  height: 340px;
+  width: 21.25rem;
+  height: 21.25rem;
   position: relative;
   overflow: hidden;
 }
@@ -74,10 +76,10 @@ header{
   height: 1000px;
   
   .scenery__box{
-    height: 1000px;
+    height: 1000px;;
 
     .scenery__bg__left{
-      width: 34%;
+      width: 33%;
       height: 100%;
       float: left;
       overflow: hidden;
@@ -91,20 +93,20 @@ header{
 
         .scenery__bg__bigSlide1{
           @include scenery__bg__Slide;
-          background: url('../img/05/scenery1_1.png') center no-repeat;
+          background: url('../img/05/left/L_content_1_1.png') center no-repeat;
           background-size: cover;
         }
 
         .scenery__bg__bigSlide2{
           @include scenery__bg__Slide;
-          background: url('../img/05/scenery2_1.png') center no-repeat;
+          background: url('../img/05/left/L_content_2_1.png') center no-repeat;
           background-size: cover;
         }
       }
 
       .scenery__bg__smallBox{
-        width: 340px;
-        height: 680px;
+        width: 21.25rem;
+        height: 42.5rem;
         right: 0;
         top: 50%;
         margin-top: -340px;
@@ -114,20 +116,20 @@ header{
           @include scenery__bg__smollContainer;
 
           .scenery__bg__up{
-            width: 680px;
-            height: 340px;
+            width: 42.5rem;
+            height: 21.25rem;
             position: absolute;
             transition: 0.5s ease-out;
             
             .scenery__bg__smallSlide1{
               @include scenery__bg__smallSlide;
-              background: url('../img/05/scenery1_1_small.png') center no-repeat;
+              background: url('../img/05/left/L_scenery1_1_bg.png') center no-repeat;
               background-size: cover;
             }
     
             .scenery__bg__smallSlide2{
               @include scenery__bg__smallSlide;
-              background: url('../img/05/scenery2_1_small.png') center no-repeat;
+              background: url('../img/05/left/L_scenery2_1_bg.png') center no-repeat;
               background-size: cover;
             }
           }
@@ -135,15 +137,27 @@ header{
 
         }
         .scenery__bg__down{
-          width: 340px;
-          height: 340px;
+          width: 21.25rem;
+          height: 21.25rem;
+          background: white;
 
           .scenery__bg__small{
-            width: 340px;
-            height: 340px;
+            width: 21.25rem;
+            height: 21.25rem;
             position: absolute;
-            background: url('../img/05/coffee1.png') center no-repeat;
+            background: url('../img/05/left/L_text_1_1.png') center no-repeat;
             background-size: cover;
+            opacity: 1;
+            transition: opacity 1s;
+          }
+          .scenery__bg__small2{
+            width: 21.25rem;
+            height: 21.25rem;
+            position: absolute;
+            background: url('../img/05/left/L_text_2_1.png') center no-repeat;
+            background-size: cover;
+            opacity: 0;
+            transition: opacity 1s;
           }
           
         }
@@ -151,7 +165,7 @@ header{
       }
     }
     .scenery__bg__right{
-      width: 66%;
+      width: 67%;
       height: 100%;
       float: left;
       overflow: hidden;
@@ -165,55 +179,68 @@ header{
 
         .scenery__bg__bigSlide1{
           @include scenery__bg__Slide;
-          background: url('../img/05/scenery1_2.png') center no-repeat;
+          background: url('../img/05/right/R_content_1_1.png') center no-repeat;
           background-size: cover;
         }
 
         .scenery__bg__bigSlide2{
           @include scenery__bg__Slide;
-          background: url('../img/05/scenery2_2.png') center no-repeat;
+          background: url('../img/05/right/R_content_2_1.png') center no-repeat;
           background-size: cover;
         }
       }
 
       .scenery__bg__smallBox{
-        width: 340px;
-        height: 680px;
+        width: 21.25rem;
+        height: 42.5rem;
         left: 0;
         top: 50%;
         margin-top: -340px;
         position: absolute;
 
         .scenery__bg__up{
-          width: 340px;
-          height: 340px;
+          width: 21.25rem;
+          height: 21.25rem;
+          background: white;
 
           .scenery__bg__small{
-            width: 340px;
-            height: 340px;
+            width: 21.25rem;
+            height: 21.25rem;
             position: absolute;
-            background: url('../img/05/coffee1.png') center no-repeat;
+            background: url('../img/05/right/R_text_1_1.png') center no-repeat;
             background-size: cover;
+            opacity: 1;
+            transition: opacity 1s;
+          }
+          .scenery__bg__small2{
+            width: 21.25rem;
+            height: 21.25rem;
+            position: absolute;
+            background: url('../img/05/right/R_text_2_1.png') center no-repeat;
+            background-size: cover;
+            opacity: 0;
+            transition: opacity 1s;
           }
         }
         .scenery__bg__down__container{
          @include scenery__bg__smollContainer;
 
          .scenery__bg__down{
-          width: 680px;
-          height: 340px;
+          width: 42.5rem;
+          height: 21.25rem;
           position: absolute;
           transition: 0.5s ease-out;
 
           .scenery__bg__smallSlide1{
             @include scenery__bg__smallSlide;
-            background: url('../img/05/scenery1_2_small.png') center no-repeat;
+            background: url('../img/05/right/R_scenery1_1_bg.png') center no-repeat;
             background-size: cover;
+            
           }
   
           .scenery__bg__smallSlide2{
             @include scenery__bg__smallSlide;
-            background: url('../img/05/scenery2_2_small.png') center no-repeat;
+            background: url('../img/05/right/R_scenery2_1_bg.png.png') center no-repeat;
             background-size: cover;
           }
 
@@ -236,9 +263,21 @@ header{
   overflow: hidden;
 
   .best__tit{
-    width: 600px;
-    height: 420px;
-    padding: 240px 0px 60px 360px;
+    width: 988px;
+    height: 26.25rem;
+    padding: 200px 0px 0px 92px;
+    margin: 0 auto;
+    line-height: 50px;
+    letter-spacing: 2px;
+  }
+
+  .tit{
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  .sub__tit{
+    font-size: 36px;
+    font-family: 'Frank Ruhl Libre', serif;
   }
 
   .best__bg{
@@ -269,6 +308,7 @@ header{
     left: 60%;
     background: url("../img/06/best_1_1.png") center no-repeat;
     background-size: cover;
+    box-shadow: 10px 10px 15px rgb(84, 84, 85);
 
     .best__header{
       width: 360px;
