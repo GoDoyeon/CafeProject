@@ -55,72 +55,6 @@ button {
   margin-top: 210px;
 }
 
-.main__horoscope .horoscope {
-  width: 100%;
-  left: 360px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  margin-bottom: 160px;
-}
-
-.main__horoscope .horoscope .horoscope__block {
-  margin-right: 30px;
-  position: relative;
-}
-
-.main__horoscope .horoscope .horoscope__block .horoscope__tit {
-  color: #fff;
-  top: 40px;
-  opacity: 0;
-  padding: 40px;
-  position: absolute;
-  text-align: left;
-  width: 100%;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.main__horoscope .horoscope .horoscope__block .horoscope__tit h1 {
-  font-size: 3rem;
-}
-
-.main__horoscope .horoscope .horoscope__block .horoscope__tit p {
-  margin-top: 20px;
-}
-
-.main__horoscope .horoscope .horoscope__block .horoscope__img {
-  width: 584;
-  height: 400px;
-  opacity: 1;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  overflow: hidden;
-}
-
-.main__horoscope .horoscope .horoscope__block:hover .horoscope__img {
-  background-color: #000;
-}
-
-.main__horoscope .horoscope .horoscope__block:hover img {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  opacity: 0.15;
-}
-
-.main__horoscope .horoscope .horoscope__block:hover .horoscope__tit {
-  opacity: 1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 .main__horoscope .prev__btn {
   position: absolute;
   left: 30px;
@@ -140,32 +74,266 @@ button {
 .main__horoscope .horoscope__btn {
   border: none;
   border-radius: 50px;
-  color: #aa91c5;
+  color: #979797;
+}
+
+.main__horoscope .horoscope__wrapper {
+  width: 100%;
+  left: 360px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  margin-bottom: 160px;
+}
+
+.main__horoscope .horoscope__wrapper .horsecope {
+  margin-right: 30px;
+  position: relative;
+}
+
+.main__horoscope .horoscope__wrapper .horsecope .horoscope__tit {
+  color: #fff;
+  top: 40px;
+  opacity: 0;
+  padding: 40px;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main__horoscope .horoscope__wrapper .horsecope .horoscope__tit h1 {
+  font-size: 3rem;
+}
+
+.main__horoscope .horoscope__wrapper .horsecope .horoscope__tit p {
+  margin-top: 20px;
+}
+
+.main__horoscope .horoscope__wrapper .horsecope .horoscope__img {
+  width: 584;
+  height: 400px;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  overflow: hidden;
+}
+
+.main__horoscope .horoscope__wrapper .horsecope:hover .horoscope__img {
+  background-color: #000;
+}
+
+.main__horoscope .horoscope__wrapper .horsecope:hover img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.15;
+}
+
+.main__horoscope .horoscope__wrapper .horsecope:hover .horoscope__tit {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* 파트 4 : 뉴 카페 */
-.main__new {
-  background-color: #d4eed4;
+.main__newCafe {
+  background-color: #eedeff;
   margin: 0 auto;
   height: 1000px;
   /* 뉴 카페 텍스트 부분 */
 }
 
-.main__new .new__tit {
-  border: 1px solid black;
-  height: 376px;
+.main__newCafe .newCafe_tit {
+  padding: 100px 0 150px 0;
   text-align: center;
 }
 
-.main__new .new__tit .tit {
-  margin-top: 160px;
-  font-size: 56px;
+.main__newCafe .newCafe_tit .tit h1 {
+  font-size: 4rem;
 }
 
-.main__new .new__list {
-  margin-left: 668px;
-  height: 750px;
-  border: 1px solid #979797;
+.main__newCafe .newCafe_tit .tit p {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.main__newCafe .newCafe__slider {
+  width: 640px;
+  height: 480px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.main__newCafe .newCafe__slider input[type='radio'] {
+  display: none;
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(1):checked ~ .bullets > label:nth-child(1) {
+  background-color: #fff;
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(2):checked ~ .bullets > label:nth-child(2) {
+  background-color: #fff;
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(3):checked ~ .bullets > label:nth-child(3) {
+  background-color: #fff;
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(1):checked
+~ ul.newCafe__imgs
+> li:nth-child(1) {
+  left: 0;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  z-index: 1;
+  -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(1):checked
+~ ul.newCafe__imgs
+> li:nth-child(2) {
+  left: 120px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  z-index: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(1):checked
+~ ul.newCafe__imgs
+> li:nth-child(3) {
+  left: -120px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  z-index: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(2):checked
+~ ul.newCafe__imgs
+> li:nth-child(1) {
+  left: -90px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  z-index: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(2):checked
+~ ul.newCafe__imgs
+> li:nth-child(2) {
+  left: 0;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  z-index: 1;
+  -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(2):checked
+~ ul.newCafe__imgs
+> li:nth-child(3) {
+  left: 90px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  z-index: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(3):checked
+~ ul.newCafe__imgs
+> li:nth-child(1) {
+  left: 90px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  z-index: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(3):checked
+~ ul.newCafe__imgs
+> li:nth-child(2) {
+  left: -90px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  z-index: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+}
+
+.main__newCafe .newCafe__slider input[type='radio']:nth-child(3):checked
+~ ul.newCafe__imgs
+> li:nth-child(3) {
+  left: 0;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  z-index: 1;
+  -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+}
+
+.main__newCafe .newCafe__slider ul.newCafe__imgs {
+  padding: 0;
+  margin: 0;
+}
+
+.main__newCafe .newCafe__slider ul.newCafe__imgs li {
+  position: absolute;
+  left: 640px;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main__newCafe .newCafe__slider ul.newCafe__imgs li img {
+  border: 5px solid #fff;
+}
+
+.main__newCafe .newCafe__slider .bullets {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  z-index: 2;
+}
+
+.main__newCafe .newCafe__slider .bullets label {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .screen_out {

@@ -53,8 +53,27 @@ button {
       margin-top: 210px;
     }
   }
+  .prev__btn {
+    position: absolute;
+    left: 30px;
+    width: 70px;
+    height: 70px;
+    top: 300px;
+  }
+  .next__btn {
+    position: absolute;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    top: 300px;
+  }
+  .horoscope__btn {
+    border: none;
+    border-radius: 50px;
+    color: #979797;
+  }
   /* 별점 높은 순 사진 리스트 부분 */
-  .horoscope {
+  .horoscope__wrapper {
     width: 100%;
     left: 360px;
     position: relative;
@@ -63,7 +82,7 @@ button {
     transform: translate3d(0, 0, 0);
     transition: transform 0.5s;
     margin-bottom: 160px;
-    .horoscope__block {
+    .horsecope {
       margin-right: 30px;
       //border: 1px solid #979797;
 
@@ -108,49 +127,193 @@ button {
       }
     }
   }
-  .prev__btn {
-    position: absolute;
-    left: 30px;
-    width: 70px;
-    height: 70px;
-    top: 300px;
-  }
-  .next__btn {
-    position: absolute;
-    right: 30px;
-    width: 70px;
-    height: 70px;
-    top: 300px;
-  }
-  .horoscope__btn {
-    border: none;
-    border-radius: 50px;
-    color: #aa91c5;
-  }
 }
 
 /* 파트 4 : 뉴 카페 */
-.main__new {
-  background-color: rgb(212, 238, 212);
+.main__newCafe {
+  background-color: $maincolor;
   margin: 0 auto;
   height: 1000px;
   /* 뉴 카페 텍스트 부분 */
-  .new__tit {
-    border: 1px solid black;
-    height: 376px; //160+160+56
+  .newCafe_tit {
+    // border: 1px solid black;
+    padding: 100px 0 150px 0;
     text-align: center;
     .tit {
-      margin-top: 160px;
-      font-size: 56px;
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 2rem;
+      }
     }
   }
-  .new__list {
-    margin-left: 668px;
-    height: 750px;
-    border: 1px solid #979797;
-  }
-}
+  .newCafe__slider {
+    // 뉴 카페 이미지 슬라이드
+    width: 640px;
+    height: 480px;
+    position: relative;
+    margin: 0 auto;
+    // 라디오 버튼 숨기기
+    & input[type='radio'] {
+      display: none;
+    }
+    // 클릭 시 불릿 배경 색 흰색으로 변경
+    & input[type='radio']:nth-child(1):checked ~ .bullets > label:nth-child(1) {
+      background-color: #fff;
+    }
+    & input[type='radio']:nth-child(2):checked ~ .bullets > label:nth-child(2) {
+      background-color: #fff;
+    }
+    & input[type='radio']:nth-child(3):checked ~ .bullets > label:nth-child(3) {
+      background-color: #fff;
+    }
+    // 3D 효과주기. 1번째 사진이 선택 되었을 경우
+    &
+      input[type='radio']:nth-child(1):checked
+      ~ ul.newCafe__imgs
+      > li:nth-child(1) {
+      left: 0;
+      transition: 0.75s;
+      z-index: 1;
+      box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+    }
+    &
+      input[type='radio']:nth-child(1):checked
+      ~ ul.newCafe__imgs
+      > li:nth-child(2) {
+      left: 120px;
+      transition: 0.75s;
+      z-index: 0;
+      transform: scale(0.8);
+      box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+    }
+    &
+      input[type='radio']:nth-child(1):checked
+      ~ ul.newCafe__imgs
+      > li:nth-child(3) {
+      left: -120px;
+      transition: 0.75s;
+      z-index: 0;
+      transform: scale(0.8);
+      box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+    }
+    // 3D 효과주기. 2번째 사진이 선택 되었을 경우
+    &
+      input[type='radio']:nth-child(2):checked
+      ~ ul.newCafe__imgs
+      > li:nth-child(1) {
+      left: -90px;
+      transition: 0.75s;
+      z-index: 0;
+      transform: scale(0.9);
+      box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+    }
+    &
+      input[type='radio']:nth-child(2):checked
+      ~ ul.newCafe__imgs
+      > li:nth-child(2) {
+      left: 0;
+      transition: 0.75s;
+      z-index: 1;
+      box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+    }
+    &
+      input[type='radio']:nth-child(2):checked
+      ~ ul.newCafe__imgs
+      > li:nth-child(3) {
+      left: 90px;
+      transition: 0.75s;
+      z-index: 0;
+      transform: scale(0.9);
+      box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+    }
+    // 3D 효과주기. 3번째 사진이 선택 되었을 경우
+    &
+      input[type='radio']:nth-child(3):checked
+      ~ ul.newCafe__imgs
+      > li:nth-child(1) {
+      left: 90px;
+      transition: 0.75s;
+      z-index: 0;
+      transform: scale(0.9);
+      box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+    }
+    &
+      input[type='radio']:nth-child(3):checked
+      ~ ul.newCafe__imgs
+      > li:nth-child(2) {
+      left: -90px;
+      transition: 0.75s;
+      z-index: 0;
+      transform: scale(0.9);
+      box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+    }
+    &
+      input[type='radio']:nth-child(3):checked
+      ~ ul.newCafe__imgs
+      > li:nth-child(3) {
+      left: 0;
+      transition: 0.75s;
+      z-index: 1;
+      box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+    }
+    ul.newCafe__imgs {
+      padding: 0;
+      margin: 0;
+      li {
+        position: absolute;
+        left: 640px;
+        transition-delay: 1s;
 
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        img {
+          border: 5px solid #fff;
+        }
+      }
+    }
+    .bullets {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20px;
+      z-index: 2;
+      label {
+        display: inline-block;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.55);
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // .newCafe__wrapper {
+  //   margin: 0 360px;
+  //   border: 1px solid #979797;
+  //   text-align: center;
+
+  //   .newCafe {
+  //     display: flex;
+  //   }
+  //   .newCafe__img {
+  //     display: flex;
+  //     .selected {
+  //       width: 790px;
+  //       height: 470px;
+  //     }
+  //     .proselected {
+  //       background-color: #8e8796;
+  //       width: 626px;
+  //       height: 367px;
+  //     }
+  //   }
+  // }
+}
 .screen_out {
   text-indent: -9999px;
   overflow: hidden;

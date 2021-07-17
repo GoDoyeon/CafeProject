@@ -1,6 +1,6 @@
 const prevButton = document.querySelector('.prev__btn');
 const nextButton = document.querySelector('.next__btn');
-const horoscope = document.querySelector('.horoscope');
+const horoscope = document.querySelector('.horoscope__wrapper');
 
 let index = 0;
 
