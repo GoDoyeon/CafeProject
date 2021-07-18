@@ -9,6 +9,7 @@ $maincolor: #eedeff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 10px;
 }
 body {
   background-color: #fff;
@@ -28,101 +29,124 @@ button {
 .main__home {
   width: 100%;
   background-color: $maincolor;
-  height: 600px;
+  height: 60rem;
   .main__tit {
     text-align: center;
-    padding: 300px 0;
-    font-size: 2rem;
+    padding: 30rem 0;
+    font-size: 8rem;
   }
 }
 
 /* 파트 3 : 별점 높은 순 */
 .main__horoscope {
-  width: 100%;
-  height: 1000px;
+  height: 100rem; // 1000px
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
-  /* 별점 높은 순 텍스트 부분 */
-  .horoscope_tit {
-    border: 1px solid #fff;
-    height: 440px; // 210+80+150
-    margin-left: 360px;
-    .tit {
-      font-size: 4rem;
-      margin-top: 210px;
+  .horoscope__block {
+    /* 별점 높은 순 텍스트 부분 */
+    .horoscope_tit {
+      color: #333;
+      display: block;
+      margin: 0 auto;
+      height: 44rem; // 210+80+150 = 440px
+      width: 192rem;
+      strong {
+        display: block;
+        padding: 21rem 0 0 10rem;
+        font-size: 6rem;
+      }
+      p {
+        display: block;
+        padding: 1.4rem 0 0 10rem;
+        margin-top: 1rem;
+        font-size: 4rem;
+      }
     }
-  }
-  .prev__btn {
-    position: absolute;
-    left: 30px;
-    width: 70px;
-    height: 70px;
-    top: 300px;
-  }
-  .next__btn {
-    position: absolute;
-    right: 30px;
-    width: 70px;
-    height: 70px;
-    top: 300px;
-  }
-  .horoscope__btn {
-    border: none;
-    border-radius: 50px;
-    color: #979797;
-  }
-  /* 별점 높은 순 사진 리스트 부분 */
-  .horoscope__wrapper {
-    width: 100%;
-    left: 360px;
-    position: relative;
-    // border: 1px solid green;
-    display: flex;
-    transform: translate3d(0, 0, 0);
-    transition: transform 0.5s;
-    margin-bottom: 160px;
-    .horsecope {
-      margin-right: 30px;
-      //border: 1px solid #979797;
-
+    // 슬라이드 + 버튼
+    .horoscope__block {
       position: relative;
-      .horoscope__tit {
-        color: #fff;
-        top: 40px;
-        opacity: 0;
-        padding: 40px;
-        position: absolute;
+      width: 100%;
+      //height: 40rem;
+      display: block;
 
-        text-align: left;
-        width: 100%;
-        transition: all 0.3s ease;
-        h1 {
-          font-size: 3rem;
-        }
-        p {
-          margin-top: 20px;
+      /* 별점 높은 순 사진 리스트 부분 */
+      .horoscope__wrapper {
+        width: 192rem;
+        height: 40rem;
+        margin: 0 auto;
+        left: 10rem;
+        position: relative;
+        // border: 1px solid green;
+        display: flex;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.5s;
+        margin-bottom: 16rem;
+        .horsecope {
+          margin-right: 3rem;
+          //border: 1px solid #979797;
+          position: relative;
+          // 이미지 호버 시 나오는 카페 설명 부분
+          .horoscope__tit {
+            color: #fff;
+            top: 4rem;
+            opacity: 0;
+            padding: 4rem;
+            position: absolute;
+            text-align: left;
+            width: 100%;
+            transition: all 0.3s ease;
+            h1 {
+              font-size: 5rem;
+            }
+            p {
+              margin-top: 2rem;
+              font-size: 3rem;
+            }
+          }
+          .horoscope__img {
+            width: 584;
+            height: 40rem;
+            opacity: 1;
+            transition: all 0.3s ease 0s;
+            overflow: hidden;
+          }
+          &:hover {
+            .horoscope__img {
+              background-color: #333;
+            }
+            img {
+              //transform: scale(1.1, 1.1);
+              transition: all 0.3s ease;
+              opacity: 0.15;
+            }
+            .horoscope__tit {
+              opacity: 1;
+              transition: all 0.3s ease;
+            }
+          }
         }
       }
-      .horoscope__img {
-        width: 584;
-        height: 400px;
-        opacity: 1;
-        transition: all 0.3s ease 0s;
-        overflow: hidden;
+      // 슬라이드 이전 버튼
+      .prev__btn {
+        left: 3rem;
+        position: absolute;
+        bottom: 16.5rem;
       }
-      &:hover {
-        .horoscope__img {
-          background-color: #000;
-        }
-        img {
-          //transform: scale(1.1, 1.1);
-          transition: all 0.3s ease;
-          opacity: 0.15;
-        }
-        .horoscope__tit {
-          opacity: 1;
-          transition: all 0.3s ease;
+      // 슬라이드 다음 버튼
+      .next__btn {
+        right: 3rem;
+        position: absolute;
+        bottom: 16.5rem;
+      }
+      .horoscope__btn {
+        border: none;
+        border-radius: 50px;
+        padding: 2rem 2.5rem;
+        background-color: #333;
+        color: #fff;
+        &:hover {
+          background-color: $maincolor;
+          color: #333;
         }
       }
     }
@@ -133,26 +157,26 @@ button {
 .main__newCafe {
   background-color: $maincolor;
   margin: 0 auto;
-  height: 1000px;
+  height: 100rem;
   /* 뉴 카페 텍스트 부분 */
   .newCafe_tit {
     // border: 1px solid black;
-    padding: 100px 0 150px 0;
+    padding: 15rem 0 10rem 0;
     text-align: center;
     .tit {
       h1 {
-        font-size: 4rem;
+        font-size: 6rem;
       }
       p {
-        margin-top: 10px;
-        font-size: 2rem;
+        margin-top: 1rem;
+        font-size: 4em;
       }
     }
   }
   .newCafe__slider {
     // 뉴 카페 이미지 슬라이드
-    width: 640px;
-    height: 480px;
+    width: 64rem;
+    height: 48rem;
     position: relative;
     margin: 0 auto;
     // 라디오 버튼 숨기기
@@ -183,7 +207,7 @@ button {
       input[type='radio']:nth-child(1):checked
       ~ ul.newCafe__imgs
       > li:nth-child(2) {
-      left: 120px;
+      left: 12rem;
       transition: 0.75s;
       z-index: 0;
       transform: scale(0.8);
@@ -193,7 +217,7 @@ button {
       input[type='radio']:nth-child(1):checked
       ~ ul.newCafe__imgs
       > li:nth-child(3) {
-      left: -120px;
+      left: -12rem;
       transition: 0.75s;
       z-index: 0;
       transform: scale(0.8);
@@ -204,7 +228,7 @@ button {
       input[type='radio']:nth-child(2):checked
       ~ ul.newCafe__imgs
       > li:nth-child(1) {
-      left: -90px;
+      left: -9rem;
       transition: 0.75s;
       z-index: 0;
       transform: scale(0.9);
@@ -223,7 +247,7 @@ button {
       input[type='radio']:nth-child(2):checked
       ~ ul.newCafe__imgs
       > li:nth-child(3) {
-      left: 90px;
+      left: 9rem;
       transition: 0.75s;
       z-index: 0;
       transform: scale(0.9);
@@ -234,7 +258,7 @@ button {
       input[type='radio']:nth-child(3):checked
       ~ ul.newCafe__imgs
       > li:nth-child(1) {
-      left: 90px;
+      left: 9rem;
       transition: 0.75s;
       z-index: 0;
       transform: scale(0.9);
@@ -244,7 +268,7 @@ button {
       input[type='radio']:nth-child(3):checked
       ~ ul.newCafe__imgs
       > li:nth-child(2) {
-      left: -90px;
+      left: -9rem;
       transition: 0.75s;
       z-index: 0;
       transform: scale(0.9);
@@ -264,7 +288,7 @@ button {
       margin: 0;
       li {
         position: absolute;
-        left: 640px;
+        left: 64rem;
         transition-delay: 1s;
 
         list-style: none;
@@ -279,14 +303,14 @@ button {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 20px;
+      bottom: 2rem;
       z-index: 2;
       label {
         display: inline-block;
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.55);
-        width: 20px;
-        height: 20px;
+        width: 2rem;
+        height: 2rem;
         cursor: pointer;
       }
     }

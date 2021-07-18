@@ -5,6 +5,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 10px;
 }
 
 body {
@@ -24,62 +25,59 @@ button {
 .main__home {
   width: 100%;
   background-color: #eedeff;
-  height: 600px;
+  height: 60rem;
 }
 
 .main__home .main__tit {
   text-align: center;
-  padding: 300px 0;
-  font-size: 2rem;
+  padding: 30rem 0;
+  font-size: 8rem;
 }
 
 /* 파트 3 : 별점 높은 순 */
 .main__horoscope {
-  width: 100%;
-  height: 1000px;
+  height: 100rem;
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+}
+
+.main__horoscope .horoscope__block {
   /* 별점 높은 순 텍스트 부분 */
+}
+
+.main__horoscope .horoscope__block .horoscope_tit {
+  color: #333;
+  display: block;
+  margin: 0 auto;
+  height: 44rem;
+  width: 192rem;
+}
+
+.main__horoscope .horoscope__block .horoscope_tit strong {
+  display: block;
+  padding: 21rem 0 0 10rem;
+  font-size: 6rem;
+}
+
+.main__horoscope .horoscope__block .horoscope_tit p {
+  display: block;
+  padding: 1.4rem 0 0 10rem;
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+.main__horoscope .horoscope__block .horoscope__block {
+  position: relative;
+  width: 100%;
+  display: block;
   /* 별점 높은 순 사진 리스트 부분 */
 }
 
-.main__horoscope .horoscope_tit {
-  border: 1px solid #fff;
-  height: 440px;
-  margin-left: 360px;
-}
-
-.main__horoscope .horoscope_tit .tit {
-  font-size: 4rem;
-  margin-top: 210px;
-}
-
-.main__horoscope .prev__btn {
-  position: absolute;
-  left: 30px;
-  width: 70px;
-  height: 70px;
-  top: 300px;
-}
-
-.main__horoscope .next__btn {
-  position: absolute;
-  right: 30px;
-  width: 70px;
-  height: 70px;
-  top: 300px;
-}
-
-.main__horoscope .horoscope__btn {
-  border: none;
-  border-radius: 50px;
-  color: #979797;
-}
-
-.main__horoscope .horoscope__wrapper {
-  width: 100%;
-  left: 360px;
+.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper {
+  width: 192rem;
+  height: 40rem;
+  margin: 0 auto;
+  left: 10rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,19 +88,19 @@ button {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  margin-bottom: 160px;
+  margin-bottom: 16rem;
 }
 
-.main__horoscope .horoscope__wrapper .horsecope {
-  margin-right: 30px;
+.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope {
+  margin-right: 3rem;
   position: relative;
 }
 
-.main__horoscope .horoscope__wrapper .horsecope .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit {
   color: #fff;
-  top: 40px;
+  top: 4rem;
   opacity: 0;
-  padding: 40px;
+  padding: 4rem;
   position: absolute;
   text-align: left;
   width: 100%;
@@ -110,64 +108,90 @@ button {
   transition: all 0.3s ease;
 }
 
-.main__horoscope .horoscope__wrapper .horsecope .horoscope__tit h1 {
+.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit h1 {
+  font-size: 5rem;
+}
+
+.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit p {
+  margin-top: 2rem;
   font-size: 3rem;
 }
 
-.main__horoscope .horoscope__wrapper .horsecope .horoscope__tit p {
-  margin-top: 20px;
-}
-
-.main__horoscope .horoscope__wrapper .horsecope .horoscope__img {
+.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope .horoscope__img {
   width: 584;
-  height: 400px;
+  height: 40rem;
   opacity: 1;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   overflow: hidden;
 }
 
-.main__horoscope .horoscope__wrapper .horsecope:hover .horoscope__img {
-  background-color: #000;
+.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope:hover .horoscope__img {
+  background-color: #333;
 }
 
-.main__horoscope .horoscope__wrapper .horsecope:hover img {
+.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope:hover img {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.15;
 }
 
-.main__horoscope .horoscope__wrapper .horsecope:hover .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope:hover .horoscope__tit {
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.main__horoscope .horoscope__block .horoscope__block .prev__btn {
+  left: 3rem;
+  position: absolute;
+  bottom: 16.5rem;
+}
+
+.main__horoscope .horoscope__block .horoscope__block .next__btn {
+  right: 3rem;
+  position: absolute;
+  bottom: 16.5rem;
+}
+
+.main__horoscope .horoscope__block .horoscope__block .horoscope__btn {
+  border: none;
+  border-radius: 50px;
+  padding: 2rem 2.5rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.main__horoscope .horoscope__block .horoscope__block .horoscope__btn:hover {
+  background-color: #eedeff;
+  color: #333;
 }
 
 /* 파트 4 : 뉴 카페 */
 .main__newCafe {
   background-color: #eedeff;
   margin: 0 auto;
-  height: 1000px;
+  height: 100rem;
   /* 뉴 카페 텍스트 부분 */
 }
 
 .main__newCafe .newCafe_tit {
-  padding: 100px 0 150px 0;
+  padding: 15rem 0 10rem 0;
   text-align: center;
 }
 
 .main__newCafe .newCafe_tit .tit h1 {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .main__newCafe .newCafe_tit .tit p {
-  margin-top: 10px;
-  font-size: 2rem;
+  margin-top: 1rem;
+  font-size: 4em;
 }
 
 .main__newCafe .newCafe__slider {
-  width: 640px;
-  height: 480px;
+  width: 64rem;
+  height: 48rem;
   position: relative;
   margin: 0 auto;
 }
@@ -202,7 +226,7 @@ button {
 .main__newCafe .newCafe__slider input[type='radio']:nth-child(1):checked
 ~ ul.newCafe__imgs
 > li:nth-child(2) {
-  left: 120px;
+  left: 12rem;
   -webkit-transition: 0.75s;
   transition: 0.75s;
   z-index: 0;
@@ -215,7 +239,7 @@ button {
 .main__newCafe .newCafe__slider input[type='radio']:nth-child(1):checked
 ~ ul.newCafe__imgs
 > li:nth-child(3) {
-  left: -120px;
+  left: -12rem;
   -webkit-transition: 0.75s;
   transition: 0.75s;
   z-index: 0;
@@ -228,7 +252,7 @@ button {
 .main__newCafe .newCafe__slider input[type='radio']:nth-child(2):checked
 ~ ul.newCafe__imgs
 > li:nth-child(1) {
-  left: -90px;
+  left: -9rem;
   -webkit-transition: 0.75s;
   transition: 0.75s;
   z-index: 0;
@@ -252,7 +276,7 @@ button {
 .main__newCafe .newCafe__slider input[type='radio']:nth-child(2):checked
 ~ ul.newCafe__imgs
 > li:nth-child(3) {
-  left: 90px;
+  left: 9rem;
   -webkit-transition: 0.75s;
   transition: 0.75s;
   z-index: 0;
@@ -265,7 +289,7 @@ button {
 .main__newCafe .newCafe__slider input[type='radio']:nth-child(3):checked
 ~ ul.newCafe__imgs
 > li:nth-child(1) {
-  left: 90px;
+  left: 9rem;
   -webkit-transition: 0.75s;
   transition: 0.75s;
   z-index: 0;
@@ -278,7 +302,7 @@ button {
 .main__newCafe .newCafe__slider input[type='radio']:nth-child(3):checked
 ~ ul.newCafe__imgs
 > li:nth-child(2) {
-  left: -90px;
+  left: -9rem;
   -webkit-transition: 0.75s;
   transition: 0.75s;
   z-index: 0;
@@ -306,7 +330,7 @@ button {
 
 .main__newCafe .newCafe__slider ul.newCafe__imgs li {
   position: absolute;
-  left: 640px;
+  left: 64rem;
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
   list-style: none;
@@ -323,7 +347,7 @@ button {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 20px;
+  bottom: 2rem;
   z-index: 2;
 }
 
@@ -331,8 +355,8 @@ button {
   display: inline-block;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.55);
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
 }
 
