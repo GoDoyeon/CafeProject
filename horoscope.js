@@ -1,10 +1,10 @@
-const prevButton = document.querySelector('.prev__btn');
-const nextButton = document.querySelector('.next__btn');
-const horoscope = document.querySelector('.horoscope');
+const horoPrevBtn = document.querySelector('.horoscope__prevbtn');
+const horoNextBtn = document.querySelector('.horoscope__nextbtn');
+const horoscope = document.querySelector('.horoscope__wrapper');
 
 let index = 0;
 
-prevButton.addEventListener('click', () => {
+horoPrevBtn.addEventListener('click', () => {
   console.log('prev');
   if (index === 0) {
     console.log('prev끝');
@@ -14,7 +14,7 @@ prevButton.addEventListener('click', () => {
   horoscope.style.transform = `translate3d(-${1228 * index}px, 0, 0)`;
 });
 
-nextButton.addEventListener('click', () => {
+horoNextBtn.addEventListener('click', () => {
   console.log('next');
   if (index === 2) {
     console.log('next끝');
