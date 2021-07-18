@@ -34,18 +34,16 @@ button {
   font-size: 8rem;
 }
 
-/* 파트 3 : 별점 높은 순 */
+/* section 3. Horoscope [별점 높은 순] */
 .main__horoscope {
   height: 100rem;
   position: relative;
   overflow: hidden;
+  /* article 3-1. 텍스트 부분 */
+  /* article 3-2. 슬라이드 + 버튼 */
 }
 
-.main__horoscope .horoscope__block {
-  /* 별점 높은 순 텍스트 부분 */
-}
-
-.main__horoscope .horoscope__block .horoscope_tit {
+.main__horoscope .horoscope__tit {
   color: #333;
   display: block;
   margin: 0 auto;
@@ -53,31 +51,31 @@ button {
   width: 192rem;
 }
 
-.main__horoscope .horoscope__block .horoscope_tit strong {
+.main__horoscope .horoscope__tit strong {
   display: block;
-  padding: 21rem 0 0 10rem;
+  padding: 21rem 0 0 18rem;
   font-size: 6rem;
 }
 
-.main__horoscope .horoscope__block .horoscope_tit p {
+.main__horoscope .horoscope__tit p {
   display: block;
-  padding: 1.4rem 0 0 10rem;
+  padding: 1.4rem 0 0 18rem;
   margin-top: 1rem;
   font-size: 4rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__block {
+.main__horoscope .horoscope__block {
   position: relative;
   width: 100%;
   display: block;
   /* 별점 높은 순 사진 리스트 부분 */
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper {
+.main__horoscope .horoscope__block .horoscope__wrapper {
   width: 192rem;
   height: 40rem;
   margin: 0 auto;
-  left: 10rem;
+  left: 18rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,12 +89,12 @@ button {
   margin-bottom: 16rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope {
   margin-right: 3rem;
   position: relative;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit {
   color: #fff;
   top: 4rem;
   opacity: 0;
@@ -108,16 +106,16 @@ button {
   transition: all 0.3s ease;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit h1 {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit h1 {
   font-size: 5rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit p {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit p {
   margin-top: 2rem;
   font-size: 3rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope .horoscope__img {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__img {
   width: 584;
   height: 40rem;
   opacity: 1;
@@ -126,35 +124,35 @@ button {
   overflow: hidden;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope:hover .horoscope__img {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope:hover .horoscope__img {
   background-color: #333;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope:hover img {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope:hover img {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.15;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__wrapper .horsecope:hover .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope:hover .horoscope__tit {
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .prev__btn {
+.main__horoscope .horoscope__block .horoscope__prevbtn {
   left: 3rem;
   position: absolute;
   bottom: 16.5rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .next__btn {
+.main__horoscope .horoscope__block .horoscope__nextbtn {
   right: 3rem;
   position: absolute;
   bottom: 16.5rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__btn {
+.main__horoscope .horoscope__block .horoscope__btn {
   border: none;
   border-radius: 50px;
   padding: 2rem 2.5rem;
@@ -162,73 +160,81 @@ button {
   color: #fff;
 }
 
-.main__horoscope .horoscope__block .horoscope__block .horoscope__btn:hover {
+.main__horoscope .horoscope__block .horoscope__btn:hover {
   background-color: #eedeff;
   color: #333;
 }
 
-/* 파트 4 : 뉴 카페 */
+/* section 6. New cafe 4 [뉴 카페] */
 .main__newCafe {
+  height: 100rem;
+  position: relative;
   background-color: #eedeff;
   margin: 0 auto;
-  height: 100rem;
-  /* 뉴 카페 텍스트 부분 */
+  /* article 6-1. 텍스트 부분 */
+  /* article 6-2. 슬라이드 + 버튼 */
 }
 
-.main__newCafe .newCafe_tit {
-  padding: 15rem 0 10rem 0;
+.main__newCafe .newCafe__tit {
+  padding: 15rem 0 8rem 0;
   text-align: center;
 }
 
-.main__newCafe .newCafe_tit .tit h1 {
+.main__newCafe .newCafe__tit strong {
   font-size: 6rem;
 }
 
-.main__newCafe .newCafe_tit .tit p {
+.main__newCafe .newCafe__tit p {
   margin-top: 1rem;
   font-size: 4em;
 }
 
-.main__newCafe .newCafe__slider {
-  width: 64rem;
-  height: 48rem;
+.main__newCafe .newCafe__block {
   position: relative;
+  width: 79rem;
   margin: 0 auto;
+  display: block;
+  /* 뉴 카페 이미지 슬라이드 */
 }
 
-.main__newCafe .newCafe__slider input[type='radio'] {
+.main__newCafe .newCafe__block .newCafe__slider {
+  width: 79rem;
+  margin: 0 auto;
+  height: 47rem;
+  position: relative;
+  /* < (이전), > (다음) 버튼으로 슬라이드 효과주기 */
+  /* 불릿으로 슬라이드 효과주기 */
+}
+
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio'] {
   display: none;
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(1):checked ~ .bullets > label:nth-child(1) {
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ .bullets > label:nth-child(1) {
   background-color: #fff;
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(2):checked ~ .bullets > label:nth-child(2) {
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ .bullets > label:nth-child(2) {
   background-color: #fff;
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(3):checked ~ .bullets > label:nth-child(3) {
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ .bullets > label:nth-child(3) {
   background-color: #fff;
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(1):checked
-~ ul.newCafe__imgs
-> li:nth-child(1) {
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(1) {
   left: 0;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 1;
   -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
           box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(1):checked
-~ ul.newCafe__imgs
-> li:nth-child(2) {
-  left: 12rem;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(2) {
+  left: 15rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 0;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -236,12 +242,10 @@ button {
           box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(1):checked
-~ ul.newCafe__imgs
-> li:nth-child(3) {
-  left: -12rem;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(3) {
+  left: -15rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 0;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -249,86 +253,74 @@ button {
           box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(2):checked
-~ ul.newCafe__imgs
-> li:nth-child(1) {
-  left: -9rem;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(1) {
+  left: -15rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 0;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
           box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(2):checked
-~ ul.newCafe__imgs
-> li:nth-child(2) {
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(2) {
   left: 0;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 1;
   -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
           box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(2):checked
-~ ul.newCafe__imgs
-> li:nth-child(3) {
-  left: 9rem;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(3) {
+  left: 15rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 0;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
           box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(3):checked
-~ ul.newCafe__imgs
-> li:nth-child(1) {
-  left: 9rem;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(1) {
+  left: 15rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 0;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
           box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(3):checked
-~ ul.newCafe__imgs
-> li:nth-child(2) {
-  left: -9rem;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(2) {
+  left: -15rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 0;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
           box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__slider input[type='radio']:nth-child(3):checked
-~ ul.newCafe__imgs
-> li:nth-child(3) {
+.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(3) {
   left: 0;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 1;
   -webkit-box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
           box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__slider ul.newCafe__imgs {
+.main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs {
   padding: 0;
   margin: 0;
 }
 
-.main__newCafe .newCafe__slider ul.newCafe__imgs li {
+.main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs li {
   position: absolute;
   left: 64rem;
   -webkit-transition-delay: 1s;
@@ -338,26 +330,53 @@ button {
   margin: 0;
 }
 
-.main__newCafe .newCafe__slider ul.newCafe__imgs li img {
-  border: 5px solid #fff;
+.main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs li img {
+  width: 79rem;
+  height: 47rem;
+  border: 2px solid #fff;
 }
 
-.main__newCafe .newCafe__slider .bullets {
+.main__newCafe .newCafe__block .newCafe__slider .bullets {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 2rem;
+  bottom: -6rem;
   z-index: 2;
 }
 
-.main__newCafe .newCafe__slider .bullets label {
+.main__newCafe .newCafe__block .newCafe__slider .bullets label {
   display: inline-block;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.55);
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+}
+
+.main__newCafe .newCafe__block .newCafe__prevbtn {
+  right: 100rem;
+  position: absolute;
+  bottom: 46.5rem;
+}
+
+.main__newCafe .newCafe__block .newCafe__nextbtn {
+  left: 100rem;
+  position: absolute;
+  bottom: 46.5rem;
+}
+
+.main__newCafe .newCafe__block .newCafe__btn {
+  border: none;
+  bottom: 20rem;
+  padding: 2rem 2.5rem;
+  color: #fff;
+  background-color: #eedeff;
+}
+
+.main__newCafe .newCafe__block .newCafe__btn:hover {
+  background-color: #eedeff;
+  color: #333;
 }
 
 .screen_out {
