@@ -9,12 +9,17 @@ $maincolor: #eedeff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 10px;
 }
 body {
   background-color: #fff;
 }
 
+html,
+body {
+  height: 100%;
+  font-size: 10px;
+  // font-size: 7px; // 맥북 기준
+}
 .container {
   width: 100%;
 }
@@ -101,7 +106,7 @@ button {
           }
         }
         .horoscope__img {
-          width: 584;
+          width: 58.4rem;
           height: 40rem;
           opacity: 1;
           transition: all 0.3s ease 0s;
