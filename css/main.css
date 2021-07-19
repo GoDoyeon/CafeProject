@@ -5,11 +5,16 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 10px;
 }
 
 body {
   background-color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 10px;
 }
 
 .container {
@@ -116,7 +121,7 @@ button {
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__img {
-  width: 584;
+  width: 58.4rem;
   height: 40rem;
   opacity: 1;
   -webkit-transition: all 0.3s ease 0s;
