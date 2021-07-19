@@ -1,10 +1,16 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 10px;
 }
 
 html,
@@ -32,7 +38,7 @@ button {
 /* section 2 : 카페 소개 */
 .main__home {
   width: 100%;
-  background-color: #EEDEFF;
+  background-color: #eedeff;
   height: 60rem;
 }
 
@@ -96,7 +102,11 @@ button {
   position: relative;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horsecope
+  .horoscope__tit {
   color: #fff;
   top: 4rem;
   opacity: 0;
@@ -107,16 +117,30 @@ button {
   transition: all 0.3s ease;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit h1 {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horsecope
+  .horoscope__tit
+  h1 {
   font-size: 5rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit p {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horsecope
+  .horoscope__tit
+  p {
   margin-top: 2rem;
   font-size: 3rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__img {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horsecope
+  .horoscope__img {
   width: 58.4rem;
   height: 40rem;
   opacity: 1;
@@ -124,7 +148,11 @@ button {
   overflow: hidden;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope:hover .horoscope__img {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horsecope:hover
+  .horoscope__img {
   background-color: #333;
 }
 
@@ -133,7 +161,11 @@ button {
   opacity: 0.15;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope:hover .horoscope__tit {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horsecope:hover
+  .horoscope__tit {
   opacity: 1;
   transition: all 0.3s ease;
 }
@@ -159,7 +191,7 @@ button {
 }
 
 .main__horoscope .horoscope__block .horoscope__btn:hover {
-  background-color: #EEDEFF;
+  background-color: #eedeff;
   color: #333;
 }
 
@@ -194,7 +226,7 @@ button {
   height: 58rem;
   position: relative;
   overflow: hidden;
-  background: url("../img/06/best_1_1.png") center no-repeat;
+  background: url('../img/06/best_1_1.png') center no-repeat;
   background-size: cover;
 }
 
@@ -203,7 +235,7 @@ button {
   height: 58rem;
   position: absolute;
   top: 58rem;
-  background: url("../img/06/bg.png") center no-repeat;
+  background: url('../img/06/bg.png') center no-repeat;
   background-size: cover;
   transition: 0.5s ease-out;
 }
@@ -215,7 +247,7 @@ button {
   overflow: hidden;
   top: 21rem;
   left: 60%;
-  background: url("../img/06/best_1_1.png") center no-repeat;
+  background: url('../img/06/best_1_1.png') center no-repeat;
   background-size: cover;
   box-shadow: 10px 10px 15px #545455;
 }
@@ -225,7 +257,7 @@ button {
   height: 58rem;
   position: absolute;
   top: 58rem;
-  background: url("../img/06/bg.png") center no-repeat;
+  background: url('../img/06/bg.png') center no-repeat;
   background-size: cover;
   transition: 0.5s ease-out;
 }
@@ -254,19 +286,27 @@ button {
   transition: 0.5s ease-out;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__bigBox .scenery__bg__bigSlide1 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__bigBox
+  .scenery__bg__bigSlide1 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url("../img/05/left/L_content_1_1.png") center no-repeat;
+  background: url('../img/05/left/L_content_1_1.png') center no-repeat;
   background-size: cover;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__bigBox .scenery__bg__bigSlide2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__bigBox
+  .scenery__bg__bigSlide2 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url("../img/05/left/L_content_2_1.png") left top no-repeat;
+  background: url('../img/05/left/L_content_2_1.png') left top no-repeat;
   background-size: cover;
 }
 
@@ -279,57 +319,92 @@ button {
   position: absolute;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__up__container {
   width: 34rem;
   height: 34rem;
   position: relative;
   overflow: hidden;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__up__container
+  .scenery__bg__up {
   width: 68rem;
   height: 34rem;
   position: absolute;
   transition: 0.5s ease-out;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__up__container
+  .scenery__bg__up
+  .scenery__bg__smallSlide1 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url("../img/05/left/L_scenery1_1_bg.png") center no-repeat;
+  background: url('../img/05/left/L_scenery1_1_bg.png') center no-repeat;
   background-size: cover;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__up__container
+  .scenery__bg__up
+  .scenery__bg__smallSlide2 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url("../img/05/left/L_scenery_2_1_bg.png") center no-repeat;
+  background: url('../img/05/left/L_scenery_2_1_bg.png') center no-repeat;
   background-size: cover;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__down {
   width: 34rem;
   height: 34rem;
   background: white;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__down
+  .scenery__bg__small {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url("../img/05/left/L_text_2_1.png") center no-repeat;
+  background: url('../img/05/left/L_text_2_1.png') center no-repeat;
   background-size: cover;
   opacity: 1;
   transition: opacity 1s;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__down
+  .scenery__bg__small2 {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url("../img/05/left/L_text_1_1.png") center no-repeat;
+  background: url('../img/05/left/L_text_1_1.png') center no-repeat;
   background-size: cover;
   opacity: 0;
   transition: opacity 1s;
@@ -350,19 +425,27 @@ button {
   transition: 0.5s ease-out;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox .scenery__bg__bigSlide1 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__bigBox
+  .scenery__bg__bigSlide1 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url("../img/05/right/R_content_1_1.png") center no-repeat;
+  background: url('../img/05/right/R_content_1_1.png') center no-repeat;
   background-size: cover;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox .scenery__bg__bigSlide2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__bigBox
+  .scenery__bg__bigSlide2 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url("../img/05/right/R_content_2_1.png") center no-repeat;
+  background: url('../img/05/right/R_content_2_1.png') center no-repeat;
   background-size: cover;
 }
 
@@ -375,59 +458,94 @@ button {
   position: absolute;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__up {
   width: 34rem;
   height: 34rem;
   background: white;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__up
+  .scenery__bg__small {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url("../img/05/right/R_text_2_1.png") center no-repeat;
+  background: url('../img/05/right/R_text_2_1.png') center no-repeat;
   background-size: cover;
   opacity: 1;
   transition: opacity 1s;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__up
+  .scenery__bg__small2 {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url("../img/05/right/R_text_1_1.png") center no-repeat;
+  background: url('../img/05/right/R_text_1_1.png') center no-repeat;
   background-size: cover;
   opacity: 0;
   transition: opacity 1s;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__down__container {
   width: 34rem;
   height: 34rem;
   position: relative;
   overflow: hidden;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__down__container
+  .scenery__bg__down {
   width: 68rem;
   height: 34rem;
   position: absolute;
   transition: 0.5s ease-out;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__down__container
+  .scenery__bg__down
+  .scenery__bg__smallSlide1 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url("../img/05/right/R_scenery1_1_bg.png") center no-repeat;
+  background: url('../img/05/right/R_scenery1_1_bg.png') center no-repeat;
   background-size: cover;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__down__container
+  .scenery__bg__down
+  .scenery__bg__smallSlide2 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url("../img/05/right/R_scenery2_1_bg.png.png") center no-repeat;
+  background: url('../img/05/right/R_scenery2_1_bg.png.png') center no-repeat;
   background-size: cover;
 }
 
@@ -435,7 +553,7 @@ button {
 .main__newCafe {
   height: 100rem;
   position: relative;
-  background-color: #EEDEFF;
+  background-color: #eedeff;
   margin: 0 auto;
   /* article 6-1. 텍스트 부분 */
   /* article 6-2. 슬라이드 + 버튼 */
@@ -476,26 +594,51 @@ button {
   display: none;
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ .bullets > label:nth-child(1) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(1):checked
+  ~ .bullets
+  > label:nth-child(1) {
   background-color: #fff;
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ .bullets > label:nth-child(2) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(2):checked
+  ~ .bullets
+  > label:nth-child(2) {
   background-color: #fff;
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ .bullets > label:nth-child(3) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(3):checked
+  ~ .bullets
+  > label:nth-child(3) {
   background-color: #fff;
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(1) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(1):checked
+  ~ ul.newCafe__imgs
+  > li:nth-child(1) {
   left: 0;
   transition: 0.5s;
   z-index: 1;
   box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(2) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(1):checked
+  ~ ul.newCafe__imgs
+  > li:nth-child(2) {
   left: 15rem;
   transition: 0.5s;
   z-index: 0;
@@ -503,7 +646,12 @@ button {
   box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(3) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(1):checked
+  ~ ul.newCafe__imgs
+  > li:nth-child(3) {
   left: -15rem;
   transition: 0.5s;
   z-index: 0;
@@ -511,7 +659,12 @@ button {
   box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(1) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(2):checked
+  ~ ul.newCafe__imgs
+  > li:nth-child(1) {
   left: -15rem;
   transition: 0.5s;
   z-index: 0;
@@ -519,14 +672,24 @@ button {
   box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(2) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(2):checked
+  ~ ul.newCafe__imgs
+  > li:nth-child(2) {
   left: 0;
   transition: 0.5s;
   z-index: 1;
   box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(3) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(2):checked
+  ~ ul.newCafe__imgs
+  > li:nth-child(3) {
   left: 15rem;
   transition: 0.5s;
   z-index: 0;
@@ -534,7 +697,12 @@ button {
   box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(1) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(3):checked
+  ~ ul.newCafe__imgs
+  > li:nth-child(1) {
   left: 15rem;
   transition: 0.5s;
   z-index: 0;
@@ -542,7 +710,12 @@ button {
   box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(2) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(3):checked
+  ~ ul.newCafe__imgs
+  > li:nth-child(2) {
   left: -15rem;
   transition: 0.5s;
   z-index: 0;
@@ -550,7 +723,12 @@ button {
   box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(3) {
+.main__newCafe
+  .newCafe__block
+  .newCafe__slider
+  input[type='radio']:nth-child(3):checked
+  ~ ul.newCafe__imgs
+  > li:nth-child(3) {
   left: 0;
   transition: 0.5s;
   z-index: 1;
@@ -611,11 +789,11 @@ button {
   bottom: 20rem;
   padding: 2rem 2.5rem;
   color: #fff;
-  background-color: #EEDEFF;
+  background-color: #eedeff;
 }
 
 .main__newCafe .newCafe__block .newCafe__btn:hover {
-  background-color: #EEDEFF;
+  background-color: #eedeff;
   color: #333;
 }
 
