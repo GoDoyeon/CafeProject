@@ -99,7 +99,7 @@ button {
   position: relative;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope__tit {
   color: #fff;
   top: 4rem;
   opacity: 0;
@@ -111,16 +111,16 @@ button {
   transition: all 0.3s ease;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit h1 {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope__tit h1 {
   font-size: 5rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit p {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope__tit p {
   margin-top: 2rem;
   font-size: 3rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__img {
+.main__horoscope .horoscope__block .horoscope__wrapper .horsecope__img {
   width: 58.4rem;
   height: 40rem;
   opacity: 1;

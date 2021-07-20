@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* 파트 2 : 카페 소개 */
+.main__home {
+  width: 100%;
+  background-color: #eedeff;
+  height: 60rem;
+}
+
+.main__home .main__tit {
+  text-align: center;
+  padding: 30rem 0;
+  font-size: 8rem;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.content__menu {
+  width: 120rem;
+  margin: 0 auto;
+  color: #333;
+}
+
+.content__menu .cafeKinds {
+  padding: 10rem 0 1rem 0;
+  font-size: 3rem;
+}
+
+.content__menu .locations {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+.content__menu .tags {
+  padding: 1.4rem 0.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.content__menu button,
+.content__menu strong {
+  margin-right: 3rem;
+}
+
+.content__menu button:hover,
+.content__menu strong:hover {
+  background-color: sandybrown;
+}
+
+.content__imgs {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding-bottom: 11rem;
+  margin-bottom: 5rem;
+}
+
+.content__imgs .select__cafe {
+  width: 120rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  font-size: 2rem;
+}
+
+.content__imgs .select__cafe span {
+  margin: 0 2rem 0 2rem;
+}
+
+.content__imgs .cafe__block {
+  width: 120rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.content__imgs .cafe__block .cafe__imgs1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__imgs .cafe__block .cafe__imgs1 .img img {
+  width: 38rem;
+  height: 30rem;
+}
+
+.content__imgs .cafe__block .cafe__imgs1 .img:nth-child(2) {
+  margin: 0 3rem 0 3rem;
+}
+
+.content__imgs .cafe__block .cafe__imgs1 .img:hover {
+  background-color: #47405a;
+}
+
+.content__imgs .cafe__block .cafe__imgs2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem 0 3rem 0;
+}
+
+.content__imgs .cafe__block .cafe__imgs2 .img img {
+  width: 38rem;
+  height: 30rem;
+}
+
+.content__imgs .cafe__block .cafe__imgs2 .img:nth-child(2) {
+  margin: 0 3rem 0 3rem;
+}
+
+.content__imgs .cafe__block .cafe__imgs3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__imgs .cafe__block .cafe__imgs3 .img img {
+  width: 38rem;
+  height: 30rem;
+}
+
+.content__imgs .cafe__block .cafe__imgs3 .img:nth-child(2) {
+  margin: 0 3rem 0 3rem;
+}
+/*# sourceMappingURL=specialCafe.css.map */
