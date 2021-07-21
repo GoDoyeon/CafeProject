@@ -4,22 +4,21 @@
 // font-family: 'Dancing Script', cursive;
 
 $maincolor: #eedeff;
-
+$maincolortext: #ccbedb;
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
-body {
-  background-color: #fff;
-}
-
 html,
 body {
   height: 100%;
+  background-color: #fff;
   font-size: 10px;
   //font-size: 7px; // 맥북 기준
-  font-family: 'Noto Sans KR', sans-serif;
 }
 .container {
   width: 100%;
@@ -54,27 +53,62 @@ button {
     width: 120rem;
     margin: 0 auto;
     color: #333;
+    // 카페 메뉴 - 공통 ul, li 부분 style
+    ul {
+      display: block;
+      li {
+        position: relative;
+        display: inline-block;
+        line-height: 3rem;
+        padding: 1rem;
+        margin-right: 3rem;
+        display: inline-block;
+      }
+    }
     // 카페 메뉴 - 종류 선택
     .cafeKinds {
-      padding: 10rem 0 1rem 0;
+      padding: 10rem 0 3rem 0;
       font-size: 3rem;
+      border-bottom: 1px solid #cdcdcd;
+      margin-bottom: 1rem;
+      li {
+        margin: 0 3rem 0 0;
+        height: 40px;
+        a {
+          color: #333;
+          &:hover {
+            padding-bottom: 2.4rem;
+            border-bottom: 0.8rem solid $maincolor;
+            color: $maincolortext;
+            font-weight: bold;
+          }
+        }
+      }
     }
     // 카페 메뉴 - 위치 선택
     .locations {
-      padding-top: 1rem;
       font-size: 2rem;
+      li {
+        &:hover,
+        :active {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
     }
     // 카페 메뉴 - 해시 태그
     .tags {
       padding: 1.4rem 0.6rem;
       font-size: 1.6rem;
       margin-bottom: 3rem;
-    }
-    button,
-    strong {
-      margin-right: 3rem;
-      &:hover {
-        background-color: sandybrown;
+      li {
+        padding: 0;
+        padding-bottom: 0;
+        text-decoration: none;
+        &:hover {
+          box-shadow: 0 -8px $maincolor inset;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -98,52 +132,52 @@ button {
     .cafe__block {
       width: 120rem;
       margin: 0 auto;
-      display: block;
+      //display: block;
       .cafe__imgs {
-        // 카페 이미지 1번째 줄
-        &1 {
+        // 카페 이미지 1, 2, 3번째 줄 ul, li 공통 style
+        ul {
           display: flex;
-          .img {
+          li {
+            position: relative;
+            &:hover {
+              transform: translateY(-1em);
+              -moz-box-shadow: 0 0 10px rgb(158, 158, 158);
+              -webkit-box-shadow: 0 0 10px rgb(158, 158, 158);
+              box-shadow: 0 0 10px rgb(158, 158, 158);
+            }
             img {
+              // 이미지 사이즈
               width: 38rem;
               height: 30rem;
             }
-            &:nth-child(2) {
-              margin: 0 3rem 0 3rem;
-            }
-            &:hover {
+            .img__text {
+              position: absolute;
+              z-index: 1;
+              bottom: 0;
+              height: 7.3rem;
+              width: 38rem;
               background-color: #47405a;
+              opacity: 0.8;
+              color: #fff;
+              text-align: center;
+              font-size: 2.8rem;
+              padding: 1.5rem 0;
             }
           }
+          li:nth-child(2) {
+            margin: 0 3rem 0 3rem;
+          }
         }
+        // 카페 이미지 1번째 줄
+        // &1 {
+        // }
         // 카페 이미지 2번째 줄
         &2 {
-          display: flex;
           margin: 3rem 0 3rem 0;
-          .img {
-            img {
-              width: 38rem;
-              height: 30rem;
-            }
-            &:nth-child(2) {
-              margin: 0 3rem 0 3rem;
-            }
-          }
         }
         // 카페 이미지 3번째 줄
-        &3 {
-          display: flex;
-          // margin-bottom: 11rem;
-          .img {
-            img {
-              width: 38rem;
-              height: 30rem;
-            }
-            &:nth-child(2) {
-              margin: 0 3rem 0 3rem;
-            }
-          }
-        }
+        // &3 {
+        // }
       }
     }
   }
