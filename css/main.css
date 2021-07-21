@@ -1,14 +1,15 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 10px;
 }
 
+html,
 body {
-  background-color: #fff;
+  height: 100%;
+  font-size: 10px;
 }
 
 .screen_out {
@@ -42,8 +43,77 @@ header {
   height: 1200px;
   position: relative;
   margin: 0 auto;
+  background: orangered;
 }
 
+/*section 4: 이달의 카페*/
+.main__best {
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__best .best__tit {
+  width: 98.8rem;
+  height: 58rem;
+  padding: 20rem 0px 0px 9.2rem;
+  margin: 0 auto;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+
+.main__best .tit {
+  font-size: 50px;
+  margin-bottom: 3rem;
+}
+
+.main__best .sub__tit {
+  font-size: 36px;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.main__best .best__bg {
+  width: 100%;
+  height: 58rem;
+  position: relative;
+  overflow: hidden;
+  background: url("../img/06/best_1_1.png") center no-repeat;
+  background-size: cover;
+}
+
+.main__best .best__bg .best__inner__bg {
+  width: 100%;
+  height: 58rem;
+  position: absolute;
+  top: 58rem;
+  background: url("../img/06/bg.png") center no-repeat;
+  background-size: cover;
+  transition: 0.5s ease-out;
+}
+
+.main__best .best__box {
+  width: 36rem;
+  height: 58rem;
+  position: absolute;
+  overflow: hidden;
+  top: 21rem;
+  left: 60%;
+  background: url("../img/06/best_1_1.png") center no-repeat;
+  background-size: cover;
+  box-shadow: 10px 10px 15px #545455;
+}
+
+.main__best .best__box .best__header {
+  width: 36rem;
+  height: 58rem;
+  position: absolute;
+  top: 58rem;
+  background: url("../img/06/bg.png") center no-repeat;
+  background-size: cover;
+  transition: 0.5s ease-out;
+}
+
+/*section 5: 전망좋은 카페*/
 .main__scenery {
   height: 1000px;
 }
@@ -242,72 +312,6 @@ header {
   float: left;
   background: url("../img/05/right/R_scenery2_1_bg.png.png") center no-repeat;
   background-size: cover;
-}
-
-.main__best {
-  height: 1000px;
-  position: relative;
-  overflow: hidden;
-}
-
-.main__best .best__tit {
-  width: 98.8rem;
-  height: 58rem;
-  padding: 20rem 0px 0px 9.2rem;
-  margin: 0 auto;
-  line-height: 50px;
-  letter-spacing: 2px;
-}
-
-.main__best .tit {
-  font-size: 50px;
-  margin-bottom: 3rem;
-}
-
-.main__best .sub__tit {
-  font-size: 36px;
-  font-family: 'Frank Ruhl Libre', serif;
-}
-
-.main__best .best__bg {
-  width: 100%;
-  height: 58rem;
-  position: relative;
-  overflow: hidden;
-  background: url("../img/06/best_1_1.png") center no-repeat;
-  background-size: cover;
-}
-
-.main__best .best__bg .best__inner__bg {
-  width: 100%;
-  height: 58rem;
-  position: absolute;
-  top: 58rem;
-  background: url("../img/06/bg.png") center no-repeat;
-  background-size: cover;
-  transition: 0.5s ease-out;
-}
-
-.main__best .best__box {
-  width: 36rem;
-  height: 58rem;
-  position: absolute;
-  overflow: hidden;
-  top: 21rem;
-  left: 60%;
-  background: url("../img/06/best_1_1.png") center no-repeat;
-  background-size: cover;
-  box-shadow: 10px 10px 15px #545455;
-}
-
-.main__best .best__box .best__header {
-  width: 36rem;
-  height: 58rem;
-  position: absolute;
-  top: 58rem;
-  background: url("../img/06/bg.png") center no-repeat;
-  background-size: cover;
-  transition: 0.5s ease-out;
 }
 
 footer {
