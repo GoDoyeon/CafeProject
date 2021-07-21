@@ -83,12 +83,12 @@ button {
       transform: translate3d(0, 0, 0);
       transition: transform 0.5s;
       margin-bottom: 16rem;
-      .horsecope {
+      .horoscope {
         margin-right: 3rem;
         //border: 1px solid #979797;
         position: relative;
         // 이미지 호버 시 나오는 카페 설명 부분
-        &__tit {
+        .horoscope__tit {
           color: #fff;
           top: 4rem;
           opacity: 0;
