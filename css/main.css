@@ -13,10 +13,10 @@ body {
   font-size: 10px;
 }
 
-html,
-body {
-  height: 100%;
-  font-size: 10px;
+.screen_out {
+  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
 }
 
 .container {
@@ -24,175 +24,29 @@ body {
   height: 5200px;
 }
 
-/*헤더*/
 header {
   height: 100px;
   background-color: rosybrown;
 }
 
-a,
-button {
-  cursor: pointer;
-}
-
-/* section 2 : 카페 소개 */
 .main__home {
   width: 100%;
   background-color: #eedeff;
   height: 60rem;
 }
 
-.main__home .main__tit {
-  text-align: center;
-  padding: 30rem 0;
-  font-size: 8rem;
-}
-
-/* section 3. Horoscope [별점 높은 순] */
 .main__horoscope {
-  height: 100rem;
+  height: 1000px;
   position: relative;
   overflow: hidden;
-  /* article 3-1. 텍스트 부분 */
-  /* article 3-2. 슬라이드 + 버튼 */
+  background: olive;
 }
 
-.main__horoscope .horoscope__tit {
-  color: #333;
-  display: block;
+.main__new {
+  height: 1200px;
+  position: relative;
   margin: 0 auto;
-  height: 44rem;
-  width: 192rem;
-}
-
-.main__horoscope .horoscope__tit strong {
-  display: block;
-  padding: 21rem 0 0 18rem;
-  font-size: 6rem;
-}
-
-.main__horoscope .horoscope__tit p {
-  display: block;
-  padding: 1.4rem 0 0 18rem;
-  margin-top: 1rem;
-  font-size: 4rem;
-}
-
-.main__horoscope .horoscope__block {
-  position: relative;
-  width: 100%;
-  display: block;
-  /* 별점 높은 순 사진 리스트 부분 */
-}
-
-.main__horoscope .horoscope__block .horoscope__wrapper {
-  width: 192rem;
-  height: 40rem;
-  margin: 0 auto;
-  left: 18rem;
-  position: relative;
-  display: flex;
-  transform: translate3d(0, 0, 0);
-  transition: transform 0.5s;
-  margin-bottom: 16rem;
-}
-
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope {
-  margin-right: 3rem;
-  position: relative;
-}
-
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horsecope
-  .horoscope__tit {
-  color: #fff;
-  top: 4rem;
-  opacity: 0;
-  padding: 4rem;
-  position: absolute;
-  text-align: left;
-  width: 100%;
-  transition: all 0.3s ease;
-}
-
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horsecope
-  .horoscope__tit
-  h1 {
-  font-size: 5rem;
-}
-
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horsecope
-  .horoscope__tit
-  p {
-  margin-top: 2rem;
-  font-size: 3rem;
-}
-
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horsecope
-  .horoscope__img {
-  width: 58.4rem;
-  height: 40rem;
-  opacity: 1;
-  transition: all 0.3s ease 0s;
-  overflow: hidden;
-}
-
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horsecope:hover
-  .horoscope__img {
-  background-color: #333;
-}
-
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope:hover img {
-  transition: all 0.3s ease;
-  opacity: 0.15;
-}
-
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horsecope:hover
-  .horoscope__tit {
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-
-.main__horoscope .horoscope__block .horoscope__prevbtn {
-  left: 3rem;
-  position: absolute;
-  bottom: 16.5rem;
-}
-
-.main__horoscope .horoscope__block .horoscope__nextbtn {
-  right: 3rem;
-  position: absolute;
-  bottom: 16.5rem;
-}
-
-.main__horoscope .horoscope__block .horoscope__btn {
-  border: none;
-  border-radius: 50px;
-  padding: 2rem 2.5rem;
-  background-color: #333;
-  color: #fff;
-}
-
-.main__horoscope .horoscope__block .horoscope__btn:hover {
-  background-color: #eedeff;
-  color: #333;
+  background: orangered;
 }
 
 /*section 4: 이달의 카페*/
@@ -547,254 +401,6 @@ button {
   float: left;
   background: url('../img/05/right/R_scenery2_1_bg.png.png') center no-repeat;
   background-size: cover;
-}
-
-/* section 6. New cafe 4 [뉴 카페] */
-.main__newCafe {
-  height: 100rem;
-  position: relative;
-  background-color: #eedeff;
-  margin: 0 auto;
-  /* article 6-1. 텍스트 부분 */
-  /* article 6-2. 슬라이드 + 버튼 */
-}
-
-.main__newCafe .newCafe__tit {
-  padding: 15rem 0 8rem 0;
-  text-align: center;
-}
-
-.main__newCafe .newCafe__tit strong {
-  font-size: 6rem;
-}
-
-.main__newCafe .newCafe__tit p {
-  margin-top: 1rem;
-  font-size: 4em;
-}
-
-.main__newCafe .newCafe__block {
-  position: relative;
-  width: 79rem;
-  margin: 0 auto;
-  display: block;
-  /* 뉴 카페 이미지 슬라이드 */
-}
-
-.main__newCafe .newCafe__block .newCafe__slider {
-  width: 79rem;
-  margin: 0 auto;
-  height: 47rem;
-  position: relative;
-  /* < (이전), > (다음) 버튼으로 슬라이드 효과주기 */
-  /* 불릿으로 슬라이드 효과주기 */
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio'] {
-  display: none;
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(1):checked
-  ~ .bullets
-  > label:nth-child(1) {
-  background-color: #fff;
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(2):checked
-  ~ .bullets
-  > label:nth-child(2) {
-  background-color: #fff;
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(3):checked
-  ~ .bullets
-  > label:nth-child(3) {
-  background-color: #fff;
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(1):checked
-  ~ ul.newCafe__imgs
-  > li:nth-child(1) {
-  left: 0;
-  transition: 0.5s;
-  z-index: 1;
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(1):checked
-  ~ ul.newCafe__imgs
-  > li:nth-child(2) {
-  left: 15rem;
-  transition: 0.5s;
-  z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(1):checked
-  ~ ul.newCafe__imgs
-  > li:nth-child(3) {
-  left: -15rem;
-  transition: 0.5s;
-  z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(2):checked
-  ~ ul.newCafe__imgs
-  > li:nth-child(1) {
-  left: -15rem;
-  transition: 0.5s;
-  z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(2):checked
-  ~ ul.newCafe__imgs
-  > li:nth-child(2) {
-  left: 0;
-  transition: 0.5s;
-  z-index: 1;
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(2):checked
-  ~ ul.newCafe__imgs
-  > li:nth-child(3) {
-  left: 15rem;
-  transition: 0.5s;
-  z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(3):checked
-  ~ ul.newCafe__imgs
-  > li:nth-child(1) {
-  left: 15rem;
-  transition: 0.5s;
-  z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(3):checked
-  ~ ul.newCafe__imgs
-  > li:nth-child(2) {
-  left: -15rem;
-  transition: 0.5s;
-  z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
-}
-
-.main__newCafe
-  .newCafe__block
-  .newCafe__slider
-  input[type='radio']:nth-child(3):checked
-  ~ ul.newCafe__imgs
-  > li:nth-child(3) {
-  left: 0;
-  transition: 0.5s;
-  z-index: 1;
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
-}
-
-.main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs {
-  padding: 0;
-  margin: 0;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs li {
-  position: absolute;
-  left: 64rem;
-  transition-delay: 1s;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs li img {
-  width: 79rem;
-  height: 47rem;
-  border: 2px solid #fff;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider .bullets {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -6rem;
-  z-index: 2;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider .bullets label {
-  display: inline-block;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.55);
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-}
-
-.main__newCafe .newCafe__block .newCafe__prevbtn {
-  right: 100rem;
-  position: absolute;
-  bottom: 46.5rem;
-}
-
-.main__newCafe .newCafe__block .newCafe__nextbtn {
-  left: 100rem;
-  position: absolute;
-  bottom: 46.5rem;
-}
-
-.main__newCafe .newCafe__block .newCafe__btn {
-  border: none;
-  bottom: 20rem;
-  padding: 2rem 2.5rem;
-  color: #fff;
-  background-color: #eedeff;
-}
-
-.main__newCafe .newCafe__block .newCafe__btn:hover {
-  background-color: #eedeff;
-  color: #333;
 }
 
 footer {
