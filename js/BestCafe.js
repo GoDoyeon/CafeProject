@@ -2,7 +2,7 @@ let best__inner__bg = document.querySelector('.best__bg .best__inner__bg');
 let best__inner__bg__height = best__inner__bg.clientHeight;
 let best__header = document.querySelector('.best__box .best__header');
 let best__header__height = best__header.clientHeight;
-let TopNum_pageSix = 3900;
+let TopNum_pageSix = 2700;
 let direction_pageSix = '';
 console.log(best__inner__bg.clientWidth);
 document.addEventListener('scroll',function(){

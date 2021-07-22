@@ -1,10 +1,18 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 html,
@@ -13,23 +21,101 @@ body {
   font-size: 10px;
 }
 
+.screen_out {
+  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+}
+
 .container {
   width: 100%;
   height: 5200px;
 }
 
-/*헤더*/
-header {
+.header {
+  position: fixed;
+  width: 100%;
   height: 100px;
-  background-color: rosybrown;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: 0.2s ease-in;
 }
 
-a,
-button {
+.header__inner {
+  position: relative;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.header__inner h1 {
+  float: left;
+  margin-left: 60px;
+  width: 200px;
+  height: 100px;
+}
+
+.header__inner h1 .logo {
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.header .gnb {
+  float: left;
+  font-size: 4rem;
+  font-family: "Dancing Script", cursive;
+  margin: 25px 0 0 60px;
+}
+
+.header .gnb__menu li {
+  float: left;
+  list-style: none;
+  padding-right: 5rem;
+}
+
+.header .gnb__menu li a {
+  height: 50rem;
+  color: #333;
+}
+
+.header .gnb__menu li a:hover {
+  border-bottom: 1px solid black;
+}
+
+.header .mode__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 175px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 25px 60px 0 0;
+  box-shadow: 10px 10px 10px #000000a8;
+  border: 0;
+  outline: 0;
   cursor: pointer;
+  color: #333;
 }
 
-/* section 2 : 카페 소개 */
+.header .mode__btn i {
+  margin-right: 10px;
+}
+
+.header .mode__btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.header .mode__btn:hover .fa-moon {
+  color: yellow;
+}
+
+.header .on {
+  background-color: #000;
+}
+
+/* section2 */
 .main__home {
   width: 100%;
   background-color: #EEDEFF;
@@ -91,12 +177,12 @@ button {
   margin-bottom: 16rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope {
   margin-right: 3rem;
   position: relative;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__tit {
   color: #fff;
   top: 4rem;
   opacity: 0;
@@ -107,16 +193,16 @@ button {
   transition: all 0.3s ease;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit h1 {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__tit h1 {
   font-size: 5rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__tit p {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__tit p {
   margin-top: 2rem;
   font-size: 3rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope .horoscope__img {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope__img {
   width: 58.4rem;
   height: 40rem;
   opacity: 1;
@@ -124,16 +210,16 @@ button {
   overflow: hidden;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope:hover .horoscope__img {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__img {
   background-color: #333;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope:hover img {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover img {
   transition: all 0.3s ease;
   opacity: 0.15;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horsecope:hover .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__tit {
   opacity: 1;
   transition: all 0.3s ease;
 }
@@ -163,80 +249,14 @@ button {
   color: #333;
 }
 
-/*section 4: 이달의 카페*/
-.main__best {
-  height: 1000px;
-  position: relative;
-  overflow: hidden;
-}
-
-.main__best .best__tit {
-  width: 98.8rem;
-  height: 58rem;
-  padding: 20rem 0px 0px 9.2rem;
-  margin: 0 auto;
-  line-height: 50px;
-  letter-spacing: 2px;
-}
-
-.main__best .tit {
-  font-size: 50px;
-  margin-bottom: 3rem;
-}
-
-.main__best .sub__tit {
-  font-size: 36px;
-  font-family: 'Frank Ruhl Libre', serif;
-}
-
-.main__best .best__bg {
-  width: 100%;
-  height: 58rem;
-  position: relative;
-  overflow: hidden;
-  background: url("../img/06/best_1_1.png") center no-repeat;
-  background-size: cover;
-}
-
-.main__best .best__bg .best__inner__bg {
-  width: 100%;
-  height: 58rem;
-  position: absolute;
-  top: 58rem;
-  background: url("../img/06/bg.png") center no-repeat;
-  background-size: cover;
-  transition: 0.5s ease-out;
-}
-
-.main__best .best__box {
-  width: 36rem;
-  height: 58rem;
-  position: absolute;
-  overflow: hidden;
-  top: 21rem;
-  left: 60%;
-  background: url("../img/06/best_1_1.png") center no-repeat;
-  background-size: cover;
-  box-shadow: 10px 10px 15px #545455;
-}
-
-.main__best .best__box .best__header {
-  width: 36rem;
-  height: 58rem;
-  position: absolute;
-  top: 58rem;
-  background: url("../img/06/bg.png") center no-repeat;
-  background-size: cover;
-  transition: 0.5s ease-out;
-}
-
-/*section 5: 전망좋은 카페*/
+/*section 4: 전망좋은 카페*/
 .main__scenery {
   height: 1000px;
 }
 
 .main__scenery .scenery__box {
   height: 1000px;
+  position: relative;
 }
 
 .main__scenery .scenery__box .scenery__bg__left {
@@ -343,6 +363,37 @@ button {
   position: relative;
 }
 
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px 5px #000000a8;
+  padding-top: 5.7rem;
+  background-color: #EEDEFF;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 25rem;
+  margin-top: 22rem;
+  transition: 0.2s ease-in;
+}
+
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail p {
+  width: 15rem;
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+}
+
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail .arrow {
+  font-size: 30px;
+  text-shadow: 5px 5px 7px #000000a8;
+}
+
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail:hover {
+  transform: scale(1.2);
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox {
   width: 200%;
   height: 100%;
@@ -431,6 +482,104 @@ button {
   background-size: cover;
 }
 
+/*section 5: 이달의 카페*/
+.main__best {
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__best .best__tit {
+  width: 98.8rem;
+  height: 58rem;
+  padding: 20rem 0px 0px 9.2rem;
+  margin: 0 auto;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+
+.main__best .tit {
+  font-size: 50px;
+  margin-bottom: 3rem;
+}
+
+.main__best .sub__tit {
+  font-size: 36px;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.main__best .best__bg {
+  width: 100%;
+  height: 58rem;
+  position: relative;
+  overflow: hidden;
+  background: url("../img/06/best_1_1.png") center no-repeat;
+  background-size: cover;
+}
+
+.main__best .best__bg .best__inner__bg {
+  width: 100%;
+  height: 58rem;
+  position: absolute;
+  top: 58rem;
+  background: url("../img/06/bg.png") center no-repeat;
+  background-size: cover;
+  transition: 0.5s ease-out;
+}
+
+.main__best .best__box {
+  width: 36rem;
+  height: 58rem;
+  position: absolute;
+  overflow: hidden;
+  top: 21rem;
+  left: 60%;
+  background: url("../img/06/best_1_1.png") center no-repeat;
+  background-size: cover;
+  box-shadow: 10px 10px 15px #000000a8;
+}
+
+.main__best .best__box .best__header {
+  width: 36rem;
+  height: 58rem;
+  position: absolute;
+  top: 58rem;
+  background: url("../img/06/bg.png") center no-repeat;
+  background-size: cover;
+  transition: 0.5s ease-out;
+}
+
+.main__best .scenery__bg__detail {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px 5px #000000a8;
+  padding-top: 5.7rem;
+  background-color: #EEDEFF;
+  position: absolute;
+  z-index: 999;
+  top: 50rem;
+  left: 60%;
+  margin: 22rem;
+  transition: 0.2s ease-in;
+}
+
+.main__best .scenery__bg__detail p {
+  width: 15rem;
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+}
+
+.main__best .scenery__bg__detail .arrow {
+  font-size: 30px;
+  text-shadow: 5px 5px 7px #000000a8;
+}
+
+.main__best .scenery__bg__detail:hover {
+  transform: scale(1.2);
+}
+
 /* section 6. New cafe 4 [뉴 카페] */
 .main__newCafe {
   height: 100rem;
@@ -492,7 +641,7 @@ button {
   left: 0;
   transition: 0.5s;
   z-index: 1;
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+  box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(2) {
@@ -500,7 +649,7 @@ button {
   transition: 0.5s;
   z-index: 0;
   transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+  box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(3) {
@@ -508,7 +657,7 @@ button {
   transition: 0.5s;
   z-index: 0;
   transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+  box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(1) {
@@ -516,14 +665,14 @@ button {
   transition: 0.5s;
   z-index: 0;
   transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+  box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(2) {
   left: 0;
   transition: 0.5s;
   z-index: 1;
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+  box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(3) {
@@ -531,7 +680,7 @@ button {
   transition: 0.5s;
   z-index: 0;
   transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+  box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(1) {
@@ -539,7 +688,7 @@ button {
   transition: 0.5s;
   z-index: 0;
   transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+  box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(2) {
@@ -547,14 +696,14 @@ button {
   transition: 0.5s;
   z-index: 0;
   transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+  box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(3) {
   left: 0;
   transition: 0.5s;
   z-index: 1;
-  box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+  box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs {
@@ -619,14 +768,57 @@ button {
   color: #333;
 }
 
-footer {
+.footer {
+  position: relative;
+  width: 100%;
   height: 300px;
-  background-color: sienna;
+  bottom: 0;
+  padding: 70px 60px;
 }
 
-.screen_out {
-  text-indent: -9999px;
-  overflow: hidden;
-  position: absolute;
+.footer__inner {
+  position: relative;
+  margin: 0 auto;
+}
+
+.footer__logo {
+  float: left;
+}
+
+.footer__tit {
+  padding-top: 50px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+}
+
+.footer__tit p:first-child {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.footer__gnb {
+  float: right;
+  display: flex;
+  width: 378px;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  width: 70px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.6rem;
+}
+
+.footer__menu__list {
+  padding-top: 20px;
+  list-style: none;
+}
+
+.footer__menu__list li {
+  height: 30px;
+}
+
+.footer__menu__list li a {
+  color: #333;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

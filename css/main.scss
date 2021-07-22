@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
 
-//font-family: 'Frank Ruhl Libre', serif;
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
-
 $maincolor : #EEDEFF;
+$textcolor: #333;
+$boxshadow: #000000a8;
+
 @mixin scenery__bg__Slide {
   width: 50%;
   height: 100%;
@@ -31,6 +31,14 @@ $maincolor : #EEDEFF;
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
 
 html,
 body {
@@ -39,24 +47,94 @@ body {
   // font-size: 7px; // 맥북 기준
 }
 
+.screen_out {
+  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+}
+
 .container{
   width: 100%;
   height: 5200px;
 }
 
-/*헤더*/
-header{
+
+// Header
+
+.header {
+  position: fixed;
+  width: 100%;
   height: 100px;
-  background-color: rosybrown;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: 0.2s ease-in;
+  &__inner {
+    position: relative;
+    margin: 0 auto;
+    height: 100px;
+    h1 {
+      float: left;
+      margin-left: 60px;
+      width: 200px;
+      height: 100px;
+      .logo {
+        display: block;
+        margin: auto;
+        padding-top: 15px;
+      }
+    }
+  }
+  .gnb {
+    float: left;
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+    margin: 25px 0 0 60px;
+    &__menu li {
+      float: left;
+      list-style: none;
+      padding-right: 5rem;
+      a {
+        height: 50rem;
+        color: $textcolor;
+        &:hover{
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+  
+  .mode__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 25px 60px 0 0;
+    box-shadow: 10px 10px 10px $boxshadow;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: $textcolor;
+    i {
+      margin-right: 10px;
+    }
+    &:hover{
+      background-color: black;
+      color: white;
+      .fa-moon{
+        color: yellow;
+      }
+    }
+    
+  }
+  .on {
+    background-color: #000;
+  }
 }
 
-// 링크, 버튼 클릭시 마우스 커서 포인트로 변경
-a,
-button {
-  cursor: pointer;
-}
-
-/* section 2 : 카페 소개 */
+/* section2 */
 .main__home {
   width: 100%;
   background-color: $maincolor;
@@ -109,7 +187,7 @@ button {
       transform: translate3d(0, 0, 0);
       transition: transform 0.5s;
       margin-bottom: 16rem;
-      .horsecope {
+      .horoscope {
         margin-right: 3rem;
         //border: 1px solid #979797;
         position: relative;
@@ -131,7 +209,7 @@ button {
             font-size: 3rem;
           }
         }
-        .horoscope__img {
+        &__img {
           width: 58.4rem;
           height: 40rem;
           opacity: 1;
@@ -181,80 +259,13 @@ button {
   }
 }
 
-
-/*section 4: 이달의 카페*/
-.main__best{
-  height: 1000px;
-  position: relative;
-  overflow: hidden;
-
-  .best__tit{
-    width: 98.8rem;
-    height: 58rem;
-    padding: 20rem 0px 0px 9.2rem;
-    margin: 0 auto;
-    line-height: 50px;
-    letter-spacing: 2px;
-  }
-
-  .tit{
-    font-size: 50px;
-    margin-bottom: 3rem;
-  }
-  .sub__tit{
-    font-size: 36px;
-    font-family: 'Frank Ruhl Libre', serif;
-  }
-
-  .best__bg{
-    width: 100%;
-    height: 58rem;
-    position: relative;
-    overflow: hidden;
-    background: url("../img/06/best_1_1.png") center no-repeat;
-    background-size: cover;
-
-    .best__inner__bg{
-      width: 100%;
-      height: 58rem;
-      position: absolute;
-      top: 58rem;
-      background: url("../img/06/bg.png") center no-repeat;
-      background-size: cover;
-      transition: 0.5s ease-out;
-    }
-  }
-
-  .best__box{
-    width: 36rem;
-    height: 58rem;
-    position: absolute;
-    overflow: hidden;
-    top: 21rem;
-    left: 60%;
-    background: url("../img/06/best_1_1.png") center no-repeat;
-    background-size: cover;
-    box-shadow: 10px 10px 15px rgb(84, 84, 85);
-
-    .best__header{
-      width: 36rem;
-      height: 58rem;
-      position: absolute;
-      top: 58rem;
-      background: url("../img/06/bg.png") center no-repeat;
-      background-size: cover;
-      transition: 0.5s ease-out;
-    }
-  }
-
-}
-
-/*section 5: 전망좋은 카페*/
+/*section 4: 전망좋은 카페*/
 .main__scenery{
   height: 1000px;
   
   .scenery__box{
-    height: 1000px;;
+    height: 1000px;
+    position: relative;
 
     .scenery__bg__left{
       width: 33%;
@@ -349,6 +360,36 @@ button {
       overflow: hidden;
       position: relative;
 
+      .scenery__bg__detail{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        box-shadow: 5px 5px 15px 5px $boxshadow;
+        padding-top: 5.7rem;
+        background-color: $maincolor;
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 25rem;
+        margin-top: 22rem;
+        transition: 0.2s ease-in;
+        p{
+          width: 15rem;
+          color: $textcolor;
+          font-size: 30px;
+          text-align: center;
+          
+        }
+        .arrow{
+          font-size: 30px;
+          text-shadow: 5px 5px 7px $boxshadow;
+        }
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+      
+
       .scenery__bg__bigBox{
         width: 200%;
         height: 100%;
@@ -431,6 +472,103 @@ button {
   }
 }
 
+/*section 5: 이달의 카페*/
+.main__best{
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+
+  .best__tit{
+    width: 98.8rem;
+    height: 58rem;
+    padding: 20rem 0px 0px 9.2rem;
+    margin: 0 auto;
+    line-height: 50px;
+    letter-spacing: 2px;
+  }
+
+  .tit{
+    font-size: 50px;
+    margin-bottom: 3rem;
+  }
+  .sub__tit{
+    font-size: 36px;
+    font-family: 'Frank Ruhl Libre', serif;
+  }
+
+  .best__bg{
+    width: 100%;
+    height: 58rem;
+    position: relative;
+    overflow: hidden;
+    background: url("../img/06/best_1_1.png") center no-repeat;
+    background-size: cover;
+
+    .best__inner__bg{
+      width: 100%;
+      height: 58rem;
+      position: absolute;
+      top: 58rem;
+      background: url("../img/06/bg.png") center no-repeat;
+      background-size: cover;
+      transition: 0.5s ease-out;
+    }
+  }
+
+  .best__box{
+    width: 36rem;
+    height: 58rem;
+    position: absolute;
+    overflow: hidden;
+    top: 21rem;
+    left: 60%;
+    background: url("../img/06/best_1_1.png") center no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 15px $boxshadow;
+
+    .best__header{
+      width: 36rem;
+      height: 58rem;
+      position: absolute;
+      top: 58rem;
+      background: url("../img/06/bg.png") center no-repeat;
+      background-size: cover;
+      transition: 0.5s ease-out;
+    }
+  }
+
+  .scenery__bg__detail{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px 5px $boxshadow;
+    padding-top: 5.7rem;
+    background-color: $maincolor;
+    position: absolute;
+    z-index: 999;
+    top: 50rem;
+    left: 60%;
+    margin: 22rem;
+    
+    transition: 0.2s ease-in;
+    p{
+      width: 15rem;
+      color: $textcolor;
+      font-size: 30px;
+      text-align: center;
+      
+    }
+    .arrow{
+      font-size: 30px;
+      text-shadow: 5px 5px 7px $boxshadow;
+    }
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+
+}
+
 /* section 6. New cafe 4 [뉴 카페] */
 .main__newCafe {
   height: 100rem;
@@ -462,7 +600,6 @@ button {
       width: 79rem;
       //width: 192rem;
       margin: 0 auto;
-
       height: 47rem;
       position: relative;
       //margin: 0 auto;
@@ -489,21 +626,21 @@ button {
           left: 0;
           transition: 0.5s;
           z-index: 1;
-          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
         }
         & > li:nth-child(2) {
           left: 15rem;
           transition: 0.5s;
           z-index: 0;
           transform: scale(0.8);
-          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
         }
         & > li:nth-child(3) {
           left: -15rem;
           transition: 0.5s;
           z-index: 0;
           transform: scale(0.8);
-          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
         }
       }
       // 3D 효과주기. 2번째 사진이 선택 되었을 경우
@@ -513,20 +650,20 @@ button {
           transition: 0.5s;
           z-index: 0;
           transform: scale(0.8);
-          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
         }
         & > li:nth-child(2) {
           left: 0;
           transition: 0.5s;
           z-index: 1;
-          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
         }
         & > li:nth-child(3) {
           left: 15rem;
           transition: 0.5s;
           z-index: 0;
           transform: scale(0.8);
-          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
         }
       }
       // 3D 효과주기. 3번째 사진이 선택 되었을 경우
@@ -536,20 +673,20 @@ button {
           transition: 0.5s;
           z-index: 0;
           transform: scale(0.8);
-          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
         }
         & > li:nth-child(2) {
           left: -15rem;
           transition: 0.5s;
           z-index: 0;
           transform: scale(0.8);
-          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
         }
         & > li:nth-child(3) {
           left: 0;
           transition: 0.5s;
           z-index: 1;
-          box-shadow: 14px -5px 35px -21px rgba(0, 0, 0, 0.66);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
         }
       }
       // 슬라이드 이미지
@@ -614,13 +751,49 @@ button {
   }
 }
 
-footer{
-  height: 300px;
-  background-color: sienna;
-}
+// Footer
 
-.screen_out {
-  text-indent: -9999px;
-  overflow: hidden;
-  position: absolute;
+.footer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+  padding: 70px 60px;
+  &__inner {
+    position: relative;
+    margin: 0 auto;
+  }
+  &__logo {
+    float: left;
+  }
+  &__tit {
+    padding-top: 50px;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+    p:first-child {
+      font-family: "Noto Sans KR", sans-serif;
+    }
+  }
+  &__gnb {
+    float: right;
+    display: flex;
+    width: 378px;
+    justify-content: space-between;
+  }
+  &__menu {
+    width: 70px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.6rem;
+    &__list {
+      padding-top: 20px;
+      list-style: none;
+      li {
+        height: 30px;
+        a {
+          color: $textcolor;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }
