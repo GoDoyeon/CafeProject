@@ -4,6 +4,9 @@
 // font-family: 'Dancing Script', cursive;
 
 $maincolor : #EEDEFF;
+$textcolor: #333;
+$boxshadow: #000000a8;
+
 @mixin scenery__bg__Slide {
   width: 50%;
   height: 100%;
@@ -28,6 +31,14 @@ $maincolor : #EEDEFF;
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
 
 html,
 body {
@@ -47,105 +58,214 @@ body {
   height: 5200px;
 }
 
-header{
+
+// Header
+
+.header {
+  position: fixed;
+  width: 100%;
   height: 100px;
-  background-color: rosybrown;
-}
-
-.main__home{
-  height: 600px;
-}
-
-// width 100%
-.main__horoscope{
-  height: 1000px;
-  position: relative;
-  overflow: hidden;
-  background: olive;
-
-}
-
-.main__new{
-  height: 1200px;
-  position: relative;
-  margin: 0 auto;
-  background: orangered;
-}
-
-
-/*section 4: 이달의 카페*/
-.main__best{
-  height: 1000px;
-  position: relative;
-  overflow: hidden;
-
-  .best__tit{
-    width: 98.8rem;
-    height: 58rem;
-    padding: 20rem 0px 0px 9.2rem;
-    margin: 0 auto;
-    line-height: 50px;
-    letter-spacing: 2px;
-  }
-
-  .tit{
-    font-size: 50px;
-    margin-bottom: 3rem;
-  }
-  .sub__tit{
-    font-size: 36px;
-    font-family: 'Frank Ruhl Libre', serif;
-  }
-
-  .best__bg{
-    width: 100%;
-    height: 58rem;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: 0.2s ease-in;
+  &__inner {
     position: relative;
-    overflow: hidden;
-    background: url("../img/06/best_1_1.png") center no-repeat;
-    background-size: cover;
-
-    .best__inner__bg{
-      width: 100%;
-      height: 58rem;
-      position: absolute;
-      top: 58rem;
-      background: url("../img/06/bg.png") center no-repeat;
-      background-size: cover;
-      transition: 0.5s ease-out;
+    margin: 0 auto;
+    height: 100px;
+    h1 {
+      float: left;
+      margin-left: 60px;
+      width: 200px;
+      height: 100px;
+      .logo {
+        display: block;
+        margin: auto;
+        padding-top: 15px;
+      }
     }
   }
-
-  .best__box{
-    width: 36rem;
-    height: 58rem;
+  .gnb {
+    float: left;
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+    margin: 25px 0 0 60px;
+    &__menu li {
+      float: left;
+      list-style: none;
+      padding-right: 5rem;
+      a {
+        height: 50rem;
+        color: $textcolor;
+        &:hover{
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+  
+  .mode__btn {
     position: absolute;
-    overflow: hidden;
-    top: 21rem;
-    left: 60%;
-    background: url("../img/06/best_1_1.png") center no-repeat;
-    background-size: cover;
-    box-shadow: 10px 10px 15px rgb(84, 84, 85);
-
-    .best__header{
-      width: 36rem;
-      height: 58rem;
-      position: absolute;
-      top: 58rem;
-      background: url("../img/06/bg.png") center no-repeat;
-      background-size: cover;
-      transition: 0.5s ease-out;
+    right: 0;
+    top: 0;
+    width: 175px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 25px 60px 0 0;
+    box-shadow: 10px 10px 10px $boxshadow;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: $textcolor;
+    i {
+      margin-right: 10px;
     }
+    &:hover{
+      background-color: black;
+      color: white;
+      .fa-moon{
+        color: yellow;
+      }
+    }
+    
   }
-
+  .on {
+    background-color: #000;
+  }
 }
 
-/*section 5: 전망좋은 카페*/
+/* section2 */
+.main__home {
+  width: 100%;
+  background-color: $maincolor;
+  height: 60rem;
+  .main__tit {
+    text-align: center;
+    padding: 30rem 0;
+    font-size: 8rem;
+  }
+}
+
+/* section 3. Horoscope [별점 높은 순] */
+.main__horoscope {
+  height: 100rem; // 1000px
+  position: relative;
+  overflow: hidden;
+  /* article 3-1. 텍스트 부분 */
+  .horoscope__tit {
+    color: #333;
+    display: block;
+    margin: 0 auto;
+    height: 44rem; // 210+80+150 = 440px
+    width: 192rem;
+    strong {
+      display: block;
+      padding: 21rem 0 0 18rem;
+      font-size: 6rem;
+    }
+    p {
+      display: block;
+      padding: 1.4rem 0 0 18rem;
+      margin-top: 1rem;
+      font-size: 4rem;
+    }
+  }
+  /* article 3-2. 슬라이드 + 버튼 */
+  .horoscope__block {
+    position: relative;
+    width: 100%;
+    display: block;
+    /* 별점 높은 순 사진 리스트 부분 */
+    .horoscope__wrapper {
+      width: 192rem;
+      height: 40rem;
+      margin: 0 auto;
+      left: 18rem;
+      position: relative;
+      // border: 1px solid green;
+      display: flex;
+      transform: translate3d(0, 0, 0);
+      transition: transform 0.5s;
+      margin-bottom: 16rem;
+      .horoscope {
+        margin-right: 3rem;
+        //border: 1px solid #979797;
+        position: relative;
+        // 이미지 호버 시 나오는 카페 설명 부분
+        .horoscope__tit {
+          color: #fff;
+          top: 4rem;
+          opacity: 0;
+          padding: 4rem;
+          position: absolute;
+          text-align: left;
+          width: 100%;
+          transition: all 0.3s ease;
+          h1 {
+            font-size: 5rem;
+          }
+          p {
+            margin-top: 2rem;
+            font-size: 3rem;
+          }
+        }
+        &__img {
+          width: 58.4rem;
+          height: 40rem;
+          opacity: 1;
+          transition: all 0.3s ease 0s;
+          overflow: hidden;
+        }
+        &:hover {
+          .horoscope__img {
+            background-color: #333;
+          }
+          img {
+            //transform: scale(1.1, 1.1);
+            transition: all 0.3s ease;
+            opacity: 0.15;
+          }
+          .horoscope__tit {
+            opacity: 1;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+    // 슬라이드 이전 버튼
+    .horoscope__prevbtn {
+      left: 3rem;
+      position: absolute;
+      bottom: 16.5rem;
+    }
+    // 슬라이드 다음 버튼
+    .horoscope__nextbtn {
+      right: 3rem;
+      position: absolute;
+      bottom: 16.5rem;
+    }
+    // 공통 버튼
+    .horoscope__btn {
+      border: none;
+      border-radius: 50px;
+      padding: 2rem 2.5rem;
+      background-color: #333;
+      color: #fff;
+      &:hover {
+        background-color: $maincolor;
+        color: #333;
+      }
+    }
+  }
+}
+
+/*section 4: 전망좋은 카페*/
 .main__scenery{
   height: 1000px;
   
   .scenery__box{
-    height: 1000px;;
+    height: 1000px;
+    position: relative;
 
     .scenery__bg__left{
       width: 33%;
@@ -240,6 +360,36 @@ header{
       overflow: hidden;
       position: relative;
 
+      .scenery__bg__detail{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        box-shadow: 5px 5px 15px 5px $boxshadow;
+        padding-top: 5.7rem;
+        background-color: $maincolor;
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 25rem;
+        margin-top: 22rem;
+        transition: 0.2s ease-in;
+        p{
+          width: 15rem;
+          color: $textcolor;
+          font-size: 30px;
+          text-align: center;
+          
+        }
+        .arrow{
+          font-size: 30px;
+          text-shadow: 5px 5px 7px $boxshadow;
+        }
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+      
+
       .scenery__bg__bigBox{
         width: 200%;
         height: 100%;
@@ -322,7 +472,328 @@ header{
   }
 }
 
-footer{
+/*section 5: 이달의 카페*/
+.main__best{
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+
+  .best__tit{
+    width: 98.8rem;
+    height: 58rem;
+    padding: 20rem 0px 0px 9.2rem;
+    margin: 0 auto;
+    line-height: 50px;
+    letter-spacing: 2px;
+  }
+
+  .tit{
+    font-size: 50px;
+    margin-bottom: 3rem;
+  }
+  .sub__tit{
+    font-size: 36px;
+    font-family: 'Frank Ruhl Libre', serif;
+  }
+
+  .best__bg{
+    width: 100%;
+    height: 58rem;
+    position: relative;
+    overflow: hidden;
+    background: url("../img/06/best_1_1.png") center no-repeat;
+    background-size: cover;
+
+    .best__inner__bg{
+      width: 100%;
+      height: 58rem;
+      position: absolute;
+      top: 58rem;
+      background: url("../img/06/bg.png") center no-repeat;
+      background-size: cover;
+      transition: 0.5s ease-out;
+    }
+  }
+
+  .best__box{
+    width: 36rem;
+    height: 58rem;
+    position: absolute;
+    overflow: hidden;
+    top: 21rem;
+    left: 60%;
+    background: url("../img/06/best_1_1.png") center no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 15px $boxshadow;
+
+    .best__header{
+      width: 36rem;
+      height: 58rem;
+      position: absolute;
+      top: 58rem;
+      background: url("../img/06/bg.png") center no-repeat;
+      background-size: cover;
+      transition: 0.5s ease-out;
+    }
+  }
+
+  .scenery__bg__detail{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px 5px $boxshadow;
+    padding-top: 5.7rem;
+    background-color: $maincolor;
+    position: absolute;
+    z-index: 999;
+    top: 50rem;
+    left: 60%;
+    margin: 22rem;
+    
+    transition: 0.2s ease-in;
+    p{
+      width: 15rem;
+      color: $textcolor;
+      font-size: 30px;
+      text-align: center;
+      
+    }
+    .arrow{
+      font-size: 30px;
+      text-shadow: 5px 5px 7px $boxshadow;
+    }
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+
+}
+
+/* section 6. New cafe 4 [뉴 카페] */
+.main__newCafe {
+  height: 100rem;
+  position: relative;
+  background-color: $maincolor;
+  margin: 0 auto;
+  /* article 6-1. 텍스트 부분 */
+  .newCafe__tit {
+    // border: 1px solid black;
+    padding: 15rem 0 8rem 0;
+    text-align: center;
+    strong {
+      font-size: 6rem;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 4em;
+    }
+  }
+  /* article 6-2. 슬라이드 + 버튼 */
+  .newCafe__block {
+    position: relative;
+    width: 79rem;
+    //width: 100%;
+    margin: 0 auto;
+    display: block;
+    /* 뉴 카페 이미지 슬라이드 */
+    .newCafe__slider {
+      width: 79rem;
+      //width: 192rem;
+      margin: 0 auto;
+      height: 47rem;
+      position: relative;
+      //margin: 0 auto;
+      // 라디오 버튼 숨기기
+      & input[type='radio'] {
+        display: none;
+        // 클릭 시 불릿 배경 색 흰색으로 변경
+        &:nth-child(1):checked ~ .bullets > label:nth-child(1) {
+          background-color: #fff;
+        }
+        &:nth-child(2):checked ~ .bullets > label:nth-child(2) {
+          background-color: #fff;
+        }
+        &:nth-child(3):checked ~ .bullets > label:nth-child(3) {
+          background-color: #fff;
+        }
+      }
+      /* < (이전), > (다음) 버튼으로 슬라이드 효과주기 */
+      // 해야 함
+      /* 불릿으로 슬라이드 효과주기 */
+      // 3D 효과주기. 1번째 사진이 선택 되었을 경우
+      & input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs {
+        & > li:nth-child(1) {
+          left: 0;
+          transition: 0.5s;
+          z-index: 1;
+          box-shadow: 14px -5px 35px -21px $boxshadow;
+        }
+        & > li:nth-child(2) {
+          left: 15rem;
+          transition: 0.5s;
+          z-index: 0;
+          transform: scale(0.8);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
+        }
+        & > li:nth-child(3) {
+          left: -15rem;
+          transition: 0.5s;
+          z-index: 0;
+          transform: scale(0.8);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
+        }
+      }
+      // 3D 효과주기. 2번째 사진이 선택 되었을 경우
+      & input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs {
+        & > li:nth-child(1) {
+          left: -15rem;
+          transition: 0.5s;
+          z-index: 0;
+          transform: scale(0.8);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
+        }
+        & > li:nth-child(2) {
+          left: 0;
+          transition: 0.5s;
+          z-index: 1;
+          box-shadow: 14px -5px 35px -21px $boxshadow;
+        }
+        & > li:nth-child(3) {
+          left: 15rem;
+          transition: 0.5s;
+          z-index: 0;
+          transform: scale(0.8);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
+        }
+      }
+      // 3D 효과주기. 3번째 사진이 선택 되었을 경우
+      & input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs {
+        & > li:nth-child(1) {
+          left: 15rem;
+          transition: 0.5s;
+          z-index: 0;
+          transform: scale(0.8);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
+        }
+        & > li:nth-child(2) {
+          left: -15rem;
+          transition: 0.5s;
+          z-index: 0;
+          transform: scale(0.8);
+          box-shadow: 14px -5px 35px -21px $boxshadow;
+        }
+        & > li:nth-child(3) {
+          left: 0;
+          transition: 0.5s;
+          z-index: 1;
+          box-shadow: 14px -5px 35px -21px $boxshadow;
+        }
+      }
+      // 슬라이드 이미지
+      ul.newCafe__imgs {
+        padding: 0;
+        margin: 0;
+        li {
+          position: absolute;
+          left: 64rem;
+          transition-delay: 1s;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          img {
+            width: 79rem;
+            height: 47rem;
+            border: 2px solid #fff;
+          }
+        }
+      }
+      // 슬라이드 불릿
+      .bullets {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -6rem;
+        z-index: 2;
+        label {
+          display: inline-block;
+          border-radius: 50%;
+          background-color: rgba(0, 0, 0, 0.55);
+          width: 2rem;
+          height: 2rem;
+          cursor: pointer;
+        }
+      }
+    }
+    // 슬라이드 이전 버튼
+    .newCafe__prevbtn {
+      right: 100rem;
+      position: absolute;
+      bottom: 46.5rem;
+    }
+    // 슬라이드 다음 버튼
+    .newCafe__nextbtn {
+      left: 100rem;
+      position: absolute;
+      bottom: 46.5rem;
+    }
+    // 공통 버튼
+    .newCafe__btn {
+      border: none;
+      bottom: 20rem;
+      padding: 2rem 2.5rem;
+      color: #fff;
+      background-color: $maincolor;
+      &:hover {
+        background-color: $maincolor;
+        color: #333;
+      }
+    }
+  }
+}
+
+// Footer
+
+.footer {
+  position: relative;
+  width: 100%;
   height: 300px;
-  background-color: sienna;
+  bottom: 0;
+  padding: 70px 60px;
+  &__inner {
+    position: relative;
+    margin: 0 auto;
+  }
+  &__logo {
+    float: left;
+  }
+  &__tit {
+    padding-top: 50px;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+    p:first-child {
+      font-family: "Noto Sans KR", sans-serif;
+    }
+  }
+  &__gnb {
+    float: right;
+    display: flex;
+    width: 378px;
+    justify-content: space-between;
+  }
+  &__menu {
+    width: 70px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.6rem;
+    &__list {
+      padding-top: 20px;
+      list-style: none;
+      li {
+        height: 30px;
+        a {
+          color: $textcolor;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }

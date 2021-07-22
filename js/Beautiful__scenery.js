@@ -14,7 +14,7 @@ let docElement = document.documentElement;
 let scenery__leftBigSlide__width = scenery.clientWidth;
 let scenery_rightBigSlide__width = scenery__right.clientWidth;
 let scenery__bg__upSlide__width = scenery__small.clientWidth;
-let topNum=2900;
+let topNum=1700;
 let direction = '';
 // console.log(screen.width);
 document.addEventListener('scroll',function(){
