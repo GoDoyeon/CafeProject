@@ -3,7 +3,7 @@
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
-$maincolor : #EEDEFF;
+$maincolor: #eedeff;
 $textcolor: #333;
 $boxshadow: #000000a8;
 
@@ -13,20 +13,20 @@ $boxshadow: #000000a8;
   float: left;
 }
 
-@mixin scenery__bg__smallSlide{
+@mixin scenery__bg__smallSlide {
   width: 34rem;
   height: 100%;
   float: left;
 }
 
-@mixin scenery__bg__smollContainer{
+@mixin scenery__bg__smollContainer {
   width: 34rem;
   height: 34rem;
   position: relative;
   overflow: hidden;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -53,11 +53,10 @@ body {
   position: absolute;
 }
 
-.container{
+.container {
   width: 100%;
   height: 5200px;
 }
-
 
 // Header
 
@@ -88,7 +87,7 @@ body {
   .gnb {
     float: left;
     font-size: 4rem;
-    font-family: "Dancing Script", cursive;
+    font-family: 'Dancing Script', cursive;
     margin: 25px 0 0 60px;
     &__menu li {
       float: left;
@@ -97,13 +96,13 @@ body {
       a {
         height: 50rem;
         color: $textcolor;
-        &:hover{
+        &:hover {
           border-bottom: 1px solid black;
         }
       }
     }
   }
-  
+
   .mode__btn {
     position: absolute;
     right: 0;
@@ -120,14 +119,13 @@ body {
     i {
       margin-right: 10px;
     }
-    &:hover{
+    &:hover {
       background-color: black;
       color: white;
-      .fa-moon{
+      .fa-moon {
         color: yellow;
       }
     }
-    
   }
   .on {
     background-color: #000;
@@ -260,40 +258,40 @@ body {
 }
 
 /*section 4: 전망좋은 카페*/
-.main__scenery{
+.main__scenery {
   height: 1000px;
-  
-  .scenery__box{
+
+  .scenery__box {
     height: 1000px;
     position: relative;
 
-    .scenery__bg__left{
+    .scenery__bg__left {
       width: 33%;
       height: 100%;
       float: left;
       overflow: hidden;
       position: relative;
 
-      .scenery__bg__bigBox{
+      .scenery__bg__bigBox {
         width: 200%;
         height: 100%;
         position: absolute;
         transition: 0.5s ease-out;
 
-        .scenery__bg__bigSlide1{
+        .scenery__bg__bigSlide1 {
           @include scenery__bg__Slide;
           background: url('../img/05/left/L_content_1_1.png') center no-repeat;
           background-size: cover;
         }
 
-        .scenery__bg__bigSlide2{
+        .scenery__bg__bigSlide2 {
           @include scenery__bg__Slide;
           background: url('../img/05/left/L_content_2_1.png') left top no-repeat;
           background-size: cover;
         }
       }
 
-      .scenery__bg__smallBox{
+      .scenery__bg__smallBox {
         width: 34rem;
         height: 68rem;
         right: 0;
@@ -301,36 +299,36 @@ body {
         margin-top: -34rem;
         position: absolute;
 
-        .scenery__bg__up__container{
+        .scenery__bg__up__container {
           @include scenery__bg__smollContainer;
 
-          .scenery__bg__up{
+          .scenery__bg__up {
             width: 68rem;
             height: 34rem;
             position: absolute;
             transition: 0.5s ease-out;
-            
-            .scenery__bg__smallSlide1{
+
+            .scenery__bg__smallSlide1 {
               @include scenery__bg__smallSlide;
-              background: url('../img/05/left/L_scenery1_1_bg.png') center no-repeat;
+              background: url('../img/05/left/L_scenery1_1_bg.png') center
+                no-repeat;
               background-size: cover;
             }
-    
-            .scenery__bg__smallSlide2{
+
+            .scenery__bg__smallSlide2 {
               @include scenery__bg__smallSlide;
-              background: url('../img/05/left/L_scenery_2_1_bg.png') center no-repeat;
+              background: url('../img/05/left/L_scenery_2_1_bg.png') center
+                no-repeat;
               background-size: cover;
             }
           }
-
-
         }
-        .scenery__bg__down{
+        .scenery__bg__down {
           width: 34rem;
           height: 34rem;
           background: white;
 
-          .scenery__bg__small{
+          .scenery__bg__small {
             width: 34rem;
             height: 34rem;
             position: absolute;
@@ -339,7 +337,7 @@ body {
             opacity: 1;
             transition: opacity 1s;
           }
-          .scenery__bg__small2{
+          .scenery__bg__small2 {
             width: 34rem;
             height: 34rem;
             position: absolute;
@@ -348,19 +346,17 @@ body {
             opacity: 0;
             transition: opacity 1s;
           }
-          
         }
-
       }
     }
-    .scenery__bg__right{
+    .scenery__bg__right {
       width: 67%;
       height: 100%;
       float: left;
       overflow: hidden;
       position: relative;
 
-      .scenery__bg__detail{
+      .scenery__bg__detail {
         width: 15rem;
         height: 15rem;
         border-radius: 50%;
@@ -373,43 +369,41 @@ body {
         left: 25rem;
         margin-top: 22rem;
         transition: 0.2s ease-in;
-        p{
+        p {
           width: 15rem;
           color: $textcolor;
           font-size: 30px;
           text-align: center;
-          
         }
-        .arrow{
+        .arrow {
           font-size: 30px;
           text-shadow: 5px 5px 7px $boxshadow;
         }
-        &:hover{
+        &:hover {
           transform: scale(1.2);
         }
       }
-      
 
-      .scenery__bg__bigBox{
+      .scenery__bg__bigBox {
         width: 200%;
         height: 100%;
         position: absolute;
         transition: 0.5s ease-out;
 
-        .scenery__bg__bigSlide1{
+        .scenery__bg__bigSlide1 {
           @include scenery__bg__Slide;
           background: url('../img/05/right/R_content_1_1.png') center no-repeat;
           background-size: cover;
         }
 
-        .scenery__bg__bigSlide2{
+        .scenery__bg__bigSlide2 {
           @include scenery__bg__Slide;
           background: url('../img/05/right/R_content_2_1.png') center no-repeat;
           background-size: cover;
         }
       }
 
-      .scenery__bg__smallBox{
+      .scenery__bg__smallBox {
         width: 34rem;
         height: 68rem;
         left: 0;
@@ -417,12 +411,12 @@ body {
         margin-top: -340px;
         position: absolute;
 
-        .scenery__bg__up{
+        .scenery__bg__up {
           width: 34rem;
           height: 34rem;
           background: white;
 
-          .scenery__bg__small{
+          .scenery__bg__small {
             width: 34rem;
             height: 34rem;
             position: absolute;
@@ -431,7 +425,7 @@ body {
             opacity: 1;
             transition: opacity 1s;
           }
-          .scenery__bg__small2{
+          .scenery__bg__small2 {
             width: 34rem;
             height: 34rem;
             position: absolute;
@@ -441,44 +435,42 @@ body {
             transition: opacity 1s;
           }
         }
-        .scenery__bg__down__container{
-         @include scenery__bg__smollContainer;
+        .scenery__bg__down__container {
+          @include scenery__bg__smollContainer;
 
-         .scenery__bg__down{
-          width: 68rem;
-          height: 34rem;
-          position: absolute;
-          transition: 0.5s ease-out;
+          .scenery__bg__down {
+            width: 68rem;
+            height: 34rem;
+            position: absolute;
+            transition: 0.5s ease-out;
 
-          .scenery__bg__smallSlide1{
-            @include scenery__bg__smallSlide;
-            background: url('../img/05/right/R_scenery1_1_bg.png') center no-repeat;
-            background-size: cover;
-            
+            .scenery__bg__smallSlide1 {
+              @include scenery__bg__smallSlide;
+              background: url('../img/05/right/R_scenery1_1_bg.png') center
+                no-repeat;
+              background-size: cover;
+            }
+
+            .scenery__bg__smallSlide2 {
+              @include scenery__bg__smallSlide;
+              background: url('../img/05/right/R_scenery2_1_bg.png.png') center
+                no-repeat;
+              background-size: cover;
+            }
           }
-  
-          .scenery__bg__smallSlide2{
-            @include scenery__bg__smallSlide;
-            background: url('../img/05/right/R_scenery2_1_bg.png.png') center no-repeat;
-            background-size: cover;
-          }
-
         }
-        }
-
       }
     }
-
   }
 }
 
 /*section 5: 이달의 카페*/
-.main__best{
+.main__best {
   height: 1000px;
   position: relative;
   overflow: hidden;
 
-  .best__tit{
+  .best__tit {
     width: 98.8rem;
     height: 58rem;
     padding: 20rem 0px 0px 9.2rem;
@@ -487,57 +479,57 @@ body {
     letter-spacing: 2px;
   }
 
-  .tit{
+  .tit {
     font-size: 50px;
     margin-bottom: 3rem;
   }
-  .sub__tit{
+  .sub__tit {
     font-size: 36px;
     font-family: 'Frank Ruhl Libre', serif;
   }
 
-  .best__bg{
+  .best__bg {
     width: 100%;
     height: 58rem;
     position: relative;
     overflow: hidden;
-    background: url("../img/06/best_1_1.png") center no-repeat;
+    background: url('../img/06/best_1_1.png') center no-repeat;
     background-size: cover;
 
-    .best__inner__bg{
+    .best__inner__bg {
       width: 100%;
       height: 58rem;
       position: absolute;
       top: 58rem;
-      background: url("../img/06/bg.png") center no-repeat;
+      background: url('../img/06/bg.png') center no-repeat;
       background-size: cover;
       transition: 0.5s ease-out;
     }
   }
 
-  .best__box{
+  .best__box {
     width: 36rem;
     height: 58rem;
     position: absolute;
     overflow: hidden;
     top: 21rem;
     left: 60%;
-    background: url("../img/06/best_1_1.png") center no-repeat;
+    background: url('../img/06/best_1_1.png') center no-repeat;
     background-size: cover;
     box-shadow: 10px 10px 15px $boxshadow;
 
-    .best__header{
+    .best__header {
       width: 36rem;
       height: 58rem;
       position: absolute;
       top: 58rem;
-      background: url("../img/06/bg.png") center no-repeat;
+      background: url('../img/06/bg.png') center no-repeat;
       background-size: cover;
       transition: 0.5s ease-out;
     }
   }
 
-  .scenery__bg__detail{
+  .scenery__bg__detail {
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
@@ -549,24 +541,22 @@ body {
     top: 50rem;
     left: 60%;
     margin: 22rem;
-    
+
     transition: 0.2s ease-in;
-    p{
+    p {
       width: 15rem;
       color: $textcolor;
       font-size: 30px;
       text-align: center;
-      
     }
-    .arrow{
+    .arrow {
       font-size: 30px;
       text-shadow: 5px 5px 7px $boxshadow;
     }
-    &:hover{
+    &:hover {
       transform: scale(1.2);
     }
   }
-
 }
 
 /* section 6. New cafe 4 [뉴 카페] */
@@ -769,9 +759,9 @@ body {
   &__tit {
     padding-top: 50px;
     font-weight: bold;
-    font-family: "Dancing Script", cursive;
+    font-family: 'Dancing Script', cursive;
     p:first-child {
-      font-family: "Noto Sans KR", sans-serif;
+      font-family: 'Noto Sans KR', sans-serif;
     }
   }
   &__gnb {
@@ -782,7 +772,7 @@ body {
   }
   &__menu {
     width: 70px;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 1.6rem;
     &__list {
       padding-top: 20px;

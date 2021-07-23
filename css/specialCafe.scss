@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+// font-family: 'Noto Sans KR', sans-serif;
+// font-family: 'Dancing Script', cursive;
+
+$maincolor: #eedeff;
+$maincolortext: #ccbedb;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  font-size: 10px;
+  //font-size: 7px; // 맥북 기준
+}
+.container {
+  width: 100%;
+}
+
+// 링크, 버튼 클릭시 마우스 커서 포인트로 변경
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* 파트 2 : 카페 소개 */
+.main__home {
+  width: 100%;
+  background-color: $maincolor;
+  height: 60rem;
+  .main__tit {
+    text-align: center;
+    padding: 30rem 0;
+    font-size: 8rem;
+  }
+}
+
+// 스페셜 카페 content
+.content {
+  width: 100%;
+  position: relative;
+  display: block;
+  // 메뉴 박스 부분
+  &__menu {
+    width: 120rem;
+    margin: 0 auto;
+    color: #333;
+    // 카페 메뉴 - 공통 ul, li 부분 style
+    ul {
+      display: block;
+      li {
+        position: relative;
+        display: inline-block;
+        line-height: 3rem;
+        padding: 1rem;
+        margin-right: 3rem;
+        display: inline-block;
+      }
+    }
+    // 카페 메뉴 - 종류 선택
+    .cafeKinds {
+      padding: 10rem 0 3rem 0;
+      font-size: 3rem;
+      border-bottom: 1px solid #cdcdcd;
+      margin-bottom: 1rem;
+      li {
+        margin: 0 3rem 0 0;
+        height: 40px;
+        a {
+          color: #333;
+          &:hover {
+            padding-bottom: 2.4rem;
+            border-bottom: 0.8rem solid $maincolor;
+            color: $maincolortext;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    // 카페 메뉴 - 위치 선택
+    .locations {
+      font-size: 2rem;
+      li {
+        &:hover,
+        :active {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+    // 카페 메뉴 - 해시 태그
+    .tags {
+      padding: 1.4rem 0.6rem;
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+      li {
+        padding: 0;
+        padding-bottom: 0;
+        text-decoration: none;
+        &:hover {
+          box-shadow: 0 -8px $maincolor inset;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  // 메뉴 이미지 부분
+  &__imgs {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding-bottom: 11rem;
+    margin-bottom: 5rem;
+    // 선택된 카페 카테고리 텍스트
+    .select__cafe {
+      width: 120rem;
+      margin: 0 auto;
+      padding: 3rem 0;
+      font-size: 2rem;
+      span {
+        margin: 0 2rem 0 2rem;
+      }
+    }
+    // 카페 이미지 모음
+    .cafe__block {
+      width: 120rem;
+      margin: 0 auto;
+      //display: block;
+      .cafe__imgs {
+        // 카페 이미지 1, 2, 3번째 줄 ul, li 공통 style
+        ul {
+          display: flex;
+          li {
+            position: relative;
+            &:hover {
+              transform: translateY(-1em);
+              -moz-box-shadow: 0 0 10px rgb(158, 158, 158);
+              -webkit-box-shadow: 0 0 10px rgb(158, 158, 158);
+              box-shadow: 0 0 10px rgb(158, 158, 158);
+            }
+            img {
+              // 이미지 사이즈
+              width: 38rem;
+              height: 30rem;
+            }
+            .img__text {
+              position: absolute;
+              z-index: 1;
+              bottom: 0;
+              height: 7.3rem;
+              width: 38rem;
+              background-color: #47405a;
+              opacity: 0.8;
+              color: #fff;
+              text-align: center;
+              font-size: 2.8rem;
+              padding: 1.5rem 0;
+            }
+          }
+          li:nth-child(2) {
+            margin: 0 3rem 0 3rem;
+          }
+        }
+        // 카페 이미지 1번째 줄
+        // &1 {
+        // }
+        // 카페 이미지 2번째 줄
+        &2 {
+          margin: 3rem 0 3rem 0;
+        }
+        // 카페 이미지 3번째 줄
+        // &3 {
+        // }
+      }
+    }
+  }
+}

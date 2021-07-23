@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -39,6 +40,7 @@ body {
   top: 0;
   left: 0;
   z-index: 9999;
+  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -64,7 +66,7 @@ body {
 .header .gnb {
   float: left;
   font-size: 4rem;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   margin: 25px 0 0 60px;
 }
 
@@ -91,7 +93,8 @@ body {
   height: 50px;
   border-radius: 30px;
   margin: 25px 60px 0 0;
-  box-shadow: 10px 10px 10px #000000a8;
+  -webkit-box-shadow: 10px 10px 10px #000000a8;
+          box-shadow: 10px 10px 10px #000000a8;
   border: 0;
   outline: 0;
   cursor: pointer;
@@ -118,7 +121,7 @@ body {
 /* section2 */
 .main__home {
   width: 100%;
-  background-color: #EEDEFF;
+  background-color: #eedeff;
   height: 60rem;
 }
 
@@ -171,9 +174,15 @@ body {
   margin: 0 auto;
   left: 18rem;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   margin-bottom: 16rem;
 }
 
@@ -190,6 +199,7 @@ body {
   position: absolute;
   text-align: left;
   width: 100%;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -206,6 +216,7 @@ body {
   width: 58.4rem;
   height: 40rem;
   opacity: 1;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   overflow: hidden;
 }
@@ -215,12 +226,14 @@ body {
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover img {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.15;
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__tit {
   opacity: 1;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -245,7 +258,7 @@ body {
 }
 
 .main__horoscope .horoscope__block .horoscope__btn:hover {
-  background-color: #EEDEFF;
+  background-color: #eedeff;
   color: #333;
 }
 
@@ -271,6 +284,7 @@ body {
   width: 200%;
   height: 100%;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -310,6 +324,7 @@ body {
   width: 68rem;
   height: 34rem;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -342,6 +357,7 @@ body {
   background: url("../img/05/left/L_text_2_1.png") center no-repeat;
   background-size: cover;
   opacity: 1;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -352,6 +368,7 @@ body {
   background: url("../img/05/left/L_text_1_1.png") center no-repeat;
   background-size: cover;
   opacity: 0;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -367,14 +384,16 @@ body {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  box-shadow: 5px 5px 15px 5px #000000a8;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
+          box-shadow: 5px 5px 15px 5px #000000a8;
   padding-top: 5.7rem;
-  background-color: #EEDEFF;
+  background-color: #eedeff;
   position: absolute;
   z-index: 999;
   top: 50%;
   left: 25rem;
   margin-top: 22rem;
+  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -391,13 +410,15 @@ body {
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox {
   width: 200%;
   height: 100%;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -439,6 +460,7 @@ body {
   background: url("../img/05/right/R_text_2_1.png") center no-repeat;
   background-size: cover;
   opacity: 1;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -449,6 +471,7 @@ body {
   background: url("../img/05/right/R_text_1_1.png") center no-repeat;
   background-size: cover;
   opacity: 0;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -463,6 +486,7 @@ body {
   width: 68rem;
   height: 34rem;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -524,6 +548,7 @@ body {
   top: 58rem;
   background: url("../img/06/bg.png") center no-repeat;
   background-size: cover;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -536,7 +561,8 @@ body {
   left: 60%;
   background: url("../img/06/best_1_1.png") center no-repeat;
   background-size: cover;
-  box-shadow: 10px 10px 15px #000000a8;
+  -webkit-box-shadow: 10px 10px 15px #000000a8;
+          box-shadow: 10px 10px 15px #000000a8;
 }
 
 .main__best .best__box .best__header {
@@ -546,6 +572,7 @@ body {
   top: 58rem;
   background: url("../img/06/bg.png") center no-repeat;
   background-size: cover;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -553,14 +580,16 @@ body {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  box-shadow: 5px 5px 15px 5px #000000a8;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
+          box-shadow: 5px 5px 15px 5px #000000a8;
   padding-top: 5.7rem;
-  background-color: #EEDEFF;
+  background-color: #eedeff;
   position: absolute;
   z-index: 999;
   top: 50rem;
   left: 60%;
   margin: 22rem;
+  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -577,14 +606,15 @@ body {
 }
 
 .main__best .scenery__bg__detail:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* section 6. New cafe 4 [뉴 카페] */
 .main__newCafe {
   height: 100rem;
   position: relative;
-  background-color: #EEDEFF;
+  background-color: #eedeff;
   margin: 0 auto;
   /* article 6-1. 텍스트 부분 */
   /* article 6-2. 슬라이드 + 버튼 */
@@ -639,71 +669,95 @@ body {
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(1) {
   left: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 1;
-  box-shadow: 14px -5px 35px -21px #000000a8;
+  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
+          box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(2) {
   left: 15rem;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px #000000a8;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
+          box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(3) {
   left: -15rem;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px #000000a8;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
+          box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(1) {
   left: -15rem;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px #000000a8;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
+          box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(2) {
   left: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 1;
-  box-shadow: 14px -5px 35px -21px #000000a8;
+  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
+          box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(3) {
   left: 15rem;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px #000000a8;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
+          box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(1) {
   left: 15rem;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px #000000a8;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
+          box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(2) {
   left: -15rem;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 0;
-  transform: scale(0.8);
-  box-shadow: 14px -5px 35px -21px #000000a8;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
+          box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(3) {
   left: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 1;
-  box-shadow: 14px -5px 35px -21px #000000a8;
+  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
+          box-shadow: 14px -5px 35px -21px #000000a8;
 }
 
 .main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs {
@@ -714,7 +768,8 @@ body {
 .main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs li {
   position: absolute;
   left: 64rem;
-  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -729,7 +784,8 @@ body {
 .main__newCafe .newCafe__block .newCafe__slider .bullets {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: -6rem;
   z-index: 2;
 }
@@ -760,11 +816,11 @@ body {
   bottom: 20rem;
   padding: 2rem 2.5rem;
   color: #fff;
-  background-color: #EEDEFF;
+  background-color: #eedeff;
 }
 
 .main__newCafe .newCafe__block .newCafe__btn:hover {
-  background-color: #EEDEFF;
+  background-color: #eedeff;
   color: #333;
 }
 
@@ -788,23 +844,27 @@ body {
 .footer__tit {
   padding-top: 50px;
   font-weight: bold;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 .footer__tit p:first-child {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .footer__gnb {
   float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 378px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__menu {
   width: 70px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.6rem;
 }
 
