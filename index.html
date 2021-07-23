@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
+
   <body>
     <div class="container">
       <header class="header">
         <section class="header__inner inner">
           <h1 class="logo">
             <a href="#none" class="screen_out">로고</a>
+            <img class="logo" src="./img/01/logo.png" alt="" />
           </h1>
           <div class="gnb">
             <h2 class="screen_out">네비게이션</h2>
@@ -39,19 +41,18 @@
             </ul>
           </div>
           <button class="mode__btn">
-            <i class="fas fa-moon"></i> 다크모드
+            <i class="fas fa-moon"></i>
+            <span class="mode__btn-right">다크모드</span>
           </button>
         </section>
       </header>
-      -->
       <main class="main">
-        <!-- Home 2-->
+        <!--section2 Home -->
         <section class="main__content main__home">
           <h2 class="screen_out">메인</h2>
-          <div class="main__tit">CafeStory (이미지)</div>
+          <div class="main__tit">이미지</div>
         </section>
-
-        <!-- section 3. Horoscope [별점 높은 순] -->
+        <!--section3 Horoscope -->
         <section class="main__content main__horoscope">
           <h2 class="screen_out">별점</h2>
           <!-- article 3-1. 텍스트 부분 -->
@@ -185,7 +186,83 @@
             </button>
           </article>
         </section>
-        <!-- section 6. New cafe 4 [뉴 카페] -->
+
+        <!-- section5 풍경좋은 카페 -->
+        <section class="main__content main__scenery">
+          <h2 class="screen_out">SCENERY</h2>
+          <article class="scenery__box">
+            <div class="scenery__bg__left">
+              <div class="scenery__bg__bigBox">
+                <span class="scenery__bg__bigSlide1"></span>
+                <span class="scenery__bg__bigSlide2"></span>
+              </div>
+              <div class="scenery__bg__smallBox">
+                <div class="scenery__bg__up__container">
+                  <div class="scenery__bg__up">
+                    <span class="scenery__bg__smallSlide1"></span>
+                    <span class="scenery__bg__smallSlide2"></span>
+                  </div>
+                </div>
+                <div class="scenery__bg__down">
+                  <span class="scenery__bg__small"></span>
+                  <span class="scenery__bg__small2"></span>
+                </div>
+              </div>
+            </div>
+            <div class="scenery__bg__right">
+              <a href="none" target="_self"
+                ><div class="scenery__bg__detail">
+                  <p class="detail">상세보기</p>
+                  <p class="arrow">&rarr;</p>
+                </div></a
+              >
+              <div class="scenery__bg__bigBox">
+                <span class="scenery__bg__bigSlide1"></span>
+                <span class="scenery__bg__bigSlide2"></span>
+              </div>
+              <div class="scenery__bg__smallBox">
+                <div class="scenery__bg__up">
+                  <span class="scenery__bg__small"></span>
+                  <span class="scenery__bg__small2"></span>
+                </div>
+                <div class="scenery__bg__down__container">
+                  <div class="scenery__bg__down">
+                    <span class="scenery__bg__smallSlide1"></span>
+                    <span class="scenery__bg__smallSlide2"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- section4 이달의 카페 -->
+        <section class="main__content main__best">
+          <h2 class="screen_out">BEST</h2>
+          <a href="none" target="_self"
+            ><div class="scenery__bg__detail">
+              <p class="detail">상세보기</p>
+              <p class="arrow">&rarr;</p>
+            </div></a
+          >
+          <article class="best__tit">
+            <h1 class="tit">이달의 카페</h1>
+            <p class="sub__tit">
+              Unique & Coffee,
+              <br />
+              Art & Coffee
+            </p>
+          </article>
+          <article class="best__bg">
+            1번째 백그라운드
+            <div class="best__inner__bg">2번째 백그라운드</div>
+          </article>
+          <article class="best__box">
+            <div class="best__header"><img src="" alt="" /> 문구정리중</div>
+          </article>
+        </section>
+
+        <!--section6 New cafe -->
         <section class="main__content main__newCafe">
           <h2 class="screen_out">뉴카페</h2>
           <!-- article 6-1. 텍스트 부분 -->
@@ -220,77 +297,12 @@
               </div>
             </div>
             <!-- <, > 버튼 부분 -->
-            <button class="newCafe__prevbtn newCafe__btn" type="button">
-              <i class="fas fa-chevron-left fa-6x"></i>
-            </button>
-            <button class="newCafe__nextbtn newCafe__btn" type="button">
-              <i class="fas fa-chevron-right fa-6x"></i>
-            </button>
-          </article>
-        </section>
-        <!-- 5 -->
-        <section class="main__content main__scenery">
-          <h2 class="screen_out">SCENERY</h2>
-          <article class="scenery__tit">
-            <h1 class="tit">
-              <em>사진만 바꾸어도</em>
-              <br />
-              다른분위기
-            </h1>
-            <p class="sub__tit">
-              스킨은 그저 캔버스일뿐입니다.
-              <br />
-              스킨 속 같은 커버라도 이미지에 따라
-              <br />
-              전혀 다른 분위기를 연출할 수 있어요.
-            </p>
-          </article>
-          <article class="scenery__box">
-            <div class="scenery__bg">
-              풀 백그라운드
-              <div class="box__left">
-                <div class="box__up">
-                  <span class="img__bg"></span>
-                  <span class="img__bg"></span>
-                </div>
-                <div class="box__down">
-                  <span class="tit__bg"></span>
-                  <span class="tit__bg"></span>
-                </div>
-              </div>
-            </div>
-            <div class="scenery__bg">
-              풀 백그라운드
-              <div class="box__right">
-                <div class="box__up">
-                  <span class="tit__bg"></span>
-                  <span class="tit__bg"></span>
-                </div>
-                <div class="box__down">
-                  <span class="img__bg"></span>
-                  <span class="img__bg"></span>
-                </div>
-              </div>
-            </div>
-          </article>
-        </section>
-        <!-- 6 -->
-        <section class="main__content main__best">
-          <h2 class="screent_out">BEST</h2>
-          <article class="best__tit">
-            <h1 class="tit">이달의 카페</h1>
-            <p class="sub__tit">
-              복잡하지 않으면서 편안하게
-              <br />
-              이달의 카페를 즐겨보세요.
-            </p>
-          </article>
-          <article class="best__bg">
-            1번째 백그라운드
-            <div class="best__inner-bg">2번째 백그라운드</div>
-          </article>
-          <article class="best__box">
-            <div class="best__header"><img src="" alt="" /> 문구정리중</div>
+            <!-- <button class="newCafe__prevbtn newCafe__btn" type="button">
+            <i class="fas fa-chevron-left fa-6x"></i>
+          </button>
+          <button class="newCafe__nextbtn newCafe__btn" type="button">
+            <i class="fas fa-chevron-right fa-6x"></i>
+          </button> -->
           </article>
         </section>
       </main>
@@ -300,65 +312,78 @@
             <h2 class="screen_out">COPYRIGHT</h2>
             <div class="footer__logo">
               <img src="./img/01/logo.png" alt="logo" />
+              <div class="footer__tit">
+                <p>카페 스토리는 사랑을 담아 만듭니다.</p>
+                <p>@CafeStory Corp.</p>
+              </div>
             </div>
-            <div class="footer__tit">
-              <p>@Cafestory Corp.</p>
-            </div>
-          </div>
-          <div class="footer__gnb">
-            <h2 class="screen_out">FOOTERGNB</h2>
-            <div class="footer__menu">
-              <span>Lorem ipsum dolor sit amet.</span>
-              <ul class="footer__list">
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-              </ul>
-              <ul class="footer__list">
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-              </ul>
-              <ul class="footer__list">
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-              </ul>
-              <ul class="footer__list">
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-                <li>
-                  <a href="#none">Lorem.</a>
-                </li>
-              </ul>
+            <div class="footer__gnb">
+              <h2 class="screen_out">FOOTERGNB</h2>
+              <div class="footer__menu">
+                <span class="footer__menu-tit">Lorem</span>
+                <ul class="footer__menu__list">
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__menu">
+                <span class="footer__menu-tit">Lorem</span>
+                <ul class="footer__menu__list">
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__menu">
+                <span class="footer__menu-tit">Lorem</span>
+                <ul class="footer__menu__list">
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__menu">
+                <span class="footer__menu-tit">Lorem</span>
+                <ul class="footer__menu__list">
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                  <li>
+                    <a href="#none">lorem</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
       </footer>
     </div>
-    <script src="./horoscope.js"></script>
-    <script src="./newCafe.js"></script>
   </body>
+  <script src="js/Beautiful__scenery.js"></script>
+  <script src="js/BestCafe.js"></script>
+  <script src="js/horoscope.js"></script>
+  <script src="js/newCafe.js"></script>
+  <script src="js/header.js"></script>
 </html>
