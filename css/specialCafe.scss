@@ -5,7 +5,7 @@
 
 $maincolor: #eedeff;
 $maincolortext: #ccbedb;
-$textcolor: #333;
+$textcolor: #707070;
 $boxshadow: #000000a8;
 $hovercolor: #47405a;
 
@@ -42,6 +42,7 @@ a,
 button {
   cursor: pointer;
   text-decoration: none;
+  border: none;
 }
 
 /* 파트 2 : 카페 소개 */

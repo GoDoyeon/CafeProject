@@ -32,6 +32,7 @@ a,
 button {
   cursor: pointer;
   text-decoration: none;
+  border: none;
 }
 
 /* 파트 2 : 카페 소개 */
@@ -245,7 +246,7 @@ button {
 }
 
 .footer__menu__list li a {
-  color: #333;
+  color: #707070;
   font-size: 1rem;
 }
 /*# sourceMappingURL=specialCafe.css.map */
