@@ -129,6 +129,7 @@ body {
   text-align: center;
   padding: 30rem 0;
   font-size: 8rem;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* section 3. Horoscope [별점 높은 순] */
@@ -141,7 +142,8 @@ body {
 }
 
 .main__horoscope .horoscope__tit {
-  color: #333;
+  color: #707070;
+  font-family: 'Noto Sans KR', sans-serif;
   display: block;
   margin: 0 auto;
   height: 44rem;
@@ -253,13 +255,14 @@ body {
   border: none;
   border-radius: 50px;
   padding: 2rem 2.5rem;
-  background-color: #333;
+  background-color: #979797;
+  opacity: 0.8;
   color: #fff;
 }
 
 .main__horoscope .horoscope__block .horoscope__btn:hover {
-  background-color: #eedeff;
-  color: #333;
+  background-color: #47405a;
+  color: #fff;
 }
 
 /*section 4: 전망좋은 카페*/
@@ -614,13 +617,15 @@ body {
 .main__newCafe {
   height: 100rem;
   position: relative;
-  background-color: #eedeff;
+  background-color: #f8f2ff;
   margin: 0 auto;
   /* article 6-1. 텍스트 부분 */
   /* article 6-2. 슬라이드 + 버튼 */
 }
 
 .main__newCafe .newCafe__tit {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #707070;
   padding: 15rem 0 8rem 0;
   text-align: center;
 }
@@ -642,186 +647,43 @@ body {
   /* 뉴 카페 이미지 슬라이드 */
 }
 
-.main__newCafe .newCafe__block .newCafe__slider {
-  width: 79rem;
-  margin: 0 auto;
-  height: 47rem;
-  position: relative;
-  /* < (이전), > (다음) 버튼으로 슬라이드 효과주기 */
-  /* 불릿으로 슬라이드 효과주기 */
+.main__newCafe .newCafe__block .swiper-button-next {
+  right: -70px;
+  color: #707070;
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio'] {
-  display: none;
+.main__newCafe .newCafe__block .swiper-button-prev {
+  left: -70px;
+  color: #707070;
 }
 
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ .bullets > label:nth-child(1) {
-  background-color: #fff;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ .bullets > label:nth-child(2) {
-  background-color: #fff;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ .bullets > label:nth-child(3) {
-  background-color: #fff;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(1) {
-  left: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 1;
-  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
-          box-shadow: 14px -5px 35px -21px #000000a8;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(2) {
-  left: 15rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 0;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
-          box-shadow: 14px -5px 35px -21px #000000a8;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(1):checked ~ ul.newCafe__imgs > li:nth-child(3) {
-  left: -15rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 0;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
-          box-shadow: 14px -5px 35px -21px #000000a8;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(1) {
-  left: -15rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 0;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
-          box-shadow: 14px -5px 35px -21px #000000a8;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(2) {
-  left: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 1;
-  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
-          box-shadow: 14px -5px 35px -21px #000000a8;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(2):checked ~ ul.newCafe__imgs > li:nth-child(3) {
-  left: 15rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 0;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
-          box-shadow: 14px -5px 35px -21px #000000a8;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(1) {
-  left: 15rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 0;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
-          box-shadow: 14px -5px 35px -21px #000000a8;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(2) {
-  left: -15rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 0;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
-          box-shadow: 14px -5px 35px -21px #000000a8;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider input[type='radio']:nth-child(3):checked ~ ul.newCafe__imgs > li:nth-child(3) {
-  left: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 1;
-  -webkit-box-shadow: 14px -5px 35px -21px #000000a8;
-          box-shadow: 14px -5px 35px -21px #000000a8;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs {
-  padding: 0;
-  margin: 0;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs li {
-  position: absolute;
-  left: 64rem;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider ul.newCafe__imgs li img {
-  width: 79rem;
-  height: 47rem;
-  border: 2px solid #fff;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider .bullets {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: -6rem;
-  z-index: 2;
-}
-
-.main__newCafe .newCafe__block .newCafe__slider .bullets label {
-  display: inline-block;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.55);
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-}
-
-.main__newCafe .newCafe__block .newCafe__prevbtn {
-  right: 100rem;
-  position: absolute;
-  bottom: 46.5rem;
-}
-
-.main__newCafe .newCafe__block .newCafe__nextbtn {
-  left: 100rem;
-  position: absolute;
-  bottom: 46.5rem;
-}
-
-.main__newCafe .newCafe__block .newCafe__btn {
-  border: none;
-  bottom: 20rem;
-  padding: 2rem 2.5rem;
-  color: #fff;
-  background-color: #eedeff;
-}
-
-.main__newCafe .newCafe__block .newCafe__btn:hover {
-  background-color: #eedeff;
+.main__newCafe .newCafe__block .swiper-button-prev:hover {
   color: #333;
+}
+
+.main__newCafe .newCafe__block .swiperbtn {
+  color: #fff;
+}
+
+.main__newCafe .newCafe__block .swiper-container {
+  height: 100%;
+}
+
+.main__newCafe .newCafe__block .swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 이 설정을 하지 않으면 슬라이드드가 틀어짐 */
 }
 
 .footer {
