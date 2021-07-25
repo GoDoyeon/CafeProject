@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -29,11 +28,13 @@ a {
 
 .header {
   position: fixed;
+  background: #eedeff;
   width: 100%;
   height: 100px;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 9999;
+  transition: 0.2s ease-in;
 }
 
 .header__inner {
@@ -65,11 +66,16 @@ a {
 .header .gnb__menu li {
   float: left;
   list-style: none;
-  padding-right: 30px;
+  padding-right: 5rem;
 }
 
 .header .gnb__menu li a {
+  height: 50rem;
   color: #333;
+}
+
+.header .gnb__menu li a:hover {
+  border-bottom: 1px solid black;
 }
 
 .header .mode__btn {
@@ -80,20 +86,24 @@ a {
   height: 50px;
   border-radius: 30px;
   margin: 25px 60px 0 0;
-  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 10px #000000a8;
   border: 0;
   outline: 0;
   cursor: pointer;
+  color: #333;
 }
 
 .header .mode__btn i {
   margin-right: 10px;
-  color: #333;
 }
 
-.header .mode__btn-right {
-  color: #333;
+.header .mode__btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.header .mode__btn:hover .fa-moon {
+  color: yellow;
 }
 
 .header .on {
@@ -129,13 +139,9 @@ a {
 
 .footer__gnb {
   float: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 378px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer__menu {
