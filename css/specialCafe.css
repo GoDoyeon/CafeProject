@@ -33,17 +33,29 @@ button {
   cursor: pointer;
   text-decoration: none;
   border: none;
-  color: #707070;
+  color: #343a40;
 }
 
 a:active,
 button:active {
-  color: #47405a;
+  color: #8d91eb;
 }
 
 a:hover,
 button:hover {
-  color: #47405a;
+  color: green;
+}
+
+a img,
+button img {
+  width: 3.5rem;
+  margin-right: 1rem;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
 }
 
 /* 파트 2 : 카페 소개 */
@@ -80,8 +92,7 @@ button:hover {
   position: relative;
   display: inline-block;
   line-height: 3rem;
-  padding: 1rem;
-  margin-right: 3rem;
+  margin-right: 4rem;
   display: inline-block;
 }
 
@@ -89,7 +100,7 @@ button:hover {
   padding: 10rem 0 3rem 0;
   font-size: 3rem;
   border-bottom: 1px solid #cdcdcd;
-  margin-bottom: 1rem;
+  margin-bottom: 10rem;
 }
 
 .content__menu .cafeKinds li {
@@ -98,24 +109,20 @@ button:hover {
 }
 
 .content__menu .cafeKinds li a {
-  color: #333;
+  color: #343a40;
+  font-weight: bold;
+}
+
+.content__menu .cafeKinds li a.visited {
+  padding-bottom: 2.4rem;
+  border-bottom: 0.8rem solid #8d91eb;
+  color: #8d91eb;
 }
 
 .content__menu .cafeKinds li a:hover {
-  padding-bottom: 2.4rem;
-  border-bottom: 0.8rem solid #47405a;
-  color: #47405a;
-  font-weight: 500;
-}
-
-.content__menu .locations {
-  font-size: 2rem;
-}
-
-.content__menu .locations li:hover,
-.content__menu .locations li :active {
   font-weight: bold;
-  cursor: pointer;
+  padding-bottom: 2.4rem;
+  color: #8d91eb;
 }
 
 .content__menu .tags {
@@ -128,12 +135,15 @@ button:hover {
   padding: 0;
   padding-bottom: 0;
   text-decoration: none;
+  font-weight: bold;
+  color: #343a40;
 }
 
 .content__menu .tags li:hover {
-  -webkit-box-shadow: 0 -8px #eedeff inset;
-          box-shadow: 0 -8px #eedeff inset;
+  -webkit-box-shadow: 0 -8px #8d91eb inset;
+          box-shadow: 0 -8px #8d91eb inset;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .content__imgs {
@@ -152,6 +162,15 @@ button:hover {
 
 .content__imgs .select__cafe span {
   margin: 0 2rem 0 2rem;
+}
+
+.content__imgs .select__cafe span a {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.content__imgs .select__cafe span a:visited {
+  font-weight: bold;
 }
 
 .content__imgs .cafe__block {
@@ -223,11 +242,6 @@ button:hover {
 .footer__tit {
   padding-top: 50px;
   font-weight: bold;
-  font-family: 'Dancing Script', cursive;
-}
-
-.footer__tit p:first-child {
-  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .footer__gnb {
@@ -243,7 +257,6 @@ button:hover {
 
 .footer__menu {
   width: 70px;
-  font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.6rem;
 }
 
@@ -257,7 +270,7 @@ button:hover {
 }
 
 .footer__menu__list li a {
-  color: #707070;
+  color: #343a40;
   font-size: 1rem;
 }
 /*# sourceMappingURL=specialCafe.css.map */
