@@ -43,6 +43,13 @@ button {
   cursor: pointer;
   text-decoration: none;
   border: none;
+  color: $textcolor;
+  &:active {
+    color: $hovercolor;
+  }
+  &:hover {
+    color: $hovercolor;
+  }
 }
 
 /* 파트 2 : 카페 소개 */

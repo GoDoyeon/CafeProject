@@ -33,6 +33,17 @@ button {
   cursor: pointer;
   text-decoration: none;
   border: none;
+  color: #707070;
+}
+
+a:active,
+button:active {
+  color: #47405a;
+}
+
+a:hover,
+button:hover {
+  color: #47405a;
 }
 
 /* 파트 2 : 카페 소개 */
