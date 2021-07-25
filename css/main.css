@@ -142,7 +142,7 @@ body {
 }
 
 .main__horoscope .horoscope__tit {
-  color: #707070;
+  color: #343a40;
   font-family: 'Noto Sans KR', sans-serif;
   display: block;
   margin: 0 auto;
@@ -625,7 +625,7 @@ body {
 
 .main__newCafe .newCafe__tit {
   font-family: 'Noto Sans KR', sans-serif;
-  color: #707070;
+  color: #343a40;
   padding: 15rem 0 8rem 0;
   text-align: center;
 }
@@ -636,7 +636,7 @@ body {
 
 .main__newCafe .newCafe__tit p {
   margin-top: 1rem;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .main__newCafe .newCafe__block {
@@ -649,12 +649,12 @@ body {
 
 .main__newCafe .newCafe__block .swiper-button-next {
   right: -70px;
-  color: #707070;
+  color: #343a40;
 }
 
 .main__newCafe .newCafe__block .swiper-button-prev {
   left: -70px;
-  color: #707070;
+  color: #343a40;
 }
 
 .main__newCafe .newCafe__block .swiper-button-prev:hover {

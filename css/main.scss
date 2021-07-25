@@ -6,7 +6,9 @@
 $maincolor: #eedeff;
 $textcolor: #333;
 $boxshadow: #000000a8;
-$textcolordy: #707070;
+$textcolordy: #343a40;
+//$hovercolor: #8d91eb;
+
 $subcolor: #f8f2ff;
 $hovercolor: #47405a;
 
@@ -584,7 +586,7 @@ body {
     }
     p {
       margin-top: 1rem;
-      font-size: 4em;
+      font-size: 3em;
     }
   }
   /* article 6-2. 슬라이드 + 버튼 */
