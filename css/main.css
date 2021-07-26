@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -39,6 +40,7 @@ body {
   top: 0;
   left: 0;
   z-index: 9999;
+  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -91,7 +93,8 @@ body {
   height: 50px;
   border-radius: 30px;
   margin: 25px 60px 0 0;
-  box-shadow: 10px 10px 10px #000000a8;
+  -webkit-box-shadow: 10px 10px 10px #000000a8;
+          box-shadow: 10px 10px 10px #000000a8;
   border: 0;
   outline: 0;
   cursor: pointer;
@@ -173,9 +176,15 @@ body {
   margin: 0 auto;
   left: 18rem;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   margin-bottom: 16rem;
 }
 
@@ -192,6 +201,7 @@ body {
   position: absolute;
   text-align: left;
   width: 100%;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -208,6 +218,7 @@ body {
   width: 58.4rem;
   height: 40rem;
   opacity: 1;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   overflow: hidden;
 }
@@ -217,12 +228,14 @@ body {
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover img {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.15;
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__tit {
   opacity: 1;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -274,6 +287,7 @@ body {
   width: 200%;
   height: 100%;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -313,6 +327,7 @@ body {
   width: 68rem;
   height: 34rem;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -345,6 +360,7 @@ body {
   background: url("../img/05/left/L_text_2_1.png") center no-repeat;
   background-size: cover;
   opacity: 1;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -355,6 +371,7 @@ body {
   background: url("../img/05/left/L_text_1_1.png") center no-repeat;
   background-size: cover;
   opacity: 0;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -370,7 +387,8 @@ body {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  box-shadow: 5px 5px 15px 5px #000000a8;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
+          box-shadow: 5px 5px 15px 5px #000000a8;
   padding-top: 5.7rem;
   background-color: #eedeff;
   position: absolute;
@@ -378,6 +396,7 @@ body {
   top: 50%;
   left: 25rem;
   margin-top: 22rem;
+  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -394,13 +413,15 @@ body {
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox {
   width: 200%;
   height: 100%;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -442,6 +463,7 @@ body {
   background: url("../img/05/right/R_text_2_1.png") center no-repeat;
   background-size: cover;
   opacity: 1;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -452,6 +474,7 @@ body {
   background: url("../img/05/right/R_text_1_1.png") center no-repeat;
   background-size: cover;
   opacity: 0;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -466,6 +489,7 @@ body {
   width: 68rem;
   height: 34rem;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -527,6 +551,7 @@ body {
   top: 58rem;
   background: url("../img/06/bg.png") center no-repeat;
   background-size: cover;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -539,7 +564,8 @@ body {
   left: 60%;
   background: url("../img/06/best_1_1.png") center no-repeat;
   background-size: cover;
-  box-shadow: 10px 10px 15px #000000a8;
+  -webkit-box-shadow: 10px 10px 15px #000000a8;
+          box-shadow: 10px 10px 15px #000000a8;
 }
 
 .main__best .best__box .best__header {
@@ -549,6 +575,7 @@ body {
   top: 58rem;
   background: url("../img/06/bg.png") center no-repeat;
   background-size: cover;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -556,7 +583,8 @@ body {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  box-shadow: 5px 5px 15px 5px #000000a8;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
+          box-shadow: 5px 5px 15px 5px #000000a8;
   padding-top: 5.7rem;
   background-color: #eedeff;
   position: absolute;
@@ -564,6 +592,7 @@ body {
   top: 50rem;
   left: 60%;
   margin: 22rem;
+  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -580,7 +609,8 @@ body {
 }
 
 .main__best .scenery__bg__detail:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* section 6. New cafe 4 [뉴 카페] */
@@ -641,11 +671,18 @@ body {
 
 .main__newCafe .newCafe__block .swiper-slide {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 5px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 이 설정을 하지 않으면 슬라이드드가 틀어짐 */
 }
 
@@ -678,9 +715,13 @@ body {
 
 .footer__gnb {
   float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 378px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__menu {
