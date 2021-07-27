@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+@import "../../variables/variables";
+@import "../../mixin/mixin";
+// font-family: 'Noto Sans KR', sans-serif;
+// font-family: 'Dancing Script', cursive;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: $textcolor;
+  &:hover{
+    color: white;
+  }
+}
+
+.screen_out {
+  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+}
+
+html,
+body{
+  height: 100%;
+  font-size: 10px;
+}
+
+.container{
+  width: 100%;
+  height: 2400px;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: $maincolor;
+
+  /* 헤더 */
+.header {
+  @include header;
+}
+
+  /*메인 title*/
+  .main{
+    height: 2000px;
+    .main__detail{
+      height: 600px;
+      position: relative;
+      .detailed__information{ 
+        width: 70rem;
+        height: 10rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -5rem -35rem;
+        text-align: center;
+        font-size: 80px;
+        font-family: 'Dancing Script', cursive;
+        
+      }
+    }
+    .detailed__info{
+      height: 1400px;
+      position: relative;
+      background: #f4f4f4;
+      .detailed__wrap{
+        width: 123rem;
+        height: 120rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -60rem -61.5rem;
+
+        .detailed__container{
+          width: 123rem;
+          height: 120rem;
+          overflow: hidden;
+          position: relative;
+          
+          li{
+            width: 38rem;
+            height: 38rem;
+            float: left;
+            margin: 0rem 3rem 3rem 0rem;
+            background: url('../img/temporary__imgFile/1_1.png');
+          }
+
+          .caption{
+            width: 120rem;
+            height: 120rem;
+            position: absolute;
+            background: rgba(190, 189, 189, 0.7);
+            top: 120rem;
+            transition: 0.5s ease-in;
+            opacity: 0;
+            z-index: 200;
+            
+            
+            .main_tit{
+              font-size: 14.4rem;
+              text-align: center;
+              font-family: 'Dancing Script', cursive;
+              line-height: 50rem;
+            }
+
+            .cafe_tit{
+              font-size: 7.2rem;
+              text-align: center;
+            }
+
+            .cafe_link{
+              font-family: 'Dancing Script', cursive;
+              font-size: 4.8rem;
+              text-align: center;
+              line-height: 20rem;
+
+            }
+
+            .stars{
+              font-size: 4.8rem;
+              text-align: center;
+              line-height: 15rem;
+
+            }
+            
+
+           
+          }
+          &:hover .caption{
+            opacity: 1;
+            transform: translateY(-120rem);
+          }
+        }
+      }
+
+      
+    }
+
+
+  }
+
+
+
+  
+// Footer
+
+.footer {
+  @include footer;
+}
+}
