@@ -62,6 +62,10 @@ li {
   margin: 0;
 }
 
+.main {
+  display: none;
+}
+
 /* 파트 2 : 카페 소개 */
 .main__home {
   width: 100%;
@@ -220,5 +224,193 @@ li {
 
 .content__imgs .cafe__block .cafe__imgs2 {
   margin: 3rem 0 3rem 0;
+}
+
+/*detail info*/
+/*메인 title*/
+.main {
+  height: 2000px;
+}
+
+.main .main__detail {
+  height: 600px;
+  position: relative;
+}
+
+.main .main__detail .detailed__information {
+  width: 70rem;
+  height: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5rem -35rem;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.main .detailed__info {
+  height: 1400px;
+  position: relative;
+  background: #f4f4f4;
+}
+
+.main .detailed__info .detailed__wrap {
+  width: 123rem;
+  height: 120rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -60rem -61.5rem;
+}
+
+.main .detailed__info .detailed__wrap .detailed__container {
+  width: 123rem;
+  height: 120rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.main .detailed__info .detailed__wrap .detailed__container li {
+  width: 38rem;
+  height: 38rem;
+  float: left;
+  margin: 0rem 3rem 3rem 0rem;
+  background: url("../img/temporary__imgFile/1_1.png");
+}
+
+.main .detailed__info .detailed__wrap .detailed__container .caption {
+  width: 120rem;
+  height: 120rem;
+  position: absolute;
+  background: rgba(190, 189, 189, 0.7);
+  top: 120rem;
+  transition: 0.5s ease-in;
+  opacity: 0;
+  z-index: 200;
+}
+
+.main .detailed__info .detailed__wrap .detailed__container .caption .main_tit {
+  font-size: 14.4rem;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  line-height: 50rem;
+}
+
+.main .detailed__info .detailed__wrap .detailed__container .caption .cafe_tit {
+  font-size: 7.2rem;
+  text-align: center;
+}
+
+.main .detailed__info .detailed__wrap .detailed__container .caption .cafe_link {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.8rem;
+  text-align: center;
+  line-height: 20rem;
+}
+
+.main .detailed__info .detailed__wrap .detailed__container .caption .stars {
+  font-size: 4.8rem;
+  text-align: center;
+  line-height: 15rem;
+}
+
+.main .detailed__info .detailed__wrap .detailed__container:hover .caption {
+  opacity: 1;
+  transform: translateY(-120rem);
+}
+
+/*메인 title*/
+.main_detail_info {
+  height: 2000px;
+}
+
+.main_detail_info .main__detail {
+  height: 600px;
+  position: relative;
+  background: #eedeff;
+}
+
+.main_detail_info .main__detail .detailed__information {
+  width: 70rem;
+  height: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5rem -35rem;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.main_detail_info .detailed__info {
+  height: 1400px;
+  position: relative;
+  background: #f4f4f4;
+}
+
+.main_detail_info .detailed__info .detailed__wrap {
+  width: 123rem;
+  height: 120rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -60rem -61.5rem;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .detailed__container {
+  width: 123rem;
+  height: 120rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .detailed__container li {
+  width: 38rem;
+  height: 38rem;
+  float: left;
+  margin: 0rem 3rem 3rem 0rem;
+  background: url("../../detailed_info/img/temporary__imgFile/1_1.png");
+}
+
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption {
+  width: 120rem;
+  height: 120rem;
+  position: absolute;
+  background: rgba(190, 189, 189, 0.7);
+  top: 120rem;
+  transition: 0.5s ease-in;
+  opacity: 0;
+  z-index: 200;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .main_tit {
+  font-size: 14.4rem;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  line-height: 50rem;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .cafe_tit {
+  font-size: 7.2rem;
+  text-align: center;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .cafe_link {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.8rem;
+  text-align: center;
+  line-height: 20rem;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .stars {
+  font-size: 4.8rem;
+  text-align: center;
+  line-height: 15rem;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .detailed__container:hover .caption {
+  opacity: 1;
+  transform: translateY(-120rem);
 }
 /*# sourceMappingURL=specialCafe.css.map */

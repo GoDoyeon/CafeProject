@@ -1,5 +1,5 @@
 let imgs = document.querySelectorAll('.detailed__container li');
-let clickCafe=document.querySelector('.btn');
+let clickCafe=document.querySelector('.cafeDetailBtn');
 let link__information = {
   CafeButtonValue1:'link Information1',
   CafeButtonValue2:'link Information2',
@@ -16,6 +16,9 @@ let link__information = {
 }
 
 */
+
+let param = {}
+param.cafe = clickCafe.value;
 
 clickCafe.addEventListener('click',function(){
   console.log(clickCafe.value);

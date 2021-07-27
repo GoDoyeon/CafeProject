@@ -45,6 +45,9 @@
           </button>
         </section>
       </header>
+
+      <!-- main section -->
+
         <main class="main">
           <section class="main__content main__home">
             <div class="home__inner">
@@ -53,7 +56,6 @@
             </div>
           </section>
           <section class="main__content best"></section>
-        </main>
         <!-- 스페셜 카페 content -->
         <section class="content">
           <!-- article 3-1. 메뉴 박스 부분 -->
@@ -97,19 +99,19 @@
                 <!-- 카페 이미지 1번째 줄 -->
                 <ul class="cafe__imgs1">
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='regentsky'>
+                    <button class="cafeDetailBtn" value='regentsky'>
                       <img src="../img/specialCafe/1/seoul/regentsky.png" alt="" />
                       <div class="img__text">리젠트스카이 카페</div>
                     </button>
                   </li>
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='lefran'>
+                    <button class="cafeDetailBtn" value='lefran'>
                     <img src="../img/specialCafe/1/seoul/lefran.png" alt="" />
                     <div class="img__text">르프랑 카페</div>
                     </button>
                   </li>
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='rooftop347'>
+                    <button class="cafeDetailBtn" value='rooftop347'>
                     <img
                       src="../img/specialCafe/1/gyeonggi/rooftop347.png"
                       alt=""
@@ -121,7 +123,7 @@
                 <!-- 카페 이미지 2번째 줄 -->
                 <ul class="cafe__imgs2">
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='rooftop357'>
+                    <button value='rooftop357'>
                     <img
                       src="../img/specialCafe/1/gyeonggi/rooftop357.png"
                       alt=""
@@ -177,6 +179,37 @@
           </article>
         </section>
       </main>
+      
+        <!-- detail information -->
+        <section class="main_detail_info">
+          <article class="main__content main__detail">
+            <h1 class="detailed__information">Detailed Information</h2>
+          </article>
+          <article class="main__content detailed__info">
+            <div class="detailed__wrap">
+              <ul class="detailed__container">
+                <div class="caption">
+                  <h1 class="main_tit">Cafe Theme</h1>
+                  <p class="cafe_tit">Cafe Name</p>
+                  <a class="cafe_link" href="www.naver.com"><p>www.naver.com</p></a>
+                  <p class="stars">평점: 4.5/5</p>
+                </div>
+                <li class="img1"></li>
+                <li class="img2"></li>
+                <li class="img3"></li>
+                <li class="img4"></li>
+                <li class="img5"></li>
+                <li class="img6"></li>
+                <li class="img7"></li>
+                <li class="img8"></li>
+                <li class="img9"></li>
+              </ul>
+            </div>
+          </article>
+        </section>
+   
+
+      
       <footer class="footer">
         <section class="footer__inner inner">
           <div class="footer__copyright">
@@ -251,6 +284,10 @@
         </section>
       </footer>
     </div>
+
+    <!-- detail Information -->
+    
     
   </body>
+  <script src=""></script>
 </html>
