@@ -2,7 +2,11 @@
 @import "../variables/variables";
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
+/*
+section2 main-home : 400px
+section3 __menu : 1200px
 
+*/
 * {
   margin: 0;
   padding: 0;
@@ -149,7 +153,8 @@ li {
     width: 100%;
     background-color: #f4f4f4;
     padding-bottom: 11rem;
-    margin-bottom: 5rem;
+    // margin-bottom: 5rem; //푸터와 너무 떨어져 있어서 0으로 바꿈.
+    margin-bottom: 0rem;
     // 선택된 카페 카테고리 텍스트
     .select__cafe {
       width: 120rem;
