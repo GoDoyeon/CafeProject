@@ -1,5 +1,21 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
+/*main scss*/
+/*header*/
+/*footer*/
+/*
+header 100px
+
+section2: mainhome 600px
+section3: Horoscope  1000px
+section 4: 전망좋은 카페 1000px
+section 5: 이달의 카페 1000px
+section 6: New cafe 1000px
+
+footer 300px
+
+entire: 5000px
+*/
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +45,7 @@ body {
 
 .container {
   width: 100%;
-  height: 5200px;
+  height: 4900px;
 }
 
 .header {
@@ -139,7 +155,7 @@ body {
 }
 
 .main__horoscope .horoscope__tit {
-  color: #707070;
+  color: #343a40;
   font-family: 'Noto Sans KR', sans-serif;
   display: block;
   margin: 0 auto;
@@ -595,7 +611,7 @@ body {
 
 .main__newCafe .newCafe__tit {
   font-family: 'Noto Sans KR', sans-serif;
-  color: #707070;
+  color: #343a40;
   padding: 15rem 0 8rem 0;
   text-align: center;
 }
@@ -606,7 +622,7 @@ body {
 
 .main__newCafe .newCafe__tit p {
   margin-top: 1rem;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .main__newCafe .newCafe__block {
@@ -619,12 +635,12 @@ body {
 
 .main__newCafe .newCafe__block .swiper-button-next {
   right: -70px;
-  color: #707070;
+  color: #343a40;
 }
 
 .main__newCafe .newCafe__block .swiper-button-prev {
   left: -70px;
-  color: #707070;
+  color: #343a40;
 }
 
 .main__newCafe .newCafe__block .swiper-button-prev:hover {
@@ -702,4 +718,4 @@ body {
   color: #333;
   font-size: 1rem;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main 2.css.map */
