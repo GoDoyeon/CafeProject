@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -13,7 +12,7 @@ html,
 body {
   height: 100%;
   background-color: #fff;
-  font-size: 7px;
+  font-size: 10px;
 }
 
 .container {
@@ -33,7 +32,7 @@ button {
   cursor: pointer;
   text-decoration: none;
   border: none;
-  color: #343a40;
+  color: #333;
 }
 
 a:active,
@@ -109,7 +108,7 @@ li {
 }
 
 .content__menu .cafeKinds li a {
-  color: #343a40;
+  color: #333;
   font-weight: bold;
 }
 
@@ -136,12 +135,11 @@ li {
   padding-bottom: 0;
   text-decoration: none;
   font-weight: bold;
-  color: #343a40;
+  color: #333;
 }
 
 .content__menu .tags li:hover {
-  -webkit-box-shadow: 0 -8px #8d91eb inset;
-          box-shadow: 0 -8px #8d91eb inset;
+  box-shadow: 0 -8px #8d91eb inset;
   cursor: pointer;
   font-weight: bold;
 }
@@ -166,7 +164,7 @@ li {
 
 .content__imgs .select__cafe span a {
   font-weight: bold;
-  color: #343a40;
+  color: #333;
 }
 
 .content__imgs .select__cafe span a:visited {
@@ -179,8 +177,6 @@ li {
 }
 
 .content__imgs .cafe__block .cafe__imgs ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -189,9 +185,7 @@ li {
 }
 
 .content__imgs .cafe__block .cafe__imgs ul li:hover {
-  -webkit-transform: translateY(-1em);
-          transform: translateY(-1em);
-  -webkit-box-shadow: 0 0 10px #9e9e9e;
+  transform: translateY(-1em);
   box-shadow: 0 0 10px #9e9e9e;
 }
 

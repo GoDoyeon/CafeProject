@@ -1,16 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-
+@import "../variables/variables";
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
-$maincolor: #eedeff;
-$textcolor: #333;
-$boxshadow: #000000a8;
-$textcolordy: #343a40;
-//$hovercolor: #8d91eb;
-
-$subcolor: #f8f2ff;
-$hovercolor: #47405a;
 
 @mixin scenery__bg__Slide {
   width: 50%;
@@ -259,7 +251,7 @@ body {
       opacity: 0.8;
       color: #fff;
       &:hover {
-        background-color: $hovercolor;
+        background-color: $hovercolor_main;
         color: #fff;
       }
     }
