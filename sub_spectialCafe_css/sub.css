@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -35,7 +34,6 @@ a {
   top: 0;
   left: 0;
   z-index: 9999;
-  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -88,8 +86,7 @@ a {
   height: 50px;
   border-radius: 30px;
   margin: 25px 60px 0 0;
-  -webkit-box-shadow: 10px 10px 10px #000000a8;
-          box-shadow: 10px 10px 10px #000000a8;
+  box-shadow: 10px 10px 10px #000000a8;
   border: 0;
   outline: 0;
   cursor: pointer;
@@ -142,13 +139,9 @@ a {
 
 .footer__gnb {
   float: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 378px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer__menu {

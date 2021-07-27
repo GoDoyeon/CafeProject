@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-
+@import "../variables/variables";
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
-
-$maincolor: #eedeff;
-$maincolortext: #ccbedb;
-$textcolor: #343a40;
-$boxshadow: #000000a8;
-$hovercolor: #8d91eb;
-//$hovercolor: #47405a;
 
 * {
   margin: 0;
@@ -46,7 +39,7 @@ button {
   border: none;
   color: $textcolor;
   &:active {
-    color: $hovercolor;
+    color: $hovercolor_special;
   }
   &:hover {
     color: green;
@@ -110,13 +103,13 @@ li {
           font-weight: bold;
           &.visited {
             padding-bottom: 2.4rem;
-            border-bottom: 0.8rem solid $hovercolor;
-            color: $hovercolor;
+            border-bottom: 0.8rem solid $hovercolor_special;
+            color: $hovercolor_special;
           }
           &:hover {
             font-weight: bold;
             padding-bottom: 2.4rem;
-            color: $hovercolor;
+            color: $hovercolor_special;
           }
         }
       }
@@ -144,7 +137,7 @@ li {
         font-weight: bold;
         color: $textcolor;
         &:hover {
-          box-shadow: 0 -8px $hovercolor inset;
+          box-shadow: 0 -8px $hovercolor_special inset;
           cursor: pointer;
           font-weight: bold;
         }
