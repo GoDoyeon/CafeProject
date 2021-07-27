@@ -1,11 +1,34 @@
 let imgs = document.querySelectorAll('.detailed__container li');
-let clickCafe=document.querySelector('.cafeDetailBtn');
+let clickCafe=document.querySelectorAll('.cafeDetailBtn');
+let main = document.querySelector('.main');
+let main_detail = document.querySelector('.main_detail_info');
 let link__information = {
   CafeButtonValue1:'link Information1',
   CafeButtonValue2:'link Information2',
   CafeButtonValue3:'link Information3',
 
 }
+
+clickCafe[0].addEventListener('click',function(){
+  main.style.display = "none";
+  main_detail.style.display = "block";
+  for(let i=0; i<9; i++){
+    if(i===4){
+      continue;
+    }
+    imgs[i].style.background = `url('../../img/detail_img/rooftop/${clickCafe[0].value}/${i}.png')`;
+  }
+  
+  // for(let i=0; i<9; i++){
+  //   if(i===4){
+  //     continue;
+  //   }
+  //   console.log(i);
+  //   console.log(clickCafe[0].value);
+  //   imgs[i].style.background = `url('../detail_img/rooftop/regentsky/0.png')`;
+  //   // imgs[i].style.background = `url('../detail_img/rooftop/${clickCafe[0].value}/${i}.png')`;
+  // }
+});
 
 /* 별점 넣으려면
 let link__information = {
@@ -16,16 +39,10 @@ let link__information = {
 }
 
 */
-
-let param = {}
-param.cafe = clickCafe.value;
-
-clickCafe.addEventListener('click',function(){
-  console.log(clickCafe.value);
-  imgs[0].style.background = `url('../img/${clickCafe.value}/logo.png')`;
-});
-
-
+// clickCafe1.addEventListener('click',function(){
+//   console.log(clickCafe1.value);
+//   imgs[0].style.background = `url('../img/${clickCafe1.value}/logo.png')`;
+// });
 
 
 /*
