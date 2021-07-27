@@ -2,6 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
 /*main scss*/
 /*header*/
+/*
+header 100px
+
+section2: mainhome 600px
+section3: Horoscope  1000px
+section 4: 전망좋은 카페 1000px
+section 5: 이달의 카페 1000px
+section 6: New cafe 1000px
+
+footer 300px
+
+entire: 5000px
+*/
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +44,7 @@ body {
 
 .container {
   width: 100%;
-  height: 5200px;
+  height: 4900px;
 }
 
 .header {
