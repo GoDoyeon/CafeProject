@@ -2,6 +2,7 @@ let imgs = document.querySelectorAll('.detailed__container li');
 let clickCafe=document.querySelectorAll('.cafeDetailBtn');
 let main = document.querySelector('.main');
 let main_detail = document.querySelector('.main_detail_info');
+let prev = document.querySelector('.detailed__info .prev');
 
 let link__information = {
   CafeButtonValue1:'link Information1',
@@ -24,6 +25,11 @@ for(let i=0; i<clickCafe.length; i++){
     }
   });
 }
+
+prev.addEventListener('click', function(){
+    main.style.display = "block";
+    main_detail.style.display = "none";
+});
 
 
 // clickCafe[0].addEventListener('click',function(){
