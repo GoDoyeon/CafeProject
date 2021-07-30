@@ -1,4 +1,4 @@
-let drawing = {
+const drawing = {
   cafeCategory : 'Drawing Cafe',
   atrium:{
     name: '아트리움', 

@@ -1,4 +1,4 @@
-let healing = {
+const healing = {
   cafeCategory : 'Healing Cafe',
   atrium:{
     name: '아트리움', 

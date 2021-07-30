@@ -1,4 +1,4 @@
-let theme = {
+const theme = {
   cafeCategory : 'Theme Cafe',
   atrium:{
     name: '아트리움', 

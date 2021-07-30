@@ -1,4 +1,4 @@
-import rooftop from '../detail_js/rooftop_info';
+import rooftop from './rooftop_info.js';
 
 let imgs = document.querySelectorAll('.detailed__container li');
 let clickCafe=document.querySelectorAll('.cafeDetailBtn');
@@ -6,14 +6,19 @@ let main = document.querySelector('.main');
 let main_detail = document.querySelector('.main_detail_info');
 let prev = document.querySelector('.detailed__info .prev');
 
-
+/* 카페 info*/
+let cafeTheme_Info = document.querySelector('.detailed__container .cafe__Category');
+let cafeName_Info = document.querySelector('.detailed__container .cafe__Name');
+let cafeAddress_Info = document.querySelector('.detailed__container cafe_address');
+let cafeLink_Info = document.querySelector('.detailed__container .cafe_link a');
+let cafeStars_Info = document.querySelector('.detailed__container .stars');
 
 for(let i=0; i<clickCafe.length; i++){
   clickCafe[i].addEventListener('click', function(){
     main.style.display = "none";
     main_detail.style.display = "block";
     
-
+    // cafeTheme_Info.innerHTML = rooftop[cafeCategory];
     
     for(let j=0; j<imgs.length; j++){
       if(j===4){
