@@ -1,4 +1,7 @@
 import rooftop from './rooftop_info.js';
+import drawing from './drawing_info.js';
+import healing from './healing_info.js';
+import theme from './theme_info.js';
 
 let imgs = document.querySelectorAll('.detailed__container li');
 let clickCafe=document.querySelectorAll('.cafeDetailBtn');
@@ -36,7 +39,20 @@ for(let i=0; i<clickCafe.length; i++){
 
       cafeMainTheme_Info.innerHTML = cafeTheme;
       cafeMainName_Info.innerHTML = cafeName;
+    }else if(clickCafe[i].name==='drawing'){
+      let cafeTheme = drawing[`cafeCategory`];
+      let cafeName = drawing[`${clickCafe[i].value}`][`name`];
+
+      cafeTheme_Info.innerHTML = cafeTheme;
+      cafeName_Info.innerHTML = cafeName;
+      cafeAddress_Info.innerHTML = drawing[`${clickCafe[i].value}`][`address`];
+      cafeLink_Info.innerHTML = drawing[`${clickCafe[i].value}`][`link`];
+      cafeStars_Info.innerHTML = drawing[`${clickCafe[i].value}`][`star`];
+
+      cafeMainTheme_Info.innerHTML = cafeTheme;
+      cafeMainName_Info.innerHTML = cafeName;
     }
+
     
     // cafeStars_Info.innerHTML = rooftop[`${click}`]
     
@@ -44,15 +60,11 @@ for(let i=0; i<clickCafe.length; i++){
       if(j===4){
         continue;
       }
-      imgs[j].style.background = `url('../../img/detail_img/rooftop/${clickCafe[i].value}/${j}.png')`;
+
+      imgs[j].style.background = `url('../../img/detail_img/${clickCafe[i].name}/${clickCafe[i].value}/${j}.png')`;
     }
   });
 }
-
-prev.addEventListener('click', function(){
-    main.style.display = "block";
-    main_detail.style.display = "none";
-});
 
 
 // clickCafe[0].addEventListener('click',function(){
