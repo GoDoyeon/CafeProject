@@ -189,6 +189,7 @@ button {
         ul {
           display: flex;
           li {
+            margin-right: 3rem;
             position: relative;
             &:hover {
               transform: translateY(-1em);

@@ -175,6 +175,7 @@ button img {
 }
 
 .content__imgs .cafe__block .cafe__imgs ul li {
+  margin-right: 3rem;
   position: relative;
 }
 
