@@ -2,6 +2,7 @@ let imgs = document.querySelectorAll('.detailed__container li');
 let clickCafe=document.querySelectorAll('.cafeDetailBtn');
 let main = document.querySelector('.main');
 let main_detail = document.querySelector('.main_detail_info');
+
 let link__information = {
   CafeButtonValue1:'link Information1',
   CafeButtonValue2:'link Information2',
@@ -9,15 +10,31 @@ let link__information = {
 
 }
 
-clickCafe[0].addEventListener('click',function(){
-  main.style.display = "none";
-  main_detail.style.display = "block";
-  for(let i=0; i<9; i++){
-    if(i===4){
-      continue;
+for(let i=0; i<clickCafe.length; i++){
+  clickCafe[i].addEventListener('click', function(){
+    main.style.display = "none";
+    main_detail.style.display = "block";
+    console.log(i)
+    console.log(clickCafe[i].value);
+    for(let j=0; j<imgs.length; j++){
+      if(j===4){
+        continue;
+      }
+      imgs[j].style.background = `url('../../img/detail_img/rooftop/${clickCafe[i].value}/${j}.png')`;
     }
-    imgs[i].style.background = `url('../../img/detail_img/rooftop/${clickCafe[0].value}/${i}.png')`;
-  }
+  });
+}
+
+
+// clickCafe[0].addEventListener('click',function(){
+//   main.style.display = "none";
+//   main_detail.style.display = "block";
+//   for(let i=0; i<9; i++){
+//     if(i===4){
+//       continue;
+//     }
+//     imgs[i].style.background = `url('../../img/detail_img/rooftop/${clickCafe[0].value}/${i}.png')`;
+//   }
   
   // for(let i=0; i<9; i++){
   //   if(i===4){
@@ -28,7 +45,9 @@ clickCafe[0].addEventListener('click',function(){
   //   imgs[i].style.background = `url('../detail_img/rooftop/regentsky/0.png')`;
   //   // imgs[i].style.background = `url('../detail_img/rooftop/${clickCafe[0].value}/${i}.png')`;
   // }
-});
+// });
+
+
 
 /* 별점 넣으려면
 let link__information = {
