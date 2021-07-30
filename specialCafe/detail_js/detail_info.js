@@ -1,3 +1,5 @@
+import rooftop from '../detail_js/rooftop_info';
+
 let imgs = document.querySelectorAll('.detailed__container li');
 let clickCafe=document.querySelectorAll('.cafeDetailBtn');
 let main = document.querySelector('.main');
@@ -10,8 +12,9 @@ for(let i=0; i<clickCafe.length; i++){
   clickCafe[i].addEventListener('click', function(){
     main.style.display = "none";
     main_detail.style.display = "block";
-    console.log(i)
-    console.log(clickCafe[i].value);
+    
+
+    
     for(let j=0; j<imgs.length; j++){
       if(j===4){
         continue;
