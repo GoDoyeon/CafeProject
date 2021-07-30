@@ -1,22 +1,45 @@
+import rooftop from './rooftop_info.js';
+
 let imgs = document.querySelectorAll('.detailed__container li');
 let clickCafe=document.querySelectorAll('.cafeDetailBtn');
 let main = document.querySelector('.main');
 let main_detail = document.querySelector('.main_detail_info');
 let prev = document.querySelector('.detailed__info .prev');
 
-let link__information = {
-  CafeButtonValue1:'link Information1',
-  CafeButtonValue2:'link Information2',
-  CafeButtonValue3:'link Information3',
+/* 카페 hover시, info*/
+let cafeTheme_Info = document.querySelector('.detailed__container .main_tit');
+let cafeName_Info = document.querySelector('.detailed__container .cafe_tit');
+let cafeAddress_Info = document.querySelector('.detailed__container .cafe_address');
+let cafeLink_Info = document.querySelector('.detailed__container .cafe_link a');
+let cafeStars_Info = document.querySelector('.detailed__container .stars');
 
-}
+/* 카페 Main info */
+let cafeMainTheme_Info = document.querySelector('.detailed__container .cafe_theme');
+let cafeMainName_Info = document.querySelector('.detailed__container .cafe_name');
 
 for(let i=0; i<clickCafe.length; i++){
   clickCafe[i].addEventListener('click', function(){
     main.style.display = "none";
     main_detail.style.display = "block";
-    console.log(i)
-    console.log(clickCafe[i].value);
+
+
+    /*카페 정보*/
+    if (clickCafe[i].name==='rooftop'){
+      let cafeTheme = rooftop[`cafeCategory`];
+      let cafeName = rooftop[`${clickCafe[i].value}`][`name`];
+
+      cafeTheme_Info.innerHTML = cafeTheme;
+      cafeName_Info.innerHTML = cafeName;
+      cafeAddress_Info.innerHTML = rooftop[`${clickCafe[i].value}`][`address`];
+      cafeLink_Info.innerHTML = rooftop[`${clickCafe[i].value}`][`link`];
+      cafeStars_Info.innerHTML = rooftop[`${clickCafe[i].value}`][`star`];
+
+      cafeMainTheme_Info.innerHTML = cafeTheme;
+      cafeMainName_Info.innerHTML = cafeName;
+    }
+    
+    // cafeStars_Info.innerHTML = rooftop[`${click}`]
+    
     for(let j=0; j<imgs.length; j++){
       if(j===4){
         continue;

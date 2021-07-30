@@ -304,18 +304,20 @@ button {
         .img5{
           background: white;
           padding-top: 7rem;
-        }
-        .cafe_theme{
-          font-size: 5rem;
-          font-family: 'Dancing Script', cursive;
-          text-align: center;
-          line-height: 15rem;
-        }
 
-        .cafe_name{
-          font-size: 4rem;
-          text-align: center;
+          .cafe_theme{
+            font-size: 3rem;
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            line-height: 1rem;
+          }
+  
+          .cafe_name{
+            font-size: 4rem;
+            text-align: center;
+          }
         }
+        
         
 
         .caption{
@@ -341,11 +343,17 @@ button {
             text-align: center;
           }
 
+          .cafe_address{
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 6rem;
+          }
+
           .cafe_link{
             font-family: 'Dancing Script', cursive;
             font-size: 4.8rem;
             text-align: center;
-            line-height: 20rem;
+            padding-top: 3rem;
 
           }
 
