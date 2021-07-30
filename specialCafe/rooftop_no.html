@@ -45,9 +45,6 @@
           </button>
         </section>
       </header>
-
-      <!-- main section -->
-
         <main class="main">
           <section class="main__content main__home">
             <div class="home__inner">
@@ -56,13 +53,14 @@
             </div>
           </section>
           <section class="main__content best"></section>
+        </main>
         <!-- 스페셜 카페 content -->
         <section class="content">
           <!-- article 3-1. 메뉴 박스 부분 -->
           <article class="content__menu">
             <!-- 카페 메뉴 - 종류 선택 -->
             <ul class="cafeKinds">
-              <li><a href="../specialCafe/rooftop.html"><img src='../img/icon/rooftop.png'>루프탑 카페</a></li>
+              <li><a class='visited' href="rooftop.html"><img src='../img/icon/rooftop.png'>루프탑 카페</a></li>
               <li><a href="drawing.html"><img src='../img/icon/color-palette.png'>드로잉 카페</a></li>
               <li><a href="themed.html"><img src='../img/icon/hot-air-balloon.png'>테마 카페</a></li>
               <li><a href="healing.html"><img src='../img/icon/relax.png'>힐링 카페</a></li>
@@ -89,9 +87,9 @@
           <article class="content__imgs">
             <!-- 선택된 카페 카테고리 텍스트  -->
             <div class="select__cafe">
-              <span><a href="/specialCafe/index.html">Special Cafe</a></span>              
+              <span><a href="/specialCafe/index.html">Special Cafe</a></span>
               <i class="fas fa-chevron-right fa-1x"></i>
-              <span><a href="/specialCafe/index.html">ALL</a></span>              
+              <span><a href="rooftop.html">루프탑 카페</a></span>
             </div>
             <!-- 카페 이미지 모음 -->
             <div class="cafe__block">
@@ -99,19 +97,19 @@
                 <!-- 카페 이미지 1번째 줄 -->
                 <ul class="cafe__imgs1">
                   <li class="img__block">
-                    <button class="cafeDetailBtn" value='regentsky'>
+                    <button onclick="location.href='../detailed_info/detailed.html'" value='regentsky'>
                       <img src="../img/specialCafe/1/seoul/regentsky.png" alt="" />
                       <div class="img__text">리젠트스카이 카페</div>
                     </button>
                   </li>
                   <li class="img__block">
-                    <button class="cafeDetailBtn" value='lefran'>
+                    <button onclick="location.href='../detailed_info/detailed.html'" value='lefran'>
                     <img src="../img/specialCafe/1/seoul/lefran.png" alt="" />
                     <div class="img__text">르프랑 카페</div>
                     </button>
                   </li>
                   <li class="img__block">
-                    <button class="cafeDetailBtn" value='rooftop347'>
+                    <button onclick="location.href='../detailed_info/detailed.html'" value='rooftop347'>
                     <img
                       src="../img/specialCafe/1/gyeonggi/rooftop347.png"
                       alt=""
@@ -123,7 +121,7 @@
                 <!-- 카페 이미지 2번째 줄 -->
                 <ul class="cafe__imgs2">
                   <li class="img__block">
-                    <button value='rooftop357'>
+                    <button onclick="location.href='../detailed_info/detailed.html'" value='rooftop357'>
                     <img
                       src="../img/specialCafe/1/gyeonggi/rooftop357.png"
                       alt=""
@@ -179,40 +177,6 @@
           </article>
         </section>
       </main>
-      
-        <!-- detail information -->
-        <section class="main_detail_info">
-          <article class="main__content main__detail">
-            <h1 class="detailed__information">Detailed Information</h2>
-          </article>
-          <article class="main__content detailed__info">
-            <div class="detailed__wrap">
-              <ul class="detailed__container">
-                <div class="caption">
-                  <h1 class="main_tit">Cafe Theme</h1>
-                  <p class="cafe_tit">Cafe Name</p>
-                  <a class="cafe_link" href="www.naver.com"><p>www.naver.com</p></a>
-                  <p class="stars">평점: 4.5/5</p>
-                </div>
-                <li class="img1"></li>
-                <li class="img2"></li>
-                <li class="img3"></li>
-                <li class="img4"></li>
-                <li class="img5">
-                  <p class="cafe_theme">Cafe Theme</p>
-                  <p class="cafe_name">Cafe Name</p>
-                </li>
-                <li class="img6"></li>
-                <li class="img7"></li>
-                <li class="img8"></li>
-                <li class="img9"></li>
-              </ul>
-            </div>
-          </article>
-        </section>
-   
-
-      
       <footer class="footer">
         <section class="footer__inner inner">
           <div class="footer__copyright">
@@ -287,10 +251,6 @@
         </section>
       </footer>
     </div>
-
-    <!-- detail Information -->
-    
-    
+    <!-- <script src="./horoscope.js"></script> -->
   </body>
-  <script src="./detail_js/detail_info.js"></script>
 </html>

@@ -32,7 +32,7 @@
                 <a href="../index.html">Main</a>
               </li>
               <li>
-                <a href="/specialCafe/index.html">Special Cafe</a>
+                <a href="/specialCafe/rooftop.html">Special Cafe</a>
               </li>
               <li>
                 <a href="#none">About</a>
@@ -45,6 +45,7 @@
           </button>
         </section>
       </header>
+
         <main class="main">
           <section class="main__content main__home">
             <div class="home__inner">
@@ -52,19 +53,21 @@
               <div class="main__tit"></div>
             </div>
           </section>
-          <section class="main__content best"></section>
-        </main>
         <!-- 스페셜 카페 content -->
         <section class="content">
           <!-- article 3-1. 메뉴 박스 부분 -->
           <article class="content__menu">
             <!-- 카페 메뉴 - 종류 선택 -->
-            <ul class="cafeKinds">
-              <li><a href="rooftop.html"><img src='../img/icon/rooftop.png'>루프탑 카페</a></li>
-              <li><a class='visited' href="drawing.html"><img src='../img/icon/color-palette.png'>드로잉 카페</a></li>
-              <li><a href="themed.html"><img src='../img/icon/hot-air-balloon.png'>테마 카페</a></li>
-              <li><a href="healing.html"><img src='../img/icon/relax.png'>힐링 카페</a></li>
-            </ul>
+            <div class="wrap">
+              <ul class="cafeKinds">
+                <li class="rooftopCafe"><a href="rooftop.html"><img src='../img/icon/rooftop.png'>루프탑 카페</a></li>
+                <li class="drawingCafe"><a class="visited" href="drawing.html"><img src='../img/icon/color-palette.png'>드로잉 카페</a></li>
+                <li class="themeCafe"><a href="themed.html"><img src='../img/icon/hot-air-balloon.png'>테마 카페</a></li>
+                <li class="healingCefe"><a href="healing.html"><img src='../img/icon/relax.png'>힐링 카페</a></li>
+              </ul>
+              <div class="underline"></div>
+            </div>
+            
             <!-- <hr /> -->
             <!-- 카페 메뉴 - 위치 선택 -->
             <!-- <ul class="locations">
@@ -87,7 +90,7 @@
           <article class="content__imgs">
             <!-- 선택된 카페 카테고리 텍스트  -->
             <div class="select__cafe">
-              <span><a href="/specialCafe/index.html">Special Cafe</a></span>              
+              <span><a href="/specialCafe/rooftop.html">Special Cafe</a></span>              
               <i class="fas fa-chevron-right fa-1x"></i>
               <span><a href="drawing.html">드로잉 카페</a></span>
             </div>
@@ -97,19 +100,19 @@
                 <!-- 카페 이미지 1번째 줄 -->
                 <ul class="cafe__imgs1">
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='picturestudio'>
+                    <button class="cafeDetailBtn" value='picturestudio'>
                       <img src="../img/specialCafe/2/seoul/picturestudio.png" alt="" />
                       <div class="img__text">그림제작소</div>
                     </button>
                   </li>
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='pitchgray'>
+                    <button class="cafeDetailBtn" value='pitchgray'>
                     <img src="../img/specialCafe/2/seoul/pitchgray.png" alt="" />
                     <div class="img__text">피치그레이</div>
                     </button>
                   </li>
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='artcapink'>
+                    <button class="cafeDetailBtn" value='artcapink'>
                     <img
                       src="../img/specialCafe/2/gyeonggi/artcapink.png"
                       alt=""
@@ -121,7 +124,7 @@
                 <!-- 카페 이미지 2번째 줄 -->
                 <ul class="cafe__imgs2">
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='painting'>
+                    <button class="cafeDetailBtn" value='painting'>
                     <img
                       src="../img/specialCafe/2/gyeonggi/painting.png"
                       alt=""
@@ -130,7 +133,7 @@
                     </button>
                   </li>
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='asacolor'>
+                    <button class="cafeDetailBtn" value='asacolor'>
                     <img
                       src="../img/specialCafe/2/incheon/asacolor.png"
                       alt=""
@@ -139,7 +142,7 @@
                     </button>
                   </li>
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='nrfp'>
+                    <button class="cafeDetailBtn" value='nrfp'>
                     <img src="../img/specialCafe/2/incheon/nrfp.png" alt="" />
                     <div class="img__text">NRFP</div>
                     </button>
@@ -148,7 +151,7 @@
                 <!-- 카페 이미지 3번째 줄 -->
                 <ul class="cafe__imgs3">
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='artcafeink'>
+                    <button class="cafeDetailBtn" value='artcafeink'>
                     <img
                       src="../img/specialCafe/2/busan/artcafeink.png"
                       alt=""
@@ -157,7 +160,7 @@
                     </button>
                   </li>
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='pastelmuseum'>
+                    <button class="cafeDetailBtn" value='pastelmuseum'>
                     <img
                       src="../img/specialCafe/2/busan/pastelmuseum.png"
                       alt=""
@@ -166,7 +169,7 @@
                     </button>
                   </li>
                   <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='egon'>
+                    <button class="cafeDetailBtn" value='egon'>
                     <img src="../img/specialCafe/2/jeju/egon.png" alt="" />
                     <div class="img__text">성산카페 에곤</div>
                     </button>
@@ -251,6 +254,7 @@
         </section>
       </footer>
     </div>
-    <script src="./horoscope.js"></script>
+    <script src="./special.js/hoverMenu.js"></script>
+    <!-- <script src="./horoscope.js"></script> -->
   </body>
 </html>

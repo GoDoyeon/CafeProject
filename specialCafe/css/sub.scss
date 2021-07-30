@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-@import "../variables/variables";
-@import "../mixin/mixin";
+@import "../../variables/_variables.scss";
+@import "../../mixin/_mixin.scss";
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
@@ -19,9 +19,8 @@ body {
   font-size: 10px;
 }
 
-.container {
-  position: relative;
-  overflow: hidden;
+li{
+  list-style: none;
 }
 
 a {
@@ -30,9 +29,7 @@ a {
 
 // 웹접근성 텍스트
 .screen_out {
-  text-indent: -9999px;
-  overflow: hidden;
-  position: absolute;
+  display: none
 }
 
 // Header
@@ -40,6 +37,10 @@ a {
 .header {
   @include header;
   background-color: $maincolor;
+}
+
+.footer {
+  @include footer;
 }
 
 // Main
@@ -64,6 +65,4 @@ a {
 // }
 
 // Footer
-.footer {
-  @include footer;
-}
+
