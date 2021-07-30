@@ -11,9 +11,9 @@ let scenery__bg__small2 = document.querySelector('.scenery__bg__down .scenery__b
 let scenery__bg__smallUp = document.querySelector('.scenery__bg__up .scenery__bg__small');
 let scenery__bg__smallUp2 = document.querySelector('.scenery__bg__up .scenery__bg__small2');
 let docElement = document.documentElement;
-let scenery__leftBigSlide__width = scenery.clientWidth;
-let scenery_rightBigSlide__width = scenery__right.clientWidth;
-let scenery__bg__upSlide__width = scenery__small.clientWidth;
+// let scenery__leftBigSlide__width = scenery.clientWidth;
+// let scenery_rightBigSlide__width = scenery__right.clientWidth;
+// let scenery__bg__upSlide__width = scenery__small.clientWidth;
 let topNum=1700;
 let direction = '';
 // console.log(screen.width);
