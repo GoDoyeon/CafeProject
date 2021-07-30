@@ -235,6 +235,24 @@ button img {
   background: #f4f4f4;
 }
 
+.main_detail_info .detailed__info .prev {
+  width: 10rem;
+  position: absolute;
+  height: 4rem;
+  font-size: 3rem;
+  background: #eedeff;
+  border-radius: 30px;
+  left: 50%;
+  top: 5rem;
+  margin-left: 60rem;
+  box-shadow: 1rem 1rem 0.6rem 0.3rem gray;
+}
+
+.main_detail_info .detailed__info .prev:hover {
+  background: #8d91eb;
+  color: white;
+}
+
 .main_detail_info .detailed__info .detailed__wrap {
   width: 123rem;
   height: 120rem;

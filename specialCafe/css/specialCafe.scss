@@ -159,6 +159,7 @@ button {
     padding-bottom: 11rem;
     // margin-bottom: 5rem; //푸터와 너무 떨어져 있어서 0으로 바꿈.
     margin-bottom: 0rem;
+
     // 선택된 카페 카테고리 텍스트
     .select__cafe {
       width: 120rem;
@@ -258,6 +259,26 @@ button {
     height: 1400px;
     position: relative;
     background: #f4f4f4;
+
+    .prev{
+      width: 10rem;
+      position: absolute;
+      height: 4rem;
+      font-size: 3rem;
+      background: $maincolor;
+      border-radius: 30px;
+      left: 50%;
+      top: 5rem;
+      margin-left: 60rem;
+      box-shadow: 1rem 1rem 0.6rem 0.3rem gray;
+
+      &:hover{
+        background: $hovercolor_special;
+        color: white;
+        
+      }
+    }
+
     .detailed__wrap{
       width: 123rem;
       height: 120rem;
