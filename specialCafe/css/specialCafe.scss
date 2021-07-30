@@ -95,30 +95,35 @@ button {
             // }
             &:hover {
               font-weight: bold;
-              padding-bottom: 2.4rem;
               color: $hovercolor_special;
+
             }
           }
+
         }
-        .rooftopCafe{
-          a{
-            color: $hovercolor_special;
-          }
+
+        
+
+        // .rooftopCafe{
+        //   a{
+        //     color: $hovercolor_special;
+        //   }
           
-        }
+        // }
         
       }
 
       /* 밑에 줄*/
+      
       .underline{
         width: 22rem;
         height: 5rem;
         position: absolute;
         background: $hovercolor_special;
         top: 16rem;
+        left: 0;
         transition: .2s;
       }
-    
 
     
       }

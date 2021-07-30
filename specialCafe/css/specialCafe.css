@@ -101,11 +101,6 @@ button img {
 
 .content__menu .wrap ul li a:hover {
   font-weight: bold;
-  padding-bottom: 2.4rem;
-  color: #8d91eb;
-}
-
-.content__menu .wrap ul .rooftopCafe a {
   color: #8d91eb;
 }
 
@@ -115,6 +110,7 @@ button img {
   position: absolute;
   background: #8d91eb;
   top: 16rem;
+  left: 0;
   transition: .2s;
 }
 
