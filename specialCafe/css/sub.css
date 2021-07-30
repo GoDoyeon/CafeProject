@@ -15,7 +15,6 @@ body {
 }
 
 .container {
-  position: relative;
   overflow: hidden;
 }
 
@@ -24,9 +23,7 @@ a {
 }
 
 .screen_out {
-  text-indent: -9999px;
-  overflow: hidden;
-  position: absolute;
+  display: none;
 }
 
 .header {
