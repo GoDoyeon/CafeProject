@@ -65,24 +65,22 @@ button {
     color: #333;
     // 카페 메뉴 - 공통 ul, li 부분 style
     .wrap{
-      width: 92rem;
+      width: 105rem;
       height: 17rem;
       position: relative;
       overflow: hidden;
       border-bottom: 1px solid #cdcdcd;
       ul {
-        width: 92rem;
+        width: 95rem;
         height: 19rem;
         padding: 10rem 0 3rem 0;
         font-size: 3rem;
         margin-bottom: 0rem;
         display: block;
         li {
-          width: 19rem;
+          width: 22rem;
           position: relative;
           display: inline-block;
-          line-height: 3rem;
-          margin: 0 3rem 0 0;
           height: 40px;
   
           a {
@@ -102,13 +100,23 @@ button {
             }
           }
         }
+        .rooftopCafe{
+          a{
+            color: $hovercolor_special;
+          }
+          
+        }
+        
       }
+
+      /* 밑에 줄*/
       .underline{
-        width: 19rem;
+        width: 22rem;
         height: 5rem;
         position: absolute;
         background: $hovercolor_special;
         top: 16rem;
+        transition: .2s;
       }
     
 
@@ -208,9 +216,7 @@ button {
               padding: 1.5rem 0;
             }
           }
-          li:nth-child(2) {
-            margin: 0 3rem 0 3rem;
-          }
+
         }
         // 카페 이미지 1번째 줄
         // &1 {
