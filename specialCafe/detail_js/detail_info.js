@@ -4,12 +4,7 @@ let main = document.querySelector('.main');
 let main_detail = document.querySelector('.main_detail_info');
 let prev = document.querySelector('.detailed__info .prev');
 
-let link__information = {
-  CafeButtonValue1:'link Information1',
-  CafeButtonValue2:'link Information2',
-  CafeButtonValue3:'link Information3',
 
-}
 
 for(let i=0; i<clickCafe.length; i++){
   clickCafe[i].addEventListener('click', function(){
