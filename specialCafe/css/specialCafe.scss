@@ -306,16 +306,16 @@ button {
           padding-top: 7rem;
 
           .cafe_theme{
-            font-size: 3rem;
+            font-size: 4rem;
             font-family: 'Dancing Script', cursive;
             text-align: center;
-            line-height: 15rem;
+            line-height: 13rem;
           }
   
           .cafe_name{
             font-size: 4rem;
             text-align: center;
-            line-height: 2rem;
+            line-height: 6rem;
           }
         }
         
@@ -325,7 +325,7 @@ button {
           width: 120rem;
           height: 120rem;
           position: absolute;
-          background: rgba(190, 189, 189, 0.7);
+          background: rgba(190, 189, 189, 0.836);
           top: 120rem;
           transition: 0.5s ease-in;
           opacity: 0;
