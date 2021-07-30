@@ -56,7 +56,7 @@ for(let i=0; i<clickCafe.length; i++){
     }else if(clickCafe[i].name==='healing'){
       let cafeTheme = healing[`cafeCategory`];
       let cafeName = healing[`${clickCafe[i].value}`][`name`];
-
+      console.log(imgs);
       cafeTheme_Info.innerHTML = cafeTheme;
       cafeName_Info.innerHTML = cafeName;
       cafeAddress_Info.innerHTML = healing[`${clickCafe[i].value}`][`address`];
@@ -86,7 +86,6 @@ for(let i=0; i<clickCafe.length; i++){
       if(j===4){
         continue;
       }
-
       imgs[j].style.background = `url('../../img/detail_img/${clickCafe[i].name}/${clickCafe[i].value}/${j}.png')`;
     }
   });
@@ -96,5 +95,5 @@ for(let i=0; i<clickCafe.length; i++){
 
 prev.addEventListener('click', function(){
     main.style.display = "block";
-    main_detail.style.display = "noen";
+    main_detail.style.display = "none";
 });

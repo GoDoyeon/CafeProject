@@ -281,16 +281,17 @@ button img {
   padding-top: 7rem;
 }
 
-.main_detail_info .detailed__info .detailed__wrap .detailed__container .cafe_theme {
-  font-size: 5rem;
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_theme {
+  font-size: 3rem;
   font-family: 'Dancing Script', cursive;
   text-align: center;
   line-height: 15rem;
 }
 
-.main_detail_info .detailed__info .detailed__wrap .detailed__container .cafe_name {
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_name {
   font-size: 4rem;
   text-align: center;
+  line-height: 2rem;
 }
 
 .main_detail_info .detailed__info .detailed__wrap .detailed__container .caption {

@@ -4,7 +4,7 @@ const drawing = {
     name: '그림제작소', 
     address: '도로명 : 서울 송파구 석촌호수로 290 3층 그림제작소', 
     link: 'https://blog.naver.com/sht01140/222403146262',
-    star: '평점: 4.75/5',
+    star: '평점: 4.75/5.00',
   },
 
   pitchgray:{
@@ -25,7 +25,7 @@ const drawing = {
     name: '수채화를 그리다',
     address: '도로명 : 경기 남양주시 두물로27번길 21 1층',
     link: 'https://blog.naver.com/yujin4718/221963253622',
-    star: '평점: 4.81/5',
+    star: '평점: 4.81/5.00',
   },
 
   asacolor:{
