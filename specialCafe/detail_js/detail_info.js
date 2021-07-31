@@ -86,7 +86,7 @@ for(let i=0; i<clickCafe.length; i++){
       if(j===4){
         continue;
       }
-      imgs[j].style.background = `url('../../img/detail_img/${clickCafe[i].name}/${clickCafe[i].value}/${j}.png')`;
+      imgs[j].style.background = `url('../img/detail_img/${clickCafe[i].name}/${clickCafe[i].value}/${j}.png')`;
     }
   });
 }
