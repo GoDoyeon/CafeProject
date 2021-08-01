@@ -32,11 +32,13 @@ for(let i=0; i<clickCafe.length; i++){
     if (clickCafe[i].name==='rooftop'){
       let cafeTheme = rooftop[`cafeCategory`];
       let cafeName = rooftop[`${clickCafe[i].value}`][`name`];
+      let aTagHref = rooftop[`${clickCafe[i].value}`][`link`];
 
       cafeTheme_Info.innerHTML = cafeTheme;
       cafeName_Info.innerHTML = cafeName;
       cafeAddress_Info.innerHTML = rooftop[`${clickCafe[i].value}`][`address`];
       cafeLink_Info.innerHTML = rooftop[`${clickCafe[i].value}`][`link`];
+      cafeLink_Info.setAttribute('href', aTagHref);
       cafeStars_Info.innerHTML = rooftop[`${clickCafe[i].value}`][`star`];
 
       cafeMainTheme_Info.innerHTML = cafeTheme;
@@ -44,11 +46,13 @@ for(let i=0; i<clickCafe.length; i++){
     }else if(clickCafe[i].name==='drawing'){
       let cafeTheme = drawing[`cafeCategory`];
       let cafeName = drawing[`${clickCafe[i].value}`][`name`];
+      let aTagHref = drawing[`${clickCafe[i].value}`][`link`];
 
       cafeTheme_Info.innerHTML = cafeTheme;
       cafeName_Info.innerHTML = cafeName;
       cafeAddress_Info.innerHTML = drawing[`${clickCafe[i].value}`][`address`];
       cafeLink_Info.innerHTML = drawing[`${clickCafe[i].value}`][`link`];
+      cafeLink_Info.setAttribute('href', aTagHref);
       cafeStars_Info.innerHTML = drawing[`${clickCafe[i].value}`][`star`];
 
       cafeMainTheme_Info.innerHTML = cafeTheme;
@@ -56,11 +60,13 @@ for(let i=0; i<clickCafe.length; i++){
     }else if(clickCafe[i].name==='healing'){
       let cafeTheme = healing[`cafeCategory`];
       let cafeName = healing[`${clickCafe[i].value}`][`name`];
-      console.log(imgs);
+      let aTagHref = healing[`${clickCafe[i].value}`][`link`];
+
       cafeTheme_Info.innerHTML = cafeTheme;
       cafeName_Info.innerHTML = cafeName;
       cafeAddress_Info.innerHTML = healing[`${clickCafe[i].value}`][`address`];
       cafeLink_Info.innerHTML = healing[`${clickCafe[i].value}`][`link`];
+      cafeLink_Info.setAttribute('href', aTagHref);
       cafeStars_Info.innerHTML = healing[`${clickCafe[i].value}`][`star`];
 
       cafeMainTheme_Info.innerHTML = cafeTheme;
@@ -68,11 +74,13 @@ for(let i=0; i<clickCafe.length; i++){
     }else if(clickCafe[i].name==='theme'){
       let cafeTheme = theme[`cafeCategory`];
       let cafeName = theme[`${clickCafe[i].value}`][`name`];
+      let aTagHref = theme[`${clickCafe[i].value}`][`link`];
 
       cafeTheme_Info.innerHTML = cafeTheme;
       cafeName_Info.innerHTML = cafeName;
       cafeAddress_Info.innerHTML = theme[`${clickCafe[i].value}`][`address`];
       cafeLink_Info.innerHTML = theme[`${clickCafe[i].value}`][`link`];
+      cafeLink_Info.setAttribute('href', aTagHref);
       cafeStars_Info.innerHTML = theme[`${clickCafe[i].value}`][`star`];
 
       cafeMainTheme_Info.innerHTML = cafeTheme;
