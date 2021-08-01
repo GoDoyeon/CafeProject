@@ -20,31 +20,26 @@
     <div class="container">
       <!-- Hearder -->
       <header class="header">
-        <section class="header__inner inner">
-          <h1 class="logo">
-            <!-- <a href="index.html" class="screen_out">로고</a> -->
-            <img class="logo" src="../img/01/logo.png" alt="" />
-          </h1>
-          <div class="gnb">
-            <h2 class="screen_out">네비게이션</h2>
-            <ul class="gnb__menu">
-              <li>
-                <a href="../index.html">Main</a>
-              </li>
-              <li>
-                <a href="../specialCafe/rooftop.html">Special Cafe</a>
-              </li>
-              <li>
-                <a href="../about/about.html">About</a>
-              </li>
-            </ul>
-          </div>
-          <button class="mode__btn">
+        <div class="header__logo">
+          <!-- <h2 class="screen__out"><a href="#none">로고</a></h2> -->
+          <a href="./index.html"><img src="./img/01/logo.png" alt="logo"></a>
+        </div>
+        <ul class="header__menu">
+          <h2 class="screen_out"><a href="#none">네비게이션</a></h2>
+          <li><a href="./index.html">Main</a></li>
+          <li><a href="./specialCafe/rooftop.html">SpeciaCafe</a></li>
+          <li><a href="./about/about.html">About</a></li>
+        </ul>
+        <button tyle="button" class="header__btn">
+          <h2 class="screen__out"><a href="#none">모드</a></h2>
             <i class="fas fa-moon"></i>
-            <span class="mode__btn-right">다크모드</span>
-          </button>
-        </section>
+            <span class="header__btn--right">다크모드</span>
+        </button>
+        <a href="#none" class="header__toogleBtn">
+          <i class="fas fa-bars"></i>
+        </a>
       </header>
+      
         <main class="main">
           <section class="main__content main__home">
             <div class="home__inner">
