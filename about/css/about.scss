@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-@import "../variables/variables";
-@import "../mixin/mixin";
+@import "../../variables/variables";
+@import "../../mixin/mixin";
 
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
@@ -45,7 +45,7 @@ body {
 .project {
   position: relative;
   width: 100%;
-  margin-top: 200px;
+  padding-top: 200px;
   &__inner {
     width: 1200px;
     margin: 0 auto;
