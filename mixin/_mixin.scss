@@ -19,6 +19,7 @@
   overflow: hidden;
 }
 
+
 /*header*/
 @mixin header{
   position: fixed;
@@ -99,6 +100,7 @@
   height: 300px;
   bottom: 0;
   padding: 70px 60px;
+  border-top: 2px solid #ccc;
   &__inner {
     position: relative;
     margin: 0 auto;
@@ -137,3 +139,4 @@
     }
   }
 }
+

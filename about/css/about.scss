@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+@import "../variables/variables";
+@import "../mixin/mixin";
+
+// font-family: 'Noto Sans KR', sans-serif;
+// font-family: 'Dancing Script', cursive;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 10px;
+}
+
+.screen_out {
+  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+}
+
+// header
+.header {
+  @include header;
+}
+
+.project {
+  position: relative;
+  width: 100%;
+  margin-top: 200px;
+  &__inner {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &-main {
+    width: 100%;
+    text-align: center;
+    &__txt {
+      font-size: 2rem;
+      margin: 40px 0;
+      line-height: 3.5rem;
+    }
+  }
+  &-content {
+    background-color: $maincolor;
+    height: 100%;
+    width: 100%;
+    &__txt {
+      padding-top: 70px;
+      &--name {
+        font-size: 3rem;
+      }
+    }
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      &--txt {
+        font-size: 1.25rem;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 3.5rem;
+      }
+    }
+    .box__txt {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 1.875rem;
+      margin: 8px 0 70px;
+      i {
+        color: #5D4B72;
+      }
+      span {
+        margin: 0 1rem;
+      }
+      &--color {
+        font-weight: bold;
+        color: #5D4B72;
+      }
+    }
+    &-page {
+      width: 100%;
+    }
+  }
+
+  &-page {
+    width: 100%;
+    height: 100%;
+    &__txt {
+      width: 100%;
+      font-size: 3rem;
+      margin-top: 70px;
+    }
+    &__subtxt {
+      width: 100%;
+      font-size: 2rem;
+      margin: 2rem 0;
+      line-height: 3.5rem;
+    }
+    &__img {
+      width: 1200px;
+      height: 600px;
+      background-color: #c4c4c4;
+    }
+  }
+
+  &-team {
+    width: 100%;
+    height: 100%;
+    &__txt {
+      width: 100%;
+      margin-top: 70px;
+      font-family: 'Noto Sans KR', sans-serif;
+      &--name {
+        font-size: 3rem;
+      }
+      &--subname {
+        font-size: 2rem;
+        margin: 5rem 0;
+      }
+    }
+    &__subtxt {
+      margin: 5rem 0;
+    }
+    &__profile {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 280px;
+      box-shadow: 0px 3px 10px $maincolor;
+      &--img {
+        width: 130px;
+        height: 130px;
+        margin: 103px;
+      }
+      &--content {
+        font-family: 'Noto Sans KR', sans-serif;
+        width: 600px;
+      }
+    }
+    &__profile:last-child {
+      margin: 3rem 0;
+    }
+    &__address--color {
+      color: #5D4B72;
+    }
+  }
+  &-name {
+    margin: 0.6rem 0;
+    font-size: 1.4rem;
+  }
+}
+.name {
+  font-size: 20px;
+  &__part {
+    font-size: 1.6rem;
+    background-color: $maincolor;
+    color: #333;
+    padding: 0.4rem 1rem;
+    margin: 0 0.8rem;
+    border-radius: 20px;
+  }
+}
+
+
+
+
+
+
+
+// footer
+.footer {
+  @include footer;
+}
