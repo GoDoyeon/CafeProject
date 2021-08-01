@@ -253,13 +253,11 @@ body {
 
 .main__home .main__tit {
   margin: 10rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border: 1px solid red;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   color: #333;
+  line-height: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -267,21 +265,16 @@ body {
   font-size: 8rem;
 }
 
-.main__home .main__tit p {
-  font-family: 'Noto Sans KR', sans-serif;
+.main__home .main__tit .sub_text {
   font-size: 3rem;
-  font-weight: 600;
 }
 
-.main__home .main__tit p .grey__color {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #686868;
+.main__home .main__tit .main_text {
+  font-size: 6rem;
 }
 
-.main__home .main__tit p .main {
-  font-size: 5rem;
-  color: #333;
+.main__home .main__tit .main_text .main {
+  color: #8d91eb;
   font-weight: bold;
 }
 
@@ -808,7 +801,7 @@ body {
 
 .main__newCafe .newCafe__tit button {
   background-color: #8d91eb;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 5rem;
   border-radius: 50px;
   font-size: 2rem;
   border: none;

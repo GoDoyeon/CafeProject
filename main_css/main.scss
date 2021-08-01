@@ -83,25 +83,22 @@ body {
   }
   .main__tit {
     margin: 10rem 0;
-    display: flex;
     border: 1px solid red;
     // width: 70%;
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     color: $textcolor;
-    p {
-      font-family: 'Noto Sans KR', sans-serif;
-      //float: left;
+    line-height: 30px;
+
+    .sub_text {
       font-size: 3rem;
-      font-weight: 600;
-      .grey__color {
-        font-size: 2rem;
-        font-weight: 600;
-        color: $greycolor;
-      }
+    }
+    .main_text {
+      font-size: 6rem;
+
       .main {
-        font-size: 5rem;
-        color: $textcolor;
+        color: $hovercolor_special;
+
         font-weight: bold;
       }
     }
@@ -569,7 +566,7 @@ body {
     }
     button {
       background-color: $hovercolor_special;
-      padding: 1.5rem 3rem;
+      padding: 1.5rem 5rem;
       border-radius: 50px;
       font-size: 2rem;
       border: none;
