@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-@import "../mixin/mixin";
-@import "../variables/variables";
+@import '../mixin/mixin';
+@import '../variables/variables';
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Poppins:wght@300;400;500&display=swap');
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Poppins', sans-serif; */
 
 @mixin scenery__bg__Slide {
   width: 50%;
@@ -64,15 +67,49 @@ body {
 
 /* section2 */
 .main__home {
+  padding-top: 10rem;
   width: 100%;
-  background-color: $maincolor;
+  background-color: $subcolor2;
   height: 60rem;
+  display: flex;
+  .main__img {
+    margin: 10rem;
+    margin: auto 10rem;
+    //border: 1px solid green;
+    width: 30%;
+    img {
+      width: 20rem;
+    }
+  }
   .main__tit {
+    margin: 10rem 0;
+    display: flex;
+    border: 1px solid red;
+    // width: 70%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: $textcolor;
+    p {
+      font-family: 'Noto Sans KR', sans-serif;
+      //float: left;
+      font-size: 3rem;
+      font-weight: 600;
+      .grey__color {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $greycolor;
+      }
+      .main {
+        font-size: 5rem;
+        color: $textcolor;
+        font-weight: bold;
+      }
+    }
+
+    justify-content: center;
     text-align: center;
-    padding: 30rem 0;
+    //padding: 30rem 0;
     font-size: 8rem;
-    // font-family: 'Noto Sans KR', sans-serif;
-    font-family: 'Dancing Script', cursive; //임시로 해놓음
   }
 }
 
@@ -84,22 +121,32 @@ body {
   /* article 3-1. 텍스트 부분 */
   .horoscope__tit {
     color: $textcolordy;
-    font-family: 'Noto Sans KR', sans-serif;
-
+    font-family: 'Nanum Gothic', sans-serif;
+    //font-family: 'Poppins', sans-serif;
+    //font-family: 'Noto Sans KR', sans-serif;
     display: block;
     margin: 0 auto;
     height: 44rem; // 210+80+150 = 440px
     width: 192rem;
-    strong {
+    .tit {
       display: block;
       padding: 21rem 0 0 18rem;
+      font-weight: 400;
       font-size: 6rem;
+      .main__font {
+        font-weight: bold;
+        color: $hovercolor_special;
+      }
     }
     p {
       display: block;
       padding: 1.4rem 0 0 18rem;
       margin-top: 1rem;
-      font-size: 4rem;
+      font-size: 3rem;
+      .main__font {
+        font-weight: bold;
+        color: $hovercolor_special;
+      }
     }
   }
   /* article 3-2. 슬라이드 + 버튼 */
@@ -503,17 +550,41 @@ body {
   /* article 6-1. 텍스트 부분 */
   .newCafe__tit {
     // border: 1px solid black;
-    font-family: 'Noto Sans KR', sans-serif;
+    //font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+
     color: $textcolordy;
     padding: 15rem 0 8rem 0;
     text-align: center;
-    strong {
-      font-size: 6rem;
+    .tit {
+      display: block;
+      //padding: 21rem 0 0 18rem;
+      font-weight: 400;
+      font-size: 5rem;
+      margin-bottom: 5rem;
+      .main__font {
+        font-weight: bold;
+        color: $hovercolor_special;
+      }
     }
-    p {
-      margin-top: 1rem;
-      font-size: 4em;
+    button {
+      background-color: $hovercolor_special;
+      padding: 1.5rem 3rem;
+      border-radius: 50px;
+      font-size: 2rem;
+      border: none;
+      color: #fff;
     }
+    // p {
+    //   display: block;
+    //   // padding: 1.4rem 0 0 18rem;
+    //   margin-top: 1rem;
+    //   font-size: 3rem;
+    //   .main__font {
+    //     font-weight: bold;
+    //     color: $hovercolor_special;
+    //   }
+    // }
   }
   /* article 6-2. 슬라이드 + 버튼 */
   .newCafe__block {

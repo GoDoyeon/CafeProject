@@ -1,21 +1,34 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
 /*main scss*/
 /*header*/
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Poppins:wght@300;400;500&display=swap");
 @media screen and (max-width: 1024px) {
   .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 10px;
   }
   .header__logo {
     margin: 0;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header__menu {
     display: none;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   .header__menu li {
@@ -27,6 +40,8 @@
     border-bottom: none;
   }
   .header__menu .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .header__btn {
@@ -50,9 +65,16 @@
 /*footer*/
 @media screen and (max-width: 1024px) {
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .footer__right {
     margin-left: 6rem;
@@ -64,19 +86,26 @@
 
 @media screen and (max-width: 768px) {
   .footer__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__menu {
     margin-top: 60px;
   }
 }
 
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Poppins', sans-serif; */
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -109,21 +138,35 @@ body {
   position: fixed;
   width: 100%;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 999;
 }
 
 .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   margin-left: 6rem;
 }
 
 .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-size: 3rem;
   list-style: none;
   font-family: 'Dancing Script', cursive;
@@ -143,17 +186,26 @@ body {
 }
 
 .header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 0;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 3rem;
   height: 50px;
   border-radius: 30px;
   border: 0;
   outline: 0;
   margin: 0 6rem;
-  box-shadow: 4px 6px 10px #000000a8;
+  -webkit-box-shadow: 4px 6px 10px #000000a8;
+          box-shadow: 4px 6px 10px #000000a8;
 }
 
 .header__btn i {
@@ -180,16 +232,57 @@ body {
 
 /* section2 */
 .main__home {
+  padding-top: 10rem;
   width: 100%;
-  background-color: #eedeff;
+  background-color: #fff7fe;
   height: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__home .main__img {
+  margin: 10rem;
+  margin: auto 10rem;
+  width: 30%;
+}
+
+.main__home .main__img img {
+  width: 20rem;
 }
 
 .main__home .main__tit {
+  margin: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  padding: 30rem 0;
   font-size: 8rem;
-  font-family: 'Dancing Script', cursive;
+}
+
+.main__home .main__tit p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.main__home .main__tit p .grey__color {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #686868;
+}
+
+.main__home .main__tit p .main {
+  font-size: 5rem;
+  color: #333;
+  font-weight: bold;
 }
 
 /* section 3. Horoscope [별점 높은 순] */
@@ -203,24 +296,35 @@ body {
 
 .main__horoscope .horoscope__tit {
   color: #343a40;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   display: block;
   margin: 0 auto;
   height: 44rem;
   width: 192rem;
 }
 
-.main__horoscope .horoscope__tit strong {
+.main__horoscope .horoscope__tit .tit {
   display: block;
   padding: 21rem 0 0 18rem;
+  font-weight: 400;
   font-size: 6rem;
+}
+
+.main__horoscope .horoscope__tit .tit .main__font {
+  font-weight: bold;
+  color: #8d91eb;
 }
 
 .main__horoscope .horoscope__tit p {
   display: block;
   padding: 1.4rem 0 0 18rem;
   margin-top: 1rem;
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+.main__horoscope .horoscope__tit p .main__font {
+  font-weight: bold;
+  color: #8d91eb;
 }
 
 .main__horoscope .horoscope__block {
@@ -240,7 +344,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -253,11 +357,7 @@ body {
   position: relative;
 }
 
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horoscope
-  .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__tit {
   color: #fff;
   top: 4rem;
   opacity: 0;
@@ -269,21 +369,11 @@ body {
   transition: all 0.3s ease;
 }
 
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horoscope
-  .horoscope__tit
-  h1 {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__tit h1 {
   font-size: 5rem;
 }
 
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horoscope
-  .horoscope__tit
-  p {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__tit p {
   margin-top: 2rem;
   font-size: 3rem;
 }
@@ -297,11 +387,7 @@ body {
   overflow: hidden;
 }
 
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horoscope:hover
-  .horoscope__img {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__img {
   background-color: #333;
 }
 
@@ -311,11 +397,7 @@ body {
   opacity: 0.15;
 }
 
-.main__horoscope
-  .horoscope__block
-  .horoscope__wrapper
-  .horoscope:hover
-  .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__tit {
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -373,27 +455,19 @@ body {
   transition: 0.5s ease-out;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__left
-  .scenery__bg__bigBox
-  .scenery__bg__bigSlide1 {
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__bigBox .scenery__bg__bigSlide1 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url('../img/05/left/L_content_1_1.png') center no-repeat;
+  background: url("../img/05/left/L_content_1_1.png") center no-repeat;
   background-size: cover;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__left
-  .scenery__bg__bigBox
-  .scenery__bg__bigSlide2 {
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__bigBox .scenery__bg__bigSlide2 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url('../img/05/left/L_content_2_1.png') left top no-repeat;
+  background: url("../img/05/left/L_content_2_1.png") left top no-repeat;
   background-size: cover;
 }
 
@@ -406,23 +480,14 @@ body {
   position: absolute;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__left
-  .scenery__bg__smallBox
-  .scenery__bg__up__container {
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
   width: 34rem;
   height: 34rem;
   position: relative;
   overflow: hidden;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__left
-  .scenery__bg__smallBox
-  .scenery__bg__up__container
-  .scenery__bg__up {
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
   width: 68rem;
   height: 34rem;
   position: absolute;
@@ -430,70 +495,44 @@ body {
   transition: 0.5s ease-out;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__left
-  .scenery__bg__smallBox
-  .scenery__bg__up__container
-  .scenery__bg__up
-  .scenery__bg__smallSlide1 {
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url('../img/05/left/L_scenery1_1_bg.png') center no-repeat;
+  background: url("../img/05/left/L_scenery1_1_bg.png") center no-repeat;
   background-size: cover;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__left
-  .scenery__bg__smallBox
-  .scenery__bg__up__container
-  .scenery__bg__up
-  .scenery__bg__smallSlide2 {
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url('../img/05/left/L_scenery_2_1_bg.png') center no-repeat;
+  background: url("../img/05/left/L_scenery_2_1_bg.png") center no-repeat;
   background-size: cover;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__left
-  .scenery__bg__smallBox
-  .scenery__bg__down {
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
   width: 34rem;
   height: 34rem;
   background: white;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__left
-  .scenery__bg__smallBox
-  .scenery__bg__down
-  .scenery__bg__small {
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url('../img/05/left/L_text_2_1.png') center no-repeat;
+  background: url("../img/05/left/L_text_2_1.png") center no-repeat;
   background-size: cover;
   opacity: 1;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__left
-  .scenery__bg__smallBox
-  .scenery__bg__down
-  .scenery__bg__small2 {
+.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url('../img/05/left/L_text_1_1.png') center no-repeat;
+  background: url("../img/05/left/L_text_1_1.png") center no-repeat;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 1s;
@@ -513,7 +552,7 @@ body {
   height: 15rem;
   border-radius: 50%;
   -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
-  box-shadow: 5px 5px 15px 5px #000000a8;
+          box-shadow: 5px 5px 15px 5px #000000a8;
   padding-top: 5.7rem;
   background-color: #eedeff;
   position: absolute;
@@ -539,7 +578,7 @@ body {
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail:hover {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox {
@@ -550,27 +589,19 @@ body {
   transition: 0.5s ease-out;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__right
-  .scenery__bg__bigBox
-  .scenery__bg__bigSlide1 {
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox .scenery__bg__bigSlide1 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url('../img/05/right/R_content_1_1.png') center no-repeat;
+  background: url("../img/05/right/R_content_1_1.png") center no-repeat;
   background-size: cover;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__right
-  .scenery__bg__bigBox
-  .scenery__bg__bigSlide2 {
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox .scenery__bg__bigSlide2 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url('../img/05/right/R_content_2_1.png') center no-repeat;
+  background: url("../img/05/right/R_content_2_1.png") center no-repeat;
   background-size: cover;
 }
 
@@ -583,65 +614,42 @@ body {
   position: absolute;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__right
-  .scenery__bg__smallBox
-  .scenery__bg__up {
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
   width: 34rem;
   height: 34rem;
   background: white;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__right
-  .scenery__bg__smallBox
-  .scenery__bg__up
-  .scenery__bg__small {
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url('../img/05/right/R_text_2_1.png') center no-repeat;
+  background: url("../img/05/right/R_text_2_1.png") center no-repeat;
   background-size: cover;
   opacity: 1;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__right
-  .scenery__bg__smallBox
-  .scenery__bg__up
-  .scenery__bg__small2 {
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url('../img/05/right/R_text_1_1.png') center no-repeat;
+  background: url("../img/05/right/R_text_1_1.png") center no-repeat;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__right
-  .scenery__bg__smallBox
-  .scenery__bg__down__container {
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
   width: 34rem;
   height: 34rem;
   position: relative;
   overflow: hidden;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__right
-  .scenery__bg__smallBox
-  .scenery__bg__down__container
-  .scenery__bg__down {
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
   width: 68rem;
   height: 34rem;
   position: absolute;
@@ -649,31 +657,19 @@ body {
   transition: 0.5s ease-out;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__right
-  .scenery__bg__smallBox
-  .scenery__bg__down__container
-  .scenery__bg__down
-  .scenery__bg__smallSlide1 {
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url('../img/05/right/R_scenery1_1_bg.png') center no-repeat;
+  background: url("../img/05/right/R_scenery1_1_bg.png") center no-repeat;
   background-size: cover;
 }
 
-.main__scenery
-  .scenery__box
-  .scenery__bg__right
-  .scenery__bg__smallBox
-  .scenery__bg__down__container
-  .scenery__bg__down
-  .scenery__bg__smallSlide2 {
+.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url('../img/05/right/R_scenery2_1_bg.png.png') center no-repeat;
+  background: url("../img/05/right/R_scenery2_1_bg.png.png") center no-repeat;
   background-size: cover;
 }
 
@@ -708,7 +704,7 @@ body {
   height: 58rem;
   position: relative;
   overflow: hidden;
-  background: url('../img/06/best_1_1.png') center no-repeat;
+  background: url("../img/06/best_1_1.png") center no-repeat;
   background-size: cover;
 }
 
@@ -717,7 +713,7 @@ body {
   height: 58rem;
   position: absolute;
   top: 58rem;
-  background: url('../img/06/bg.png') center no-repeat;
+  background: url("../img/06/bg.png") center no-repeat;
   background-size: cover;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
@@ -730,10 +726,10 @@ body {
   overflow: hidden;
   top: 21rem;
   left: 60%;
-  background: url('../img/06/best_1_1.png') center no-repeat;
+  background: url("../img/06/best_1_1.png") center no-repeat;
   background-size: cover;
   -webkit-box-shadow: 10px 10px 15px #000000a8;
-  box-shadow: 10px 10px 15px #000000a8;
+          box-shadow: 10px 10px 15px #000000a8;
 }
 
 .main__best .best__box .best__header {
@@ -741,7 +737,7 @@ body {
   height: 58rem;
   position: absolute;
   top: 58rem;
-  background: url('../img/06/bg.png') center no-repeat;
+  background: url("../img/06/bg.png") center no-repeat;
   background-size: cover;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
@@ -752,7 +748,7 @@ body {
   height: 15rem;
   border-radius: 50%;
   -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
-  box-shadow: 5px 5px 15px 5px #000000a8;
+          box-shadow: 5px 5px 15px 5px #000000a8;
   padding-top: 5.7rem;
   background-color: #eedeff;
   position: absolute;
@@ -778,7 +774,7 @@ body {
 
 .main__best .scenery__bg__detail:hover {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* section 6. New cafe 4 [뉴 카페] */
@@ -792,19 +788,31 @@ body {
 }
 
 .main__newCafe .newCafe__tit {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   color: #343a40;
   padding: 15rem 0 8rem 0;
   text-align: center;
 }
 
-.main__newCafe .newCafe__tit strong {
-  font-size: 6rem;
+.main__newCafe .newCafe__tit .tit {
+  display: block;
+  font-weight: 400;
+  font-size: 5rem;
+  margin-bottom: 5rem;
 }
 
-.main__newCafe .newCafe__tit p {
-  margin-top: 1rem;
-  font-size: 4em;
+.main__newCafe .newCafe__tit .tit .main__font {
+  font-weight: bold;
+  color: #8d91eb;
+}
+
+.main__newCafe .newCafe__tit button {
+  background-color: #8d91eb;
+  padding: 1.5rem 3rem;
+  border-radius: 50px;
+  font-size: 2rem;
+  border: none;
+  color: #fff;
 }
 
 .main__newCafe .newCafe__block {
@@ -843,23 +851,29 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   /* 이 설정을 하지 않으면 슬라이드드가 틀어짐 */
 }
 
 .footer {
   width: 100%;
   height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__left {
@@ -878,6 +892,8 @@ body {
 }
 
 .footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 6rem;
 }
