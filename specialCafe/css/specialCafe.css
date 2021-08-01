@@ -8,7 +8,8 @@ section3 __menu : 1200px
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -148,7 +149,8 @@ li {
 }
 
 .content__menu .tags li:hover {
-  box-shadow: 0 -8px #8d91eb inset;
+  -webkit-box-shadow: 0 -8px #8d91eb inset;
+          box-shadow: 0 -8px #8d91eb inset;
   cursor: pointer;
   font-weight: bold;
 }
@@ -186,6 +188,8 @@ li {
 }
 
 .content__imgs .cafe__block .cafe__imgs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -194,7 +198,9 @@ li {
 }
 
 .content__imgs .cafe__block .cafe__imgs ul li:hover {
-  transform: translateY(-1em);
+  -webkit-transform: translateY(-1em);
+          transform: translateY(-1em);
+  -webkit-box-shadow: 0 0 10px #9e9e9e;
   box-shadow: 0 0 10px #9e9e9e;
 }
 
@@ -303,6 +309,7 @@ li {
   position: absolute;
   background: rgba(190, 189, 189, 0.7);
   top: 120rem;
+  -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   opacity: 0;
   z-index: 200;
@@ -335,6 +342,7 @@ li {
 
 .main_detail_info .detailed__info .detailed__wrap .detailed__container:hover .caption {
   opacity: 1;
-  transform: translateY(-120rem);
+  -webkit-transform: translateY(-120rem);
+          transform: translateY(-120rem);
 }
 /*# sourceMappingURL=specialCafe.css.map */
