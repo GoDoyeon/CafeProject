@@ -32,151 +32,196 @@
                 <a href="../index.html">Main</a>
               </li>
               <li>
-                <a href="/specialCafe/index.html">Special Cafe</a>
+                <a href="./rooftop.html">Special Cafe</a>
               </li>
               <li>
-                <a href="#none">About</a>
+                <a href="../about/about.html">About</a>
               </li>
             </ul>
           </div>
+
           <button class="mode__btn">
             <i class="fas fa-moon"></i>
             <span class="mode__btn-right">다크모드</span>
           </button>
         </section>
       </header>
+
+      <!-- main section -->
+
         <main class="main">
+          <!--상단 Title-->
           <section class="main__content main__home">
             <div class="home__inner">
               <h2 class="screen_out">메인</h2>
               <div class="main__tit"></div>
             </div>
           </section>
-          <section class="main__content best"></section>
-        </main>
+          <!-- <section class="main__content best"> -->
         <!-- 스페셜 카페 content -->
-        <section class="content">
-          <!-- article 3-1. 메뉴 박스 부분 -->
-          <article class="content__menu">
-            <!-- 카페 메뉴 - 종류 선택 -->
-            <ul class="cafeKinds">
-              <li><a class='visited' href="rooftop.html"><img src='../img/icon/rooftop.png'>루프탑 카페</a></li>
-              <li><a href="drawing.html"><img src='../img/icon/color-palette.png'>드로잉 카페</a></li>
-              <li><a href="themed.html"><img src='../img/icon/hot-air-balloon.png'>테마 카페</a></li>
-              <li><a href="healing.html"><img src='../img/icon/relax.png'>힐링 카페</a></li>
-            </ul>
-            <!-- <hr /> -->
-            <!-- 카페 메뉴 - 위치 선택 -->
-            <!-- <ul class="locations">
-              <li>서울</li>
-              <li>경기</li>
-              <li>인천</li>
-              <li>부산</li>
-              <li>제주</li>
-            </ul> -->
-            <!-- 카페 메뉴 - 해시 태그 -->
-            <!-- <ul class="tags">
-              <li>#키즈존</li>
-              <li>#노키즈존</li>
-              <li>#주차가능</li>
-              <li>#풍경 좋은곳</li>
-            </ul> -->
-          </article>
-
-          <!-- article 3-1. 이미지 박스 부분 -->
-          <article class="content__imgs">
-            <!-- 선택된 카페 카테고리 텍스트  -->
-            <div class="select__cafe">
-              <span><a href="/specialCafe/index.html">Special Cafe</a></span>
-              <i class="fas fa-chevron-right fa-1x"></i>
-              <span><a href="rooftop.html">루프탑 카페</a></span>
-            </div>
-            <!-- 카페 이미지 모음 -->
-            <div class="cafe__block">
-              <div class="cafe__imgs">
-                <!-- 카페 이미지 1번째 줄 -->
-                <ul class="cafe__imgs1">
-                  <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='regentsky'>
-                      <img src="../img/specialCafe/1/seoul/regentsky.png" alt="" />
-                      <div class="img__text">리젠트스카이 카페</div>
-                    </button>
-                  </li>
-                  <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='lefran'>
-                    <img src="../img/specialCafe/1/seoul/lefran.png" alt="" />
-                    <div class="img__text">르프랑 카페</div>
-                    </button>
-                  </li>
-                  <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='rooftop347'>
-                    <img
-                      src="../img/specialCafe/1/gyeonggi/rooftop347.png"
-                      alt=""
-                    />
-                    <div class="img__text">루프탑347</div>
-                    </button>
-                  </li>
+          <section class="content">
+            <!-- article 3-1. 메뉴 박스 부분 -->
+            <article class="content__menu">
+              <!-- 카페 메뉴 - 종류 선택 -->
+              <div class="wrap">
+                <ul class="cafeKinds">
+                  <li class="rooftopCafe"><a class="visited" href="./rooftop.html"><img src='../img/icon/rooftop.png'>루프탑 카페</a></li>
+                  <li class="drawingCafe"><a href="./drawing.html"><img src='../img/icon/color-palette.png'>드로잉 카페</a></li>
+                  <li class="themeCafe"><a href="./themed.html"><img src='../img/icon/hot-air-balloon.png'>테마 카페</a></li>
+                  <li class="healingCefe"><a href="./healing.html"><img src='../img/icon/relax.png'>힐링 카페</a></li>
                 </ul>
-                <!-- 카페 이미지 2번째 줄 -->
-                <ul class="cafe__imgs2">
-                  <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='rooftop357'>
-                    <img
-                      src="../img/specialCafe/1/gyeonggi/rooftop357.png"
-                      alt=""
-                    />
-                    <div class="img__text">ROOFTOP357</div>
-                    </button>
-                  </li>
-                  <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='glasscafe'>
-                    <img
-                      src="../img/specialCafe/1/incheon/glasscafe.png"
-                      alt=""
-                    />
-                    <div class="img__text">유리카페</div>
-                    </button>
-                  </li>
-                  <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='atrium'>
-                    <img src="../img/specialCafe/1/incheon/atrium.png" alt="" />
-                    <div class="img__text">아트리움</div>
-                    </button>
-                  </li>
-                </ul>
-                <!-- 카페 이미지 3번째 줄 -->
-                <ul class="cafe__imgs3">
-                  <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='karinyoungdoplace'>
-                    <img
-                      src="../img/specialCafe/1/busan/karinyoungdoplace.png"
-                      alt=""
-                    />
-                    <div class="img__text">카린영도 플레이스</div>
-                    </button>
-                  </li>
-                  <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='caferooftop'>
-                    <img
-                      src="../img/specialCafe/1/busan/caferooftop.png"
-                      alt=""
-                    />
-                    <div class="img__text">카페루프탑</div>
-                    </button>
-                  </li>
-                  <li class="img__block">
-                    <button onclick="location.href='../detailed_info/detailed.html'" value='lepicnic'>
-                    <img src="../img/specialCafe/1/jeju/lepicnic.png" alt="" />
-                    <div class="img__text">르피크닉</div>
-                    </button>
-                  </li>
-                </ul>
+                <div class="underline"></div>
               </div>
+
+              <!-- <hr /> -->
+              <!-- 카페 메뉴 - 위치 선택 -->
+              <!-- <ul class="locations">
+                <li>서울</li>
+                <li>경기</li>
+                <li>인천</li>
+                <li>부산</li>
+                <li>제주</li>
+              </ul> -->
+              <!-- 카페 메뉴 - 해시 태그 -->
+              <!-- <ul class="tags">
+                <li>#키즈존</li>
+                <li>#노키즈존</li>
+                <li>#주차가능</li>
+                <li>#풍경 좋은곳</li>
+              </ul> -->
+            </article>
+            
+          <!-- </section> -->
+            <!-- article 3-1. 이미지 박스 부분 -->
+            <article class="content__imgs">
+              <!-- 선택된 카페 카테고리 텍스트  -->
+              <div class="select__cafe">
+                <span><a href="./rooftop.html">Special Cafe</a></span>              
+                <i class="fas fa-chevron-right fa-1x"></i>
+                <span><a href="./rooftop.html">루프탑 카페</a></span>              
+              </div>
+              <!-- 카페 이미지 모음 -->
+              <div class="cafe__block">
+                <div class="cafe__imgs">
+                  <!-- 카페 이미지 1번째 줄 -->
+                  <ul class="cafe__imgs1">
+                    <li class="img__block">
+                      <button class="cafeDetailBtn" name="rooftop" value='regentsky'>
+                        <img src="../img/specialCafe/1/seoul/regentsky.png" alt="" />
+                        <div class="img__text">리젠트스카이 카페</div>
+                      </button>
+                    </li>
+                    <li class="img__block">
+                      <button class="cafeDetailBtn" name="rooftop" value='lefran'>
+                      <img src="../img/specialCafe/1/seoul/lefran.png" alt="" />
+                      <div class="img__text">르프랑 카페</div>
+                      </button>
+                    </li>
+                    <li class="img__block">
+                      <button class="cafeDetailBtn" name="rooftop" value='rooftop347'>
+                      <img
+                        src="../img/specialCafe/1/gyeonggi/rooftop347.png"
+                        alt=""
+                      />
+                      <div class="img__text">루프탑347</div>
+                      </button>
+                    </li>
+                  </ul>
+                  <!-- 카페 이미지 2번째 줄 -->
+                  <ul class="cafe__imgs2">
+                    <li class="img__block">
+                      <button class="cafeDetailBtn" name="rooftop" value='rooftop357'>
+                      <img
+                        src="../img/specialCafe/1/gyeonggi/rooftop357.png"
+                        alt=""
+                      />
+                      <div class="img__text">ROOFTOP357</div>
+                      </button>
+                    </li>
+                    <li class="img__block">
+                      <button class="cafeDetailBtn" name="rooftop" value='glasscafe'>
+                      <img
+                        src="../img/specialCafe/1/incheon/glasscafe.png"
+                        alt=""
+                      />
+                      <div class="img__text">유리카페</div>
+                      </button>
+                    </li>
+                    <li class="img__block">
+                      <button class="cafeDetailBtn" name="rooftop" value='atrium'>
+                      <img src="../img/specialCafe/1/incheon/atrium.png" alt="" />
+                      <div class="img__text">아트리움</div>
+                      </button>
+                    </li>
+                  </ul>
+                  <!-- 카페 이미지 3번째 줄 -->
+                  <ul class="cafe__imgs3">
+                    <li class="img__block">
+                      <button class="cafeDetailBtn" name="rooftop" value='karinyoungdoplace'>
+                      <img
+                        src="../img/specialCafe/1/busan/karinyoungdoplace.png"
+                        alt=""
+                      />
+                      <div class="img__text">카린영도 플레이스</div>
+                      </button>
+                    </li>
+                    <li class="img__block">
+                      <button class="cafeDetailBtn" name="rooftop" value='caferooftop'>
+                      <img
+                        src="../img/specialCafe/1/busan/caferooftop.png"
+                        alt=""
+                      />
+                      <div class="img__text">카페루프탑</div>
+                      </button>
+                    </li>
+                    <li class="img__block">
+                      <button class="cafeDetailBtn" name="rooftop" value='lepicnic'>
+                      <img src="../img/specialCafe/1/jeju/lepicnic.png" alt="" />
+                      <div class="img__text">르피크닉</div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </section>
+        </main>
+      
+        <!-- detail information -->
+        <section class="main_detail_info">
+          <article class="main__content main__detail">
+            <h1 class="detailed__information">Detailed Information</h2>
+          </article>
+          <article class="main__content detailed__info">
+            <button class="prev">prev</button>
+            <div class="detailed__wrap">
+              <ul class="detailed__container">
+                <div class="caption">
+                  <h1 class="main_tit">Cafe Theme</h1>
+                  <p class="cafe_tit">Cafe Name</p>
+                  <p class="cafe_address">주소: 인천 연수구 청량로97번길 56 아트리움</p>
+                  <p class="cafe_link">Blog Review: <a href="www.naver.com">https://blog.naver.com/claire_mj/222411380413</a></p>
+                  <p class="stars">평점: 4.5/5</p>
+                </div>
+                <li class="img1"></li>
+                <li class="img2"></li>
+                <li class="img3"></li>
+                <li class="img4"></li>
+                <li class="img5">
+                  <p class="cafe_theme">Cafe Theme</p>
+                  <p class="cafe_name">Cafe Name</p>
+                </li>
+                <li class="img6"></li>
+                <li class="img7"></li>
+                <li class="img8"></li>
+                <li class="img9"></li>
+              </ul>
             </div>
           </article>
         </section>
-      </main>
+   
+
+      
       <footer class="footer">
         <section class="footer__inner inner">
           <div class="footer__copyright">
@@ -251,6 +296,11 @@
         </section>
       </footer>
     </div>
-    <script src="./horoscope.js"></script>
+
+    <!-- detail Information -->
+    
+    
   </body>
+  <script src="./special.js/hoverMenu.js"></script>
+  <script type="module" src="./detail_js/detail_info.js"></script>
 </html>

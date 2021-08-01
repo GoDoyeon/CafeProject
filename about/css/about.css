@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
+/*header*/
+/*footer*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 10px;
+}
+
+.screen_out {
+  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: 0.2s ease-in;
+}
+
+.header__inner {
+  position: relative;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.header__inner h1 {
+  float: left;
+  margin-left: 60px;
+  width: 200px;
+  height: 100px;
+}
+
+.header__inner h1 .logo {
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.header .gnb {
+  float: left;
+  font-size: 4rem;
+  font-family: 'Dancing Script', cursive;
+  margin: 25px 0 0 60px;
+}
+
+.header .gnb__menu li {
+  float: left;
+  list-style: none;
+  padding-right: 5rem;
+}
+
+.header .gnb__menu li a {
+  height: 50rem;
+  color: #333;
+}
+
+.header .gnb__menu li a:hover {
+  border-bottom: 1px solid black;
+}
+
+.header .mode__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 175px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 25px 60px 0 0;
+  box-shadow: 10px 10px 10px #000000a8;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: #333;
+}
+
+.header .mode__btn i {
+  margin-right: 10px;
+}
+
+.header .mode__btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.header .mode__btn:hover .fa-moon {
+  color: yellow;
+}
+
+.header .on {
+  background-color: #000;
+}
+
+.project {
+  position: relative;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.project__inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.project-main {
+  width: 100%;
+  text-align: center;
+}
+
+.project-main__txt {
+  font-size: 2rem;
+  margin: 40px 0;
+  line-height: 3.5rem;
+}
+
+.project-content {
+  background-color: #eedeff;
+  height: 100%;
+  width: 100%;
+}
+
+.project-content__txt {
+  padding-top: 70px;
+}
+
+.project-content__txt--name {
+  font-size: 3rem;
+}
+
+.project-content__box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.project-content__box--txt {
+  font-size: 1.25rem;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 3.5rem;
+}
+
+.project-content .box__txt {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.875rem;
+  margin: 8px 0 70px;
+}
+
+.project-content .box__txt i {
+  color: #5D4B72;
+}
+
+.project-content .box__txt span {
+  margin: 0 1rem;
+}
+
+.project-content .box__txt--color {
+  font-weight: bold;
+  color: #5D4B72;
+}
+
+.project-content-page {
+  width: 100%;
+}
+
+.project-page {
+  width: 100%;
+  height: 100%;
+}
+
+.project-page__txt {
+  width: 100%;
+  font-size: 3rem;
+  margin-top: 70px;
+}
+
+.project-page__subtxt {
+  width: 100%;
+  font-size: 2rem;
+  margin: 2rem 0;
+  line-height: 3.5rem;
+}
+
+.project-page__img {
+  width: 1200px;
+  height: 600px;
+  background-color: #c4c4c4;
+}
+
+.project-team {
+  width: 100%;
+  height: 100%;
+}
+
+.project-team__txt {
+  width: 100%;
+  margin-top: 70px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.project-team__txt--name {
+  font-size: 3rem;
+}
+
+.project-team__txt--subname {
+  font-size: 2rem;
+  margin: 5rem 0;
+}
+
+.project-team__subtxt {
+  margin: 5rem 0;
+}
+
+.project-team__profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+  box-shadow: 0px 3px 10px #eedeff;
+}
+
+.project-team__profile--img {
+  width: 130px;
+  height: 130px;
+  margin: 103px;
+}
+
+.project-team__profile--content {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 600px;
+}
+
+.project-team__profile:last-child {
+  margin: 3rem 0;
+}
+
+.project-team__address--color {
+  color: #5D4B72;
+}
+
+.project-name {
+  margin: 0.6rem 0;
+  font-size: 1.4rem;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.name__part {
+  font-size: 1.6rem;
+  background-color: #eedeff;
+  color: #333;
+  padding: 0.4rem 1rem;
+  margin: 0 0.8rem;
+  border-radius: 20px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+  padding: 70px 60px;
+  border-top: 2px solid #ccc;
+}
+
+.footer__inner {
+  position: relative;
+  margin: 0 auto;
+}
+
+.footer__logo {
+  float: left;
+}
+
+.footer__tit {
+  padding-top: 50px;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+
+.footer__tit p:first-child {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.footer__gnb {
+  float: right;
+  display: flex;
+  width: 378px;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  width: 70px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.6rem;
+}
+
+.footer__menu__list {
+  padding-top: 20px;
+  list-style: none;
+}
+
+.footer__menu__list li {
+  height: 30px;
+}
+
+.footer__menu__list li a {
+  color: #333;
+  font-size: 1rem;
+}
