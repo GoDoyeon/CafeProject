@@ -33,8 +33,7 @@ button:hover {
   color: green;
 }
 
-a img,
-button img {
+.cafeIcon {
   width: 3.5rem;
   margin-right: 1rem;
 }
