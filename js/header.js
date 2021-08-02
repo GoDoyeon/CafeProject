@@ -8,7 +8,7 @@ document.addEventListener('scroll',function(){
     if(direction_header != 'down'){
       direction_header = 'down';
       if(darkModeBtn.value==='night'){
-        header__bg.style.background = '#EEDEFF';
+        header__bg.style.background = 'white';
         header__bg.style.color = '#333';
       }else{
         header__bg.style.background = 'black';

@@ -63,7 +63,7 @@ function nightDayHandler(){
   }else{
     /* 헤더 */
     header.setFontColor('#333');
-    header.setBgColor('#eedeff')
+    header.setBgColor('white')
     header.setBtnBgColor('#f4f4f4');
     header.setBtnFontColor('#333');
     header.setBtnIcon('black');
