@@ -9,9 +9,12 @@ document.addEventListener('scroll',function(){
       direction_header = 'down';
       if(darkModeBtn.value==='night'){
         header__bg.style.background = '#EEDEFF';
+        header__bg.style.color = '#333';
       }else{
         header__bg.style.background = 'black';
+        header__bg.style.color = 'powderblude';
       }
+
       
     }
   }else{
@@ -23,13 +26,18 @@ document.addEventListener('scroll',function(){
 });
 
 
-darkModeBtn.addEventListener('click', function(){
-  let currentPos = document.documentElement.scrollTop;
-  if(currentPos > TopNum_header){
-    if(darkModeBtn.value==='night'){
-      header__bg.style.background = '#EEDEFF';
-    }else{
-      header__bg.style.background = 'black';
-    }
-  }
-});
+
+
+// darkModeBtn.addEventListener('click', function(){
+//   let currentPos = document.documentElement.scrollTop;
+//   if(currentPos > TopNum_header){
+//     if(darkModeBtn.value==='night'){
+//       header__bg.style.background = '#EEDEFF';
+//       header__bg.style.color = '#333';
+//       console.log('a');
+//     }else{
+//       header__bg.style.background = 'black';
+//       header__bg.style.color = 'powderblue';
+//     }
+//   }
+// });
