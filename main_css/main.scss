@@ -18,6 +18,13 @@ button {
   cursor: pointer;
 }
 
+.scenery__bg__detail{  //상세보기 버튼
+  background: $maincolor;
+  p{
+    color: $textcolor;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -277,7 +284,6 @@ body {
         border-radius: 50%;
         box-shadow: 5px 5px 15px 5px $boxshadow;
         padding-top: 5.7rem;
-        background-color: $maincolor;
         position: absolute;
         z-index: 999;
         top: 50%;
@@ -454,7 +460,6 @@ body {
     top: 50rem;
     left: 60%;
     margin: 22rem;
-
     transition: 0.2s ease-in;
     p {
       width: 15rem;
