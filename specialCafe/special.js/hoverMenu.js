@@ -12,14 +12,14 @@ for (let i=0;i<menu.length;i++){
   }
 }
 
-for (let i=0;i<menu.length;i++){
-  menu[i].addEventListener('mouseover', function(){
-    underline.style.left = (i*22) + "rem";
-  });
-  menu[i].addEventListener('mouseout', function(){
-    underline.style.left = (cnt*22) + "rem";
-  });
-}
+// for (let i=0;i<menu.length;i++){
+//   menu[i].addEventListener('mouseover', function(){
+//     underline.style.left = (i*22) + "rem";
+//   });
+//   menu[i].addEventListener('mouseout', function(){
+//     underline.style.left = (cnt*22) + "rem";
+//   });
+// }
 
 
 
