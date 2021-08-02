@@ -1,6 +1,7 @@
 import header from './header_color.js';
 import mainHome from './mainHome_color.js';
 import body from './body_color.js';
+import main_newCafe from './main_newCafe_color.js'
 
 /* 버튼 이벤트*/
 darkModeBtn.addEventListener('click', nightDayHandler);
@@ -49,6 +50,9 @@ function nightDayHandler(){
     body.setBgColor('black');
     body.setFontColor('powderblue');
 
+    /* 메인 뉴카페 */
+    main_newCafe.cafeBgColor('black');
+
     darkModeBtn.value = 'day';
     
   }else{
@@ -66,6 +70,9 @@ function nightDayHandler(){
     /* 전체 바디 */
     body.setBgColor('none');
     body.setFontColor('#333');
+
+    /* 메인 뉴카페 */
+    main_newCafe.cafeBgColor('black');
     
     darkModeBtn.value = 'night';
   }
