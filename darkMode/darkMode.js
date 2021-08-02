@@ -1,7 +1,7 @@
-import header from './header_color.js';
-import mainHome from './mainHome_color.js';
-import body from './body_color.js';
-import main_newCafe from './main_newCafe_color.js'
+import header from './object/header_color.js';
+import mainHome from './object/mainHome_color.js';
+import body from './object/body_color.js';
+import main_newCafe from './object/main_newCafe_color.js'
 
 /* 버튼 이벤트*/
 darkModeBtn.addEventListener('click', nightDayHandler);
@@ -72,7 +72,7 @@ function nightDayHandler(){
     body.setFontColor('#333');
 
     /* 메인 뉴카페 */
-    main_newCafe.cafeBgColor('black');
+    main_newCafe.cafeBgColor('#f8f2ff');
     
     darkModeBtn.value = 'night';
   }

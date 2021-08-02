@@ -87,6 +87,14 @@ button {
   cursor: pointer;
 }
 
+.scenery__bg__detail {
+  background: #eedeff;
+}
+
+.scenery__bg__detail p {
+  color: #333;
+}
+
 html,
 body {
   height: 100%;
