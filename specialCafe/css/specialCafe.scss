@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 @import '../../variables/_variables.scss';
 @import '../../mixin/mixin.scss';
-
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 /*
@@ -118,9 +117,8 @@ button {
         height: 5rem;
         position: absolute;
         background: $hovercolor_special;
-        top: 16rem;
+        top: 16.4rem;
         left: 0;
-        transition: 0.2s;
       }
     }
 
