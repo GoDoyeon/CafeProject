@@ -2,32 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 /*main scss*/
 /*header*/
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Poppins:wght@300;400;500&display=swap');
 @media screen and (max-width: 1024px) {
   .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin-top: 10px;
   }
   .header__logo {
     margin: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   .header__menu {
     display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
   }
@@ -40,8 +27,6 @@
     border-bottom: none;
   }
   .header__menu .active {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .header__btn {
@@ -65,15 +50,8 @@
 /*footer*/
 @media screen and (max-width: 1024px) {
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
   }
   .footer__right {
@@ -86,12 +64,7 @@
 
 @media screen and (max-width: 768px) {
   .footer__right {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
   .footer__menu {
@@ -99,8 +72,19 @@
   }
 }
 
-/* font-family: 'Nanum Gothic', sans-serif;
-font-family: 'Poppins', sans-serif; */
+/*
+header 100px
+
+section2: mainhome 600px
+section3: Horoscope  1000px
+section 4: 전망좋은 카페 1000px
+section 5: 이달의 카페 1000px
+section 6: New cafe 1000px
+
+footer 300px
+
+entire: 5000px
+*/
 * {
   margin: 0;
   padding: 0;
@@ -117,19 +101,10 @@ button {
   cursor: pointer;
 }
 
-.scenery__bg__detail {
-  background: #eedeff;
-}
-
-.scenery__bg__detail p {
-  color: #333;
-}
-
 html,
 body {
   height: 100%;
   font-size: 10px;
-  color: #333;
 }
 
 .screen_out {
@@ -140,41 +115,27 @@ body {
 
 .container {
   width: 100%;
-  height: 100%;
+  height: 4900px;
 }
 
 .header {
   position: fixed;
   width: 100%;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   z-index: 999;
 }
 
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
   flex-grow: 0;
   margin-left: 6rem;
 }
 
 .header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   font-size: 3rem;
   list-style: none;
@@ -195,17 +156,9 @@ body {
 }
 
 .header__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
   flex-grow: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 0 3rem;
   height: 50px;
@@ -213,7 +166,6 @@ body {
   border: 0;
   outline: 0;
   margin: 0 6rem;
-  -webkit-box-shadow: 4px 6px 10px #000000a8;
   box-shadow: 4px 6px 10px #000000a8;
 }
 
@@ -241,50 +193,16 @@ body {
 
 /* section2 */
 .main__home {
-  padding-top: 10rem;
   width: 100%;
-  background-color: #fff7fe;
+  background-color: #eedeff;
   height: 60rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main__home .main__img {
-  margin: 10rem;
-  margin: auto 10rem;
-  width: 30%;
-}
-
-.main__home .main__img img {
-  width: 20rem;
 }
 
 .main__home .main__tit {
-  margin: 10rem 0;
-  border: 1px solid red;
-  width: 100%;
-  font-family: 'Nanum Gothic', sans-serif;
-  color: #333;
-  line-height: 30px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   text-align: center;
+  padding: 30rem 0;
   font-size: 8rem;
-}
-
-.main__home .main__tit .sub_text {
-  font-size: 3rem;
-}
-
-.main__home .main__tit .main_text {
-  font-size: 6rem;
-}
-
-.main__home .main__tit .main_text .main {
-  color: #8d91eb;
-  font-weight: bold;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* section 3. Horoscope [별점 높은 순] */
@@ -297,6 +215,7 @@ body {
 }
 
 .main__horoscope .horoscope__tit {
+  color: #343a40;
   font-family: 'Noto Sans KR', sans-serif;
   display: block;
   margin: 0 auto;
@@ -304,28 +223,17 @@ body {
   width: 192rem;
 }
 
-.main__horoscope .horoscope__tit .tit {
+.main__horoscope .horoscope__tit strong {
   display: block;
   padding: 21rem 0 0 18rem;
-  font-weight: 400;
   font-size: 6rem;
-}
-
-.main__horoscope .horoscope__tit .tit .main__font {
-  font-weight: bold;
-  color: #8d91eb;
 }
 
 .main__horoscope .horoscope__tit p {
   display: block;
   padding: 1.4rem 0 0 18rem;
   margin-top: 1rem;
-  font-size: 3rem;
-}
-
-.main__horoscope .horoscope__tit p .main__font {
-  font-weight: bold;
-  color: #8d91eb;
+  font-size: 4rem;
 }
 
 .main__horoscope .horoscope__block {
@@ -620,6 +528,7 @@ body {
   -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
   box-shadow: 5px 5px 15px 5px #000000a8;
   padding-top: 5.7rem;
+  background-color: #eedeff;
   position: absolute;
   z-index: 999;
   top: 50%;
@@ -631,6 +540,7 @@ body {
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail p {
   width: 15rem;
+  color: #333;
   font-size: 30px;
   text-align: center;
 }
@@ -857,6 +767,7 @@ body {
   -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
   box-shadow: 5px 5px 15px 5px #000000a8;
   padding-top: 5.7rem;
+  background-color: #eedeff;
   position: absolute;
   z-index: 999;
   top: 50rem;
@@ -868,6 +779,7 @@ body {
 
 .main__best .scenery__bg__detail p {
   width: 15rem;
+  color: #333;
   font-size: 30px;
   text-align: center;
 }
@@ -894,29 +806,18 @@ body {
 
 .main__newCafe .newCafe__tit {
   font-family: 'Noto Sans KR', sans-serif;
+  color: #343a40;
   padding: 15rem 0 8rem 0;
   text-align: center;
 }
 
-.main__newCafe .newCafe__tit .tit {
-  display: block;
-  font-weight: 400;
-  font-size: 5rem;
-  margin-bottom: 5rem;
+.main__newCafe .newCafe__tit strong {
+  font-size: 6rem;
 }
 
-.main__newCafe .newCafe__tit .tit .main__font {
-  font-weight: bold;
-  color: #8d91eb;
-}
-
-.main__newCafe .newCafe__tit button {
-  background-color: #8d91eb;
-  padding: 1.5rem 5rem;
-  border-radius: 50px;
-  font-size: 2rem;
-  border: none;
-  color: #fff;
+.main__newCafe .newCafe__tit p {
+  margin-top: 1rem;
+  font-size: 3em;
 }
 
 .main__newCafe .newCafe__block {
@@ -929,10 +830,12 @@ body {
 
 .main__newCafe .newCafe__block .swiper-button-next {
   right: -70px;
+  color: #343a40;
 }
 
 .main__newCafe .newCafe__block .swiper-button-prev {
   left: -70px;
+  color: #343a40;
 }
 
 .main__newCafe .newCafe__block .swiper-button-prev:hover {
@@ -967,14 +870,8 @@ body {
 .footer {
   width: 100%;
   height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -994,8 +891,6 @@ body {
 }
 
 .footer__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 6rem;
 }
@@ -1015,4 +910,4 @@ body {
 .footer__menu li {
   font-size: 1rem;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main 2.css.map */

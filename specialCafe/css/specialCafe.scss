@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-@import "../../variables/_variables.scss";
+@import '../../variables/_variables.scss';
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 /*
@@ -14,10 +14,9 @@ section3 __menu : 1200px
   overflow: hidden;
 }
 
-.main{
+.main {
   display: block;
 }
-
 
 // 링크, 버튼 클릭시 마우스 커서 포인트로 변경
 a,
@@ -32,10 +31,9 @@ button {
   &:hover {
     color: green;
   }
-
 }
 
-.cafeIcon{
+.cafeIcon {
   width: 3.5rem;
   margin-right: 1rem;
 }
@@ -43,13 +41,14 @@ button {
 /* 파트 2 : 카페 소개 */
 .main__home {
   width: 100%;
-  background-color: $maincolor;
+  background-color: #fff;
   height: 40rem;
   .main__tit {
     width: 100%;
     height: 40rem;
     text-align: center;
     font-size: 8rem;
+    color: #fff;
   }
 }
 
@@ -66,7 +65,7 @@ button {
     margin: 0 auto;
     color: #333;
     // 카페 메뉴 - 공통 ul, li 부분 style
-    .wrap{
+    .wrap {
       width: 105rem;
       height: 17rem;
       position: relative;
@@ -84,7 +83,7 @@ button {
           position: relative;
           display: inline-block;
           height: 40px;
-  
+
           a {
             width: 19rem;
             height: 100%;
@@ -98,32 +97,24 @@ button {
             &:hover {
               font-weight: bold;
               color: $hovercolor_special;
-
             }
           }
-
         }
-
-        
       }
 
       /* 밑에 줄*/
-      
-      .underline{
+
+      .underline {
         width: 22rem;
         height: 5rem;
         position: absolute;
         background: $hovercolor_special;
         top: 16rem;
         left: 0;
-        transition: .2s;
+        transition: 0.2s;
       }
+    }
 
-    
-      }
-    
-    
-    
     // 카페 메뉴 - 위치 선택
     // .locations {
     //   font-size: 2rem;
@@ -217,7 +208,6 @@ button {
               padding: 1.5rem 0;
             }
           }
-
         }
         // 카페 이미지 1번째 줄
         // &1 {
@@ -237,14 +227,14 @@ button {
 /*------detail info---------*/
 
 /*메인 title*/
-.main_detail_info{
+.main_detail_info {
   display: none;
   height: 2000px;
-  .main__detail{
+  .main__detail {
     height: 600px;
     position: relative;
     background: $maincolor;
-    .detailed__information{ 
+    .detailed__information {
       width: 70rem;
       height: 10rem;
       position: absolute;
@@ -254,15 +244,14 @@ button {
       text-align: center;
       font-size: 80px;
       font-family: 'Dancing Script', cursive;
-      
     }
   }
-  .detailed__info{
+  .detailed__info {
     height: 1400px;
     position: relative;
     background: #f4f4f4;
 
-    .prev{
+    .prev {
       width: 10rem;
       position: absolute;
       height: 4rem;
@@ -274,14 +263,13 @@ button {
       margin-left: 60rem;
       box-shadow: 1rem 1rem 0.6rem 0.3rem gray;
 
-      &:hover{
+      &:hover {
         background: $hovercolor_special;
         color: white;
-        
       }
     }
 
-    .detailed__wrap{
+    .detailed__wrap {
       width: 123rem;
       height: 120rem;
       position: absolute;
@@ -289,13 +277,13 @@ button {
       left: 50%;
       margin: -60rem -61.5rem;
 
-      .detailed__container{
+      .detailed__container {
         width: 123rem;
         height: 120rem;
         overflow: hidden;
         position: relative;
-        
-        li{
+
+        li {
           width: 38rem;
           height: 38rem;
           float: left;
@@ -303,27 +291,25 @@ button {
           // background: url('../../img/detail_img/rooftop/regentsky/0.png');
           // background: url('../detail_img/rooftop/regentsky/0.png');
         }
-        .img5{
+        .img5 {
           background: white;
           padding-top: 7rem;
 
-          .cafe_theme{
+          .cafe_theme {
             font-size: 4rem;
             font-family: 'Dancing Script', cursive;
             text-align: center;
             line-height: 13rem;
           }
-  
-          .cafe_name{
+
+          .cafe_name {
             font-size: 4rem;
             text-align: center;
             line-height: 6rem;
           }
         }
-        
-        
 
-        .caption{
+        .caption {
           width: 120rem;
           height: 120rem;
           position: absolute;
@@ -332,54 +318,187 @@ button {
           transition: 0.5s ease-in;
           opacity: 0;
           z-index: 200;
-          
-          
-          .main_tit{
+
+          .main_tit {
             font-size: 14.4rem;
             text-align: center;
             font-family: 'Dancing Script', cursive;
             line-height: 50rem;
           }
 
-          .cafe_tit{
+          .cafe_tit {
             font-size: 7.2rem;
             text-align: center;
           }
 
-          .cafe_address{
+          .cafe_address {
             font-size: 3rem;
             text-align: center;
             padding-top: 6rem;
           }
 
-          .cafe_link{
+          .cafe_link {
             font-family: 'Dancing Script', cursive;
             font-size: 4.8rem;
             text-align: center;
             padding-top: 3rem;
-
           }
 
-          .stars{
+          .stars {
             font-size: 4.8rem;
             text-align: center;
             line-height: 15rem;
-
           }
-          
-
-         
         }
-        &:hover .caption{
+        &:hover .caption {
           opacity: 1;
           transform: translateY(-120rem);
         }
       }
     }
-
-    
   }
-
-
 }
 
+// header
+.header {
+  @include header;
+}
+
+.project {
+  position: relative;
+  width: 100%;
+  margin-top: 200px;
+  &__inner {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &-main {
+    width: 100%;
+    text-align: center;
+    &__txt {
+      font-size: 2rem;
+      margin: 40px 0;
+      line-height: 3.5rem;
+    }
+  }
+  &-content {
+    background-color: $maincolor;
+    height: 100%;
+    width: 100%;
+    &__txt {
+      padding-top: 70px;
+      &--name {
+        font-size: 3rem;
+      }
+    }
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      &--txt {
+        font-size: 1.25rem;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 3.5rem;
+      }
+    }
+    .box__txt {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 1.875rem;
+      margin: 8px 0 70px;
+      i {
+        color: #5d4b72;
+      }
+      span {
+        margin: 0 1rem;
+      }
+      &--color {
+        font-weight: bold;
+        color: #5d4b72;
+      }
+    }
+    &-page {
+      width: 100%;
+    }
+  }
+
+  &-page {
+    width: 100%;
+    height: 100%;
+    &__txt {
+      width: 100%;
+      font-size: 3rem;
+      margin-top: 70px;
+    }
+    &__subtxt {
+      width: 100%;
+      font-size: 2rem;
+      margin: 2rem 0;
+      line-height: 3.5rem;
+    }
+    &__img {
+      width: 1200px;
+      height: 600px;
+      background-color: #c4c4c4;
+    }
+  }
+
+  &-team {
+    width: 100%;
+    height: 100%;
+    &__txt {
+      width: 100%;
+      margin-top: 70px;
+      font-family: 'Noto Sans KR', sans-serif;
+      &--name {
+        font-size: 3rem;
+      }
+      &--subname {
+        font-size: 2rem;
+        margin: 5rem 0;
+      }
+    }
+    &__subtxt {
+      margin: 5rem 0;
+    }
+    &__profile {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 280px;
+      box-shadow: 0px 3px 10px $maincolor;
+      &--img {
+        width: 130px;
+        height: 130px;
+        margin: 103px;
+      }
+      &--content {
+        font-family: 'Noto Sans KR', sans-serif;
+        width: 600px;
+      }
+    }
+    &__profile:last-child {
+      margin: 3rem 0;
+    }
+    &__address--color {
+      color: #5d4b72;
+    }
+  }
+  &-name {
+    margin: 0.6rem 0;
+    font-size: 1.4rem;
+  }
+}
+.name {
+  font-size: 20px;
+  &__part {
+    font-size: 1.6rem;
+    background-color: $maincolor;
+    color: #333;
+    padding: 0.4rem 1rem;
+    margin: 0 0.8rem;
+    border-radius: 20px;
+  }
+}

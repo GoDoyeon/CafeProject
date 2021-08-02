@@ -26,12 +26,11 @@
 
   <body>
     <div class="container">
-
       <!-- 헤더 -->
       <header class="header">
         <div class="header__logo">
           <h2 class="screen_out"><a href="#none">로고</a></h2>
-          <a href="./index.html"><img src="./img/01/logo.png" alt="logo"></a>
+          <a href="./index.html"><img src="./img/01/logo.png" alt="logo" /></a>
         </div>
         <ul class="header__menu">
           <h2 class="screen_out"><a href="#none">네비게이션</a></h2>
@@ -41,8 +40,8 @@
         </ul>
         <button tyle="button" value="night" class="header__btn">
           <h2 class="screen_out"><a href="#none">모드</a></h2>
-            <i class="fas fa-moon"></i>
-            <span class="header__btn--right">다크모드</span>
+          <i class="fas fa-moon"></i>
+          <span class="header__btn--right">다크모드</span>
         </button>
         <a href="#none" class="header__toogleBtn">
           <i class="fas fa-bars"></i>
@@ -53,16 +52,37 @@
         <!--section2 Home -->
         <section class="main__content main__home">
           <h2 class="screen_out">메인</h2>
-          <div class="main__tit">Cafe Story</div> <!--임시로 해놓음-->
-          
+          <!-- 카페 스토리 이미지/로고 -->
+          <!-- <div class="main__img">
+            <img class="cafeIcon" src="../img/icon/signboard.png" />
+          </div> -->
+          <!-- 카페 스토리 설명 -->
+
+          <div class="main__tit">
+            <span class="sub_text">
+              친구들과 혹은 연인들과 함께 <br />
+              다양한 카페에서 좋은 시간을 보내는게 어떤가요?<br />
+            </span>
+            <span class="main_text">
+              <span class="main"><br />CAFE STORY</span>
+              에서 이색카페 추천해 드릴게요!
+            </span>
+          </div>
         </section>
+
         <!--section3 Horoscope -->
         <section class="main__content main__horoscope">
           <h2 class="screen_out">별점</h2>
           <!-- article 3-1. 텍스트 부분 -->
           <article class="horoscope__tit">
-            <strong class="tit">별점 높은 순</strong>
-            <p class="section">별점 높은 순 카페입니다.</p>
+            <p class="tit">
+              요즘 핫한 <span class="main__font">이색 카페</span>
+            </p>
+            <p class="section">
+              후기가 좋은 카페를 찾고 있나요?<br />
+              <span class="main__font">평점 4.7점 이상</span>을 유지하는
+              카페입니다!
+            </p>
           </article>
           <!-- article 3-2. 슬라이드 + 버튼 -->
           <article class="horoscope__block">
@@ -204,7 +224,8 @@
                 ><div class="scenery__bg__detail">
                   <p class="detail">상세보기</p>
                   <p class="arrow">&rarr;</p>
-                </div></a>
+                </div></a
+              >
               <div class="scenery__bg__bigBox">
                 <span class="scenery__bg__bigSlide1"></span>
                 <span class="scenery__bg__bigSlide2"></span>
@@ -232,7 +253,8 @@
             ><div class="scenery__bg__detail">
               <p class="detail">상세보기</p>
               <p class="arrow">&rarr;</p>
-            </div></a>
+            </div></a
+          >
           <article class="best__tit">
             <h1 class="tit">이달의 카페</h1>
             <p class="sub__tit">
@@ -255,8 +277,11 @@
           <h2 class="screen_out">뉴카페</h2>
           <!-- article 6-1. 텍스트 부분 -->
           <article class="newCafe__tit">
-            <strong class="tit">New Cafe</strong>
-            <p class="section">다양한 신상 카페 보러가기 ></p>
+            <p class="tit">
+              색다른 데이트 <span class="main__font">스페셜 카페</span>
+            </p>
+            <!-- <p class="section">오늘도 새로운 카페가 기다리고 있어요.</p> -->
+            <button>신상 카페 보러가기</button>
           </article>
           <!-- article 6-2. 슬라이드 + 버튼 -->
           <article class="newCafe__block">
@@ -289,7 +314,9 @@
         <div class="footer__left">
           <div class="footer__logo">
             <h2 class="screen_out"><a href="#none">푸터로고</a></h2>
-            <a href="./index.html"><img src="./img/01/logo.png" alt="footerLogo"></a>
+            <a href="./index.html"
+              ><img src="./img/01/logo.png" alt="footerLogo"
+            /></a>
           </div>
           <div class="footer__copyright">
             <p>카페 스토리는 사랑을 담아 만듭니다.</p>
