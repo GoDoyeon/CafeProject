@@ -55,7 +55,7 @@ body {
 .main__home {
   padding-top: 10rem;
   width: 100%;
-  background-color: $maincolor;
+  background-color: $subcolor;
   height: 60rem;
   display: flex;
   .main__img {
@@ -84,7 +84,7 @@ body {
       font-size: 4rem;
 
       .main {
-        color: #91005c;
+        color: $hovercolor_special;
         font-weight: bold;
       }
     }
