@@ -4,26 +4,6 @@
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
-
-@mixin scenery__bg__Slide {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-
-@mixin scenery__bg__smallSlide {
-  width: 34rem;
-  height: 100%;
-  float: left;
-}
-
-@mixin scenery__bg__smollContainer {
-  width: 34rem;
-  height: 34rem;
-  position: relative;
-  overflow: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +22,7 @@ html,
 body {
   height: 100%;
   font-size: 10px;
+  color: $textcolor;
   // font-size: 7px; // 맥북 기준
 }
 
@@ -83,7 +64,6 @@ body {
   overflow: hidden;
   /* article 3-1. 텍스트 부분 */
   .horoscope__tit {
-    color: $textcolordy;
     font-family: 'Noto Sans KR', sans-serif;
 
     display: block;
@@ -306,7 +286,6 @@ body {
         transition: 0.2s ease-in;
         p {
           width: 15rem;
-          color: $textcolor;
           font-size: 30px;
           text-align: center;
         }
@@ -470,7 +449,6 @@ body {
     border-radius: 50%;
     box-shadow: 5px 5px 15px 5px $boxshadow;
     padding-top: 5.7rem;
-    background-color: $maincolor;
     position: absolute;
     z-index: 999;
     top: 50rem;
@@ -480,7 +458,6 @@ body {
     transition: 0.2s ease-in;
     p {
       width: 15rem;
-      color: $textcolor;
       font-size: 30px;
       text-align: center;
     }
@@ -504,7 +481,6 @@ body {
   .newCafe__tit {
     // border: 1px solid black;
     font-family: 'Noto Sans KR', sans-serif;
-    color: $textcolordy;
     padding: 15rem 0 8rem 0;
     text-align: center;
     strong {
@@ -523,11 +499,9 @@ body {
     display: block;
     .swiper-button-next {
       right: -70px;
-      color: $textcolordy;
     }
     .swiper-button-prev {
       left: -70px;
-      color: $textcolordy;
 
       &:hover {
         color: #333;

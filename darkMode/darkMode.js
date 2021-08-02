@@ -1,5 +1,6 @@
 import header from './header_color.js';
 import mainHome from './mainHome_color.js';
+import body from './body_color.js';
 
 /* 버튼 이벤트*/
 darkModeBtn.addEventListener('click', nightDayHandler);
@@ -44,8 +45,10 @@ function nightDayHandler(){
     mainHome.setMainBgColor('black');
     mainHome.setMainFontColor('powderblue');
 
+    /* 전체 바디 */
+    body.setBgColor('black');
+    body.setFontColor('powderblue');
 
-    
     darkModeBtn.value = 'day';
     
   }else{
@@ -59,6 +62,10 @@ function nightDayHandler(){
     /* 메인 홈 */
     mainHome.setMainBgColor('#eedeff');
     mainHome.setMainFontColor('#333');
+
+    /* 전체 바디 */
+    body.setBgColor('none');
+    body.setFontColor('#333');
     
     darkModeBtn.value = 'night';
   }
