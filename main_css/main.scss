@@ -4,29 +4,6 @@
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Poppins:wght@300;400;500&display=swap');
-/* font-family: 'Nanum Gothic', sans-serif;
-font-family: 'Poppins', sans-serif; */
-
-@mixin scenery__bg__Slide {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-
-@mixin scenery__bg__smallSlide {
-  width: 34rem;
-  height: 100%;
-  float: left;
-}
-
-@mixin scenery__bg__smollContainer {
-  width: 34rem;
-  height: 34rem;
-  position: relative;
-  overflow: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -41,10 +18,19 @@ button {
   cursor: pointer;
 }
 
+.scenery__bg__detail {
+  //상세보기 버튼
+  background: $maincolor;
+  p {
+    color: $textcolor;
+  }
+}
+
 html,
 body {
   height: 100%;
   font-size: 10px;
+  color: $textcolor;
   // font-size: 7px; // 맥북 기준
 }
 
@@ -117,10 +103,8 @@ body {
   overflow: hidden;
   /* article 3-1. 텍스트 부분 */
   .horoscope__tit {
-    color: $textcolordy;
-    font-family: 'Nanum Gothic', sans-serif;
-    //font-family: 'Poppins', sans-serif;
-    //font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+
     display: block;
     margin: 0 auto;
     height: 44rem; // 210+80+150 = 440px
@@ -341,7 +325,6 @@ body {
         border-radius: 50%;
         box-shadow: 5px 5px 15px 5px $boxshadow;
         padding-top: 5.7rem;
-        background-color: $maincolor;
         position: absolute;
         z-index: 999;
         top: 50%;
@@ -350,7 +333,6 @@ body {
         transition: 0.2s ease-in;
         p {
           width: 15rem;
-          color: $textcolor;
           font-size: 30px;
           text-align: center;
         }
@@ -514,17 +496,14 @@ body {
     border-radius: 50%;
     box-shadow: 5px 5px 15px 5px $boxshadow;
     padding-top: 5.7rem;
-    background-color: $maincolor;
     position: absolute;
     z-index: 999;
     top: 50rem;
     left: 60%;
     margin: 22rem;
-
     transition: 0.2s ease-in;
     p {
       width: 15rem;
-      color: $textcolor;
       font-size: 30px;
       text-align: center;
     }
@@ -547,10 +526,7 @@ body {
   /* article 6-1. 텍스트 부분 */
   .newCafe__tit {
     // border: 1px solid black;
-    //font-family: 'Noto Sans KR', sans-serif;
-    font-family: 'Nanum Gothic', sans-serif;
-
-    color: $textcolordy;
+    font-family: 'Noto Sans KR', sans-serif;
     padding: 15rem 0 8rem 0;
     text-align: center;
     .tit {
@@ -591,11 +567,9 @@ body {
     display: block;
     .swiper-button-next {
       right: -70px;
-      color: $textcolordy;
     }
     .swiper-button-prev {
       left: -70px;
-      color: $textcolordy;
 
       &:hover {
         color: #333;

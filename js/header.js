@@ -1,4 +1,5 @@
 let header__bg = document.querySelector(".header");
+let darkModeBtn = document.querySelector(".header .header__btn");
 let TopNum_header = 600;
 let direction_header = '';
 document.addEventListener('scroll',function(){
@@ -6,7 +7,15 @@ document.addEventListener('scroll',function(){
   if(currentPos > TopNum_header){
     if(direction_header != 'down'){
       direction_header = 'down';
-      header__bg.style.background = '#EEDEFF';
+      if(darkModeBtn.value==='night'){
+        header__bg.style.background = '#EEDEFF';
+        header__bg.style.color = '#333';
+      }else{
+        header__bg.style.background = 'black';
+        header__bg.style.color = 'powderblude';
+      }
+
+      
     }
   }else{
     if(direction_header != 'up'){
@@ -16,3 +25,19 @@ document.addEventListener('scroll',function(){
   }
 });
 
+
+
+
+// darkModeBtn.addEventListener('click', function(){
+//   let currentPos = document.documentElement.scrollTop;
+//   if(currentPos > TopNum_header){
+//     if(darkModeBtn.value==='night'){
+//       header__bg.style.background = '#EEDEFF';
+//       header__bg.style.color = '#333';
+//       console.log('a');
+//     }else{
+//       header__bg.style.background = 'black';
+//       header__bg.style.color = 'powderblue';
+//     }
+//   }
+// });
