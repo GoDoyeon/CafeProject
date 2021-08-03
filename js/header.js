@@ -11,8 +11,8 @@ document.addEventListener('scroll',function(){
         header__bg.style.background = 'white';
         header__bg.style.color = '#333';
       }else{
-        header__bg.style.background = 'black';
-        header__bg.style.color = 'powderblude';
+        header__bg.style.background = '#292a2d';
+        header__bg.style.color = '#F1F1F1';
       }
 
       
@@ -24,9 +24,6 @@ document.addEventListener('scroll',function(){
     }
   }
 });
-
-
-
 
 // darkModeBtn.addEventListener('click', function(){
 //   let currentPos = document.documentElement.scrollTop;
