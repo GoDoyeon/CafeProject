@@ -130,7 +130,6 @@ body {
 }
 
 .highLight {
-  color: #8d91eb;
 }
 
 .screen_out {
@@ -151,7 +150,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 9999;
 }
@@ -235,7 +238,7 @@ body {
 .main__home {
   padding-top: 10rem;
   width: 100%;
-  background-color: #f8f2ff;
+  background-color: #eedeff;
   height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,7 +271,7 @@ body {
 }
 
 .main__home .main__tit .main_text {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .main__home .main__tit .main_text .main {
@@ -434,7 +437,6 @@ body {
 }
 
 .main__horoscope .horoscope__block .horoscope__btn:hover {
-  background-color: #8d91eb;
   color: #fff;
 }
 
@@ -819,6 +821,7 @@ body {
   overflow: hidden;
   top: 21rem;
   left: 60%;
+  -webkit-box-shadow: 10px 10px 15px #000000a8;
   box-shadow: 10px 10px 15px #000000a8;
 }
 
@@ -890,6 +893,7 @@ body {
 
 .main__newCafe .newCafe__tit .tit .main__font {
   font-weight: bold;
+  color: #333;
 }
 
 .main__newCafe .newCafe__tit button {
@@ -911,12 +915,16 @@ body {
 
 .main__newCafe .newCafe__block .swiper-button-next {
   right: -70px;
-  color: #8d91eb;
+  color: #ccb7ff;
+}
+
+.main__newCafe .newCafe__block .swiper-button-next:hover {
+  color: #333;
 }
 
 .main__newCafe .newCafe__block .swiper-button-prev {
   left: -70px;
-  color: #8d91eb;
+  color: #ccb7ff;
 }
 
 .main__newCafe .newCafe__block .swiper-button-prev:hover {

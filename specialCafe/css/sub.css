@@ -130,20 +130,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 999;
-  background-color: #eedeff;
-=======
-  justify-content: space-between;
-  align-items: center;
   z-index: 9999;
->>>>>>> 73a49adfa5f7404ee7ed25f19cb11160c57ef576
 }
 
 .header__logo {

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
 /*main scss*/
 /*header*/
 @media screen and (max-width: 1024px) {
@@ -9,25 +9,25 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 10px;
   }
   .header__logo {
     margin: 0;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header__menu {
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   .header__menu li {
@@ -69,11 +69,11 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .footer__right {
     margin-left: 6rem;
@@ -90,8 +90,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__menu {
     margin-top: 60px;
@@ -227,7 +227,7 @@ button:hover {
 
 .content__menu .tags li:hover {
   -webkit-box-shadow: 0 -8px #8d91eb inset;
-  box-shadow: 0 -8px #8d91eb inset;
+          box-shadow: 0 -8px #8d91eb inset;
   cursor: pointer;
   font-weight: bold;
 }
@@ -276,7 +276,7 @@ button:hover {
 
 .content__imgs .cafe__block .cafe__imgs ul li:hover {
   -webkit-transform: translateY(-1em);
-  transform: translateY(-1em);
+          transform: translateY(-1em);
   -webkit-box-shadow: 0 0 10px #9e9e9e;
   box-shadow: 0 0 10px #9e9e9e;
 }
@@ -347,7 +347,7 @@ button:hover {
   top: 5rem;
   margin-left: 60rem;
   -webkit-box-shadow: 1rem 1rem 0.6rem 0.3rem gray;
-  box-shadow: 1rem 1rem 0.6rem 0.3rem gray;
+          box-shadow: 1rem 1rem 0.6rem 0.3rem gray;
 }
 
 .main_detail_info .detailed__info .prev:hover {
@@ -383,34 +383,20 @@ button:hover {
   padding-top: 7rem;
 }
 
-.main_detail_info
-  .detailed__info
-  .detailed__wrap
-  .detailed__container
-  .img5
-  .cafe_theme {
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_theme {
   font-size: 4rem;
   font-family: 'Dancing Script', cursive;
   text-align: center;
   line-height: 13rem;
 }
 
-.main_detail_info
-  .detailed__info
-  .detailed__wrap
-  .detailed__container
-  .img5
-  .cafe_name {
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_name {
   font-size: 4rem;
   text-align: center;
   line-height: 6rem;
 }
 
-.main_detail_info
-  .detailed__info
-  .detailed__wrap
-  .detailed__container
-  .caption {
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption {
   width: 120rem;
   height: 120rem;
   position: absolute;
@@ -422,70 +408,41 @@ button:hover {
   z-index: 200;
 }
 
-.main_detail_info
-  .detailed__info
-  .detailed__wrap
-  .detailed__container
-  .caption
-  .main_tit {
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .main_tit {
   font-size: 14.4rem;
   text-align: center;
   font-family: 'Dancing Script', cursive;
   line-height: 50rem;
 }
 
-.main_detail_info
-  .detailed__info
-  .detailed__wrap
-  .detailed__container
-  .caption
-  .cafe_tit {
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .cafe_tit {
   font-size: 7.2rem;
   text-align: center;
 }
 
-.main_detail_info
-  .detailed__info
-  .detailed__wrap
-  .detailed__container
-  .caption
-  .cafe_address {
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .cafe_address {
   font-size: 3rem;
   text-align: center;
   padding-top: 6rem;
 }
 
-.main_detail_info
-  .detailed__info
-  .detailed__wrap
-  .detailed__container
-  .caption
-  .cafe_link {
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .cafe_link {
   font-family: 'Dancing Script', cursive;
   font-size: 4.8rem;
   text-align: center;
   padding-top: 3rem;
 }
 
-.main_detail_info
-  .detailed__info
-  .detailed__wrap
-  .detailed__container
-  .caption
-  .stars {
+.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .stars {
   font-size: 4.8rem;
   text-align: center;
   line-height: 15rem;
 }
 
-.main_detail_info
-  .detailed__info
-  .detailed__wrap
-  .detailed__container:hover
-  .caption {
+.main_detail_info .detailed__info .detailed__wrap .detailed__container:hover .caption {
   opacity: 1;
   -webkit-transform: translateY(-120rem);
-  transform: translateY(-120rem);
+          transform: translateY(-120rem);
 }
 
 .header {
@@ -496,12 +453,12 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 999;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9999;
 }
 
 .header__logo {
@@ -509,8 +466,8 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   margin-left: 6rem;
 }
 
@@ -519,8 +476,8 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-size: 3rem;
   list-style: none;
   font-family: 'Dancing Script', cursive;
@@ -544,14 +501,14 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 3rem;
   height: 50px;
   border-radius: 30px;
@@ -559,7 +516,7 @@ button:hover {
   outline: 0;
   margin: 0 6rem;
   -webkit-box-shadow: 4px 6px 10px #000000a8;
-  box-shadow: 4px 6px 10px #000000a8;
+          box-shadow: 4px 6px 10px #000000a8;
 }
 
 .header__btn i {
@@ -620,8 +577,8 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 30px;
 }
 
@@ -633,11 +590,11 @@ button:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   line-height: 3.5rem;
 }
 
@@ -717,12 +674,12 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 280px;
   -webkit-box-shadow: 0px 3px 10px #eedeff;
-  box-shadow: 0px 3px 10px #eedeff;
+          box-shadow: 0px 3px 10px #eedeff;
 }
 
 .project-team__profile--img {
