@@ -1,8 +1,10 @@
 let header__bg = document.querySelector(".header");
 let darkModeBtn_header = document.querySelector(".header .header__btn");
-let TopNum_header = 600;
+let main_homeHeight = document.querySelector('.main__home').clientHeight;
+let TopNum_header = main_homeHeight;
 let direction_header = '';
 document.addEventListener('scroll',function(){
+  console.log(TopNum_header);
   let currentPos = document.documentElement.scrollTop;
   if(currentPos > TopNum_header){
     if(direction_header != 'down'){
