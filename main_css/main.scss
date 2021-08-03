@@ -55,7 +55,7 @@ body {
 .main__home {
   padding-top: 10rem;
   width: 100%;
-  background-color: $subcolor2;
+  background-color: $maincolor;
   height: 60rem;
   display: flex;
   .main__img {
@@ -81,14 +81,10 @@ body {
     }
     .main_text {
       font-size: 6rem;
-
       .main {
-        color: $hovercolor_special;
-
         font-weight: bold;
       }
     }
-
     justify-content: center;
     text-align: center;
     //padding: 30rem 0;
@@ -116,7 +112,6 @@ body {
       font-size: 6rem;
       .main__font {
         font-weight: bold;
-        color: $hovercolor_special;
       }
     }
     p {
@@ -126,7 +121,6 @@ body {
       font-size: 3rem;
       .main__font {
         font-weight: bold;
-        color: $hovercolor_special;
       }
     }
   }
@@ -521,7 +515,7 @@ body {
 .main__newCafe {
   height: 100rem;
   position: relative;
-  background-color: $subcolor;
+  background-color: $maincolor;
   margin: 0 auto;
   /* article 6-1. 텍스트 부분 */
   .newCafe__tit {
@@ -537,16 +531,16 @@ body {
       margin-bottom: 5rem;
       .main__font {
         font-weight: bold;
-        color: $hovercolor_special;
+        color: $textcolor;
       }
     }
     button {
-      background-color: $hovercolor_special;
+      background-color: $buttoncolor;
       padding: 1.5rem 5rem;
       border-radius: 50px;
       font-size: 2rem;
       border: none;
-      color: #fff;
+      color: $textcolor;
     }
     // p {
     //   display: block;
@@ -567,16 +561,20 @@ body {
     display: block;
     .swiper-button-next {
       right: -70px;
+      color: $buttoncolor;
+      &:hover {
+        color: #333;
+      }
     }
     .swiper-button-prev {
       left: -70px;
-
+      color: $buttoncolor;
       &:hover {
         color: #333;
       }
     }
     .swiperbtn {
-      color: #fff;
+      color: $textcolor;
     }
     /* 뉴 카페 이미지 슬라이드 */
     .swiper-container {
