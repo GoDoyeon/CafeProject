@@ -1,8 +1,10 @@
 import header from '../darkMode_main/object/header_color.js';
 import body from '../darkMode_main/object/body_color.js';
 import mainHome from '../darkMode_main/object/mainHome_color.js';
-import footer from '../darkMode_main/object/footer_color.js';
 import category from '../darkMode_special/object/categoryColor.js';
+import content from '../darkMode_special/object/content_color.js';
+import footer from '../darkMode_main/object/footer_color.js';
+
 
 /* 버튼 이벤트*/
 let darkModeBtn = document.querySelector(".header .header__btn");
@@ -55,6 +57,9 @@ function nightDayHandler(){
     /* 카테고리 */
     category.setMainCategory('white');
 
+    /* content */
+    content.setBgColor('#464058');
+
     /* footer */
     footer.setAtagColor('#F1F1F1');
 
@@ -78,6 +83,9 @@ function nightDayHandler(){
 
     /* 카테고리 */
     category.setMainCategory('#333');
+
+    /* content */
+    content.setBgColor('#f4f4f4');
 
     /* footer */
     footer.setAtagColor('#333');

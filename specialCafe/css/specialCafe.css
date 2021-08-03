@@ -211,7 +211,7 @@ button:hover {
 
 .content__imgs {
   width: 100%;
-  background-color: #f4f4f4;
+  background: #f4f4f4;
   padding-bottom: 11rem;
   margin-bottom: 0rem;
 }
