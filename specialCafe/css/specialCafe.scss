@@ -49,7 +49,7 @@ button {
     height: 40rem;
     text-align: center;
     //font-size: 8rem;
-    margin-top: 10rem;
+    padding-top: 10rem;
     p {
       font-size: 2rem;
     }
@@ -233,7 +233,7 @@ button {
   display: none;
   height: 2000px;
   .main__detail {
-    height: 600px;
+    height: 400px;
     position: relative;
     background: $maincolor;
     .detailed__information {
