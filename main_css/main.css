@@ -172,11 +172,6 @@ body {
   margin-right: 1rem;
 }
 
-.header__btn:hover {
-  background-color: #333;
-  color: #f4f4f4;
-}
-
 .header__btn:hover .fa-moon {
   color: #fce303;
 }
