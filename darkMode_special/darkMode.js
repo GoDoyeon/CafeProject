@@ -1,9 +1,10 @@
-import header from './object/header_color.js';
-import mainHome from './object/mainHome_color.js';
-import body from './object/body_color.js';
-import main_newCafe from './object/main_newCafe_color.js';
-import detailBtnColor from './object/mainDetailBtn_color.js';
-import footer from './object/footer_color.js';
+import header from '../darkMode_main/object/header_color.js';
+import body from '../darkMode_main/object/body_color.js';
+import mainHome from '../darkMode_main/object/mainHome_color.js';
+import category from '../darkMode_special/object/categoryColor.js';
+import content from '../darkMode_special/object/content_color.js';
+import footer from '../darkMode_main/object/footer_color.js';
+
 
 /* 버튼 이벤트*/
 let darkModeBtn = document.querySelector(".header .header__btn");
@@ -35,7 +36,6 @@ darkModeBtn.addEventListener('mouseout', function(){
   }
 });
 
-
 function nightDayHandler(){
   if(darkModeBtn.value === 'night'){
     /* 헤더 */
@@ -54,18 +54,18 @@ function nightDayHandler(){
     body.setFontColor('#F1F1F1');
     body.setHighLightColor('white');
 
-    /* 메인 뉴카페 */
-    main_newCafe.cafeBgColor('#464058');
+    /* 카테고리 */
+    category.setMainCategory('white');
 
-    /* 상세보기 버튼 */
-    detailBtnColor.setBgColor('#292a2d');
-    detailBtnColor.setFontColor('#F1F1F1');
+    /* content */
+    content.setBgColor('#464058');
+    content.setFontColor('#F1F1F1');
+    content.setImgTextBox('#292a2d');
 
     /* footer */
     footer.setAtagColor('#F1F1F1');
 
     darkModeBtn.value = 'day';
-    
   }else{
     /* 헤더 */
     header.setFontColor('#333');
@@ -83,16 +83,19 @@ function nightDayHandler(){
     body.setFontColor('#333');
     body.setHighLightColor('#8d91eb');
 
-    /* 메인 뉴카페 */
-    main_newCafe.cafeBgColor('#f8f2ff');
+    /* 카테고리 */
+    category.setMainCategory('#333');
 
-    /* 상세보기 버튼 */
-    detailBtnColor.setBgColor('#eedeff');
-    detailBtnColor.setFontColor('#333');
+    /* content */
+    content.setBgColor('#f4f4f4');
+    content.setFontColor('#333');
+    content.setImgTextBox('#47405a');
+
 
     /* footer */
     footer.setAtagColor('#333');
 
     darkModeBtn.value = 'night';
+
   }
 }

@@ -49,7 +49,6 @@ button {
     height: 40rem;
     text-align: center;
     //font-size: 8rem;
-    color: $textcolor;
     margin-top: 10rem;
     p {
       font-size: 2rem;
@@ -71,7 +70,6 @@ button {
     width: 120rem;
     height: 25rem;
     margin: 0 auto;
-    color: #333;
     // 카페 메뉴 - 공통 ul, li 부분 style
     .wrap {
       width: 105rem;
@@ -95,7 +93,6 @@ button {
           a {
             width: 19rem;
             height: 100%;
-            color: $textcolor;
             font-weight: bold;
             // &.visited {
             //   padding-bottom: 2.4rem;
@@ -143,7 +140,6 @@ button {
         padding-bottom: 0;
         text-decoration: none;
         font-weight: bold;
-        color: $textcolor;
         &:hover {
           box-shadow: 0 -8px $hovercolor_special inset;
           cursor: pointer;
@@ -155,7 +151,7 @@ button {
   // 메뉴 이미지 부분
   &__imgs {
     width: 100%;
-    background-color: #f4f4f4;
+    background: #f4f4f4;
     padding-bottom: 11rem;
     // margin-bottom: 5rem; //푸터와 너무 떨어져 있어서 0으로 바꿈.
     margin-bottom: 0rem;
@@ -169,7 +165,6 @@ button {
       span {
         a {
           font-weight: bold;
-          color: $textcolor;
           &:visited {
             font-weight: bold;
           }
@@ -207,7 +202,7 @@ button {
               bottom: 0;
               height: 7.3rem;
               width: 38rem;
-              background-color: #47405a;
+              background: #47405a;
               opacity: 0.8;
               color: #fff;
               text-align: center;
