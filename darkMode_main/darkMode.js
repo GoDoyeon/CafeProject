@@ -3,6 +3,7 @@ import mainHome from './object/mainHome_color.js';
 import body from './object/body_color.js';
 import main_newCafe from './object/main_newCafe_color.js';
 import detailBtnColor from './object/mainDetailBtn_color.js';
+import footer from './object/footer_color.js';
 
 /* 버튼 이벤트*/
 let darkModeBtn = document.querySelector(".header .header__btn");
@@ -60,6 +61,9 @@ function nightDayHandler(){
     detailBtnColor.setBgColor('#292a2d');
     detailBtnColor.setFontColor('#F1F1F1');
 
+    /* footer */
+    footer.setAtagColor('#F1F1F1');
+
     darkModeBtn.value = 'day';
     
   }else{
@@ -85,6 +89,9 @@ function nightDayHandler(){
     /* 상세보기 버튼 */
     detailBtnColor.setBgColor('#eedeff');
     detailBtnColor.setFontColor('#333');
+
+    /* footer */
+    footer.setAtagColor('#333');
 
     darkModeBtn.value = 'night';
   }
