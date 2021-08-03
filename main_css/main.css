@@ -102,6 +102,10 @@ body {
   color: #333;
 }
 
+.highLight {
+  color: #8d91eb;
+}
+
 .screen_out {
   text-indent: -9999px;
   overflow: hidden;
@@ -223,7 +227,6 @@ body {
 }
 
 .main__home .main__tit .main_text .main {
-  color: #8d91eb;
   font-weight: bold;
 }
 
@@ -253,7 +256,6 @@ body {
 
 .main__horoscope .horoscope__tit .tit .main__font {
   font-weight: bold;
-  color: #8d91eb;
 }
 
 .main__horoscope .horoscope__tit p {
@@ -265,7 +267,6 @@ body {
 
 .main__horoscope .horoscope__tit p .main__font {
   font-weight: bold;
-  color: #8d91eb;
 }
 
 .main__horoscope .horoscope__block {
@@ -712,7 +713,6 @@ body {
 
 .main__newCafe .newCafe__tit .tit .main__font {
   font-weight: bold;
-  color: #8d91eb;
 }
 
 .main__newCafe .newCafe__tit button {
