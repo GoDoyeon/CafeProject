@@ -29,7 +29,7 @@ darkModeBtn.addEventListener('mouseout', function(){
     btnIcon.style.color = "black";
     darkModeBtn.style.color = "#333"
   }else{
-    darkModeBtn.style.background = "#333";
+    darkModeBtn.style.background = "#3D4044";
     btnIcon.style.color = "yellow";
     darkModeBtn.style.color = "#f4f4f4"
   }

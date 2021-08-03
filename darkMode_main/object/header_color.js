@@ -2,10 +2,9 @@ let header = {
   setBgColor: function(color){
     let headerBg = document.querySelector('.header');
     headerBg.style.background = color;
-
   },
   setFontColor: function(color){
-    let menu = document.querySelectorAll(".header li a");
+    let menu = document.querySelectorAll(".header .header__menu li a");
     
     let i = 0;
     while(i < menu.length){
