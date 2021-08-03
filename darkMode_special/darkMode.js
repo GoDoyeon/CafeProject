@@ -59,6 +59,8 @@ function nightDayHandler(){
 
     /* content */
     content.setBgColor('#464058');
+    content.setFontColor('#F1F1F1');
+    content.setImgTextBox('#292a2d');
 
     /* footer */
     footer.setAtagColor('#F1F1F1');
@@ -86,6 +88,9 @@ function nightDayHandler(){
 
     /* content */
     content.setBgColor('#f4f4f4');
+    content.setFontColor('#333');
+    content.setImgTextBox('#47405a');
+
 
     /* footer */
     footer.setAtagColor('#333');
