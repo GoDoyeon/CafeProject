@@ -15,10 +15,12 @@ let header = {
   },
 
   setBtnBgColor: function(color){
+    let darkModeBtn = document.querySelector(".header .header__btn");
     darkModeBtn.style.background = color;
   },
 
   setBtnFontColor: function(color){
+    let darkModeBtn = document.querySelector(".header .header__btn");
     darkModeBtn.style.color = color;
   },
 

@@ -1,5 +1,5 @@
 let header__bg = document.querySelector(".header");
-let darkModeBtn = document.querySelector(".header .header__btn");
+let darkModeBtn_header = document.querySelector(".header .header__btn");
 let TopNum_header = 600;
 let direction_header = '';
 document.addEventListener('scroll',function(){
@@ -7,7 +7,7 @@ document.addEventListener('scroll',function(){
   if(currentPos > TopNum_header){
     if(direction_header != 'down'){
       direction_header = 'down';
-      if(darkModeBtn.value==='night'){
+      if(darkModeBtn_header.value==='night'){
         header__bg.style.background = 'white';
         header__bg.style.color = '#333';
       }else{
