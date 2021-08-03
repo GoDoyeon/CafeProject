@@ -34,6 +34,10 @@ body {
   // font-size: 7px; // 맥북 기준
 }
 
+.highLight {
+  color: $hovercolor_special;
+}
+
 .screen_out {
   text-indent: -9999px;
   overflow: hidden;
@@ -73,11 +77,10 @@ body {
     // width: 70%;
     width: 100%;
     font-family: 'Nanum Gothic', sans-serif;
-    color: $textcolor;
     line-height: 30px;
 
     .sub_text {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     .main_text {
       font-size: 6rem;
@@ -88,7 +91,6 @@ body {
     justify-content: center;
     text-align: center;
     //padding: 30rem 0;
-    font-size: 8rem;
   }
 }
 
@@ -109,7 +111,7 @@ body {
       display: block;
       padding: 21rem 0 0 18rem;
       font-weight: 400;
-      font-size: 6rem;
+      font-size: 4em;
       .main__font {
         font-weight: bold;
       }
@@ -118,7 +120,7 @@ body {
       display: block;
       padding: 1.4rem 0 0 18rem;
       margin-top: 1rem;
-      font-size: 3rem;
+      font-size: 1.6rem;
       .main__font {
         font-weight: bold;
       }
@@ -207,7 +209,7 @@ body {
       opacity: 0.8;
       color: #fff;
       &:hover {
-        background-color: $hovercolor;
+        background-color: $hovercolor_special;
         color: #fff;
       }
     }
@@ -327,11 +329,11 @@ body {
         transition: 0.2s ease-in;
         p {
           width: 15rem;
-          font-size: 30px;
+          font-size: 2rem;
           text-align: center;
         }
         .arrow {
-          font-size: 30px;
+          font-size: 2rem;
           text-shadow: 5px 5px 7px $boxshadow;
         }
         &:hover {
@@ -428,18 +430,18 @@ body {
   .best__tit {
     width: 98.8rem;
     height: 58rem;
-    padding: 20rem 0px 0px 9.2rem;
+    padding: 22rem 0px 0px 9.2rem;
     margin: 0 auto;
-    line-height: 50px;
+    line-height: 30px;
     letter-spacing: 2px;
   }
 
   .tit {
-    font-size: 50px;
+    font-size: 4rem;
     margin-bottom: 3rem;
   }
   .sub__tit {
-    font-size: 36px;
+    font-size: 1.6rem;
     font-family: 'Frank Ruhl Libre', serif;
   }
 
@@ -455,7 +457,7 @@ body {
       width: 100%;
       height: 58rem;
       position: absolute;
-      top: 58rem;
+      top: -58rem;
       background: url('../img/06/bg.png') center no-repeat;
       background-size: cover;
       transition: 0.5s ease-out;
@@ -464,21 +466,19 @@ body {
 
   .best__box {
     width: 36rem;
-    height: 58rem;
+    height: 55rem;
     position: absolute;
     overflow: hidden;
     top: 21rem;
     left: 60%;
-    background: url('../img/06/best_1_1.png') center no-repeat;
-    background-size: cover;
     box-shadow: 10px 10px 15px $boxshadow;
 
     .best__header {
       width: 36rem;
-      height: 58rem;
+      height: 102.1rem;
       position: absolute;
-      top: 58rem;
-      background: url('../img/06/bg.png') center no-repeat;
+      top: 0rem;
+      background: url('../img/06/best.png') center no-repeat;
       background-size: cover;
       transition: 0.5s ease-out;
     }
@@ -498,11 +498,11 @@ body {
     transition: 0.2s ease-in;
     p {
       width: 15rem;
-      font-size: 30px;
+      font-size: 2rem;
       text-align: center;
     }
     .arrow {
-      font-size: 30px;
+      font-size: 2rem;
       text-shadow: 5px 5px 7px $boxshadow;
     }
     &:hover {
@@ -527,7 +527,7 @@ body {
       display: block;
       //padding: 21rem 0 0 18rem;
       font-weight: 400;
-      font-size: 5rem;
+      font-size: 4rem;
       margin-bottom: 5rem;
       .main__font {
         font-weight: bold;
@@ -538,7 +538,7 @@ body {
       background-color: $buttoncolor;
       padding: 1.5rem 5rem;
       border-radius: 50px;
-      font-size: 2rem;
+      font-size: 1.6rem;
       border: none;
       color: $textcolor;
     }
@@ -570,7 +570,7 @@ body {
       left: -70px;
       color: $buttoncolor;
       &:hover {
-        color: #333;
+        color: $textcolor;
       }
     }
     .swiperbtn {

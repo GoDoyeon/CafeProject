@@ -2,10 +2,9 @@ let header = {
   setBgColor: function(color){
     let headerBg = document.querySelector('.header');
     headerBg.style.background = color;
-
   },
   setFontColor: function(color){
-    let menu = document.querySelectorAll(".header li a");
+    let menu = document.querySelectorAll(".header .header__menu li a");
     
     let i = 0;
     while(i < menu.length){
@@ -15,10 +14,12 @@ let header = {
   },
 
   setBtnBgColor: function(color){
+    let darkModeBtn = document.querySelector(".header .header__btn");
     darkModeBtn.style.background = color;
   },
 
   setBtnFontColor: function(color){
+    let darkModeBtn = document.querySelector(".header .header__btn");
     darkModeBtn.style.color = color;
   },
 

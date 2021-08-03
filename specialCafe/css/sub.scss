@@ -17,6 +17,7 @@ html,
 body {
   height: 100%;
   font-size: 10px;
+  color: $textcolor;
 }
 
 li{
@@ -36,7 +37,6 @@ a {
 
 .header {
   @include header;
-  background-color: $maincolor;
 }
 
 .footer {

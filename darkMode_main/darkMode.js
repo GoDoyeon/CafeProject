@@ -3,14 +3,16 @@ import mainHome from './object/mainHome_color.js';
 import body from './object/body_color.js';
 import main_newCafe from './object/main_newCafe_color.js';
 import detailBtnColor from './object/mainDetailBtn_color.js';
+import footer from './object/footer_color.js';
 
 /* 버튼 이벤트*/
+let darkModeBtn = document.querySelector(".header .header__btn");
 darkModeBtn.addEventListener('click', nightDayHandler);
 
 darkModeBtn.addEventListener('mouseover', function(){
   let btnIcon = document.querySelector(".header .fa-moon");
   if (darkModeBtn.value === 'night'){
-    darkModeBtn.style.background = "#333";
+    darkModeBtn.style.background = "#3D4044";
     btnIcon.style.color = "yellow";
     darkModeBtn.style.color = "#f4f4f4"
   }else{
@@ -27,7 +29,7 @@ darkModeBtn.addEventListener('mouseout', function(){
     btnIcon.style.color = "black";
     darkModeBtn.style.color = "#333"
   }else{
-    darkModeBtn.style.background = "#333";
+    darkModeBtn.style.background = "#3D4044";
     btnIcon.style.color = "yellow";
     darkModeBtn.style.color = "#f4f4f4"
   }
@@ -37,26 +39,30 @@ darkModeBtn.addEventListener('mouseout', function(){
 function nightDayHandler(){
   if(darkModeBtn.value === 'night'){
     /* 헤더 */
-    header.setFontColor('powderblue');
-    header.setBgColor('black');
-    header.setBtnBgColor('#333');
+    header.setFontColor('#F1F1F1');
+    header.setBgColor('#292a2d');
+    header.setBtnBgColor('#3D4044');
     header.setBtnFontColor('#f4f4f4');
     header.setBtnIcon('yellow');
 
     /* 메인 홈 */
-    mainHome.setMainBgColor('black');
-    mainHome.setMainFontColor('powderblue');
+    mainHome.setMainBgColor('#464058');
+    mainHome.setMainFontColor('#F1F1F1');
 
     /* 전체 바디 */
-    body.setBgColor('black');
-    body.setFontColor('powderblue');
+    body.setBgColor('#292a2d');
+    body.setFontColor('#F1F1F1');
+    body.setHighLightColor('white');
 
     /* 메인 뉴카페 */
-    main_newCafe.cafeBgColor('black');
+    main_newCafe.cafeBgColor('#464058');
 
     /* 상세보기 버튼 */
-    detailBtnColor.setBgColor('black');
-    detailBtnColor.setFontColor('powderblue');
+    detailBtnColor.setBgColor('#292a2d');
+    detailBtnColor.setFontColor('#F1F1F1');
+
+    /* footer */
+    footer.setAtagColor('#F1F1F1');
 
     darkModeBtn.value = 'day';
     
@@ -75,6 +81,7 @@ function nightDayHandler(){
     /* 전체 바디 */
     body.setBgColor('none');
     body.setFontColor('#333');
+    body.setHighLightColor('#8d91eb');
 
     /* 메인 뉴카페 */
     main_newCafe.cafeBgColor('#f8f2ff');
@@ -82,6 +89,9 @@ function nightDayHandler(){
     /* 상세보기 버튼 */
     detailBtnColor.setBgColor('#eedeff');
     detailBtnColor.setFontColor('#333');
+
+    /* footer */
+    footer.setAtagColor('#333');
 
     darkModeBtn.value = 'night';
   }
