@@ -276,7 +276,6 @@ button:hover {
 /*메인 title*/
 .main_detail_info {
   display: none;
-  height: 2000px;
 }
 
 .main_detail_info .main__detail {
@@ -298,7 +297,7 @@ button:hover {
 }
 
 .main_detail_info .detailed__info {
-  height: 1400px;
+  height: 200rem;
   position: relative;
   background: #f4f4f4;
 }
@@ -323,7 +322,6 @@ button:hover {
 
 .main_detail_info .detailed__info .detailed__wrap {
   width: 123rem;
-  height: 120rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -333,8 +331,6 @@ button:hover {
 .main_detail_info .detailed__info .detailed__wrap .detailed__container {
   width: 123rem;
   height: 120rem;
-  overflow: hidden;
-  position: relative;
 }
 
 .main_detail_info .detailed__info .detailed__wrap .detailed__container li {
@@ -364,49 +360,7 @@ button:hover {
 
 .main_detail_info .detailed__info .detailed__wrap .detailed__container .caption {
   width: 120rem;
-  height: 120rem;
-  position: absolute;
-  background: rgba(190, 189, 189, 0.836);
-  top: 120rem;
-  transition: 0.5s ease-in;
-  opacity: 0;
-  z-index: 200;
-}
-
-.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .main_tit {
-  font-size: 14.4rem;
-  text-align: center;
-  font-family: 'Dancing Script', cursive;
-  line-height: 50rem;
-}
-
-.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .cafe_tit {
-  font-size: 7.2rem;
-  text-align: center;
-}
-
-.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .cafe_address {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 6rem;
-}
-
-.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .cafe_link {
-  font-family: 'Dancing Script', cursive;
-  font-size: 4.8rem;
-  text-align: center;
-  padding-top: 3rem;
-}
-
-.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption .stars {
-  font-size: 4.8rem;
-  text-align: center;
-  line-height: 15rem;
-}
-
-.main_detail_info .detailed__info .detailed__wrap .detailed__container:hover .caption {
-  opacity: 1;
-  transform: translateY(-120rem);
+  height: 20rem;
 }
 
 .header {
