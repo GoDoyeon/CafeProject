@@ -278,27 +278,21 @@ button:hover {
   display: none;
 }
 
-.main_detail_info .main__detail {
+.main_detail_info .main__home {
   height: 400px;
-  position: relative;
   background: #eedeff;
 }
 
-.main_detail_info .main__detail .detailed__information {
+.main_detail_info .main__home .detailed__information {
   width: 70rem;
   height: 10rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -5rem -35rem;
+  margin: auto;
   text-align: center;
   font-size: 80px;
   font-family: 'Dancing Script', cursive;
 }
 
 .main_detail_info .detailed__info {
-  height: 200rem;
-  position: relative;
   background: #f4f4f4;
 }
 
@@ -322,15 +316,12 @@ button:hover {
 
 .main_detail_info .detailed__info .detailed__wrap {
   width: 123rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -60rem -61.5rem;
+  margin: auto;
 }
 
 .main_detail_info .detailed__info .detailed__wrap .detailed__container {
   width: 123rem;
-  height: 120rem;
+  height: 118rem;
 }
 
 .main_detail_info .detailed__info .detailed__wrap .detailed__container li {
@@ -358,9 +349,35 @@ button:hover {
   line-height: 6rem;
 }
 
-.main_detail_info .detailed__info .detailed__wrap .detailed__container .caption {
+.main_detail_info .detailed__info .detailed__wrap .caption {
   width: 120rem;
   height: 20rem;
+  margin: 3rem;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .caption .main_tit {
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+  line-height: 5rem;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .caption .cafe_tit {
+  font-size: 2rem;
+  line-height: 5rem;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .caption .cafe_address {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .caption .cafe_link {
+  font-size: 2rem;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .caption .stars {
+  font-size: 2.5rem;
+  text-align: right;
 }
 
 .header {

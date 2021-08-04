@@ -226,25 +226,19 @@ button {
 /*메인 title*/
 .main_detail_info {
   display: none;
-  .main__detail {
+  .main__home { //main__detail
     height: 400px;
-    position: relative;
     background: $maincolor;
-    .detailed__information {
+    .detailed__information {//detailed__information
       width: 70rem;
       height: 10rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: -5rem -35rem;
+      margin: auto;
       text-align: center;
       font-size: 80px;
       font-family: 'Dancing Script', cursive;
     }
   }
   .detailed__info {
-    height: 200rem;
-    position: relative;
     background: #f4f4f4;
 
     .prev {
@@ -267,14 +261,11 @@ button {
 
     .detailed__wrap {
       width: 123rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: -60rem -61.5rem;
+      margin: auto;
 
       .detailed__container {
         width: 123rem;
-        height: 120rem;
+        height: 118rem;
     
 
         li {
@@ -301,45 +292,39 @@ button {
             text-align: center;
             line-height: 6rem;
           }
-        }
-
-        .caption {
-          width: 120rem;
-          height: 20rem;
-
-          // .main_tit {
-          //   font-size: 14.4rem;
-          //   text-align: center;
-          //   font-family: 'Dancing Script', cursive;
-          //   line-height: 50rem;
-          // }
-
-          // .cafe_tit {
-          //   font-size: 7.2rem;
-          //   text-align: center;
-          // }
-
-          // .cafe_address {
-          //   font-size: 3rem;
-          //   text-align: center;
-          //   padding-top: 6rem;
-          // }
-
-          // .cafe_link {
-          //   font-family: 'Dancing Script', cursive;
-          //   font-size: 4.8rem;
-          //   text-align: center;
-          //   padding-top: 3rem;
-          // }
-
-          // .stars {
-          //   font-size: 4.8rem;
-          //   text-align: center;
-          //   line-height: 15rem;
-          // }
-        }
-       
+        }       
       }
+      .caption {
+        width: 120rem;
+        height: 20rem;
+        margin: 3rem;
+
+        .main_tit {
+          font-size: 3rem;
+          font-family: 'Dancing Script', cursive;
+          line-height: 5rem;
+        }
+
+        .cafe_tit {
+          font-size: 2rem;
+          line-height: 5rem;
+        }
+
+        .cafe_address {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+
+        .cafe_link {
+          font-size: 2rem;
+        }
+
+        .stars {
+          font-size: 2.5rem;
+          text-align: right;
+        }
+      }
+
     }
   }
 }
