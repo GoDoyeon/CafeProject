@@ -75,6 +75,8 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
     line-height: 30px;
 
+    justify-content: center;
+    text-align: center;
     .sub_text {
       font-size: 2rem;
     }
@@ -84,8 +86,6 @@ body {
         font-weight: bold;
       }
     }
-    justify-content: center;
-    text-align: center;
     //padding: 30rem 0;
   }
 }
