@@ -14,10 +14,6 @@ const mainHome_detail = {
     container.style.background = color;
   },
 
-  setLinkColor: function(color){
-    let link = document.querySelector('.caption a');
-    link.style.color=color;
-  },
 
   setCenterBgColor: function(color){
     let img5 = document.querySelector('.detailed__container .img5');
@@ -28,6 +24,23 @@ const mainHome_detail = {
     let img5 = document.querySelector('.detailed__container .img5');
     img5.style.color=color;
   },
+
+  setDetailInfoBgColor: function(color){
+    let caption = document.querySelector('.detailed__wrap .caption');
+    caption.style.background = color;
+  },
+
+  setDetailInfoFontColor: function(color){
+    let caption = document.querySelector('.detailed__wrap .caption');
+    caption.style.color = color;
+  },
+
+  setDetailInfoLinkColor: function(color){
+    let captionLink = document.querySelector('.caption .cafe_link a');
+    captionLink.style.color = color;
+  },
+
+
 
   setBtnBgColot: function(color){
     let btn = document.querySelector('.detailed__info .prev');
