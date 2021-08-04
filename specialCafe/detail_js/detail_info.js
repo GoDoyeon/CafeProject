@@ -9,12 +9,12 @@ let main = document.querySelector('.main');
 let main_detail = document.querySelector('.main_detail_info');
 let prev = document.querySelector('.detailed__info .prev');
 
-/* 카페 hover시, info*/
-let cafeTheme_Info = document.querySelector('.detailed__container .main_tit');
-let cafeName_Info = document.querySelector('.detailed__container .cafe_tit');
-let cafeAddress_Info = document.querySelector('.detailed__container .cafe_address');
-let cafeLink_Info = document.querySelector('.detailed__container .cafe_link a');
-let cafeStars_Info = document.querySelector('.detailed__container .stars');
+/* 카페 info*/
+let cafeTheme_Info = document.querySelector('.detailed__wrap .main_tit');
+let cafeName_Info = document.querySelector('.detailed__wrap .cafe_tit');
+let cafeAddress_Info = document.querySelector('.detailed__wrap .cafe_address');
+let cafeLink_Info = document.querySelector('.detailed__wrap .cafe_link a');
+let cafeStars_Info = document.querySelector('.detailed__wrap .stars');
 
 /* 카페 Main info */
 let cafeMainTheme_Info = document.querySelector('.detailed__container .cafe_theme');
