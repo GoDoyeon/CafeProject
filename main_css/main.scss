@@ -53,10 +53,10 @@ body {
 
 /* section2 */
 .main__home {
-  padding-top: 10rem;
+  padding-top: 5rem;
   width: 100%;
   background-color: $maincolor;
-  height: 60rem;
+  height: 40rem;
   display: flex;
   .main__img {
     margin: 10rem;
@@ -98,14 +98,13 @@ body {
   /* article 3-1. 텍스트 부분 */
   .horoscope__tit {
     font-family: 'Noto Sans KR', sans-serif;
-
     display: block;
     margin: 0 auto;
-    height: 44rem; // 210+80+150 = 440px
+    height: 35rem; // 210+80+150 = 440px
     width: 192rem;
     .tit {
       display: block;
-      padding: 21rem 0 0 18rem;
+      padding: 15rem 0 0 18rem;
       font-weight: 400;
       font-size: 4em;
       .main__font {
@@ -130,7 +129,7 @@ body {
     /* 별점 높은 순 사진 리스트 부분 */
     .horoscope__wrapper {
       width: 192rem;
-      height: 40rem;
+      height: 10rem;
       margin: 0 auto;
       left: 18rem;
       position: relative;
@@ -138,7 +137,7 @@ body {
       display: flex;
       transform: translate3d(0, 0, 0);
       transition: transform 0.5s;
-      margin-bottom: 16rem;
+      // margin-bottom: 16rem;
       .horoscope {
         margin-right: 3rem;
         //border: 1px solid #979797;
@@ -188,13 +187,13 @@ body {
     .horoscope__prevbtn {
       left: 3rem;
       position: absolute;
-      bottom: 16.5rem;
+      bottom: -13rem;
     }
     // 슬라이드 다음 버튼
     .horoscope__nextbtn {
       right: 3rem;
       position: absolute;
-      bottom: 16.5rem;
+      bottom: -13rem;
     }
     // 공통 버튼
     .horoscope__btn {

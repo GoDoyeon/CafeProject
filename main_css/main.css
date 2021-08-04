@@ -233,10 +233,10 @@ body {
 
 /* section2 */
 .main__home {
-  padding-top: 10rem;
+  padding-top: 5rem;
   width: 100%;
   background-color: #eedeff;
-  height: 60rem;
+  height: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,13 +288,13 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   display: block;
   margin: 0 auto;
-  height: 44rem;
+  height: 35rem;
   width: 192rem;
 }
 
 .main__horoscope .horoscope__tit .tit {
   display: block;
-  padding: 21rem 0 0 18rem;
+  padding: 15rem 0 0 18rem;
   font-weight: 400;
   font-size: 4em;
 }
@@ -323,7 +323,7 @@ body {
 
 .main__horoscope .horoscope__block .horoscope__wrapper {
   width: 192rem;
-  height: 40rem;
+  height: 10rem;
   margin: 0 auto;
   left: 18rem;
   position: relative;
@@ -336,7 +336,6 @@ body {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  margin-bottom: 16rem;
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope {
@@ -393,13 +392,13 @@ body {
 .main__horoscope .horoscope__block .horoscope__prevbtn {
   left: 3rem;
   position: absolute;
-  bottom: 16.5rem;
+  bottom: -13rem;
 }
 
 .main__horoscope .horoscope__block .horoscope__nextbtn {
   right: 3rem;
   position: absolute;
-  bottom: 16.5rem;
+  bottom: -13rem;
 }
 
 .main__horoscope .horoscope__block .horoscope__btn {
