@@ -1,7 +1,7 @@
 import header from '../darkMode_main/object/header_color.js';
 import container from '../darkMode_about/object/container_color.js';
 import footer from '../darkMode_main/object/footer_color.js';
-
+import project from '../darkMode_about/object/projectContainer_color.js';
 
 /* 버튼 이벤트*/
 let darkModeBtn = document.querySelector(".header .header__btn");
@@ -46,6 +46,9 @@ function nightDayHandler(){
     container.setBgColor('#464058');
     container.setFontColor('#F1F1F1');
 
+    /* 프로젝트 배경 */
+    project.projectContainer('#292a2d');
+
     /* footer */
     footer.setAtagColor('#F1F1F1');
     footer.setBgColor('#292a2d');
@@ -62,6 +65,9 @@ function nightDayHandler(){
     /* 전체 바디 */
     container.setBgColor('none');
     container.setFontColor('#333');
+
+    /* 프로젝트 배경 */
+    project.projectContainer('#eedeff');
 
     /* footer */
     footer.setAtagColor('#333');
