@@ -248,10 +248,9 @@ button {
       font-size: 3rem;
       background: $maincolor;
       border-radius: 30px;
-      left: 50%;
-      top: 5rem;
-      margin-left: 60rem;
-      box-shadow: 1rem 1rem 0.6rem 0.3rem gray;
+      bottom: 57rem;
+      right: 15%;
+      box-shadow: 1rem 1rem 0.6rem 0.1rem gray;
 
       &:hover {
         background: $hovercolor_special;
@@ -265,8 +264,8 @@ button {
 
       .detailed__container {
         width: 123rem;
-        height: 118rem;
-    
+        height: 140rem;
+        padding-top: 10rem;
 
         li {
           width: 38rem;
