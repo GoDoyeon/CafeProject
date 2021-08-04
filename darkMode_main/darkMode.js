@@ -3,6 +3,7 @@ import mainHome from './object/mainHome_color.js';
 import body from './object/body_color.js';
 import main_newCafe from './object/main_newCafe_color.js';
 import detailBtnColor from './object/mainDetailBtn_color.js';
+import horoscopeBtn from './object/horoscopeBtn_color.js';
 import footer from './object/footer_color.js';
 
 /* 버튼 이벤트*/
@@ -53,8 +54,12 @@ function nightDayHandler(){
     body.setFontColor('#F1F1F1');
     body.setHighLightColor('white');
 
+    /* horoscopeBtn */
+    horoscopeBtn.horoscopeBgBtn('#7160BB');
+
     /* 메인 뉴카페 */
     main_newCafe.cafeBgColor('#464058');
+    main_newCafe.cafeBtnColor('#F1F1F1');
 
     /* 상세보기 버튼 */
     detailBtnColor.setBgColor('#292a2d');
@@ -81,8 +86,12 @@ function nightDayHandler(){
     body.setFontColor('#333');
     body.setHighLightColor('#8d91eb');
 
+    /* horoscopeBtn */
+    horoscopeBtn.horoscopeBgBtn('#979797');
+
     /* 메인 뉴카페 */
     main_newCafe.cafeBgColor('#f8f2ff');
+    main_newCafe.cafeBtnColor('#ccb7ff');
 
     /* 상세보기 버튼 */
     detailBtnColor.setBgColor('#eedeff');
