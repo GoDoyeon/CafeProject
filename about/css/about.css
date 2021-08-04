@@ -225,9 +225,6 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.875rem;
   margin: 8px 0 70px;
-}
-
-.project-content .box__txt i {
   color: #5D4B72;
 }
 
@@ -237,7 +234,6 @@ body {
 
 .project-content .box__txt--color {
   font-weight: bold;
-  color: #5D4B72;
 }
 
 .project-content-page {

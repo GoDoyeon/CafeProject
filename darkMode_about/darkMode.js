@@ -46,8 +46,9 @@ function nightDayHandler(){
     container.setBgColor('#464058');
     container.setFontColor('#F1F1F1');
 
-    /* 프로젝트 배경 */
+    /* 프로젝트 container&font*/
     project.projectContainer('#292a2d');
+    project.projectFontColor('white');
 
     /* footer */
     footer.setAtagColor('#F1F1F1');
@@ -66,8 +67,10 @@ function nightDayHandler(){
     container.setBgColor('none');
     container.setFontColor('#333');
 
-    /* 프로젝트 배경 */
+    /* 프로젝트 container&font*/
     project.projectContainer('#eedeff');
+    project.projectFontColor('#5D4B72');
+  
 
     /* footer */
     footer.setAtagColor('#333');

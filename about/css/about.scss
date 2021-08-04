@@ -86,15 +86,16 @@ body {
       font-family: 'Noto Sans KR', sans-serif;
       font-size: 1.875rem;
       margin: 8px 0 70px;
-      i {
-        color: #5D4B72;
-      }
+      color: #5D4B72;
+      // i {
+        
+      // }
       span {
         margin: 0 1rem;
       }
       &--color {
         font-weight: bold;
-        color: #5D4B72;
+        
       }
     }
     &-page {
