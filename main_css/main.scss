@@ -34,10 +34,6 @@ body {
   // font-size: 7px; // 맥북 기준
 }
 
-.highLight {
-  color: $hovercolor_special;
-}
-
 .screen_out {
   text-indent: -9999px;
   overflow: hidden;
@@ -209,7 +205,7 @@ body {
       opacity: 0.8;
       color: #fff;
       &:hover {
-        background-color: $hovercolor_special;
+        background-color: $maincolor;
         color: #fff;
       }
     }
