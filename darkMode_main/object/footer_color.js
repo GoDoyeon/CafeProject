@@ -7,6 +7,11 @@ let footer={
       i=i+1;
     }
   },
+
+  setBgColor: function(color){
+    let footerBg = document.querySelector('.footer');
+    footerBg.style.background=color;
+  },
 }
 
 export default footer;
