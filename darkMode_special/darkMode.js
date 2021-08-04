@@ -81,7 +81,6 @@ function nightDayHandler(){
     /* 전체 바디 */
     body.setBgColor('none');
     body.setFontColor('#333');
-    body.setHighLightColor('#8d91eb');
 
     /* 카테고리 */
     category.setMainCategory('#333');
