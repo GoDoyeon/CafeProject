@@ -25,7 +25,7 @@ const rooftop = {
   },
   
    karinyoungdoplace :{
-    name: '카린 영도 플레이스',
+    name: '카린 영도<br>플레이스',
     address: '도로명 : 부산 영도구 청학동로 16',
     link: 'https://blog.naver.com/yoanna735/222371293566',
     star: '평점: 4.45/5',
@@ -53,7 +53,7 @@ const rooftop = {
   },
   
   rooftop347 :{
-    name: '루프탑347 카페모든사람들',
+    name: '루프탑347<br>카페모든사람들',
     address: '도로명 : 경기 부천시 송내대로42번길 35',
     link: 'https://blog.naver.com/rilri0215/222360470753',
     star: '평점: 4.59/5',

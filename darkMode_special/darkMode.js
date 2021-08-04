@@ -41,7 +41,6 @@ function nightDayHandler(){
   if(darkModeBtn.value === 'night'){
     /* 헤더 */
     header.setFontColor('#F1F1F1');
-    header.setBgColor('#292a2d');
     header.setBtnBgColor('#3D4044');
     header.setBtnFontColor('#f4f4f4');
     header.setBtnIcon('yellow');
@@ -53,13 +52,17 @@ function nightDayHandler(){
     /* 디테일 메인홈 */
     mainHome_detail.setBgColor('#464058');
     mainHome_detail.setFontColor('#F1F1F1');
-    mainHome_detail.setLinkColor('#F1F1F1');
-
+    
     /* 디테일 컨테이너 */
     mainHome_detail.setContainerColor('#3D4044');
     mainHome_detail.setCenterBgColor('#464058');
     mainHome_detail.setFontColor('#F1F1F1');
 
+    /* 디테일 아래 정보 박스 */
+    mainHome_detail.setDetailInfoBgColor('#464058');
+    mainHome_detail.setDetailInfoFontColor('#F1F1F1');
+    mainHome_detail.setDetailInfoLinkColor('#F1F1F1');
+    
     /*  버튼 */
     mainHome_detail.setBtnBgColot('#464058');
     mainHome_detail.setBtnFontColot('white');
@@ -84,7 +87,6 @@ function nightDayHandler(){
   }else{
     /* 헤더 */
     header.setFontColor('#333');
-    header.setBgColor('white')
     header.setBtnBgColor('#f4f4f4');
     header.setBtnFontColor('#333');
     header.setBtnIcon('black');
@@ -96,12 +98,17 @@ function nightDayHandler(){
     /* 디테일 메인홈 */
     mainHome_detail.setBgColor('#eedeff');
     mainHome_detail.setFontColor('#333');
-    mainHome_detail.setLinkColor('#333');
+    
 
     /* 디테일 컨테이너 */
     mainHome_detail.setContainerColor('#f4f4f4');
     mainHome_detail.setCenterBgColor('white');
     mainHome_detail.setFontColor('#333');
+
+    /* 디테일 아래 정보 박스 */
+    mainHome_detail.setDetailInfoBgColor('white');
+    mainHome_detail.setDetailInfoFontColor('#333');
+    mainHome_detail.setDetailInfoLinkColor('#333');
 
     /*  버튼 */
     mainHome_detail.setBtnBgColot('#eedeff');
