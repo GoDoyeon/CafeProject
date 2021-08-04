@@ -238,12 +238,10 @@ button {
 /*메인 title*/
 .main_detail_info {
   display: none;
-  .main__home {
-    //main__detail
+  .main__home { //main__detail
     height: 400px;
     background: $maincolor;
-    .detailed__information {
-      //detailed__information
+    .detailed__information {//detailed__information
       width: 70rem;
       height: 10rem;
       margin: auto;
@@ -257,14 +255,14 @@ button {
 
     .prev {
       width: 10rem;
-      position: absolute;
+      position: fixed;
       height: 4rem;
       font-size: 3rem;
       background: $maincolor;
       border-radius: 30px;
-      bottom: 57rem;
-      right: 15%;
-      box-shadow: 1rem 1rem 0.6rem 0.1rem gray;
+      bottom: 30rem;
+      left: 2rem;
+      box-shadow: 0 0 5rem $boxshadow;
 
       &:hover {
         background: $hovercolor_special;
@@ -275,10 +273,11 @@ button {
     .detailed__wrap {
       width: 123rem;
       margin: auto;
+      padding-bottom: 6rem;
 
       .detailed__container {
         width: 123rem;
-        height: 140rem;
+        height: 136rem;
         padding-top: 10rem;
 
         li {
@@ -288,6 +287,7 @@ button {
           margin: 0rem 3rem 3rem 0rem;
           // background: url('../../img/detail_img/rooftop/regentsky/0.png');
           // background: url('../detail_img/rooftop/regentsky/0.png');
+          box-shadow: 0 0 5rem $boxshadow;
         }
         .img5 {
           background: white;
@@ -305,12 +305,15 @@ button {
             text-align: center;
             line-height: 6rem;
           }
-        }
+        }       
       }
       .caption {
         width: 120rem;
         height: 20rem;
-        margin: 3rem;
+        background: white;
+        padding: 2rem;
+        box-shadow: 0 0 5rem $boxshadow;
+        color: $textcolor;
 
         .main_tit {
           font-size: 3rem;
@@ -337,6 +340,7 @@ button {
           text-align: right;
         }
       }
+
     }
   }
 }

@@ -55,6 +55,8 @@ function nightDayHandler(){
     /* TeamBtn */
     teamProject.teamBtnBgColor('#292a2d');
     teamProject.teamBtnFontColor('white');
+    teamProject.teamFontColor('white');
+    teamProject.teamLinkColor('white');
 
     /* footer */
     footer.setAtagColor('#F1F1F1');
@@ -77,6 +79,12 @@ function nightDayHandler(){
     /* 프로젝트 container&font*/
     project.projectContainer('#eedeff');
     project.projectFontColor('#5D4B72');
+
+    /* TeamBtn */
+    teamProject.teamBtnBgColor('#eedeff');
+    teamProject.teamBtnFontColor('#333');
+    teamProject.teamFontColor('#5D4B72');
+    teamProject.teamLinkColor('#333');
   
     /* footer */
     footer.setAtagColor('#333');
