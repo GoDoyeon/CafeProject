@@ -41,7 +41,6 @@ function nightDayHandler(){
   if(darkModeBtn.value === 'night'){
     /* 헤더 */
     header.setFontColor('#F1F1F1');
-    header.setBgColor('#292a2d');
     header.setBtnBgColor('#3D4044');
     header.setBtnFontColor('#f4f4f4');
     header.setBtnIcon('yellow');
@@ -64,7 +63,6 @@ function nightDayHandler(){
     mainHome_detail.setDetailInfoFontColor('#F1F1F1');
     mainHome_detail.setDetailInfoLinkColor('#F1F1F1');
     
-
     /*  버튼 */
     mainHome_detail.setBtnBgColot('#464058');
     mainHome_detail.setBtnFontColot('white');
@@ -89,7 +87,6 @@ function nightDayHandler(){
   }else{
     /* 헤더 */
     header.setFontColor('#333');
-    header.setBgColor('white')
     header.setBtnBgColor('#f4f4f4');
     header.setBtnFontColor('#333');
     header.setBtnIcon('black');

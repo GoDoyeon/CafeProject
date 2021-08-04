@@ -40,7 +40,6 @@ function nightDayHandler(){
   if(darkModeBtn.value === 'night'){
     /* 헤더 */
     header.setFontColor('#F1F1F1');
-    header.setBgColor('#292a2d');
     header.setBtnBgColor('#3D4044');
     header.setBtnFontColor('#f4f4f4');
     header.setBtnIcon('yellow');
@@ -69,7 +68,6 @@ function nightDayHandler(){
   }else{
     /* 헤더 */
     header.setFontColor('#333');
-    header.setBgColor('white')
     header.setBtnBgColor('#f4f4f4');
     header.setBtnFontColor('#333');
     header.setBtnIcon('black');
