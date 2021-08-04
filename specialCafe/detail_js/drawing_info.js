@@ -50,10 +50,10 @@ const drawing = {
   },
 
   pastelmuseum:{
-    name: '성수미술관',
-    address: '도로명 : 제주 제주시 구좌읍 해맞이해안로 1726',
-    link: 'https://blog.naver.com/l0ve0k/222372266776',
-    star: '평점: 4.52/5',
+    name: '파스텔뮤지엄',
+    address: '도로명 : 부산 해운대구 우동2로 66 1층',
+    link: '도로명 : 부산 해운대구 우동2로 66 1층',
+    star: '평점: 4.18/5',
   },
   
   egon:{
