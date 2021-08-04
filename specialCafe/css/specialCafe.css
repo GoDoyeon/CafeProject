@@ -1,8 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
+/* 반응형 */
+/* 반응형 */
+/* 반응형 */
 /*main scss*/
 /*header*/
-@media screen and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -48,7 +51,7 @@
 }
 
 /*footer*/
-@media screen and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -62,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
   .footer__right {
     display: flex;
     flex-direction: column;
