@@ -60,6 +60,9 @@ function nightDayHandler(){
     mainHome_detail.setCenterBgColor('#464058');
     mainHome_detail.setFontColor('#F1F1F1');
 
+    /*  버튼 */
+    mainHome_detail.setBtnBgColot('#464058');
+    mainHome_detail.setBtnFontColot('white');
     
     /* 전체 바디 */
     body.setBgColor('#292a2d');
@@ -99,6 +102,11 @@ function nightDayHandler(){
     mainHome_detail.setContainerColor('#f4f4f4');
     mainHome_detail.setCenterBgColor('white');
     mainHome_detail.setFontColor('#333');
+
+    /*  버튼 */
+    mainHome_detail.setBtnBgColot('#eedeff');
+    mainHome_detail.setBtnFontColot('black');
+
 
     /* 전체 바디 */
     body.setBgColor('none');

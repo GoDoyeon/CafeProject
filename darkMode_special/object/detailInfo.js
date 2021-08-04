@@ -28,6 +28,16 @@ const mainHome_detail = {
     let img5 = document.querySelector('.detailed__container .img5');
     img5.style.color=color;
   },
+
+  setBtnBgColot: function(color){
+    let btn = document.querySelector('.detailed__info .prev');
+    btn.style.background = color;
+  },
+
+  setBtnFontColot: function(color){
+    let btn = document.querySelector('.detailed__info .prev');
+    btn.style.color = color;
+  }
 }
 
 export default mainHome_detail;
