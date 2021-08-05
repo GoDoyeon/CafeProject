@@ -6,8 +6,9 @@ let best__header__height = best__header.clientHeight;
 /* 높이 계산에 필요한 요소*/
 let mainHomeHeight = document.querySelector('.main .main__home').clientHeight;
 let mainHoroscopeHeight = document.querySelector('.main__horoscope').clientHeight;
+let mainSceneryHeight = document.querySelector('.main__scenery').clientHeight;
 
-let TopNum_pageSix = 2700;
+let TopNum_pageSix = mainHomeHeight+mainHoroscopeHeight+mainSceneryHeight;
 let direction_pageSix = '';
 console.log(best__inner__bg.clientWidth);
 document.addEventListener('scroll',function(){

@@ -14,7 +14,11 @@ let docElement = document.documentElement;
 // let scenery__leftBigSlide__width = scenery.clientWidth;
 // let scenery_rightBigSlide__width = scenery__right.clientWidth;
 // let scenery__bg__upSlide__width = scenery__small.clientWidth;
-let topNum=1700;
+
+/* 높이 계산에 필요한 요소*/
+mainHomeHeight = document.querySelector('.main .main__home').clientHeight;
+mainHoroscopeHeight = document.querySelector('.main__horoscope').clientHeight;
+let topNum=mainHomeHeight+mainHoroscopeHeight;
 let direction = '';
 // console.log(screen.width);
 document.addEventListener('scroll',function(){
