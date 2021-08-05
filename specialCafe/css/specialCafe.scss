@@ -45,7 +45,6 @@ button {
   background-color: #eedeff;
   height: 40rem;
   .main__tit {
-    border: 1px solid red;
     width: 100%;
     height: 40rem;
     justify-content: center;
@@ -238,10 +237,12 @@ button {
 /*메인 title*/
 .main_detail_info {
   display: none;
-  .main__home { //main__detail
+  .main__home {
+    //main__detail
     height: 400px;
     background: $maincolor;
-    .detailed__information {//detailed__information
+    .detailed__information {
+      //detailed__information
       width: 70rem;
       height: 10rem;
       margin: auto;
@@ -305,7 +306,7 @@ button {
             text-align: center;
             line-height: 6rem;
           }
-        }       
+        }
       }
       .caption {
         width: 120rem;
@@ -340,7 +341,6 @@ button {
           text-align: right;
         }
       }
-
     }
   }
 }
