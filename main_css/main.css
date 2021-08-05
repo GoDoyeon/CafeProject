@@ -346,23 +346,25 @@ body {
   position: relative;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit {
   color: #fff;
   top: 4rem;
   opacity: 0;
   padding: 4rem;
   position: absolute;
-  text-align: left;
+  display: block;
   width: 100%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__tit h1 {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__name {
+  display: block;
   font-size: 5rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__tit p {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__type {
+  display: block;
   margin-top: 2rem;
   font-size: 3rem;
 }
@@ -386,7 +388,7 @@ body {
   opacity: 0.15;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__tit {
+.main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__img__tit {
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
