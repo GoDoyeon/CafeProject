@@ -637,6 +637,7 @@ body {
   height: 55rem;
   position: absolute;
   overflow: hidden;
+  background: url("../img/06/best1.png") top no-repeat;
   top: 21rem;
   left: 60%;
   box-shadow: 10px 10px 15px #000000a8;
@@ -644,10 +645,10 @@ body {
 
 .main__best .best__box .best__header {
   width: 36rem;
-  height: 102.1rem;
+  height: 55rem;
   position: absolute;
-  top: 21rem;
-  background: url("../img/06/best.png") center no-repeat;
+  top: 55rem;
+  background: url("../img/06/best2.png") top no-repeat;
   background-size: cover;
   transition: 0.5s ease-out;
 }

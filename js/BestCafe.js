@@ -1,7 +1,12 @@
 let best__inner__bg = document.querySelector('.best__bg .best__inner__bg');
 let best__inner__bg__height = best__inner__bg.clientHeight;
 let best__header = document.querySelector('.best__box .best__header');
-let best__header__height = best__header.clientHeight - 550;
+let best__header__height = best__header.clientHeight;
+
+/* 높이 계산에 필요한 요소*/
+let mainHomeHeight = document.querySelector('.main .main__home').clientHeight;
+let mainHoroscopeHeight = document.querySelector('.main__horoscope').clientHeight;
+
 let TopNum_pageSix = 2700;
 let direction_pageSix = '';
 console.log(best__inner__bg.clientWidth);
