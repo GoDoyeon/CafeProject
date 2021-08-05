@@ -143,19 +143,23 @@ body {
         //border: 1px solid #979797;
         position: relative;
         // 이미지 호버 시 나오는 카페 설명 부분
-        .horoscope__tit {
+        .horoscope__img__tit {
           color: #fff;
           top: 4rem;
           opacity: 0;
           padding: 4rem;
           position: absolute;
-          text-align: left;
+          display: block;
+
           width: 100%;
           transition: all 0.3s ease;
-          h1 {
+          .cafe__name {
+            display: block;
             font-size: 5rem;
           }
-          p {
+          .cafe__type {
+            display: block;
+
             margin-top: 2rem;
             font-size: 3rem;
           }
@@ -176,7 +180,7 @@ body {
             transition: all 0.3s ease;
             opacity: 0.15;
           }
-          .horoscope__tit {
+          .horoscope__img__tit {
             opacity: 1;
             transition: all 0.3s ease;
           }
