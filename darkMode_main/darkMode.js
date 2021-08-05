@@ -38,8 +38,13 @@ darkModeBtn.addEventListener('mouseout', function(){
 
 
 function nightDayHandler(){
+  let currentPos = document.documentElement.scrollTop;
+  let mainHomeHeight = document.querySelector('.main__home').clientHeight;
   if(darkModeBtn.value === 'night'){
     /* 헤더 */
+    if(currentPos>mainHomeHeight){
+      header.setBgColor('#292a2d');
+    }
     header.setFontColor('#F1F1F1');
     header.setBtnBgColor('#3D4044');
     header.setBtnFontColor('#f4f4f4');
@@ -72,6 +77,9 @@ function nightDayHandler(){
     
   }else{
     /* 헤더 */
+    if(currentPos>mainHomeHeight){
+      header.setBgColor('white');
+    }
     header.setFontColor('#333');
     header.setBtnBgColor('#f4f4f4');
     header.setBtnFontColor('#333');
