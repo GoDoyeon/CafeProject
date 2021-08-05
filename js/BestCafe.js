@@ -10,14 +10,14 @@ document.addEventListener('scroll',function(){
   if(currentPos > TopNum_pageSix){
     if(direction_pageSix != 'down'){
       direction_pageSix = 'down';
-      best__inner__bg.style.top = 0 + "px";
-      best__header.style.top = 0+"px";
+      best__inner__bg.style.top = 0 + "rem";
+      best__header.style.top = 0+"rem";
     }
   }else{
     if(direction_pageSix != 'up'){
       direction_pageSix = 'up';
-      best__inner__bg.style.top = -best__inner__bg__height + 'px';
-      best__header.style.top = -best__header__height + 'px';
+      best__inner__bg.style.top = (best__inner__bg__height/10) + 'rem';
+      best__header.style.top = (best__header__height/10) + 'rem';
     }
   }
 });
