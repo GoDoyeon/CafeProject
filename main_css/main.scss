@@ -116,7 +116,7 @@ body {
     @include tablet{
       width: 70rem;
       height: 20rem;
-      padding-top: 2rem;
+      padding-top: 4rem;
     }
     .tit {
       display: block;
@@ -161,6 +161,10 @@ body {
       transform: translate3d(0, 0, 0);
       transition: transform 0.5s;
       // margin-bottom: 16rem;
+      @include tablet{
+        width: 70rem;
+        left: 0;
+      }
       .horoscope {
         margin-right: 3rem;
         //border: 1px solid #979797;
@@ -240,11 +244,16 @@ body {
 
 /*section 4: 전망좋은 카페*/
 .main__scenery {
-  height: 1000px;
-
+  height: 100rem;
+  @include tablet{
+    height: 65rem;
+  }
   .scenery__box {
-    height: 1000px;
+    height: 100rem;
     position: relative;
+    @include tablet{
+      height: 65rem;
+    }
 
     .scenery__bg__left {
       width: 33%;
@@ -263,6 +272,7 @@ body {
           @include scenery__bg__Slide;
           background: url('../img/05/left/L_content_1_1.png') center no-repeat;
           background-size: cover;
+          
         }
 
         .scenery__bg__bigSlide2 {
@@ -280,6 +290,12 @@ body {
         margin-top: -34rem;
         position: absolute;
 
+        @include tablet{
+          width: 20rem;
+          height: 40rem;
+          margin-top: -25rem;
+        }
+
         .scenery__bg__up__container {
           @include scenery__bg__smollContainer;
 
@@ -288,6 +304,10 @@ body {
             height: 34rem;
             position: absolute;
             transition: 0.5s ease-out;
+            @include tablet{
+              width: 40rem;
+              height: 20rem;
+            }
 
             .scenery__bg__smallSlide1 {
               @include scenery__bg__smallSlide;
@@ -308,7 +328,10 @@ body {
           width: 34rem;
           height: 34rem;
           background: white;
-
+          @include tablet{
+            width: 20rem;
+            height: 20rem;
+          }
           .scenery__bg__small {
             width: 34rem;
             height: 34rem;
@@ -317,6 +340,10 @@ body {
             background-size: cover;
             opacity: 1;
             transition: opacity 1s;
+            @include tablet{
+              width: 20rem;
+              height: 20rem;
+            }
           }
           .scenery__bg__small2 {
             width: 34rem;
@@ -326,6 +353,10 @@ body {
             background-size: cover;
             opacity: 0;
             transition: opacity 1s;
+            @include tablet{
+              width: 20rem;
+              height: 20rem;
+            }
           }
         }
       }
@@ -349,6 +380,9 @@ body {
         left: 25rem;
         margin-top: 22rem;
         transition: 0.2s ease-in;
+        @include tablet{
+          margin-top: 14rem;
+        }
         p {
           width: 15rem;
           font-size: 2rem;
@@ -387,13 +421,22 @@ body {
         height: 68rem;
         left: 0;
         top: 50%;
-        margin-top: -340px;
+        margin-top: -34rem;
         position: absolute;
+        @include tablet{
+          width: 20rem;
+          height: 40rem;
+          margin-top: -25rem;
+        }
 
         .scenery__bg__up {
           width: 34rem;
           height: 34rem;
           background: white;
+          @include tablet{
+            width: 20rem;
+            height: 20rem;
+          }
 
           .scenery__bg__small {
             width: 34rem;
@@ -403,6 +446,10 @@ body {
             background-size: cover;
             opacity: 1;
             transition: opacity 1s;
+            @include tablet{
+              width:20rem;
+              height: 20rem;
+            }
           }
           .scenery__bg__small2 {
             width: 34rem;
@@ -412,6 +459,10 @@ body {
             background-size: cover;
             opacity: 0;
             transition: opacity 1s;
+            @include tablet{
+              width: 20rem;
+              height: 20rem;
+            }
           }
         }
         .scenery__bg__down__container {
@@ -422,6 +473,10 @@ body {
             height: 34rem;
             position: absolute;
             transition: 0.5s ease-out;
+            @include tablet{
+              width: 40rem;
+              height: 20rem;
+            }
 
             .scenery__bg__smallSlide1 {
               @include scenery__bg__smallSlide;
@@ -519,6 +574,7 @@ body {
     left: 60%;
     margin: 22rem;
     transition: 0.2s ease-in;
+
     p {
       width: 15rem;
       font-size: 2rem;
