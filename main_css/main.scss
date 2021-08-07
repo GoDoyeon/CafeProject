@@ -272,6 +272,7 @@ body {
           @include scenery__bg__Slide;
           background: url('../img/05/left/L_content_1_1.png') center no-repeat;
           background-size: cover;
+          
         }
 
         .scenery__bg__bigSlide2 {
@@ -292,6 +293,7 @@ body {
         @include tablet{
           width: 20rem;
           height: 40rem;
+          margin-top: -25rem;
         }
 
         .scenery__bg__up__container {
@@ -378,6 +380,9 @@ body {
         left: 25rem;
         margin-top: 22rem;
         transition: 0.2s ease-in;
+        @include tablet{
+          margin-top: 14rem;
+        }
         p {
           width: 15rem;
           font-size: 2rem;
@@ -416,11 +421,12 @@ body {
         height: 68rem;
         left: 0;
         top: 50%;
-        margin-top: -340px;
+        margin-top: -34rem;
         position: absolute;
         @include tablet{
           width: 20rem;
           height: 40rem;
+          margin-top: -25rem;
         }
 
         .scenery__bg__up {
@@ -467,6 +473,10 @@ body {
             height: 34rem;
             position: absolute;
             transition: 0.5s ease-out;
+            @include tablet{
+              width: 40rem;
+              height: 20rem;
+            }
 
             .scenery__bg__smallSlide1 {
               @include scenery__bg__smallSlide;
@@ -564,6 +574,7 @@ body {
     left: 60%;
     margin: 22rem;
     transition: 0.2s ease-in;
+
     p {
       width: 15rem;
       font-size: 2rem;

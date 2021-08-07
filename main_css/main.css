@@ -467,6 +467,7 @@ body {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox {
     width: 20rem;
     height: 40rem;
+    margin-top: -25rem;
   }
 }
 
@@ -595,6 +596,12 @@ body {
   transition: 0.2s ease-in;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail {
+    margin-top: 14rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail p {
   width: 15rem;
   font-size: 2rem;
@@ -638,7 +645,7 @@ body {
   height: 68rem;
   left: 0;
   top: 50%;
-  margin-top: -340px;
+  margin-top: -34rem;
   position: absolute;
 }
 
@@ -646,6 +653,7 @@ body {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox {
     width: 20rem;
     height: 40rem;
+    margin-top: -25rem;
   }
 }
 
@@ -715,6 +723,13 @@ body {
   height: 34rem;
   position: absolute;
   transition: 0.5s ease-out;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
+    width: 40rem;
+    height: 20rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
