@@ -141,6 +141,12 @@ button:hover {
   color: green;
 }
 
+h2,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
 .cafeIcon {
   width: 3.5rem;
   margin-right: 1rem;
@@ -156,6 +162,12 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__home {
     height: 25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__home {
+    height: 15rem;
   }
 }
 
@@ -176,6 +188,12 @@ button:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .main__home .main__tit {
+    padding-top: 6rem;
+  }
+}
+
 .main__home .main__tit .main__title {
   font-weight: bold;
   font-size: 4rem;
@@ -184,6 +202,15 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__home .main__tit .main__title {
     font-size: 3rem;
+    padding: 0;
+    height: 6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__home .main__tit .main__title {
+    font-size: 2rem;
+    height: 3rem;
   }
 }
 
@@ -195,6 +222,14 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__home .main__tit .sub__title {
     font-size: 1.4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__home .main__tit .sub__title {
+    font-size: 1rem;
+    height: 2rem;
   }
 }
 
@@ -217,6 +252,12 @@ button:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .content__menu {
+    height: 4rem;
+  }
+}
+
 .content__menu .wrap {
   width: 88rem;
   height: 17rem;
@@ -228,6 +269,12 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .content__menu .wrap {
     height: 10rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .content__menu .wrap {
+    height: 4rem;
   }
 }
 
@@ -248,6 +295,14 @@ button:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .content__menu .wrap ul {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: 1rem;
+    height: 4rem;
+  }
+}
+
 .content__menu .wrap ul li {
   width: 22rem;
   position: relative;
@@ -258,6 +313,13 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .content__menu .wrap ul li {
     width: 16rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .content__menu .wrap ul li {
+    width: 8rem;
+    height: 2rem;
   }
 }
 
@@ -272,6 +334,12 @@ button:hover {
   color: #8d91eb;
 }
 
+@media (max-width: 767px) {
+  .content__menu .wrap ul li a img {
+    display: none;
+  }
+}
+
 .content__menu .wrap .underline {
   width: 22rem;
   height: 5rem;
@@ -282,6 +350,12 @@ button:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .content__menu .wrap .underline {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
   .content__menu .wrap .underline {
     display: none;
   }
@@ -300,6 +374,12 @@ button:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .content__imgs {
+    padding: 0 1rem 3rem 1rem;
+  }
+}
+
 .content__imgs .select__cafe {
   width: 120rem;
   margin: 0 auto;
@@ -314,6 +394,13 @@ button:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .content__imgs .select__cafe {
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+}
+
 .content__imgs .select__cafe span {
   margin: 0 2rem 0 2rem;
 }
@@ -321,6 +408,12 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .content__imgs .select__cafe span {
     margin: 0 1rem 0 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .content__imgs .select__cafe span {
+    margin: 0 0.5rem 0 0.5rem;
   }
 }
 
@@ -358,6 +451,12 @@ button:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .content__imgs .cafe__block .cafe__imgs ul li {
+    margin-right: 0.5rem;
+  }
+}
+
 .content__imgs .cafe__block .cafe__imgs ul li:hover {
   -webkit-transform: translateY(-1em);
           transform: translateY(-1em);
@@ -378,6 +477,13 @@ button:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .content__imgs .cafe__block .cafe__imgs ul li img {
+    width: 11.5rem;
+    height: 9rem;
+  }
+}
+
 .content__imgs .cafe__block .cafe__imgs ul li .img__text {
   position: absolute;
   z-index: 1;
@@ -388,6 +494,7 @@ button:hover {
   opacity: 0.8;
   color: #fff;
   text-align: center;
+  margin: auto;
   font-size: 2.8rem;
   padding: 1.5rem 0;
 }
@@ -400,6 +507,15 @@ button:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .content__imgs .cafe__block .cafe__imgs ul li .img__text {
+    width: 11.5rem;
+    height: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
 .content__imgs .cafe__block .cafe__imgs2 {
   margin: 3rem 0 3rem 0;
 }
@@ -407,6 +523,12 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .content__imgs .cafe__block .cafe__imgs2 {
     margin: 1rem 0 1rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .content__imgs .cafe__block .cafe__imgs2 {
+    margin: 0.5rem 0 0.5rem 0;
   }
 }
 
