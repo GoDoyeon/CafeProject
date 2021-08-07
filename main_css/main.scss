@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 @import '../mixin/mixin';
 @import '../variables/variables';
+
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
@@ -79,11 +80,17 @@ body {
     text-align: center;
     .sub_text {
       font-size: 2rem;
+      @include tablet{
+        font-size: 2.5rem;
+      }
     }
     .main_text {
       font-size: 6rem;
       .main {
         font-weight: bold;
+      }
+      @include tablet{
+        font-size: 3.5rem;
       }
     }
     //padding: 30rem 0;
@@ -96,26 +103,42 @@ body {
   position: relative;
   overflow: hidden;
   /* article 3-1. 텍스트 부분 */
+  @include tablet{
+    height: 65rem;
+  }
   .horoscope__tit {
     font-family: 'Noto Sans KR', sans-serif;
     display: block;
     margin: 0 auto;
     height: 35rem; // 210+80+150 = 440px
     width: 192rem;
+
+    @include tablet{
+      width: 70rem;
+      height: 20rem;
+      padding-top: 2rem;
+    }
     .tit {
       display: block;
       padding: 15rem 0 0 18rem;
       font-weight: 400;
       font-size: 4em;
+      @include tablet{
+        padding: 0;
+      }
       .main__font {
         font-weight: bold;
       }
+      
     }
     p {
       display: block;
       padding: 1.4rem 0 0 18rem;
       margin-top: 1rem;
       font-size: 1.6rem;
+      @include tablet{
+        padding: 0;
+      }
       .main__font {
         font-weight: bold;
       }
