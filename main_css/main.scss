@@ -244,13 +244,16 @@ body {
 
 /*section 4: 전망좋은 카페*/
 .main__scenery {
-  height: 1000px;
+  height: 100rem;
   @include tablet{
-    
+    height: 65rem;
   }
   .scenery__box {
-    height: 1000px;
+    height: 100rem;
     position: relative;
+    @include tablet{
+      height: 65rem;
+    }
 
     .scenery__bg__left {
       width: 33%;
@@ -286,6 +289,11 @@ body {
         margin-top: -34rem;
         position: absolute;
 
+        @include tablet{
+          width: 20rem;
+          height: 40rem;
+        }
+
         .scenery__bg__up__container {
           @include scenery__bg__smollContainer;
 
@@ -294,6 +302,10 @@ body {
             height: 34rem;
             position: absolute;
             transition: 0.5s ease-out;
+            @include tablet{
+              width: 40rem;
+              height: 20rem;
+            }
 
             .scenery__bg__smallSlide1 {
               @include scenery__bg__smallSlide;
@@ -314,7 +326,10 @@ body {
           width: 34rem;
           height: 34rem;
           background: white;
-
+          @include tablet{
+            width: 20rem;
+            height: 20rem;
+          }
           .scenery__bg__small {
             width: 34rem;
             height: 34rem;
@@ -323,6 +338,10 @@ body {
             background-size: cover;
             opacity: 1;
             transition: opacity 1s;
+            @include tablet{
+              width: 20rem;
+              height: 20rem;
+            }
           }
           .scenery__bg__small2 {
             width: 34rem;
@@ -332,6 +351,10 @@ body {
             background-size: cover;
             opacity: 0;
             transition: opacity 1s;
+            @include tablet{
+              width: 20rem;
+              height: 20rem;
+            }
           }
         }
       }
@@ -395,11 +418,19 @@ body {
         top: 50%;
         margin-top: -340px;
         position: absolute;
+        @include tablet{
+          width: 20rem;
+          height: 40rem;
+        }
 
         .scenery__bg__up {
           width: 34rem;
           height: 34rem;
           background: white;
+          @include tablet{
+            width: 20rem;
+            height: 20rem;
+          }
 
           .scenery__bg__small {
             width: 34rem;
@@ -409,6 +440,10 @@ body {
             background-size: cover;
             opacity: 1;
             transition: opacity 1s;
+            @include tablet{
+              width:20rem;
+              height: 20rem;
+            }
           }
           .scenery__bg__small2 {
             width: 34rem;
@@ -418,6 +453,10 @@ body {
             background-size: cover;
             opacity: 0;
             transition: opacity 1s;
+            @include tablet{
+              width: 20rem;
+              height: 20rem;
+            }
           }
         }
         .scenery__bg__down__container {

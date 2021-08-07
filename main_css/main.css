@@ -403,12 +403,24 @@ body {
 
 /*section 4: 전망좋은 카페*/
 .main__scenery {
-  height: 1000px;
+  height: 100rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery {
+    height: 65rem;
+  }
 }
 
 .main__scenery .scenery__box {
-  height: 1000px;
+  height: 100rem;
   position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box {
+    height: 65rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__left {
@@ -451,6 +463,13 @@ body {
   position: absolute;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox {
+    width: 20rem;
+    height: 40rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
   width: 34rem;
   height: 34rem;
@@ -458,11 +477,25 @@ body {
   overflow: hidden;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
   width: 68rem;
   height: 34rem;
   position: absolute;
   transition: 0.5s ease-out;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
+    width: 40rem;
+    height: 20rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
@@ -473,6 +506,12 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
+    width: 20rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
   width: 34rem;
   height: 100%;
@@ -481,10 +520,23 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
+    width: 20rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
   width: 34rem;
   height: 34rem;
   background: white;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
+    width: 20rem;
+    height: 20rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
@@ -497,6 +549,13 @@ body {
   transition: opacity 1s;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
   width: 34rem;
   height: 34rem;
@@ -505,6 +564,13 @@ body {
   background-size: cover;
   opacity: 0;
   transition: opacity 1s;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
+    width: 20rem;
+    height: 20rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__right {
@@ -576,10 +642,24 @@ body {
   position: absolute;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox {
+    width: 20rem;
+    height: 40rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
   width: 34rem;
   height: 34rem;
   background: white;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
+    width: 20rem;
+    height: 20rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
@@ -592,6 +672,13 @@ body {
   transition: opacity 1s;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
   width: 34rem;
   height: 34rem;
@@ -602,11 +689,25 @@ body {
   transition: opacity 1s;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
   width: 34rem;
   height: 34rem;
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
+    width: 20rem;
+    height: 20rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
@@ -624,12 +725,24 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
+    width: 20rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
   width: 34rem;
   height: 100%;
   float: left;
   background: url("../img/05/right/R_scenery2_1_bg.png.png") center no-repeat;
   background-size: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
+    width: 20rem;
+  }
 }
 
 /*section 5: 이달의 카페*/
