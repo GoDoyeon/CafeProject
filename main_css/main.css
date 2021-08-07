@@ -216,12 +216,24 @@ body {
   font-size: 2rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__home .main__tit .sub_text {
+    font-size: 2.5rem;
+  }
+}
+
 .main__home .main__tit .main_text {
   font-size: 6rem;
 }
 
 .main__home .main__tit .main_text .main {
   font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__home .main__tit .main_text {
+    font-size: 3.5rem;
+  }
 }
 
 /* section 3. Horoscope [별점 높은 순] */
@@ -233,6 +245,12 @@ body {
   /* article 3-2. 슬라이드 + 버튼 */
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope {
+    height: 65rem;
+  }
+}
+
 .main__horoscope .horoscope__tit {
   font-family: 'Noto Sans KR', sans-serif;
   display: block;
@@ -241,11 +259,25 @@ body {
   width: 192rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope .horoscope__tit {
+    width: 70rem;
+    height: 20rem;
+    padding-top: 2rem;
+  }
+}
+
 .main__horoscope .horoscope__tit .tit {
   display: block;
   padding: 15rem 0 0 18rem;
   font-weight: 400;
   font-size: 4em;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope .horoscope__tit .tit {
+    padding: 0;
+  }
 }
 
 .main__horoscope .horoscope__tit .tit .main__font {
@@ -257,6 +289,12 @@ body {
   padding: 1.4rem 0 0 18rem;
   margin-top: 1rem;
   font-size: 1.6rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope .horoscope__tit p {
+    padding: 0;
+  }
 }
 
 .main__horoscope .horoscope__tit p .main__font {
