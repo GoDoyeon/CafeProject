@@ -116,7 +116,7 @@ body {
     @include tablet{
       width: 70rem;
       height: 20rem;
-      padding-top: 2rem;
+      padding-top: 4rem;
     }
     .tit {
       display: block;
@@ -161,6 +161,10 @@ body {
       transform: translate3d(0, 0, 0);
       transition: transform 0.5s;
       // margin-bottom: 16rem;
+      @include tablet{
+        width: 70rem;
+        left: 0;
+      }
       .horoscope {
         margin-right: 3rem;
         //border: 1px solid #979797;
@@ -241,7 +245,9 @@ body {
 /*section 4: 전망좋은 카페*/
 .main__scenery {
   height: 1000px;
-
+  @include tablet{
+    
+  }
   .scenery__box {
     height: 1000px;
     position: relative;

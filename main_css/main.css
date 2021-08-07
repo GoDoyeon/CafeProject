@@ -263,7 +263,7 @@ body {
   .main__horoscope .horoscope__tit {
     width: 70rem;
     height: 20rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
 }
 
@@ -317,6 +317,13 @@ body {
   display: flex;
   transform: translate3d(0, 0, 0);
   transition: transform 0.5s;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper {
+    width: 70rem;
+    left: 0;
+  }
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope {
