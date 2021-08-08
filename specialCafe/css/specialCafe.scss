@@ -59,7 +59,7 @@ h4 {
     height: 25rem;
   }
   @include mobile {
-    height: 15rem;
+    height: 18rem;
   }
   .main__tit {
     width: 100%;
@@ -83,7 +83,7 @@ h4 {
         height: 6rem;
       }
       @include mobile {
-        font-size: 2rem;
+        font-size: 2.5rem;
         height: 3rem;
       }
     }
@@ -95,7 +95,7 @@ h4 {
         height: 4rem;
       }
       @include mobile {
-        font-size: 1rem;
+        font-size: 1.8rem;
         height: 2rem;
       }
     }
@@ -117,7 +117,7 @@ h4 {
       height: 12rem;
     }
     @include mobile {
-      height: 4rem;
+      height: 7rem;
     }
     // 카페 메뉴 - 공통 ul, li 부분 style
     .wrap {
@@ -125,11 +125,12 @@ h4 {
       height: 17rem;
       position: relative;
       overflow: hidden;
+      padding-left: 2rem;
       @include tablet {
-        height: 10rem;
+        height: 12rem;
       }
       @include mobile {
-        height: 4rem;
+        height: 7rem;
       }
       ul {
         width: 95rem;
@@ -140,13 +141,13 @@ h4 {
         display: block;
         @include tablet {
           padding: 3rem 2rem 1rem 2rem;
-          font-size: 1.8rem;
-          height: 10rem;
+          font-size: 2rem;
+          height: 12rem;
         }
         @include mobile {
-          padding: 1rem 1.5rem 1rem 1.5rem;
-          font-size: 1rem;
-          height: 4rem;
+          padding: 2rem 1.5rem 2rem 1.5rem;
+          font-size: 1.8rem;
+          height: 7rem;
         }
         li {
           width: 22rem;
@@ -157,7 +158,7 @@ h4 {
             width: 16rem;
           }
           @include mobile {
-            width: 8rem;
+            width: 12rem;
             height: 2rem;
           }
           a {
@@ -175,21 +176,20 @@ h4 {
             }
           }
         }
-      }
-
-      /* 밑에 줄*/
-      .underline {
-        width: 22rem;
-        height: 5rem;
-        position: absolute;
-        background: $hovercolor_special;
-        top: 16.4rem;
-        left: 0;
-        @include tablet {
-          display: none;
-        }
-        @include mobile {
-          display: none;
+        /* 밑에 줄*/
+        .underline {
+          width: 22rem;
+          height: 5rem;
+          position: absolute;
+          background: $hovercolor_special;
+          top: 16.4rem;
+          left: 0;
+          @include tablet {
+            display: none;
+          }
+          @include mobile {
+            display: none;
+          }
         }
       }
     }
@@ -213,12 +213,12 @@ h4 {
       padding: 3rem 0;
       font-size: 2rem;
       @include tablet {
-        padding: 1.5rem 0;
+        padding: 2rem 0;
         font-size: 1.6rem;
       }
       @include mobile {
-        padding: 1rem 0;
-        font-size: 1rem;
+        padding: 1.5rem 0;
+        font-size: 1.6rem;
       }
       span {
         margin: 0 2rem 0 2rem;
@@ -241,20 +241,36 @@ h4 {
     }
     // 카페 이미지 모음
     .cafe__block {
-      width: 120rem;
       margin: 0 auto;
+
       .cafe__imgs {
         // 카페 이미지 1, 2, 3번째 줄 ul, li 공통 style
         ul {
+          display: -webkit-flex;
           display: flex;
+          -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+          padding: 0 11rem 0 11rem;
+          @include tablet {
+            padding: 0;
+          }
+          @include mobile {
+            padding: 0;
+          }
           li {
-            margin-right: 3rem;
             position: relative;
+            margin: 1rem auto;
+            width: 38rem;
             @include tablet {
-              margin-right: 1rem;
+              width: 38rem;
+              margin-left: auto;
+              margin-right: auto;
             }
             @include mobile {
-              margin-right: 0.5rem;
+              width: 38rem;
+              margin-bottom: 2rem;
+              margin-left: auto;
+              margin-right: auto;
             }
             &:hover {
               transform: translateY(-1em);
@@ -263,18 +279,9 @@ h4 {
               box-shadow: 0 0 10px rgb(158, 158, 158);
             }
             img {
-              // 이미지 사이즈
-              width: 38rem;
-              height: 30rem;
-              margin: 0;
-              @include tablet {
-                width: 23.5rem;
-                height: 18rem;
-              }
-              @include mobile {
-                width: 11.5rem;
-                height: 9rem;
-              }
+              width: 100%;
+              background-repeat: no-repeat;
+              background-size: cover;
             }
             .img__text {
               position: absolute;
@@ -289,27 +296,7 @@ h4 {
               margin: auto;
               font-size: 2.8rem;
               padding: 1.5rem 0;
-              @include tablet {
-                width: 23.5rem;
-                height: 5rem;
-                font-size: 1.8rem;
-              }
-              @include mobile {
-                width: 11.5rem;
-                height: 1rem;
-                font-size: 1rem;
-                padding: 1rem;
-              }
             }
-          }
-        }
-        &2 {
-          margin: 3rem 0 3rem 0;
-          @include tablet {
-            margin: 1rem 0 1rem 0;
-          }
-          @include mobile {
-            margin: 0.5rem 0 0.5rem 0;
           }
         }
       }

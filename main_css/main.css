@@ -1,14 +1,110 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 /* 반응형 */
 /* 반응형 */
 /*main scss*/
 /*header*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .header__logo {
+    margin: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .header__menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__menu li {
+    width: 100%;
+    padding: 15px 0 15px 60px;
+  }
+  .header__menu li:hover {
+    background-color: #eedeff;
+    border-bottom: none;
+  }
+  .header__menu .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__btn {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 0 1.5rem;
+  }
+  .header__btn i {
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+  .header__btn--right {
+    display: none;
+  }
+  .header__toogleBtn {
+    display: block;
+  }
+}
+
 /*footer*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .footer__right {
+    margin-left: 6rem;
+  }
+  .footer__menu {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer__menu {
+    margin-top: 60px;
+  }
+}
+
 /* 반응형 */
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -51,10 +147,16 @@ body {
   position: fixed;
   width: 100%;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  z-index: 1;
+  z-index: 9999;
 }
 
 @media (max-width: 1024px) {
@@ -67,7 +169,11 @@ body {
 }
 
 .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
   margin-left: 6rem;
 }
@@ -85,7 +191,11 @@ body {
 }
 
 .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   font-size: 3rem;
   list-style: none;
@@ -125,9 +235,17 @@ body {
 }
 
 .header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0 3rem;
   height: 50px;
@@ -135,6 +253,7 @@ body {
   border: 0;
   outline: 0;
   margin: 0 6rem;
+  -webkit-box-shadow: 4px 6px 10px #000000a8;
   box-shadow: 4px 6px 10px #000000a8;
 }
 
@@ -146,7 +265,6 @@ body {
   color: #fce303;
 }
 
-@media (max-width: 1024px) {
   .header__btn {
     position: absolute;
     right: 0;
@@ -183,6 +301,8 @@ body {
   width: 100%;
   background-color: #eedeff;
   height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -199,8 +319,10 @@ body {
 .main__home .main__tit {
   margin: 10rem 0;
   width: 100%;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   line-height: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }
@@ -270,7 +392,7 @@ body {
 }
 
 .main__horoscope .horoscope__tit {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   display: block;
   margin: 0 auto;
   height: 35rem;
@@ -354,9 +476,15 @@ body {
   margin: 0 auto;
   left: 18rem;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -378,7 +506,11 @@ body {
   position: relative;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horoscope
+  .horoscope__img__tit {
   color: #fff;
   top: 4rem;
   opacity: 0;
@@ -386,15 +518,26 @@ body {
   position: absolute;
   display: block;
   width: 100%;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__name {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horoscope
+  .horoscope__img__tit
+  .cafe__name {
   display: block;
   font-size: 5rem;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__type {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horoscope
+  .horoscope__img__tit
+  .cafe__type {
   display: block;
   margin-top: 2rem;
   font-size: 3rem;
@@ -404,21 +547,32 @@ body {
   width: 58.4rem;
   height: 40rem;
   opacity: 1;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   overflow: hidden;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__img {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horoscope:hover
+  .horoscope__img {
   background-color: #333;
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover img {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.15;
 }
 
-.main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__img__tit {
+.main__horoscope
+  .horoscope__block
+  .horoscope__wrapper
+  .horoscope:hover
+  .horoscope__img__tit {
   opacity: 1;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -494,22 +648,31 @@ body {
   width: 200%;
   height: 100%;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__bigBox .scenery__bg__bigSlide1 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__bigBox
+  .scenery__bg__bigSlide1 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url("../img/05/left/L_content_1_1.png") center no-repeat;
+  background: url('../img/05/left/L_content_1_1.png') center no-repeat;
   background-size: cover;
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__bigBox .scenery__bg__bigSlide2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__bigBox
+  .scenery__bg__bigSlide2 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url("../img/05/left/L_content_2_1.png") left top no-repeat;
+  background: url('../img/05/left/L_content_2_1.png') left top no-repeat;
   background-size: cover;
 }
 
@@ -538,7 +701,11 @@ body {
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__up__container {
   width: 34rem;
   height: 34rem;
   position: relative;
@@ -546,143 +713,247 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__up__container {
     width: 20rem;
     height: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__up__container {
     width: 15rem;
     height: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__up__container
+  .scenery__bg__up {
   width: 68rem;
   height: 34rem;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__up__container
+    .scenery__bg__up {
     width: 40rem;
     height: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__up__container
+    .scenery__bg__up {
     width: 30rem;
     height: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__up__container
+  .scenery__bg__up
+  .scenery__bg__smallSlide1 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url("../img/05/left/L_scenery1_1_bg.png") center no-repeat;
+  background: url('../img/05/left/L_scenery1_1_bg.png') center no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__up__container
+    .scenery__bg__up
+    .scenery__bg__smallSlide1 {
     width: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__up__container
+    .scenery__bg__up
+    .scenery__bg__smallSlide1 {
     width: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__up__container
+  .scenery__bg__up
+  .scenery__bg__smallSlide2 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url("../img/05/left/L_scenery_2_1_bg.png") center no-repeat;
+  background: url('../img/05/left/L_scenery_2_1_bg.png') center no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__up__container
+    .scenery__bg__up
+    .scenery__bg__smallSlide2 {
     width: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__up__container
+    .scenery__bg__up
+    .scenery__bg__smallSlide2 {
     width: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__down {
   width: 34rem;
   height: 34rem;
   background: white;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__down {
     width: 20rem;
     height: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__down {
     width: 15rem;
     height: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__down
+  .scenery__bg__small {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url("../img/05/left/L_text_2_1.png") center no-repeat;
+  background: url('../img/05/left/L_text_2_1.png') center no-repeat;
   background-size: cover;
   opacity: 1;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__down
+    .scenery__bg__small {
     width: 20rem;
     height: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__down
+    .scenery__bg__small {
     width: 15rem;
     height: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__left
+  .scenery__bg__smallBox
+  .scenery__bg__down
+  .scenery__bg__small2 {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url("../img/05/left/L_text_1_1.png") center no-repeat;
+  background: url('../img/05/left/L_text_1_1.png') center no-repeat;
   background-size: cover;
   opacity: 0;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__down
+    .scenery__bg__small2 {
     width: 20rem;
     height: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__left
+    .scenery__bg__smallBox
+    .scenery__bg__down
+    .scenery__bg__small2 {
     width: 15rem;
     height: 15rem;
   }
@@ -700,6 +971,7 @@ body {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
   box-shadow: 5px 5px 15px 5px #000000a8;
   padding-top: 5.7rem;
   position: absolute;
@@ -707,6 +979,7 @@ body {
   top: 50%;
   left: 25rem;
   margin-top: 22rem;
+  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -749,6 +1022,7 @@ body {
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -756,22 +1030,31 @@ body {
   width: 200%;
   height: 100%;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox .scenery__bg__bigSlide1 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__bigBox
+  .scenery__bg__bigSlide1 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url("../img/05/right/R_content_1_1.png") center no-repeat;
+  background: url('../img/05/right/R_content_1_1.png') center no-repeat;
   background-size: cover;
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox .scenery__bg__bigSlide2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__bigBox
+  .scenery__bg__bigSlide2 {
   width: 50%;
   height: 100%;
   float: left;
-  background: url("../img/05/right/R_content_2_1.png") center no-repeat;
+  background: url('../img/05/right/R_content_2_1.png') center no-repeat;
   background-size: cover;
 }
 
@@ -800,75 +1083,123 @@ body {
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__up {
   width: 34rem;
   height: 34rem;
   background: white;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__up {
     width: 20rem;
     height: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__up {
     width: 15rem;
     height: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__up
+  .scenery__bg__small {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url("../img/05/right/R_text_2_1.png") center no-repeat;
+  background: url('../img/05/right/R_text_2_1.png') center no-repeat;
   background-size: cover;
   opacity: 1;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__up
+    .scenery__bg__small {
     width: 20rem;
     height: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__up
+    .scenery__bg__small {
     width: 15rem;
     height: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__up
+  .scenery__bg__small2 {
   width: 34rem;
   height: 34rem;
   position: absolute;
-  background: url("../img/05/right/R_text_1_1.png") center no-repeat;
+  background: url('../img/05/right/R_text_1_1.png') center no-repeat;
   background-size: cover;
   opacity: 0;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__up
+    .scenery__bg__small2 {
     width: 20rem;
     height: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__up
+    .scenery__bg__small2 {
     width: 15rem;
     height: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__down__container {
   width: 34rem;
   height: 34rem;
   position: relative;
@@ -876,76 +1207,136 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__down__container {
     width: 20rem;
     height: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__down__container {
     width: 15rem;
     height: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__down__container
+  .scenery__bg__down {
   width: 68rem;
   height: 34rem;
   position: absolute;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__down__container
+    .scenery__bg__down {
     width: 40rem;
     height: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__down__container
+    .scenery__bg__down {
     width: 30rem;
     height: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__down__container
+  .scenery__bg__down
+  .scenery__bg__smallSlide1 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url("../img/05/right/R_scenery1_1_bg.png") center no-repeat;
+  background: url('../img/05/right/R_scenery1_1_bg.png') center no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__down__container
+    .scenery__bg__down
+    .scenery__bg__smallSlide1 {
     width: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__down__container
+    .scenery__bg__down
+    .scenery__bg__smallSlide1 {
     width: 15rem;
   }
 }
 
-.main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
+.main__scenery
+  .scenery__box
+  .scenery__bg__right
+  .scenery__bg__smallBox
+  .scenery__bg__down__container
+  .scenery__bg__down
+  .scenery__bg__smallSlide2 {
   width: 34rem;
   height: 100%;
   float: left;
-  background: url("../img/05/right/R_scenery2_1_bg.png.png") center no-repeat;
+  background: url('../img/05/right/R_scenery2_1_bg.png.png') center no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__down__container
+    .scenery__bg__down
+    .scenery__bg__smallSlide2 {
     width: 20rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
+  .main__scenery
+    .scenery__box
+    .scenery__bg__right
+    .scenery__bg__smallBox
+    .scenery__bg__down__container
+    .scenery__bg__down
+    .scenery__bg__smallSlide2 {
     width: 15rem;
   }
 }
@@ -1021,7 +1412,7 @@ body {
   height: 58rem;
   position: relative;
   overflow: hidden;
-  background: url("../img/06/best_1_1.png") center no-repeat;
+  background: url('../img/06/best_1_1.png') center no-repeat;
   background-size: cover;
 }
 
@@ -1042,8 +1433,9 @@ body {
   height: 58rem;
   position: absolute;
   top: 0rem;
-  background: url("../img/06/bg.png") center no-repeat;
+  background: url('../img/06/bg.png') center no-repeat;
   background-size: cover;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -1064,10 +1456,11 @@ body {
   height: 55rem;
   position: absolute;
   overflow: hidden;
-  background: url("../img/06/best1.png") top no-repeat;
+  background: url('../img/06/best1.png') top no-repeat;
   background-size: cover;
   top: 21rem;
   left: 60%;
+  -webkit-box-shadow: 10px 10px 15px #000000a8;
   box-shadow: 10px 10px 15px #000000a8;
 }
 
@@ -1092,8 +1485,9 @@ body {
   height: 55rem;
   position: absolute;
   top: 55rem;
-  background: url("../img/06/best2.png") top no-repeat;
+  background: url('../img/06/best2.png') top no-repeat;
   background-size: cover;
+  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -1117,6 +1511,7 @@ body {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
   box-shadow: 5px 5px 15px 5px #000000a8;
   padding-top: 5.7rem;
   position: absolute;
@@ -1124,6 +1519,7 @@ body {
   top: 50rem;
   left: 60%;
   margin: 22rem;
+  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -1157,6 +1553,7 @@ body {
 }
 
 .main__best .scenery__bg__detail:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -1183,7 +1580,7 @@ body {
 }
 
 .main__newCafe .newCafe__tit {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   padding: 15rem 0 8rem 0;
   text-align: center;
 }
@@ -1330,20 +1727,33 @@ body {
 
 .main__newCafe .newCafe__block .swiper-slide {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border-radius: 5px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 이 설정을 하지 않으면 슬라이드드가 틀어짐 */
 }
 
 .footer {
   width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  padding: 100px 0;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -1377,6 +1787,8 @@ body {
 }
 
 .footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 6rem;
 }

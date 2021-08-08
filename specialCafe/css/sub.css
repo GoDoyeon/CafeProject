@@ -1,14 +1,110 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 /* 반응형 */
 /* 반응형 */
 /* 반응형 */
 /*main scss*/
 /*header*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .header__logo {
+    margin: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .header__menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__menu li {
+    width: 100%;
+    padding: 15px 0 15px 60px;
+  }
+  .header__menu li:hover {
+    background-color: #eedeff;
+    border-bottom: none;
+  }
+  .header__menu .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__btn {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 0 1.5rem;
+  }
+  .header__btn i {
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+  .header__btn--right {
+    display: none;
+  }
+  .header__toogleBtn {
+    display: block;
+  }
+}
+
 /*footer*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .footer__right {
+    margin-left: 6rem;
+  }
+  .footer__menu {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer__menu {
+    margin-top: 60px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -35,10 +131,16 @@ a {
   position: fixed;
   width: 100%;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  z-index: 1;
+  z-index: 9999;
 }
 
 @media (max-width: 1024px) {
@@ -51,7 +153,11 @@ a {
 }
 
 .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
   margin-left: 6rem;
 }
@@ -69,7 +175,11 @@ a {
 }
 
 .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   font-size: 3rem;
   list-style: none;
@@ -109,9 +219,17 @@ a {
 }
 
 .header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0 3rem;
   height: 50px;
@@ -119,6 +237,7 @@ a {
   border: 0;
   outline: 0;
   margin: 0 6rem;
+  -webkit-box-shadow: 4px 6px 10px #000000a8;
   box-shadow: 4px 6px 10px #000000a8;
 }
 
@@ -152,7 +271,7 @@ a {
   top: 15px;
   font-size: 40px;
   display: none;
-  color: #CCB7FF;
+  color: #ccb7ff;
 }
 
 @media (max-width: 1024px) {
@@ -163,10 +282,16 @@ a {
 
 .footer {
   width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  padding: 100px 0;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -200,6 +325,8 @@ a {
 }
 
 .footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 6rem;
 }
