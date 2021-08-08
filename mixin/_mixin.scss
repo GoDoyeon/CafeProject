@@ -23,12 +23,19 @@
   width: 50%;
   height: 100%;
   float: left;
+
 }
 
 @mixin scenery__bg__smallSlide {
   width: 34rem;
   height: 100%;
   float: left;
+  @include tablet{
+    width: 20rem;
+  }
+  @include mobile{
+    width: 15rem;
+  }
 }
 
 @mixin scenery__bg__smollContainer {
@@ -36,6 +43,14 @@
   height: 34rem;
   position: relative;
   overflow: hidden;
+  @include tablet{
+    width: 20rem;
+    height: 20rem;
+  }
+  @include mobile{
+    width: 15rem;
+    height: 15rem;
+  }
 }
 
 

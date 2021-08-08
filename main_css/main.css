@@ -188,16 +188,47 @@ body {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .main__home .main__tit {
+    width: 50rem;
+    margin: auto;
+  }
+}
+
 .main__home .main__tit .sub_text {
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__home .main__tit .sub_text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__home .main__tit .sub_text {
+    font-size: 2rem;
+  }
 }
 
 .main__home .main__tit .main_text {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 .main__home .main__tit .main_text .main {
   font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__home .main__tit .main_text {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__home .main__tit .main_text {
+    font-size: 2.5rem;
+  }
 }
 
 /* section 3. Horoscope [별점 높은 순] */
@@ -209,6 +240,18 @@ body {
   /* article 3-2. 슬라이드 + 버튼 */
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope {
+    height: 65rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__horoscope {
+    height: 65rem;
+  }
+}
+
 .main__horoscope .horoscope__tit {
   font-family: "Noto Sans KR", sans-serif;
   display: block;
@@ -217,11 +260,41 @@ body {
   width: 192rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope .horoscope__tit {
+    width: 70rem;
+    height: 20rem;
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__tit {
+    width: 50rem;
+    height: 15rem;
+    padding-top: 2rem;
+  }
+}
+
 .main__horoscope .horoscope__tit .tit {
   display: block;
   padding: 15rem 0 0 18rem;
   font-weight: 400;
   font-size: 4em;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope .horoscope__tit .tit {
+    padding: 0;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__tit .tit {
+    padding: 0;
+    font-size: 2.5rem;
+  }
 }
 
 .main__horoscope .horoscope__tit .tit .main__font {
@@ -233,6 +306,18 @@ body {
   padding: 1.4rem 0 0 18rem;
   margin-top: 1rem;
   font-size: 1.6rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope .horoscope__tit p {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__tit p {
+    padding: 0;
+  }
 }
 
 .main__horoscope .horoscope__tit p .main__font {
@@ -255,6 +340,20 @@ body {
   display: flex;
   transform: translate3d(0, 0, 0);
   transition: transform 0.5s;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper {
+    width: 70rem;
+    left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper {
+    width: 50rem;
+    left: 0;
+  }
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope {
@@ -334,12 +433,36 @@ body {
 
 /*section 4: 전망좋은 카페*/
 .main__scenery {
-  height: 1000px;
+  height: 100rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery {
+    height: 65rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery {
+    height: 65rem;
+  }
 }
 
 .main__scenery .scenery__box {
-  height: 1000px;
+  height: 100rem;
   position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box {
+    height: 65rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box {
+    height: 65rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__left {
@@ -382,6 +505,22 @@ body {
   position: absolute;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox {
+    width: 20rem;
+    height: 40rem;
+    margin-top: -25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox {
+    width: 15rem;
+    height: 30rem;
+    margin-top: -20rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
   width: 34rem;
   height: 34rem;
@@ -389,11 +528,39 @@ body {
   overflow: hidden;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
   width: 68rem;
   height: 34rem;
   position: absolute;
   transition: 0.5s ease-out;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
+    width: 30rem;
+    height: 15rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
@@ -404,6 +571,18 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
+    width: 15rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
   width: 34rem;
   height: 100%;
@@ -412,10 +591,36 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
+    width: 15rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
   width: 34rem;
   height: 34rem;
   background: white;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
+    width: 15rem;
+    height: 15rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
@@ -428,6 +633,20 @@ body {
   transition: opacity 1s;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
   width: 34rem;
   height: 34rem;
@@ -436,6 +655,20 @@ body {
   background-size: cover;
   opacity: 0;
   transition: opacity 1s;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
+    width: 15rem;
+    height: 15rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__right {
@@ -460,10 +693,37 @@ body {
   transition: 0.2s ease-in;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail {
+    margin-top: 14rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail {
+    width: 13rem;
+    height: 13rem;
+    padding-top: 4.7rem;
+    top: 0;
+    left: 0;
+    margin: 0;
+    top: 48rem;
+    left: 40%;
+    margin: 0;
+    margin-left: 12rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail p {
   width: 15rem;
   font-size: 2rem;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail p {
+    width: 13rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail .arrow {
@@ -503,14 +763,44 @@ body {
   height: 68rem;
   left: 0;
   top: 50%;
-  margin-top: -340px;
+  margin-top: -34rem;
   position: absolute;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox {
+    width: 20rem;
+    height: 40rem;
+    margin-top: -25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox {
+    width: 15rem;
+    height: 30rem;
+    margin-top: -20rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
   width: 34rem;
   height: 34rem;
   background: white;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
+    width: 15rem;
+    height: 15rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
@@ -523,6 +813,20 @@ body {
   transition: opacity 1s;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
   width: 34rem;
   height: 34rem;
@@ -533,6 +837,20 @@ body {
   transition: opacity 1s;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
   width: 34rem;
   height: 34rem;
@@ -540,11 +858,39 @@ body {
   overflow: hidden;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
   width: 68rem;
   height: 34rem;
   position: absolute;
   transition: 0.5s ease-out;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
+    width: 30rem;
+    height: 15rem;
+  }
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
@@ -555,6 +901,18 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
+    width: 15rem;
+  }
+}
+
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
   width: 34rem;
   height: 100%;
@@ -563,11 +921,35 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
+    width: 15rem;
+  }
+}
+
 /*section 5: 이달의 카페*/
 .main__best {
   height: 1080px;
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best {
+    height: 60rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best {
+    height: 60rem;
+  }
 }
 
 .main__best .best__tit {
@@ -579,9 +961,37 @@ body {
   letter-spacing: 2px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .best__tit {
+    width: 70rem;
+    height: 25rem;
+    padding: 8rem 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .best__tit {
+    width: 50rem;
+    height: 25rem;
+    padding: 8rem 0px;
+  }
+}
+
 .main__best .tit {
   font-size: 4rem;
   margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .tit {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .tit {
+    font-size: 2.5rem;
+  }
 }
 
 .main__best .sub__tit {
@@ -598,6 +1008,18 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .best__bg {
+    height: 35rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .best__bg {
+    height: 35rem;
+  }
+}
+
 .main__best .best__bg .best__inner__bg {
   width: 100%;
   height: 58rem;
@@ -608,15 +1030,44 @@ body {
   transition: 0.5s ease-out;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .best__bg .best__inner__bg {
+    height: 35rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .best__bg .best__inner__bg {
+    height: 35rem;
+  }
+}
+
 .main__best .best__box {
   width: 36rem;
   height: 55rem;
   position: absolute;
   overflow: hidden;
   background: url("../img/06/best1.png") top no-repeat;
+  background-size: cover;
   top: 21rem;
   left: 60%;
   box-shadow: 10px 10px 15px #000000a8;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .best__box {
+    width: 25rem;
+    height: 36rem;
+    top: 8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .best__box {
+    width: 20rem;
+    height: 30rem;
+    top: 8rem;
+  }
 }
 
 .main__best .best__box .best__header {
@@ -627,6 +1078,22 @@ body {
   background: url("../img/06/best2.png") top no-repeat;
   background-size: cover;
   transition: 0.5s ease-out;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .best__box .best__header {
+    width: 25rem;
+    height: 36rem;
+    top: 36rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .best__box .best__header {
+    width: 20rem;
+    height: 30rem;
+    top: 30rem;
+  }
 }
 
 .main__best .scenery__bg__detail {
@@ -643,10 +1110,28 @@ body {
   transition: 0.2s ease-in;
 }
 
+@media (max-width: 767px) {
+  .main__best .scenery__bg__detail {
+    width: 13rem;
+    height: 13rem;
+    padding-top: 4.7rem;
+    top: 33rem;
+    left: 60%;
+    margin: 0;
+    margin-left: 12rem;
+  }
+}
+
 .main__best .scenery__bg__detail p {
   width: 15rem;
   font-size: 2rem;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .main__best .scenery__bg__detail p {
+    width: 13rem;
+  }
 }
 
 .main__best .scenery__bg__detail .arrow {
@@ -668,10 +1153,34 @@ body {
   /* article 6-2. 슬라이드 + 버튼 */
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__newCafe {
+    height: 80rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe {
+    height: 70rem;
+  }
+}
+
 .main__newCafe .newCafe__tit {
   font-family: "Noto Sans KR", sans-serif;
   padding: 15rem 0 8rem 0;
   text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__newCafe .newCafe__tit {
+    padding: 8rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__tit {
+    padding: 3.5rem 0 3rem 0;
+  }
 }
 
 .main__newCafe .newCafe__tit .tit {
@@ -679,6 +1188,19 @@ body {
   font-weight: 400;
   font-size: 4rem;
   margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__newCafe .newCafe__tit .tit {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__tit .tit {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .main__newCafe .newCafe__tit .tit .main__font {
@@ -703,6 +1225,18 @@ body {
   /* 뉴 카페 이미지 슬라이드 */
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__newCafe .newCafe__block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__block {
+    width: 100%;
+  }
+}
+
 .main__newCafe .newCafe__block .swiper-button-next {
   right: -70px;
   color: #ccb7ff;
@@ -710,6 +1244,18 @@ body {
 
 .main__newCafe .newCafe__block .swiper-button-next:hover {
   color: #333;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__newCafe .newCafe__block .swiper-button-next {
+    right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__block .swiper-button-next {
+    right: 0;
+  }
 }
 
 .main__newCafe .newCafe__block .swiper-button-prev {
@@ -721,12 +1267,48 @@ body {
   color: #333;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__newCafe .newCafe__block .swiper-button-prev {
+    left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__block .swiper-button-prev {
+    left: 0;
+  }
+}
+
 .main__newCafe .newCafe__block .swiperbtn {
   color: #333;
 }
 
 .main__newCafe .newCafe__block .swiper-container {
   height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__newCafe .newCafe__block .swiper-container {
+    width: 70rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__block .swiper-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__newCafe .newCafe__block .swiper-container .swiper-wrapper {
+    width: 58.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__block .swiper-container .swiper-wrapper {
+    width: 50rem;
+  }
 }
 
 .main__newCafe .newCafe__block .swiper-slide {
