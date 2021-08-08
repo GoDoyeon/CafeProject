@@ -207,7 +207,7 @@ body {
 
 @media (max-width: 767px) {
   .main__home .main__tit {
-    width: 50rem;
+    width: 30rem;
     margin: auto;
   }
 }
@@ -224,7 +224,7 @@ body {
 
 @media (max-width: 767px) {
   .main__home .main__tit .sub_text {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -244,7 +244,7 @@ body {
 
 @media (max-width: 767px) {
   .main__home .main__tit .main_text {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -287,7 +287,7 @@ body {
 
 @media (max-width: 767px) {
   .main__horoscope .horoscope__tit {
-    width: 50rem;
+    width: 30rem;
     height: 15rem;
     padding-top: 2rem;
   }
@@ -310,7 +310,7 @@ body {
 @media (max-width: 767px) {
   .main__horoscope .horoscope__tit .tit {
     padding: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -334,6 +334,7 @@ body {
 @media (max-width: 767px) {
   .main__horoscope .horoscope__tit p {
     padding: 0;
+    font-size: 1.3rem;
   }
 }
 
@@ -346,6 +347,12 @@ body {
   width: 100%;
   display: block;
   /* 별점 높은 순 사진 리스트 부분 */
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block {
+    height: 50rem;
+  }
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper {
@@ -368,7 +375,8 @@ body {
 
 @media (max-width: 767px) {
   .main__horoscope .horoscope__block .horoscope__wrapper {
-    width: 50rem;
+    width: 30rem;
+    height: 40rem;
     left: 0;
   }
 }
@@ -376,6 +384,19 @@ body {
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope {
   margin-right: 3rem;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img {
+    width: 30rem;
+    height: 35rem;
+  }
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit {
@@ -428,6 +449,14 @@ body {
   bottom: -13rem;
 }
 
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__prevbtn {
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+
 .main__horoscope .horoscope__block .horoscope__nextbtn {
   right: 3rem;
   position: absolute;
@@ -448,6 +477,17 @@ body {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__btn {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1rem;
+    padding: 0;
+    top: 50%;
+    margin-top: -7.8rem;
+  }
+}
+
 /*section 4: 전망좋은 카페*/
 .main__scenery {
   height: 100rem;
@@ -461,7 +501,7 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery {
-    height: 65rem;
+    height: 50rem;
   }
 }
 
@@ -478,7 +518,7 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box {
-    height: 65rem;
+    height: 50rem;
   }
 }
 
@@ -532,9 +572,9 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox {
-    width: 15rem;
-    height: 30rem;
-    margin-top: -20rem;
+    width: 10rem;
+    height: 20rem;
+    margin-top: -14rem;
   }
 }
 
@@ -554,8 +594,8 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 
@@ -575,8 +615,8 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
-    width: 30rem;
-    height: 15rem;
+    width: 20rem;
+    height: 10rem;
   }
 }
 
@@ -596,7 +636,7 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
-    width: 15rem;
+    width: 10rem;
   }
 }
 
@@ -616,7 +656,7 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
-    width: 15rem;
+    width: 10rem;
   }
 }
 
@@ -635,8 +675,8 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 
@@ -659,8 +699,8 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 
@@ -683,8 +723,8 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 
@@ -712,22 +752,25 @@ body {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail {
+    width: 13rem;
+    height: 13rem;
     margin-top: 14rem;
+    padding-top: 4.7rem;
   }
 }
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail {
-    width: 13rem;
-    height: 13rem;
-    padding-top: 4.7rem;
+    width: 8rem;
+    height: 8rem;
+    padding-top: 3rem;
     top: 0;
     left: 0;
     margin: 0;
-    top: 48rem;
+    top: 40rem;
     left: 40%;
     margin: 0;
-    margin-left: 12rem;
+    margin-left: 3rem;
   }
 }
 
@@ -737,9 +780,16 @@ body {
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail p {
     width: 13rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail p {
+    width: 8rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -794,9 +844,9 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox {
-    width: 15rem;
-    height: 30rem;
-    margin-top: -20rem;
+    width: 10rem;
+    height: 20rem;
+    margin-top: -14rem;
   }
 }
 
@@ -815,8 +865,8 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 
@@ -839,8 +889,8 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 
@@ -863,8 +913,8 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 
@@ -884,8 +934,8 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 
@@ -905,8 +955,8 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
-    width: 30rem;
-    height: 15rem;
+    width: 20rem;
+    height: 10rem;
   }
 }
 
@@ -926,7 +976,7 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
-    width: 15rem;
+    width: 10rem;
   }
 }
 
@@ -946,7 +996,7 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
-    width: 15rem;
+    width: 10rem;
   }
 }
 
@@ -1127,6 +1177,18 @@ body {
   transition: 0.2s ease-in;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .scenery__bg__detail {
+    width: 13rem;
+    height: 13rem;
+    padding-top: 4.7rem;
+    top: 38rem;
+    left: 60%;
+    margin: 0;
+    margin-left: 17rem;
+  }
+}
+
 @media (max-width: 767px) {
   .main__best .scenery__bg__detail {
     width: 13rem;
@@ -1143,6 +1205,12 @@ body {
   width: 15rem;
   font-size: 2rem;
   text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .scenery__bg__detail p {
+    width: 13rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1428,31 +1496,4 @@ body {
 .footer__menu li a {
   color: #333;
 }
-<<<<<<< HEAD
-=======
-
-@media screen and (max-width: 1024px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer__right {
-    margin: 4rem 0 0 6rem;
-  }
-  .footer__menu {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .footer__right {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer__menu:last-child {
-    margin-top: 60px;
-  }
-}
 /*# sourceMappingURL=main.css.map */
->>>>>>> 546d8f69b4ca02c181efab46abdae83c04385d17
