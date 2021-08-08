@@ -125,6 +125,7 @@ body {
       font-size: 4em;
       @include tablet {
         padding: 0;
+        font-size: 3rem;
       }
       .main__font {
         font-weight: bold;
@@ -527,7 +528,7 @@ body {
     font-size: 4rem;
     margin-bottom: 3rem;
     @include tablet{
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
 
   }
@@ -629,18 +630,28 @@ body {
   position: relative;
   background-color: $maincolor;
   margin: 0 auto;
+
+  @include tablet{
+    height: 80rem;
+  }
   /* article 6-1. 텍스트 부분 */
   .newCafe__tit {
     // border: 1px solid black;
     font-family: 'Noto Sans KR', sans-serif;
     padding: 15rem 0 8rem 0;
     text-align: center;
+    @include tablet{
+      padding: 8rem 0;
+    }
     .tit {
       display: block;
       //padding: 21rem 0 0 18rem;
       font-weight: 400;
       font-size: 4rem;
       margin-bottom: 5rem;
+      @include tablet{
+        font-size: 3rem;
+      }
       .main__font {
         font-weight: bold;
         color: $textcolor;
@@ -671,11 +682,18 @@ body {
     width: 79rem;
     margin: 0 auto;
     display: block;
+    @include tablet{
+      width: 100%;
+    }
+
     .swiper-button-next {
       right: -70px;
       color: $buttoncolor;
       &:hover {
         color: #333;
+      }
+      @include tablet{
+        right: 0;
       }
     }
     .swiper-button-prev {
@@ -684,6 +702,9 @@ body {
       &:hover {
         color: $textcolor;
       }
+      @include tablet{
+        left: 0;
+      }
     }
     .swiperbtn {
       color: $textcolor;
@@ -691,6 +712,14 @@ body {
     /* 뉴 카페 이미지 슬라이드 */
     .swiper-container {
       height: 100%;
+      @include tablet{
+        width: 70rem;
+      }
+      .swiper-wrapper{
+        @include tablet{
+          width: 58.4rem;
+        }
+      }
     }
     .swiper-slide {
       text-align: center;
