@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 @import "../../variables/variables";
-@import "../../mixin/mixin.scss";
 
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
@@ -105,16 +104,21 @@ body {
 }
 
 
-
 @media screen and (max-width: 1024px) {
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
+    width: 100%;
     &__logo {
+      padding-top: 15px;
+      text-align: center;
       margin: 0;
       align-items: center;
+      img {
+        width: 60%;
+      }
     }
     &__menu {
       display: none;
@@ -174,8 +178,9 @@ body {
   width: 100%;
   margin-top: 200px;
   &__inner {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 6rem;
   }
   &-main {
     width: 100%;
@@ -188,26 +193,43 @@ body {
   }
   &-content {
     background-color: $maincolor;
-    height: 100%;
     width: 100%;
+    height: 100%;
     &__txt {
       padding-top: 70px;
       &--name {
         font-size: 3rem;
         font-weight: bold;
         color: #ccb7ff;
+        width: 100%;
       }
     }
-    &__box {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 30px;
-      &--txt {
+    &__subtxt {
         font-size: 2rem;
         height: 200px;
         display: flex;
         flex-direction: column;
         line-height: 3.5rem;
+        width: 100%;
+        padding: 0 2rem 0 0;
+        margin-top: 30px;
+    }
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      &--left {
+        img {
+          width: 100%;
+          padding-right: 30px;
+        }
+      }
+      &--right {
+        position: relative;
+        bottom: 200px;
+        img {
+          width: 100%;
+        }
       }
     }
     .box__txt {
@@ -244,15 +266,18 @@ body {
       line-height: 3.5rem;
     }
     &__img {
-      width: 1200px;
-      height: 600px;
-      background-color: #c4c4c4;
+      img {
+        width: 100%;
+        box-shadow: 0px 3px 10px $boxshadow;
+        border-radius: 10px;
+      }
     }
   }
 
   &-team {
     width: 100%;
     height: 100%;
+    padding-bottom: 70px;
     &__txt {
       width: 100%;
       margin-top: 70px;
@@ -272,7 +297,7 @@ body {
       display: flex;
       align-items: center;
       width: 100%;
-      height: 280px;
+      height: 100%;
       box-shadow: 0px 3px 10px $maincolor;
       &--img {
         width: 130px;
@@ -281,7 +306,11 @@ body {
       }
       &--content {
         font-family: 'Noto Sans KR', sans-serif;
-        width: 600px;
+        width: 100%;
+        height: 100%;
+      }
+      &__des {
+        width: 100%;
       }
     }
     &__profile:last-child {
@@ -298,6 +327,7 @@ body {
 }
 .name {
   font-size: 20px;
+  width: 100%;
   &__part {
     font-size: 1.6rem;
     background-color: $maincolor;
@@ -319,6 +349,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 100px 0;
+  border-top: 1px solid #c4c4c4;
   &__left {
     margin-left: 6rem;
   }
@@ -384,3 +415,74 @@ body {
 }
 
 
+
+
+@media screen and (max-width: 768px) {
+  .project-content{
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &--left {
+        img {
+          padding: 0;
+        }
+      }
+      &--right {
+        top: 0;
+      }
+    }
+  }
+  
+}
+@media screen and (max-width:1024px) {
+  .project-main {
+    &__logo {
+      img {
+        width: 24%;
+      }
+    }
+    &__txt {
+      width: 100%;
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .project-content {
+    &__txt--name {
+      font-size: 2rem;
+    }
+    &__subtxt {
+      width: 100%;
+      font-size: 1.4rem;
+    }
+  }
+  .project-page {
+    &__txt {
+      font-size: 2rem;
+    }
+    &__subtxt {
+      font-size: 1.4rem;
+    }
+  }
+  .project-team__profile {
+    display: flex;
+    flex-direction: column;
+    &--img {
+      margin: 10px 0;
+    }
+    &--content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+  }
+  .name {
+    font-size: 1.6rem;
+    &__part {
+      font-size: 1rem;
+    }
+  }
+}

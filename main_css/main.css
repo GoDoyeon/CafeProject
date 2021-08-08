@@ -4,76 +4,7 @@
 /* 반응형 */
 /*main scss*/
 /*header*/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .header__logo {
-    margin: 0;
-    align-items: center;
-  }
-  .header__menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-  .header__menu li {
-    width: 100%;
-    padding: 15px 0 15px 60px;
-  }
-  .header__menu li:hover {
-    background-color: #eedeff;
-    border-bottom: none;
-  }
-  .header__menu .active {
-    display: flex;
-  }
-  .header__btn {
-    position: absolute;
-    right: 0;
-    top: 20px;
-    padding: 0 1.5rem;
-  }
-  .header__btn i {
-    margin: 0 auto;
-    font-size: 2rem;
-  }
-  .header__btn--right {
-    display: none;
-  }
-  .header__toogleBtn {
-    display: block;
-  }
-}
-
 /*footer*/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer__right {
-    margin-left: 6rem;
-  }
-  .footer__menu {
-    margin: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer__right {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer__menu {
-    margin-top: 60px;
-  }
-}
-
 /* 반응형 */
 * {
   margin: 0;
@@ -123,7 +54,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .header__logo {
@@ -181,7 +112,52 @@ body {
   top: 15px;
   font-size: 40px;
   display: none;
-  color: #eedeff;
+  color: #CCB7FF;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .header__logo {
+    margin: 0;
+    align-items: center;
+  }
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__menu li {
+    width: 100%;
+    padding: 15px 0 15px 60px;
+  }
+  .header__menu li:hover {
+    background-color: #eedeff;
+    border-bottom: none;
+  }
+  .header__menu .active {
+    display: flex;
+  }
+  .header__btn {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 0 1.5rem;
+  }
+  .header__btn i {
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+  .header__btn--right {
+    display: none;
+  }
+  .header__toogleBtn {
+    display: block;
+  }
 }
 
 /* section2 */
@@ -206,7 +182,7 @@ body {
 .main__home .main__tit {
   margin: 10rem 0;
   width: 100%;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   line-height: 30px;
   justify-content: center;
   text-align: center;
@@ -277,7 +253,7 @@ body {
 }
 
 .main__horoscope .horoscope__tit {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   display: block;
   margin: 0 auto;
   height: 35rem;
@@ -1020,7 +996,7 @@ body {
 
 .main__best .sub__tit {
   font-size: 1.6rem;
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
 .main__best .best__bg {
@@ -1190,7 +1166,7 @@ body {
 }
 
 .main__newCafe .newCafe__tit {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   padding: 15rem 0 8rem 0;
   text-align: center;
 }
@@ -1347,10 +1323,10 @@ body {
 
 .footer {
   width: 100%;
-  height: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 100px 0;
 }
 
 .footer__left {
@@ -1374,7 +1350,7 @@ body {
 }
 
 .footer__menu {
-  width: 70px;
+  width: 100px;
   font-size: 1.6rem;
   list-style: none;
   margin-left: 4rem;
@@ -1388,4 +1364,35 @@ body {
 .footer__menu li {
   font-size: 1rem;
 }
-/*# sourceMappingURL=main.css.map */
+
+.footer__menu li :hover {
+  color: #ccb7ff;
+}
+
+.footer__menu li a {
+  color: #333;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__right {
+    margin: 4rem 0 0 6rem;
+  }
+  .footer__menu {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__right {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__menu:last-child {
+    margin-top: 60px;
+  }
+}
