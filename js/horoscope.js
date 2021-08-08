@@ -7,14 +7,12 @@ const screen_desktop = window.matchMedia("screen and (min-width: 1024px)");
 
 let index = 0;
 
-window.onresize = function(){
-  document.location.reload();
-};
+
 
 horoPrevBtn.addEventListener('click', () => {
-  if (index <= 4 && index >= 0) {
+  if (index <= 5 && index >= 0) {
     index -= 1;
-    horoscope.style.transform = `translate3d(-${950 * index}px, 0, 0)`;
+    horoscope.style.transform = `translate3d(-${614 * index}px, 0, 0)`;
     if(index===-1){
       index = 0; 
     }
@@ -23,17 +21,10 @@ horoPrevBtn.addEventListener('click', () => {
 });
 
 horoNextBtn.addEventListener('click', () => {
-  if (index >= 0 && index < 4) {//614
+  if (index >= 0 && index < 5) {//614
     index += 1;
-    horoscope.style.transform = `translate3d(-${950 * index}px, 0, 0)`;
+    horoscope.style.transform = `translate3d(-${614 * index}px, 0, 0)`;
   }
   console.log(`index: ${index}`);
 });
 
-if(matchMedia("screen and (max-width: 767px)").matches){
-  console.log("mobile");
-}else if(matchMedia("screen and (max-width: 1023px)").matches){
-  console.log("tablet");
-}else if(matchMedia("screen and (min-width: 1024px)").matches){
-  console.log("desktop");
-}
