@@ -176,9 +176,13 @@ body {
           padding: 4rem;
           position: absolute;
           display: block;
-
           width: 100%;
           transition: all 0.3s ease;
+          @include tablet{
+            width: 58.4rem;
+            
+            margin: auto;
+          }
           .cafe__name {
             display: block;
             font-size: 5rem;
@@ -501,6 +505,9 @@ body {
   height: 1080px;
   position: relative;
   overflow: hidden;
+  @include tablet{
+    height: 60rem;
+  }
 
   .best__tit {
     width: 98.8rem;
@@ -509,15 +516,25 @@ body {
     margin: 0 auto;
     line-height: 30px;
     letter-spacing: 2px;
+    @include tablet{
+      width: 70rem;
+      height: 25rem;
+      padding: 8rem 0px;
+    }
   }
 
   .tit {
     font-size: 4rem;
     margin-bottom: 3rem;
+    @include tablet{
+      font-size: 2.5rem;
+    }
+
   }
   .sub__tit {
     font-size: 1.6rem;
     font-family: 'Frank Ruhl Libre', serif;
+    
   }
 
   .best__bg {
@@ -527,6 +544,9 @@ body {
     overflow: hidden;
     background: url('../img/06/best_1_1.png') center no-repeat;
     background-size: cover;
+    @include tablet{
+      height: 35rem;
+    }
 
     .best__inner__bg {
       width: 100%;
@@ -536,6 +556,9 @@ body {
       background: url('../img/06/bg.png') center no-repeat;
       background-size: cover;
       transition: 0.5s ease-out;
+      @include tablet{
+        height: 35rem;
+      }
     }
   }
 
@@ -549,6 +572,12 @@ body {
     left: 60%;
     box-shadow: 10px 10px 15px $boxshadow;
 
+    @include tablet{
+      width: 25rem;
+      height: 36rem;
+      top: 8rem;
+    }
+
     .best__header {
       width: 36rem;
       height: 55rem;
@@ -557,6 +586,12 @@ body {
       background: url('../img/06/best2.png') top no-repeat;
       background-size: cover;
       transition: 0.5s ease-out;
+
+      @include tablet{
+        width: 25rem;
+        height: 36rem;
+        top: 36rem;
+      }
     }
   }
 
