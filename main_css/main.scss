@@ -79,17 +79,17 @@ body {
     justify-content: center;
     text-align: center;
     .sub_text {
-      font-size: 2rem;
-      @include tablet{
+      font-size: 1.6rem;
+      @include tablet {
         font-size: 2.5rem;
       }
     }
     .main_text {
-      font-size: 6rem;
+      font-size: 4rem;
       .main {
         font-weight: bold;
       }
-      @include tablet{
+      @include tablet {
         font-size: 3.5rem;
       }
     }
@@ -103,7 +103,7 @@ body {
   position: relative;
   overflow: hidden;
   /* article 3-1. 텍스트 부분 */
-  @include tablet{
+  @include tablet {
     height: 65rem;
   }
   .horoscope__tit {
@@ -113,7 +113,7 @@ body {
     height: 35rem; // 210+80+150 = 440px
     width: 192rem;
 
-    @include tablet{
+    @include tablet {
       width: 70rem;
       height: 20rem;
       padding-top: 4rem;
@@ -123,20 +123,19 @@ body {
       padding: 15rem 0 0 18rem;
       font-weight: 400;
       font-size: 4em;
-      @include tablet{
+      @include tablet {
         padding: 0;
       }
       .main__font {
         font-weight: bold;
       }
-      
     }
     p {
       display: block;
       padding: 1.4rem 0 0 18rem;
       margin-top: 1rem;
       font-size: 1.6rem;
-      @include tablet{
+      @include tablet {
         padding: 0;
       }
       .main__font {
@@ -161,7 +160,7 @@ body {
       transform: translate3d(0, 0, 0);
       transition: transform 0.5s;
       // margin-bottom: 16rem;
-      @include tablet{
+      @include tablet {
         width: 70rem;
         left: 0;
       }
@@ -249,13 +248,13 @@ body {
 /*section 4: 전망좋은 카페*/
 .main__scenery {
   height: 100rem;
-  @include tablet{
+  @include tablet {
     height: 65rem;
   }
   .scenery__box {
     height: 100rem;
     position: relative;
-    @include tablet{
+    @include tablet {
       height: 65rem;
     }
 
@@ -276,7 +275,6 @@ body {
           @include scenery__bg__Slide;
           background: url('../img/05/left/L_content_1_1.png') center no-repeat;
           background-size: cover;
-          
         }
 
         .scenery__bg__bigSlide2 {
@@ -294,7 +292,7 @@ body {
         margin-top: -34rem;
         position: absolute;
 
-        @include tablet{
+        @include tablet {
           width: 20rem;
           height: 40rem;
           margin-top: -25rem;
@@ -308,7 +306,7 @@ body {
             height: 34rem;
             position: absolute;
             transition: 0.5s ease-out;
-            @include tablet{
+            @include tablet {
               width: 40rem;
               height: 20rem;
             }
@@ -332,7 +330,7 @@ body {
           width: 34rem;
           height: 34rem;
           background: white;
-          @include tablet{
+          @include tablet {
             width: 20rem;
             height: 20rem;
           }
@@ -344,7 +342,7 @@ body {
             background-size: cover;
             opacity: 1;
             transition: opacity 1s;
-            @include tablet{
+            @include tablet {
               width: 20rem;
               height: 20rem;
             }
@@ -357,7 +355,7 @@ body {
             background-size: cover;
             opacity: 0;
             transition: opacity 1s;
-            @include tablet{
+            @include tablet {
               width: 20rem;
               height: 20rem;
             }
@@ -384,7 +382,7 @@ body {
         left: 25rem;
         margin-top: 22rem;
         transition: 0.2s ease-in;
-        @include tablet{
+        @include tablet {
           margin-top: 14rem;
         }
         p {
@@ -427,7 +425,7 @@ body {
         top: 50%;
         margin-top: -34rem;
         position: absolute;
-        @include tablet{
+        @include tablet {
           width: 20rem;
           height: 40rem;
           margin-top: -25rem;
@@ -437,7 +435,7 @@ body {
           width: 34rem;
           height: 34rem;
           background: white;
-          @include tablet{
+          @include tablet {
             width: 20rem;
             height: 20rem;
           }
@@ -450,8 +448,8 @@ body {
             background-size: cover;
             opacity: 1;
             transition: opacity 1s;
-            @include tablet{
-              width:20rem;
+            @include tablet {
+              width: 20rem;
               height: 20rem;
             }
           }
@@ -463,7 +461,7 @@ body {
             background-size: cover;
             opacity: 0;
             transition: opacity 1s;
-            @include tablet{
+            @include tablet {
               width: 20rem;
               height: 20rem;
             }
@@ -477,7 +475,7 @@ body {
             height: 34rem;
             position: absolute;
             transition: 0.5s ease-out;
-            @include tablet{
+            @include tablet {
               width: 40rem;
               height: 20rem;
             }
