@@ -1038,7 +1038,7 @@ body {
 
 @media (max-width: 767px) {
   .main__best .best__tit {
-    width: 50rem;
+    width: 30rem;
     height: 25rem;
     padding: 8rem 0px;
   }
@@ -1057,13 +1057,20 @@ body {
 
 @media (max-width: 767px) {
   .main__best .tit {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
 .main__best .sub__tit {
   font-size: 1.6rem;
   font-family: 'Frank Ruhl Libre', serif;
+}
+
+@media (max-width: 767px) {
+  .main__best .sub__tit {
+    font-size: 1.3rem;
+  }
 }
 
 .main__best .best__bg {
@@ -1131,9 +1138,10 @@ body {
 
 @media (max-width: 767px) {
   .main__best .best__box {
-    width: 20rem;
-    height: 30rem;
-    top: 8rem;
+    width: 13rem;
+    height: 20rem;
+    top: 15rem;
+    margin-left: -2rem;
   }
 }
 
@@ -1157,9 +1165,9 @@ body {
 
 @media (max-width: 767px) {
   .main__best .best__box .best__header {
-    width: 20rem;
-    height: 30rem;
-    top: 30rem;
+    width: 13rem;
+    height: 20rem;
+    top: 20rem;
   }
 }
 
@@ -1191,13 +1199,13 @@ body {
 
 @media (max-width: 767px) {
   .main__best .scenery__bg__detail {
-    width: 13rem;
-    height: 13rem;
-    padding-top: 4.7rem;
+    width: 8rem;
+    height: 8rem;
+    padding-top: 3rem;
     top: 33rem;
     left: 60%;
     margin: 0;
-    margin-left: 12rem;
+    margin-left: 5rem;
   }
 }
 
@@ -1215,7 +1223,8 @@ body {
 
 @media (max-width: 767px) {
   .main__best .scenery__bg__detail p {
-    width: 13rem;
+    width: 8rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -1246,7 +1255,7 @@ body {
 
 @media (max-width: 767px) {
   .main__newCafe {
-    height: 70rem;
+    height: 60rem;
   }
 }
 
@@ -1283,7 +1292,7 @@ body {
 
 @media (max-width: 767px) {
   .main__newCafe .newCafe__tit .tit {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
   }
 }
@@ -1300,6 +1309,13 @@ body {
   font-size: 1.6rem;
   border: none;
   color: #333;
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__tit button {
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+  }
 }
 
 .main__newCafe .newCafe__block {
@@ -1392,7 +1408,7 @@ body {
 
 @media (max-width: 767px) {
   .main__newCafe .newCafe__block .swiper-container .swiper-wrapper {
-    width: 50rem;
+    width: 30rem;
   }
 }
 
