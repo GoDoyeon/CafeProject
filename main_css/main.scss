@@ -177,9 +177,13 @@ body {
           padding: 4rem;
           position: absolute;
           display: block;
-
           width: 100%;
           transition: all 0.3s ease;
+          @include tablet{
+            width: 58.4rem;
+            
+            margin: auto;
+          }
           .cafe__name {
             display: block;
             font-size: 5rem;

@@ -342,6 +342,13 @@ body {
   transition: all 0.3s ease;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit {
+    width: 58.4rem;
+    margin: auto;
+  }
+}
+
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__name {
   display: block;
   font-size: 5rem;
