@@ -742,6 +742,9 @@ body {
   @include tablet{
     height: 80rem;
   }
+  @include mobile{
+    height: 70rem;
+  }
   /* article 6-1. 텍스트 부분 */
   .newCafe__tit {
     // border: 1px solid black;
@@ -751,6 +754,9 @@ body {
     @include tablet{
       padding: 8rem 0;
     }
+    @include mobile{
+      padding: 3.5rem 0 3rem 0;
+    }
     .tit {
       display: block;
       //padding: 21rem 0 0 18rem;
@@ -759,6 +765,10 @@ body {
       margin-bottom: 5rem;
       @include tablet{
         font-size: 3rem;
+      }
+      @include mobile{
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
       }
       .main__font {
         font-weight: bold;
@@ -793,6 +803,9 @@ body {
     @include tablet{
       width: 100%;
     }
+    @include mobile{
+      width: 100%;
+    }
 
     .swiper-button-next {
       right: -70px;
@@ -801,6 +814,9 @@ body {
         color: #333;
       }
       @include tablet{
+        right: 0;
+      }
+      @include mobile{
         right: 0;
       }
     }
@@ -813,6 +829,9 @@ body {
       @include tablet{
         left: 0;
       }
+      @include mobile{
+        left: 0;
+      }
     }
     .swiperbtn {
       color: $textcolor;
@@ -823,9 +842,15 @@ body {
       @include tablet{
         width: 70rem;
       }
+      @include mobile{
+        width: 100%;
+      }
       .swiper-wrapper{
         @include tablet{
           width: 58.4rem;
+        }
+        @include mobile{
+          width: 50rem;
         }
       }
     }

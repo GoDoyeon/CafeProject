@@ -1159,6 +1159,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .main__newCafe {
+    height: 70rem;
+  }
+}
+
 .main__newCafe .newCafe__tit {
   font-family: 'Noto Sans KR', sans-serif;
   padding: 15rem 0 8rem 0;
@@ -1168,6 +1174,12 @@ body {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__newCafe .newCafe__tit {
     padding: 8rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__tit {
+    padding: 3.5rem 0 3rem 0;
   }
 }
 
@@ -1181,6 +1193,13 @@ body {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__newCafe .newCafe__tit .tit {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__tit .tit {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -1212,6 +1231,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__block {
+    width: 100%;
+  }
+}
+
 .main__newCafe .newCafe__block .swiper-button-next {
   right: -70px;
   color: #ccb7ff;
@@ -1222,6 +1247,12 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .main__newCafe .newCafe__block .swiper-button-next {
+    right: 0;
+  }
+}
+
+@media (max-width: 767px) {
   .main__newCafe .newCafe__block .swiper-button-next {
     right: 0;
   }
@@ -1242,6 +1273,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__block .swiper-button-prev {
+    left: 0;
+  }
+}
+
 .main__newCafe .newCafe__block .swiperbtn {
   color: #333;
 }
@@ -1256,9 +1293,21 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__block .swiper-container {
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__newCafe .newCafe__block .swiper-container .swiper-wrapper {
     width: 58.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__block .swiper-container .swiper-wrapper {
+    width: 50rem;
   }
 }
 
