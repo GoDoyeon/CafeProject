@@ -10,7 +10,7 @@ let index = 0;
 
 
 horoPrevBtn.addEventListener('click', () => {
-  if (index <= 5 && index >= 0) {
+  if (index <= 6 && index >= 0) {
     index -= 1;
     horoscope.style.transform = `translate3d(-${614 * index}px, 0, 0)`;
     if(index===-1){
@@ -21,7 +21,7 @@ horoPrevBtn.addEventListener('click', () => {
 });
 
 horoNextBtn.addEventListener('click', () => {
-  if (index >= 0 && index < 5) {//614
+  if (index >= 0 && index < 6) {//614
     index += 1;
     horoscope.style.transform = `translate3d(-${614 * index}px, 0, 0)`;
   }
