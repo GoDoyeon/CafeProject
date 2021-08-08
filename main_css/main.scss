@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
-@import "../mixin/mixin";
-@import "../variables/variables";
+@import "../mixin/mixin.scss";
+@import "../variables/variables.scss";
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
@@ -51,50 +51,6 @@ body {
   @include header;
 }
 
-@media screen and (max-width: 1024px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    &__logo {
-      margin: 0;
-      align-items: center;
-    }
-    &__menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      li {
-        width: 100%;
-        padding: 15px 0 15px 60px;
-        &:hover {
-          background-color: $maincolor;
-          border-bottom: none;
-        }
-      }
-      .active {
-        display: flex;
-      }
-    }
-    &__btn {
-      position: absolute;
-      right: 0;
-      top: 20px;
-      padding: 0 1.5rem;
-      i {
-        margin: 0 auto;
-        font-size: 2rem;
-      }
-      &--right {
-        display: none;
-      }
-    }
-    &__toogleBtn {
-      display: block;
-    }
-  }
-}
 
 /* section2 */
 .main__home {
@@ -640,29 +596,4 @@ body {
 
 .footer {
   @include footer;
-}
-
-@media screen and (max-width:1024px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    &__right {
-      margin: 4rem 0 0 6rem;
-    }
-    &__menu {
-      margin: 0;
-    }
-  }
-}
-@media screen and (max-width:768px) {
-  .footer {
-    &__right {
-      display: flex;
-      flex-direction: column;
-    }
-    &__menu:last-child {
-      margin-top: 60px;
-    }
-  }
 }
