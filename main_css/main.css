@@ -964,6 +964,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .main__best {
+    height: 60rem;
+  }
+}
+
 .main__best .best__tit {
   width: 98.8rem;
   height: 50rem;
@@ -981,6 +987,14 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .main__best .best__tit {
+    width: 50rem;
+    height: 25rem;
+    padding: 8rem 0px;
+  }
+}
+
 .main__best .tit {
   font-size: 4rem;
   margin-bottom: 3rem;
@@ -989,6 +1003,12 @@ body {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__best .tit {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .tit {
+    font-size: 2.5rem;
   }
 }
 
@@ -1012,6 +1032,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .main__best .best__bg {
+    height: 35rem;
+  }
+}
+
 .main__best .best__bg .best__inner__bg {
   width: 100%;
   height: 58rem;
@@ -1028,12 +1054,19 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .main__best .best__bg .best__inner__bg {
+    height: 35rem;
+  }
+}
+
 .main__best .best__box {
   width: 36rem;
   height: 55rem;
   position: absolute;
   overflow: hidden;
   background: url("../img/06/best1.png") top no-repeat;
+  background-size: cover;
   top: 21rem;
   left: 60%;
   box-shadow: 10px 10px 15px #000000a8;
@@ -1043,6 +1076,14 @@ body {
   .main__best .best__box {
     width: 25rem;
     height: 36rem;
+    top: 8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .best__box {
+    width: 20rem;
+    height: 30rem;
     top: 8rem;
   }
 }
@@ -1062,6 +1103,14 @@ body {
     width: 25rem;
     height: 36rem;
     top: 36rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .best__box .best__header {
+    width: 20rem;
+    height: 30rem;
+    top: 30rem;
   }
 }
 

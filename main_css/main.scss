@@ -589,6 +589,9 @@ body {
   @include tablet{
     height: 60rem;
   }
+  @include mobile{
+    height: 60rem;
+  }
 
   .best__tit {
     width: 98.8rem;
@@ -602,6 +605,11 @@ body {
       height: 25rem;
       padding: 8rem 0px;
     }
+    @include mobile{
+      width: 50rem;
+      height: 25rem;
+      padding: 8rem 0px;
+    }
   }
 
   .tit {
@@ -609,6 +617,9 @@ body {
     margin-bottom: 3rem;
     @include tablet{
       font-size: 3rem;
+    }
+    @include mobile{
+      font-size: 2.5rem;
     }
 
   }
@@ -628,6 +639,9 @@ body {
     @include tablet{
       height: 35rem;
     }
+    @include mobile{
+      height: 35rem;
+    }
 
     .best__inner__bg {
       width: 100%;
@@ -640,6 +654,9 @@ body {
       @include tablet{
         height: 35rem;
       }
+      @include mobile{
+        height: 35rem;
+      }
     }
   }
 
@@ -649,6 +666,7 @@ body {
     position: absolute;
     overflow: hidden;
     background: url('../img/06/best1.png') top no-repeat;
+    background-size: cover;
     top: 21rem;
     left: 60%;
     box-shadow: 10px 10px 15px $boxshadow;
@@ -656,6 +674,11 @@ body {
     @include tablet{
       width: 25rem;
       height: 36rem;
+      top: 8rem;
+    }
+    @include mobile{
+      width: 20rem;
+      height: 30rem;
       top: 8rem;
     }
 
@@ -672,6 +695,11 @@ body {
         width: 25rem;
         height: 36rem;
         top: 36rem;
+      }
+      @include mobile{
+        width: 20rem;
+        height: 30rem;
+        top: 30rem;
       }
     }
   }
