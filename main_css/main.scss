@@ -224,15 +224,21 @@ body {
           width: 100%;
           transition: all 0.3s ease;
           
+          
           .cafe__name {
             display: block;
             font-size: 5rem;
+            @include mobile{
+              font-size: 3.6rem;
+            }
           }
           .cafe__type {
             display: block;
-
             margin-top: 2rem;
             font-size: 3rem;
+            @include mobile{
+              font-size: 2rem;
+            }
           }
         }
         &__img {

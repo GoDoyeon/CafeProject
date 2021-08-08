@@ -415,10 +415,22 @@ body {
   font-size: 5rem;
 }
 
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__name {
+    font-size: 3.6rem;
+  }
+}
+
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__type {
   display: block;
   margin-top: 2rem;
   font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__type {
+    font-size: 2rem;
+  }
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope__img {
