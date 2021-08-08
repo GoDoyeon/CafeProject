@@ -54,51 +54,6 @@ body {
   @include header;
 }
 
-@media screen and (max-width: 1024px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    &__logo {
-      margin: 0;
-      align-items: center;
-    }
-    &__menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      li {
-        width: 100%;
-        padding: 15px 0 15px 60px;
-        &:hover {
-          background-color: $maincolor;
-          border-bottom: none;
-        }
-      }
-      .active {
-        display: flex;
-      }
-    }
-    &__btn {
-      position: absolute;
-      right: 0;
-      top: 20px;
-      padding: 0 1.5rem;
-      i {
-        margin: 0 auto;
-        font-size: 2rem;
-      }
-      &--right {
-        display: none;
-      }
-    }
-    &__toogleBtn {
-      display: block;
-    }
-  }
-}
-
 /* section2 */
 .main__home {
   padding-top: 5rem;

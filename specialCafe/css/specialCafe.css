@@ -5,76 +5,7 @@
 /* 반응형 */
 /*main scss*/
 /*header*/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .header__logo {
-    margin: 0;
-    align-items: center;
-  }
-  .header__menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-  .header__menu li {
-    width: 100%;
-    padding: 15px 0 15px 60px;
-  }
-  .header__menu li:hover {
-    background-color: #eedeff;
-    border-bottom: none;
-  }
-  .header__menu .active {
-    display: flex;
-  }
-  .header__btn {
-    position: absolute;
-    right: 0;
-    top: 20px;
-    padding: 0 1.5rem;
-  }
-  .header__btn i {
-    margin: 0 auto;
-    font-size: 2rem;
-  }
-  .header__btn--right {
-    display: none;
-  }
-  .header__toogleBtn {
-    display: block;
-  }
-}
-
 /*footer*/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer__right {
-    margin-left: 6rem;
-  }
-  .footer__menu {
-    margin: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer__right {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer__menu {
-    margin-top: 60px;
-  }
-}
-
 /*
 section2 main-home : 400px
 section3 __menu : 1200px
@@ -619,13 +550,34 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 9999;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+  }
 }
 
 .header__logo {
   display: flex;
   flex-grow: 0;
   margin-left: 6rem;
+}
+
+@media (max-width: 1024px) {
+  .header__logo {
+    padding-top: 15px;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+  }
+  .header__logo img {
+    width: 60%;
+  }
 }
 
 .header__menu {
@@ -647,6 +599,25 @@ h4 {
 
 .header__menu li:hover {
   border-bottom: 1px solid #333;
+}
+
+@media (max-width: 1024px) {
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__menu li {
+    width: 100%;
+    padding: 15px 0 15px 60px;
+  }
+  .header__menu li:hover {
+    background-color: #eedeff;
+    border-bottom: none;
+  }
+  .header__menu .active {
+    display: flex;
+  }
 }
 
 .header__btn {
@@ -671,13 +642,35 @@ h4 {
   color: #fce303;
 }
 
+@media (max-width: 1024px) {
+  .header__btn {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 0 1.5rem;
+  }
+  .header__btn i {
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+  .header__btn--right {
+    display: none;
+  }
+}
+
 .header__toogleBtn {
   position: absolute;
   left: 60px;
   top: 15px;
   font-size: 40px;
   display: none;
-  color: #eedeff;
+  color: #CCB7FF;
+}
+
+@media (max-width: 1024px) {
+  .header__toogleBtn {
+    display: block;
+  }
 }
 
 .project {
