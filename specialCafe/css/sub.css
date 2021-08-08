@@ -143,6 +143,15 @@ a {
   z-index: 9999;
 }
 
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+  }
+}
+
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,6 +160,18 @@ a {
   -ms-flex-positive: 0;
   flex-grow: 0;
   margin-left: 6rem;
+}
+
+@media (max-width: 1024px) {
+  .header__logo {
+    padding-top: 15px;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+  }
+  .header__logo img {
+    width: 60%;
+  }
 }
 
 .header__menu {
@@ -176,6 +197,25 @@ a {
 
 .header__menu li:hover {
   border-bottom: 1px solid #333;
+}
+
+@media (max-width: 1024px) {
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__menu li {
+    width: 100%;
+    padding: 15px 0 15px 60px;
+  }
+  .header__menu li:hover {
+    background-color: #eedeff;
+    border-bottom: none;
+  }
+  .header__menu .active {
+    display: flex;
+  }
 }
 
 .header__btn {
@@ -209,6 +249,22 @@ a {
   color: #fce303;
 }
 
+@media (max-width: 1024px) {
+  .header__btn {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 0 1.5rem;
+  }
+  .header__btn i {
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+  .header__btn--right {
+    display: none;
+  }
+}
+
 .header__toogleBtn {
   position: absolute;
   left: 60px;
@@ -216,6 +272,12 @@ a {
   font-size: 40px;
   display: none;
   color: #ccb7ff;
+}
+
+@media (max-width: 1024px) {
+  .header__toogleBtn {
+    display: block;
+  }
 }
 
 .footer {
@@ -230,6 +292,21 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .footer__left {
@@ -254,11 +331,35 @@ a {
   margin-right: 6rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__right {
+    margin: 4rem 0 0 6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__right {
+    margin: 4rem 0 0 6rem;
+  }
+}
+
 .footer__menu {
   width: 100px;
   font-size: 1.6rem;
   list-style: none;
   margin-left: 4rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__menu {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__menu {
+    margin: 0;
+  }
 }
 
 .footer__menu--list {
@@ -277,3 +378,4 @@ a {
 .footer__menu li a {
   color: #333;
 }
+/*# sourceMappingURL=sub.css.map */
