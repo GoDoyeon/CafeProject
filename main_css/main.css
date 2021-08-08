@@ -1428,6 +1428,8 @@ body {
 .footer__menu li a {
   color: #333;
 }
+<<<<<<< HEAD
+=======
 
 @media screen and (max-width: 1024px) {
   .footer {
@@ -1453,3 +1455,4 @@ body {
   }
 }
 /*# sourceMappingURL=main.css.map */
+>>>>>>> 546d8f69b4ca02c181efab46abdae83c04385d17

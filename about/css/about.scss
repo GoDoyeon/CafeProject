@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 @import "../../variables/variables";
+<<<<<<< HEAD
+@import "../../mixin/mixin";
+
+=======
 @import "../../mixin/mixin.scss";
+>>>>>>> 546d8f69b4ca02c181efab46abdae83c04385d17
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
+
 
 
 * {
@@ -27,7 +33,7 @@ body {
   color: $textcolor;
 }
 
-.screen__out {
+.screen_out {
   text-indent: -9999px;
   overflow: hidden;
   position: absolute;
@@ -39,120 +45,11 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+
 // header
+
 .header {
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 9999;
-  &__logo {
-    display: flex;
-    flex-grow: 0;
-    margin-left: 6rem;
-  }
-  &__menu {
-    display: flex;
-    flex-grow: 1;
-    font-size: 3rem;
-    list-style: none;
-    font-family: 'Dancing Script', cursive;
-    margin: 0 6rem;
-    li {
-      margin-right: 5rem;
-      a {
-        color: $textcolor;
-      }
-      &:hover {
-        border-bottom: 1px solid #333;
-      }
-    }
-  }
-  &__btn {
-    display: flex;
-    flex-grow: 0;
-    justify-content: center;
-    align-items: center;
-    padding: 0 3rem;
-    height: 50px;
-    border-radius: 30px;
-    border: 0;
-    outline: 0;
-    margin: 0 6rem;
-    box-shadow: 4px 6px 10px $boxshadow;
-    i {
-      margin-right: 1rem;
-    }
-    &:hover {
-      background-color: $textcolor;
-      color: #f4f4f4;
-      .fa-moon {
-        color: #fce303;
-      }
-    }
-  }
-  &__toogleBtn {
-    position: absolute;
-    left: 60px;
-    top: 15px;
-    font-size: 40px;
-    display: none;
-    color: $maincolor;
-  }
-}
-
-
-@media screen and (max-width: 1024px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    width: 100%;
-    &__logo {
-      padding-top: 15px;
-      text-align: center;
-      margin: 0;
-      align-items: center;
-      img {
-        width: 60%;
-      }
-    }
-    &__menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      li {
-        width: 100%;
-        padding: 15px 0 15px 60px;
-        &:hover {
-          background-color: $maincolor;
-          border-bottom: none;
-        }
-      }
-      .active {
-        display: flex;
-      }
-    }
-    &__btn {
-      position: absolute;
-      right: 0;
-      top: 20px;
-      padding: 0 1.5rem;
-      i {
-        margin: 0 auto;
-        font-size: 2rem;
-      }
-      &--right {
-        display: none;
-      }
-    }
-    &__toogleBtn {
-      display: block;
-    }
-  }
+  @include header;
 }
 
 
@@ -162,16 +59,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
+// main
 
 .project {
   position: relative;
@@ -185,10 +73,25 @@ body {
   &-main {
     width: 100%;
     text-align: center;
+    &__logo {
+      img {
+        @include mobileAndTablet {
+          width: 24%;
+        }
+      }
+    }
     &__txt {
       font-size: 2rem;
       margin: 40px 0;
       line-height: 3.5rem;
+      @include mobileAndTablet {
+        width: 100%;
+      }
+      span {
+        @include mobileAndTablet {
+          font-size: 1.4rem;
+        }
+      }
     }
   }
   &-content {
@@ -202,6 +105,9 @@ body {
         font-weight: bold;
         color: #ccb7ff;
         width: 100%;
+        @include mobileAndTablet {
+          font-size: 2rem;
+        }
       }
     }
     &__subtxt {
@@ -213,18 +119,40 @@ body {
         width: 100%;
         padding: 0 2rem 0 0;
         margin-top: 30px;
+        @include mobileAndTablet {
+          width: 100%;
+          font-size: 1.4rem;
+        }
     }
     &__box {
       display: flex;
       justify-content: space-between;
       width: 100%;
+      @include tablet {
+        flex-direction: column;
+      }
+      @include mobile {
+        flex-direction: column;
+      }
       &--left {
         img {
+          @include tablet {
+            padding: 0;
+          }
+          @include mobile {
+            padding: 0;
+          }
           width: 100%;
           padding-right: 30px;
         }
       }
       &--right {
+        @include tablet {
+          top: 0;
+        }
+        @include mobile {
+          top: 0;
+        }
         position: relative;
         bottom: 200px;
         img {
@@ -258,12 +186,18 @@ body {
       margin-top: 70px;
       font-weight: bold;
       color: #ccb7ff;
+      @include mobileAndTablet {
+        font-size: 2rem;
+      }
     }
     &__subtxt {
       width: 100%;
       font-size: 2rem;
       margin: 2rem 0;
       line-height: 3.5rem;
+      @include mobileAndTablet {
+        font-size: 1.4rem;
+      }
     }
     &__img {
       img {
@@ -299,15 +233,28 @@ body {
       width: 100%;
       height: 100%;
       box-shadow: 0px 3px 10px $maincolor;
+      @include mobileAndTablet {
+        display: flex;
+        flex-direction: column;
+      }
       &--img {
         width: 130px;
         height: 130px;
         margin: 103px;
+        @include mobileAndTablet {
+          margin: 10px 0;
+        }
       }
       &--content {
         font-family: 'Noto Sans KR', sans-serif;
         width: 100%;
         height: 100%;
+        @include mobileAndTablet {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 2rem;
+        }
       }
       &__des {
         width: 100%;
@@ -328,6 +275,9 @@ body {
 .name {
   font-size: 20px;
   width: 100%;
+  @include mobileAndTablet {
+    font-size: 1.6rem;
+  }
   &__part {
     font-size: 1.6rem;
     background-color: $maincolor;
@@ -335,6 +285,9 @@ body {
     padding: 0.4rem 1rem;
     margin: 0 0.8rem;
     border-radius: 20px;
+    @include mobileAndTablet {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -342,147 +295,80 @@ body {
   color: #ccb7ff;
 }
 
+// footer
 
 .footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px 0;
-  border-top: 1px solid #c4c4c4;
-  &__left {
-    margin-left: 6rem;
-  }
-  &__copyright {
-    margin-top: 50px;
-    font-weight: bold;
-    p:last-child {
-      font-weight: normal;
-      font-family: 'Dancing Script', cursive;
-      margin-top: 10px;
-    }
-  }
+  @include footer;
+}
+
+
+
+// @media screen and (max-width: 768px) {
+//   .project-content{
+//     &__box {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       &--left {
+//         img {
+//           padding: 0;
+//         }
+//       }
+//       &--right {
+//         top: 0;
+//       }
+//     }
+//   }
   
-  &__right {
-    display: flex;
-    margin-right: 6rem;
-  }
-  &__menu {
-    width: 100px;
-    font-size: 1.6rem;
-    list-style: none;
-    margin-left: 4rem;
-    &--list {
-      height: 30px;
-      padding-top: 30px;
-    }
-    li {
-      font-size: 1rem;
-      :hover {
-        color: #ccb7ff;
-      }
-      a {
-        color: $textcolor;
-      }
-    }
-  }
-}
-
-@media screen and (max-width:1024px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    &__right {
-      margin: 4rem 0 0 6rem;
-    }
-    &__menu {
-      margin: 0;
-    }
-  }
-}
-@media screen and (max-width:768px) {
-  .footer {
-    &__right {
-      display: flex;
-      flex-direction: column;
-    }
-    &__menu:last-child {
-      margin-top: 60px;
-    }
-  }
-  
-}
-
-
-
-
-@media screen and (max-width: 768px) {
-  .project-content{
-    &__box {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      &--left {
-        img {
-          padding: 0;
-        }
-      }
-      &--right {
-        top: 0;
-      }
-    }
-  }
-  
-}
-@media screen and (max-width:1024px) {
-  .project-main {
-    &__logo {
-      img {
-        width: 24%;
-      }
-    }
-    &__txt {
-      width: 100%;
-      span {
-        font-size: 1.4rem;
-      }
-    }
-  }
-  .project-content {
-    &__txt--name {
-      font-size: 2rem;
-    }
-    &__subtxt {
-      width: 100%;
-      font-size: 1.4rem;
-    }
-  }
-  .project-page {
-    &__txt {
-      font-size: 2rem;
-    }
-    &__subtxt {
-      font-size: 1.4rem;
-    }
-  }
-  .project-team__profile {
-    display: flex;
-    flex-direction: column;
-    &--img {
-      margin: 10px 0;
-    }
-    &--content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-    }
-  }
-  .name {
-    font-size: 1.6rem;
-    &__part {
-      font-size: 1rem;
-    }
-  }
-}
+// }
+// @media screen and (max-width:1024px) {
+//   .project-main {
+//     &__logo {
+//       img {
+//         width: 24%;
+//       }
+//     }
+//     &__txt {
+//       width: 100%;
+//       span {
+//         font-size: 1.4rem;
+//       }
+//     }
+//   }
+//   .project-content {
+//     &__txt--name {
+//       font-size: 2rem;
+//     }
+//     &__subtxt {
+//       width: 100%;
+//       font-size: 1.4rem;
+//     }
+//   }
+//   .project-page {
+//     &__txt {
+//       font-size: 2rem;
+//     }
+//     &__subtxt {
+//       font-size: 1.4rem;
+//     }
+//   }
+//   .project-team__profile {
+//     display: flex;
+//     flex-direction: column;
+//     &--img {
+//       margin: 10px 0;
+//     }
+//     &--content {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 2rem;
+//     }
+//   }
+//   .name {
+//     font-size: 1.6rem;
+//     &__part {
+//       font-size: 1rem;
+//     }
+//   }
+// }
