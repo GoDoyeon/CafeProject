@@ -7,8 +7,6 @@ const screen_desktop = window.matchMedia("screen and (min-width: 1024px)");
 
 let index = 0;
 
-
-
 horoPrevBtn.addEventListener('click', () => {
   if (index <= 6 && index >= 0) {
     index -= 1;

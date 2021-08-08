@@ -774,6 +774,12 @@ body {
   overflow: hidden;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best {
+    height: 60rem;
+  }
+}
+
 .main__best .best__tit {
   width: 98.8rem;
   height: 50rem;
@@ -783,9 +789,23 @@ body {
   letter-spacing: 2px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .best__tit {
+    width: 70rem;
+    height: 25rem;
+    padding: 8rem 0px;
+  }
+}
+
 .main__best .tit {
   font-size: 4rem;
   margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .tit {
+    font-size: 2.5rem;
+  }
 }
 
 .main__best .sub__tit {
@@ -802,6 +822,12 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .best__bg {
+    height: 35rem;
+  }
+}
+
 .main__best .best__bg .best__inner__bg {
   width: 100%;
   height: 58rem;
@@ -810,6 +836,12 @@ body {
   background: url("../img/06/bg.png") center no-repeat;
   background-size: cover;
   transition: 0.5s ease-out;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .best__bg .best__inner__bg {
+    height: 35rem;
+  }
 }
 
 .main__best .best__box {
@@ -823,6 +855,14 @@ body {
   box-shadow: 10px 10px 15px #000000a8;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .best__box {
+    width: 25rem;
+    height: 36rem;
+    top: 8rem;
+  }
+}
+
 .main__best .best__box .best__header {
   width: 36rem;
   height: 55rem;
@@ -831,6 +871,14 @@ body {
   background: url("../img/06/best2.png") top no-repeat;
   background-size: cover;
   transition: 0.5s ease-out;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__best .best__box .best__header {
+    width: 25rem;
+    height: 36rem;
+    top: 36rem;
+  }
 }
 
 .main__best .scenery__bg__detail {
