@@ -33,6 +33,9 @@
   @include tablet{
     width: 20rem;
   }
+  @include mobile{
+    width: 15rem;
+  }
 }
 
 @mixin scenery__bg__smollContainer {
@@ -43,6 +46,10 @@
   @include tablet{
     width: 20rem;
     height: 20rem;
+  }
+  @include mobile{
+    width: 15rem;
+    height: 15rem;
   }
 }
 
