@@ -440,7 +440,13 @@ body {
           width: 13rem;
           height: 13rem;
           padding-top: 4.7rem;
-          margin-top: 10rem;
+          top: 0;
+          left: 0;
+          margin: 0;
+          top: 48rem;
+          left: 40%;
+          margin: 0;
+          margin-left: 12rem;
         }
         p {
           width: 15rem;
@@ -717,10 +723,24 @@ body {
     margin: 22rem;
     transition: 0.2s ease-in;
 
+    @include mobile {
+      width: 13rem;
+      height: 13rem;
+      padding-top: 4.7rem;
+      top:33rem;
+      left: 60%;
+      margin: 0;
+      margin-left: 12rem;
+
+    }
+
     p {
       width: 15rem;
       font-size: 2rem;
       text-align: center;
+      @include mobile{
+        width: 13rem;
+      }
     }
     .arrow {
       font-size: 2rem;

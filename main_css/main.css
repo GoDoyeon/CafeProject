@@ -728,7 +728,13 @@ body {
     width: 13rem;
     height: 13rem;
     padding-top: 4.7rem;
-    margin-top: 10rem;
+    top: 0;
+    left: 0;
+    margin: 0;
+    top: 48rem;
+    left: 40%;
+    margin: 0;
+    margin-left: 12rem;
   }
 }
 
@@ -1128,10 +1134,28 @@ body {
   transition: 0.2s ease-in;
 }
 
+@media (max-width: 767px) {
+  .main__best .scenery__bg__detail {
+    width: 13rem;
+    height: 13rem;
+    padding-top: 4.7rem;
+    top: 33rem;
+    left: 60%;
+    margin: 0;
+    margin-left: 12rem;
+  }
+}
+
 .main__best .scenery__bg__detail p {
   width: 15rem;
   font-size: 2rem;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .main__best .scenery__bg__detail p {
+    width: 13rem;
+  }
 }
 
 .main__best .scenery__bg__detail .arrow {
