@@ -52,9 +52,8 @@ body {
   position: fixed;
   width: 100%;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -62,25 +61,55 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+=======
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+  }
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 }
 
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+=======
+  flex-grow: 0;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   margin-left: 6rem;
 }
 
+@media (max-width: 1024px) {
+  .header__logo {
+    padding-top: 15px;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+  }
+  .header__logo img {
+    width: 60%;
+  }
+}
+
 .header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+=======
+  flex-grow: 1;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   font-size: 3rem;
   list-style: none;
   font-family: 'Dancing Script', cursive;
@@ -99,10 +128,28 @@ body {
   border-bottom: 1px solid #333;
 }
 
+@media (max-width: 1024px) {
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__menu li {
+    width: 100%;
+    padding: 15px 0 15px 60px;
+  }
+  .header__menu li:hover {
+    background-color: #eedeff;
+    border-bottom: none;
+  }
+  .header__menu .active {
+    display: flex;
+  }
+}
+
 .header__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -112,14 +159,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   padding: 0 3rem;
   height: 50px;
   border-radius: 30px;
   border: 0;
   outline: 0;
   margin: 0 6rem;
+<<<<<<< HEAD
   -webkit-box-shadow: 4px 6px 10px #000000a8;
           box-shadow: 4px 6px 10px #000000a8;
+=======
+  box-shadow: 4px 6px 10px #000000a8;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 }
 
 .header__btn i {
@@ -130,6 +186,7 @@ body {
   color: #fce303;
 }
 
+<<<<<<< HEAD
 .header__toogleBtn {
   position: absolute;
   left: 60px;
@@ -180,6 +237,9 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+=======
+@media (max-width: 1024px) {
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   .header__btn {
     position: absolute;
     right: 0;
@@ -193,6 +253,18 @@ body {
   .header__btn--right {
     display: none;
   }
+}
+
+.header__toogleBtn {
+  position: absolute;
+  left: 60px;
+  top: 15px;
+  font-size: 40px;
+  display: none;
+  color: #CCB7FF;
+}
+
+@media (max-width: 1024px) {
   .header__toogleBtn {
     display: block;
   }
@@ -204,8 +276,6 @@ body {
   width: 100%;
   background-color: #eedeff;
   height: 40rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -224,15 +294,19 @@ body {
   width: 100%;
   font-family: "Nanum Gothic", sans-serif;
   line-height: 30px;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  justify-content: center;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   text-align: center;
 }
 
 @media (max-width: 767px) {
   .main__home .main__tit {
-    width: 50rem;
+    width: 30rem;
     margin: auto;
   }
 }
@@ -249,7 +323,7 @@ body {
 
 @media (max-width: 767px) {
   .main__home .main__tit .sub_text {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -269,7 +343,7 @@ body {
 
 @media (max-width: 767px) {
   .main__home .main__tit .main_text {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -312,7 +386,7 @@ body {
 
 @media (max-width: 767px) {
   .main__horoscope .horoscope__tit {
-    width: 50rem;
+    width: 30rem;
     height: 15rem;
     padding-top: 2rem;
   }
@@ -335,7 +409,7 @@ body {
 @media (max-width: 767px) {
   .main__horoscope .horoscope__tit .tit {
     padding: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -359,6 +433,7 @@ body {
 @media (max-width: 767px) {
   .main__horoscope .horoscope__tit p {
     padding: 0;
+    font-size: 1.3rem;
   }
 }
 
@@ -373,21 +448,28 @@ body {
   /* 별점 높은 순 사진 리스트 부분 */
 }
 
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block {
+    height: 50rem;
+  }
+}
+
 .main__horoscope .horoscope__block .horoscope__wrapper {
   width: 192rem;
   height: 10rem;
   margin: 0 auto;
   left: 18rem;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
+=======
+  transform: translate3d(0, 0, 0);
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -399,7 +481,8 @@ body {
 
 @media (max-width: 767px) {
   .main__horoscope .horoscope__block .horoscope__wrapper {
-    width: 50rem;
+    width: 30rem;
+    height: 40rem;
     left: 0;
   }
 }
@@ -409,6 +492,22 @@ body {
   position: relative;
 }
 
+<<<<<<< HEAD
+=======
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img {
+    width: 30rem;
+    height: 35rem;
+  }
+}
+
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit {
   color: #fff;
   top: 4rem;
@@ -417,7 +516,6 @@ body {
   position: absolute;
   display: block;
   width: 100%;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -426,17 +524,31 @@ body {
   font-size: 5rem;
 }
 
+<<<<<<< HEAD
+=======
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__name {
+    font-size: 3.6rem;
+  }
+}
+
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__type {
   display: block;
   margin-top: 2rem;
   font-size: 3rem;
 }
 
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__type {
+    font-size: 2rem;
+  }
+}
+
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope__img {
   width: 58.4rem;
   height: 40rem;
   opacity: 1;
-  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   overflow: hidden;
 }
@@ -446,14 +558,12 @@ body {
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover img {
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.15;
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope:hover .horoscope__img__tit {
   opacity: 1;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -461,6 +571,14 @@ body {
   left: 3rem;
   position: absolute;
   bottom: -13rem;
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__prevbtn {
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .main__horoscope .horoscope__block .horoscope__nextbtn {
@@ -483,6 +601,17 @@ body {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__btn {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1rem;
+    padding: 0;
+    top: 50%;
+    margin-top: -7.8rem;
+  }
+}
+
 /*section 4: 전망좋은 카페*/
 .main__scenery {
   height: 100rem;
@@ -496,7 +625,7 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery {
-    height: 65rem;
+    height: 50rem;
   }
 }
 
@@ -513,7 +642,7 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box {
-    height: 65rem;
+    height: 50rem;
   }
 }
 
@@ -529,7 +658,6 @@ body {
   width: 200%;
   height: 100%;
   position: absolute;
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -568,9 +696,9 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox {
-    width: 15rem;
-    height: 30rem;
-    margin-top: -20rem;
+    width: 10rem;
+    height: 20rem;
+    margin-top: -14rem;
   }
 }
 
@@ -590,8 +718,13 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container {
+<<<<<<< HEAD
     width: 15rem;
     height: 15rem;
+=======
+    width: 10rem;
+    height: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -599,7 +732,6 @@ body {
   width: 68rem;
   height: 34rem;
   position: absolute;
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -612,8 +744,13 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up {
+<<<<<<< HEAD
     width: 30rem;
     height: 15rem;
+=======
+    width: 20rem;
+    height: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -633,7 +770,11 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide1 {
+<<<<<<< HEAD
     width: 15rem;
+=======
+    width: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -653,7 +794,11 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__up__container .scenery__bg__up .scenery__bg__smallSlide2 {
+<<<<<<< HEAD
     width: 15rem;
+=======
+    width: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -672,8 +817,13 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down {
+<<<<<<< HEAD
     width: 15rem;
     height: 15rem;
+=======
+    width: 10rem;
+    height: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -684,7 +834,6 @@ body {
   background: url("../img/05/left/L_text_2_1.png") center no-repeat;
   background-size: cover;
   opacity: 1;
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -697,8 +846,13 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small {
+<<<<<<< HEAD
     width: 15rem;
     height: 15rem;
+=======
+    width: 10rem;
+    height: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -709,7 +863,6 @@ body {
   background: url("../img/05/left/L_text_1_1.png") center no-repeat;
   background-size: cover;
   opacity: 0;
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -722,8 +875,13 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__left .scenery__bg__smallBox .scenery__bg__down .scenery__bg__small2 {
+<<<<<<< HEAD
     width: 15rem;
     height: 15rem;
+=======
+    width: 10rem;
+    height: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -739,36 +897,42 @@ body {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
+<<<<<<< HEAD
   -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
           box-shadow: 5px 5px 15px 5px #000000a8;
+=======
+  box-shadow: 5px 5px 15px 5px #000000a8;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   padding-top: 5.7rem;
   position: absolute;
   z-index: 999;
   top: 50%;
   left: 25rem;
   margin-top: 22rem;
-  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail {
+    width: 13rem;
+    height: 13rem;
     margin-top: 14rem;
+    padding-top: 4.7rem;
   }
 }
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail {
-    width: 13rem;
-    height: 13rem;
-    padding-top: 4.7rem;
+    width: 8rem;
+    height: 8rem;
+    padding-top: 3rem;
     top: 0;
     left: 0;
     margin: 0;
-    top: 48rem;
+    top: 40rem;
     left: 40%;
     margin: 0;
-    margin-left: 12rem;
+    margin-left: 3rem;
   }
 }
 
@@ -778,9 +942,16 @@ body {
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail p {
     width: 13rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail p {
+    width: 8rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -790,15 +961,18 @@ body {
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail:hover {
+<<<<<<< HEAD
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+=======
+  transform: scale(1.2);
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 }
 
 .main__scenery .scenery__box .scenery__bg__right .scenery__bg__bigBox {
   width: 200%;
   height: 100%;
   position: absolute;
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -837,9 +1011,9 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox {
-    width: 15rem;
-    height: 30rem;
-    margin-top: -20rem;
+    width: 10rem;
+    height: 20rem;
+    margin-top: -14rem;
   }
 }
 
@@ -858,8 +1032,13 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up {
+<<<<<<< HEAD
     width: 15rem;
     height: 15rem;
+=======
+    width: 10rem;
+    height: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -870,7 +1049,6 @@ body {
   background: url("../img/05/right/R_text_2_1.png") center no-repeat;
   background-size: cover;
   opacity: 1;
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -883,8 +1061,13 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small {
+<<<<<<< HEAD
     width: 15rem;
     height: 15rem;
+=======
+    width: 10rem;
+    height: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -895,7 +1078,6 @@ body {
   background: url("../img/05/right/R_text_1_1.png") center no-repeat;
   background-size: cover;
   opacity: 0;
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -908,8 +1090,13 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__up .scenery__bg__small2 {
+<<<<<<< HEAD
     width: 15rem;
     height: 15rem;
+=======
+    width: 10rem;
+    height: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -929,8 +1116,13 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container {
+<<<<<<< HEAD
     width: 15rem;
     height: 15rem;
+=======
+    width: 10rem;
+    height: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -938,7 +1130,6 @@ body {
   width: 68rem;
   height: 34rem;
   position: absolute;
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -951,8 +1142,13 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down {
+<<<<<<< HEAD
     width: 30rem;
     height: 15rem;
+=======
+    width: 20rem;
+    height: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -972,7 +1168,11 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide1 {
+<<<<<<< HEAD
     width: 15rem;
+=======
+    width: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -992,7 +1192,11 @@ body {
 
 @media (max-width: 767px) {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__smallBox .scenery__bg__down__container .scenery__bg__down .scenery__bg__smallSlide2 {
+<<<<<<< HEAD
     width: 15rem;
+=======
+    width: 10rem;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   }
 }
 
@@ -1034,7 +1238,7 @@ body {
 
 @media (max-width: 767px) {
   .main__best .best__tit {
-    width: 50rem;
+    width: 30rem;
     height: 25rem;
     padding: 8rem 0px;
   }
@@ -1053,13 +1257,20 @@ body {
 
 @media (max-width: 767px) {
   .main__best .tit {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
 .main__best .sub__tit {
   font-size: 1.6rem;
   font-family: 'Frank Ruhl Libre', serif;
+}
+
+@media (max-width: 767px) {
+  .main__best .sub__tit {
+    font-size: 1.3rem;
+  }
 }
 
 .main__best .best__bg {
@@ -1090,7 +1301,6 @@ body {
   top: 0rem;
   background: url("../img/06/bg.png") center no-repeat;
   background-size: cover;
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -1115,8 +1325,12 @@ body {
   background-size: cover;
   top: 21rem;
   left: 60%;
+<<<<<<< HEAD
   -webkit-box-shadow: 10px 10px 15px #000000a8;
           box-shadow: 10px 10px 15px #000000a8;
+=======
+  box-shadow: 10px 10px 15px #000000a8;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -1129,9 +1343,10 @@ body {
 
 @media (max-width: 767px) {
   .main__best .best__box {
-    width: 20rem;
-    height: 30rem;
-    top: 8rem;
+    width: 13rem;
+    height: 20rem;
+    top: 15rem;
+    margin-left: -2rem;
   }
 }
 
@@ -1142,7 +1357,6 @@ body {
   top: 55rem;
   background: url("../img/06/best2.png") top no-repeat;
   background-size: cover;
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
@@ -1156,9 +1370,9 @@ body {
 
 @media (max-width: 767px) {
   .main__best .best__box .best__header {
-    width: 20rem;
-    height: 30rem;
-    top: 30rem;
+    width: 13rem;
+    height: 20rem;
+    top: 20rem;
   }
 }
 
@@ -1166,27 +1380,42 @@ body {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
+<<<<<<< HEAD
   -webkit-box-shadow: 5px 5px 15px 5px #000000a8;
           box-shadow: 5px 5px 15px 5px #000000a8;
+=======
+  box-shadow: 5px 5px 15px 5px #000000a8;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   padding-top: 5.7rem;
   position: absolute;
   z-index: 999;
   top: 50rem;
   left: 60%;
   margin: 22rem;
-  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .main__best .scenery__bg__detail {
     width: 13rem;
     height: 13rem;
     padding-top: 4.7rem;
+    top: 38rem;
+    left: 60%;
+    margin: 0;
+    margin-left: 17rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .scenery__bg__detail {
+    width: 8rem;
+    height: 8rem;
+    padding-top: 3rem;
     top: 33rem;
     left: 60%;
     margin: 0;
-    margin-left: 12rem;
+    margin-left: 5rem;
   }
 }
 
@@ -1196,9 +1425,16 @@ body {
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .main__best .scenery__bg__detail p {
     width: 13rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__best .scenery__bg__detail p {
+    width: 8rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -1208,8 +1444,12 @@ body {
 }
 
 .main__best .scenery__bg__detail:hover {
+<<<<<<< HEAD
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+=======
+  transform: scale(1.2);
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 }
 
 /* section 6. New cafe 4 [뉴 카페] */
@@ -1230,7 +1470,7 @@ body {
 
 @media (max-width: 767px) {
   .main__newCafe {
-    height: 70rem;
+    height: 60rem;
   }
 }
 
@@ -1267,7 +1507,7 @@ body {
 
 @media (max-width: 767px) {
   .main__newCafe .newCafe__tit .tit {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
   }
 }
@@ -1284,6 +1524,13 @@ body {
   font-size: 1.6rem;
   border: none;
   color: #333;
+}
+
+@media (max-width: 767px) {
+  .main__newCafe .newCafe__tit button {
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+  }
 }
 
 .main__newCafe .newCafe__block {
@@ -1376,15 +1623,14 @@ body {
 
 @media (max-width: 767px) {
   .main__newCafe .newCafe__block .swiper-container .swiper-wrapper {
-    width: 50rem;
+    width: 30rem;
   }
 }
 
 .main__newCafe .newCafe__block .swiper-slide {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1394,11 +1640,18 @@ body {
   border-radius: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+=======
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   /* 이 설정을 하지 않으면 슬라이드드가 틀어짐 */
 }
 
 .footer {
   width: 100%;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1409,6 +1662,27 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 100px 0;
+=======
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 }
 
 .footer__left {
@@ -1427,10 +1701,20 @@ body {
 }
 
 .footer__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 6rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__right {
+    margin: 4rem 0 0 6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__right {
+    margin: 4rem 0 0 6rem;
+  }
 }
 
 .footer__menu {
@@ -1438,6 +1722,18 @@ body {
   font-size: 1.6rem;
   list-style: none;
   margin-left: 4rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__menu {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__menu {
+    margin: 0;
+  }
 }
 
 .footer__menu--list {
@@ -1456,6 +1752,7 @@ body {
 .footer__menu li a {
   color: #333;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 1024px) {
   .footer {
@@ -1492,4 +1789,6 @@ body {
     margin-top: 60px;
   }
 }
+=======
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 /*# sourceMappingURL=main.css.map */

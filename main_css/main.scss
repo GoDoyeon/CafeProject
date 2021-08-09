@@ -1,8 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-@import '../mixin/mixin';
-@import '../variables/variables';
-
+@import '../mixin/mixin.scss';
+@import '../variables/variables.scss';
 
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
@@ -54,50 +52,6 @@ body {
   @include header;
 }
 
-@media screen and (max-width: 1024px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    &__logo {
-      margin: 0;
-      align-items: center;
-    }
-    &__menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      li {
-        width: 100%;
-        padding: 15px 0 15px 60px;
-        &:hover {
-          background-color: $maincolor;
-          border-bottom: none;
-        }
-      }
-      .active {
-        display: flex;
-      }
-    }
-    &__btn {
-      position: absolute;
-      right: 0;
-      top: 20px;
-      padding: 0 1.5rem;
-      i {
-        margin: 0 auto;
-        font-size: 2rem;
-      }
-      &--right {
-        display: none;
-      }
-    }
-    &__toogleBtn {
-      display: block;
-    }
-  }
-}
 
 /* section2 */
 .main__home {
@@ -125,7 +79,7 @@ body {
     justify-content: center;
     text-align: center;
     @include mobile{
-      width: 50rem;
+      width: 30rem;
       margin: auto;
     }
     .sub_text {
@@ -134,7 +88,7 @@ body {
         font-size: 2.5rem;
       }
       @include mobile{
-        font-size: 2rem;
+        font-size: 1.3rem;
       }
     }
     .main_text {
@@ -146,7 +100,7 @@ body {
         font-size: 3.5rem;
       }
       @include mobile{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
       }
     }
     //padding: 30rem 0;
@@ -178,7 +132,7 @@ body {
       padding-top: 4rem;
     }
     @include mobile{
-      width: 50rem;
+      width: 30rem;
       height: 15rem;
       padding-top: 2rem;
     }
@@ -193,7 +147,7 @@ body {
       }
       @include mobile{
         padding: 0;
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
       .main__font {
         font-weight: bold;
@@ -209,6 +163,7 @@ body {
       }
       @include mobile{
         padding: 0;
+        font-size: 1.3rem;
       }
       .main__font {
         font-weight: bold;
@@ -221,6 +176,9 @@ body {
     width: 100%;
     display: block;
     /* 별점 높은 순 사진 리스트 부분 */
+    @include mobile{
+      height: 50rem;
+    }
     .horoscope__wrapper {
       width: 192rem;
       height: 10rem;
@@ -236,15 +194,26 @@ body {
         width: 70rem;
         left: 0;
       }
-      @include mobile{
-        width: 50rem;
+      @include mobile{ 
+        width: 30rem;
+        height: 40rem;
         left: 0;
+        // margin-left: -20rem;
       }
       .horoscope {
         margin-right: 3rem;
         //border: 1px solid #979797;
         position: relative;
         // 이미지 호버 시 나오는 카페 설명 부분
+        @include mobile{
+          height: 40rem;
+        }
+        .horoscope__img{
+          @include mobile{
+            width: 30rem;
+            height: 35rem;
+          }
+        }
         .horoscope__img__tit {
           color: #fff;
           top: 4rem;
@@ -255,15 +224,21 @@ body {
           width: 100%;
           transition: all 0.3s ease;
           
+          
           .cafe__name {
             display: block;
             font-size: 5rem;
+            @include mobile{
+              font-size: 3.6rem;
+            }
           }
           .cafe__type {
             display: block;
-
             margin-top: 2rem;
             font-size: 3rem;
+            @include mobile{
+              font-size: 2rem;
+            }
           }
         }
         &__img {
@@ -294,6 +269,11 @@ body {
       left: 3rem;
       position: absolute;
       bottom: -13rem;
+      @include mobile{
+        top: 0;
+        left: 0;
+        bottom: 0;
+      }
     }
     // 슬라이드 다음 버튼
     .horoscope__nextbtn {
@@ -313,6 +293,15 @@ body {
         background-color: $maincolor;
         color: #fff;
       }
+      @include mobile{
+        width: 5rem;
+        height: 5rem;
+        font-size: 1rem;
+        padding: 0;
+        top: 50%;
+        margin-top: -7.8rem;
+      }
+      
     }
   }
 }
@@ -324,7 +313,7 @@ body {
     height: 65rem;
   }
   @include mobile{
-    height: 65rem;
+    height: 50rem;
   }
   .scenery__box {
     height: 100rem;
@@ -333,7 +322,7 @@ body {
       height: 65rem;
     }
     @include mobile{
-      height: 65rem;
+      height: 50rem;
     }
 
     .scenery__bg__left {
@@ -376,9 +365,9 @@ body {
           margin-top: -25rem;
         }
         @include mobile{
-          width: 15rem;
-          height: 30rem;
-          margin-top: -20rem;
+          width: 10rem;
+          height: 20rem;
+          margin-top: -14rem;
         }
         .scenery__bg__up__container {
           @include scenery__bg__smollContainer;
@@ -393,8 +382,8 @@ body {
               height: 20rem;
             }
             @include mobile{
-              width: 30rem;
-              height: 15rem;
+              width: 20rem;
+              height: 10rem;
             }
 
             .scenery__bg__smallSlide1 {
@@ -421,8 +410,8 @@ body {
             height: 20rem;
           }
           @include mobile{
-            width: 15rem;
-            height: 15rem;
+            width: 10rem;
+            height: 10rem;
           }
           .scenery__bg__small {
             width: 34rem;
@@ -437,8 +426,8 @@ body {
               height: 20rem;
             }
             @include mobile{
-              width: 15rem;
-              height: 15rem;
+              width: 10rem;
+              height: 10rem;
             }
           }
           .scenery__bg__small2 {
@@ -454,8 +443,8 @@ body {
               height: 20rem;
             }
             @include mobile {
-              width: 15rem;
-              height: 15rem;
+              width: 10rem;
+              height: 10rem;
             }
           }
         }
@@ -481,26 +470,33 @@ body {
         margin-top: 22rem;
         transition: 0.2s ease-in;
         @include tablet {
-          margin-top: 14rem;
-        }
-        @include mobile {
           width: 13rem;
           height: 13rem;
+          margin-top: 14rem;
           padding-top: 4.7rem;
+        }
+        @include mobile {
+          width: 8rem;
+          height: 8rem;
+          padding-top: 3rem;
           top: 0;
           left: 0;
           margin: 0;
-          top: 48rem;
+          top: 40rem;
           left: 40%;
           margin: 0;
-          margin-left: 12rem;
+          margin-left: 3rem;
         }
         p {
           width: 15rem;
           font-size: 2rem;
           text-align: center;
-          @include mobile{
+          @include tablet{
             width: 13rem;
+          }
+          @include mobile{
+            width: 8rem;
+            font-size: 1.3rem;
           }
         }
         .arrow {
@@ -544,9 +540,9 @@ body {
           margin-top: -25rem;
         }
         @include mobile {
-          width: 15rem;
-          height: 30rem;
-          margin-top: -20rem;
+          width: 10rem;
+          height: 20rem;
+          margin-top: -14rem;
         }
 
         .scenery__bg__up {
@@ -558,8 +554,8 @@ body {
             height: 20rem;
           }
           @include mobile {
-            width: 15rem;
-            height: 15rem;
+            width: 10rem;
+            height: 10rem;
           }
 
           .scenery__bg__small {
@@ -575,8 +571,8 @@ body {
               height: 20rem;
             }
             @include mobile {
-              width: 15rem;
-              height: 15rem;
+              width: 10rem;
+              height: 10rem;
             }
           }
           .scenery__bg__small2 {
@@ -592,8 +588,8 @@ body {
               height: 20rem;
             }
             @include mobile {
-              width: 15rem;
-              height: 15rem;
+              width: 10rem;
+              height: 10rem;
             }
           }
         }
@@ -610,8 +606,8 @@ body {
               height: 20rem;
             }
             @include mobile {
-              width: 30rem;
-              height: 15rem;
+              width: 20rem;
+              height: 10rem;
             }
 
             .scenery__bg__smallSlide1 {
@@ -659,7 +655,7 @@ body {
       padding: 8rem 0px;
     }
     @include mobile{
-      width: 50rem;
+      width: 30rem;
       height: 25rem;
       padding: 8rem 0px;
     }
@@ -672,7 +668,8 @@ body {
       font-size: 3rem;
     }
     @include mobile{
-      font-size: 2.5rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
 
   }
@@ -680,7 +677,9 @@ body {
     font-size: 1.6rem;
 
     font-family: 'Frank Ruhl Libre', serif;
-  
+    @include mobile{
+      font-size: 1.3rem;
+    }
   }
 
   .best__bg {
@@ -731,9 +730,10 @@ body {
       top: 8rem;
     }
     @include mobile{
-      width: 20rem;
-      height: 30rem;
-      top: 8rem;
+      width: 13rem;
+      height: 20rem;
+      top: 15rem;
+      margin-left: -2rem;
     }
 
     .best__header {
@@ -751,9 +751,9 @@ body {
         top: 36rem;
       }
       @include mobile{
-        width: 20rem;
-        height: 30rem;
-        top: 30rem;
+        width: 13rem;
+        height: 20rem;
+        top: 20rem;
       }
     }
   }
@@ -771,14 +771,24 @@ body {
     margin: 22rem;
     transition: 0.2s ease-in;
 
-    @include mobile {
+    @include tablet{
       width: 13rem;
       height: 13rem;
       padding-top: 4.7rem;
+      top:38rem;
+      left: 60%;
+      margin: 0;
+      margin-left: 17rem;
+    }
+
+    @include mobile {
+      width: 8rem;
+      height: 8rem;
+      padding-top: 3rem;
       top:33rem;
       left: 60%;
       margin: 0;
-      margin-left: 12rem;
+      margin-left: 5rem;
 
     }
 
@@ -786,8 +796,12 @@ body {
       width: 15rem;
       font-size: 2rem;
       text-align: center;
-      @include mobile{
+      @include tablet{
         width: 13rem;
+      }
+      @include mobile{
+        width: 8rem;
+        font-size: 1.3rem;
       }
     }
     .arrow {
@@ -811,7 +825,7 @@ body {
     height: 80rem;
   }
   @include mobile{
-    height: 70rem;
+    height: 60rem;
   }
   /* article 6-1. 텍스트 부분 */
   .newCafe__tit {
@@ -835,7 +849,7 @@ body {
         font-size: 3rem;
       }
       @include mobile{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 3rem;
       }
       .main__font {
@@ -850,6 +864,10 @@ body {
       font-size: 1.6rem;
       border: none;
       color: $textcolor;
+      @include mobile{
+        padding: 1rem 3rem;
+        font-size: 1.3rem;
+      }
     }
     // p {
     //   display: block;
@@ -918,7 +936,7 @@ body {
           width: 58.4rem;
         }
         @include mobile{
-          width: 50rem;
+          width: 30rem;
         }
       }
     }
@@ -929,6 +947,7 @@ body {
       justify-content: center;
       border-radius: 5px;
       box-sizing: border-box; /* 이 설정을 하지 않으면 슬라이드드가 틀어짐 */
+
     }
   }
 }
@@ -937,29 +956,4 @@ body {
 
 .footer {
   @include footer;
-}
-
-@media screen and (max-width:1024px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    &__right {
-      margin: 4rem 0 0 6rem;
-    }
-    &__menu {
-      margin: 0;
-    }
-  }
-}
-@media screen and (max-width:768px) {
-  .footer {
-    &__right {
-      display: flex;
-      flex-direction: column;
-    }
-    &__menu:last-child {
-      margin-top: 60px;
-    }
-  }
 }

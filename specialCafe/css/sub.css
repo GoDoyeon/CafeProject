@@ -36,9 +36,8 @@ a {
   position: fixed;
   width: 100%;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -46,25 +45,55 @@ a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+=======
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+  }
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 }
 
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+=======
+  flex-grow: 0;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   margin-left: 6rem;
 }
 
+@media (max-width: 1024px) {
+  .header__logo {
+    padding-top: 15px;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+  }
+  .header__logo img {
+    width: 60%;
+  }
+}
+
 .header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+=======
+  flex-grow: 1;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   font-size: 3rem;
   list-style: none;
   font-family: 'Dancing Script', cursive;
@@ -83,10 +112,28 @@ a {
   border-bottom: 1px solid #333;
 }
 
+@media (max-width: 1024px) {
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__menu li {
+    width: 100%;
+    padding: 15px 0 15px 60px;
+  }
+  .header__menu li:hover {
+    background-color: #eedeff;
+    border-bottom: none;
+  }
+  .header__menu .active {
+    display: flex;
+  }
+}
+
 .header__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -96,14 +143,23 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
   padding: 0 3rem;
   height: 50px;
   border-radius: 30px;
   border: 0;
   outline: 0;
   margin: 0 6rem;
+<<<<<<< HEAD
   -webkit-box-shadow: 4px 6px 10px #000000a8;
           box-shadow: 4px 6px 10px #000000a8;
+=======
+  box-shadow: 4px 6px 10px #000000a8;
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 }
 
 .header__btn i {
@@ -114,6 +170,22 @@ a {
   color: #fce303;
 }
 
+@media (max-width: 1024px) {
+  .header__btn {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 0 1.5rem;
+  }
+  .header__btn i {
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+  .header__btn--right {
+    display: none;
+  }
+}
+
 .header__toogleBtn {
   position: absolute;
   left: 60px;
@@ -121,10 +193,20 @@ a {
   font-size: 40px;
   display: none;
   color: #CCB7FF;
+<<<<<<< HEAD
+=======
+}
+
+@media (max-width: 1024px) {
+  .header__toogleBtn {
+    display: block;
+  }
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 }
 
 .footer {
   width: 100%;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,6 +217,27 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 100px 0;
+=======
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+>>>>>>> b92c8049b889e436c87c8632a98248754d0329da
 }
 
 .footer__left {
@@ -153,10 +256,20 @@ a {
 }
 
 .footer__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 6rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__right {
+    margin: 4rem 0 0 6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__right {
+    margin: 4rem 0 0 6rem;
+  }
 }
 
 .footer__menu {
@@ -164,6 +277,18 @@ a {
   font-size: 1.6rem;
   list-style: none;
   margin-left: 4rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__menu {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__menu {
+    margin: 0;
+  }
 }
 
 .footer__menu--list {
