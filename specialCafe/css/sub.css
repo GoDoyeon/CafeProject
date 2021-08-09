@@ -38,7 +38,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 9999;
 }
 
 @media (max-width: 1024px) {
@@ -251,4 +251,3 @@ a {
 .footer__menu li a {
   color: #333;
 }
-/*# sourceMappingURL=sub.css.map */

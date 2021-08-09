@@ -15,7 +15,6 @@ document.addEventListener('scroll',function(){
       }else{
         header__bg.style.background = '#292a2d';
         // header__bg.style.color = '#F1F1F1';
- 
       }
     }
   }else{

@@ -1,15 +1,9 @@
-<<<<<<< HEAD
+
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
-@import "../mixin/mixin.scss";
-@import "../variables/variables.scss";
-=======
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-@import '../mixin/mixin';
-@import '../variables/variables';
+@import "../variables/variables";
+@import "../mixin/mixin";
 
 
->>>>>>> 546d8f69b4ca02c181efab46abdae83c04385d17
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 
@@ -55,15 +49,10 @@ body {
 }
 
 // Header
-
 .header {
   @include header;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 546d8f69b4ca02c181efab46abdae83c04385d17
 /* section2 */
 .main__home {
   padding-top: 5rem;
@@ -771,6 +760,7 @@ body {
   position: relative;
   background-color: $maincolor;
   margin: 0 auto;
+  z-index: 1;
 
   @include tablet{
     height: 80rem;
