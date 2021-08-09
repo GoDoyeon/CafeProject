@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 /* 반응형 */
 /* 반응형 */
 /* 반응형 */
@@ -166,6 +166,7 @@ h4 {
   position: relative;
   overflow: hidden;
   padding-left: 2rem;
+  /* 밑에 줄*/
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -187,7 +188,6 @@ h4 {
   font-size: 3rem;
   margin-bottom: 0rem;
   display: block;
-  /* 밑에 줄*/
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -243,7 +243,7 @@ h4 {
   }
 }
 
-.content__menu .wrap ul .underline {
+.content__menu .wrap .underline {
   width: 22rem;
   height: 5rem;
   position: absolute;
@@ -253,13 +253,13 @@ h4 {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .content__menu .wrap ul .underline {
+  .content__menu .wrap .underline {
     display: none;
   }
 }
 
 @media (max-width: 767px) {
-  .content__menu .wrap ul .underline {
+  .content__menu .wrap .underline {
     display: none;
   }
 }
@@ -332,13 +332,16 @@ h4 {
   color: #8d91eb;
 }
 
-.content__imgs .cafe__block {
-  margin: 0 auto;
-}
-
 .content__imgs .cafe__block .cafe__imgs ul {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  width: 140rem;
   padding: 0 11rem 0 11rem;
 }
 
@@ -469,14 +472,24 @@ h4 {
   padding-top: 7rem;
 }
 
-.main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_theme {
+.main_detail_info
+  .detailed__info
+  .detailed__wrap
+  .detailed__container
+  .img5
+  .cafe_theme {
   font-size: 4rem;
   font-family: 'Dancing Script', cursive;
   text-align: center;
   line-height: 13rem;
 }
 
-.main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_name {
+.main_detail_info
+  .detailed__info
+  .detailed__wrap
+  .detailed__container
+  .img5
+  .cafe_name {
   font-size: 4rem;
   text-align: center;
   line-height: 6rem;
@@ -521,18 +534,13 @@ h4 {
   width: 100%;
   height: 100px;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 1;
-}
-
-@media (max-width: 1024px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    width: 100%;
-  }
 }
 
 .header__logo {
@@ -637,13 +645,7 @@ h4 {
   top: 15px;
   font-size: 40px;
   display: none;
-  color: #CCB7FF;
-}
-
-@media (max-width: 1024px) {
-  .header__toogleBtn {
-    display: block;
-  }
+  color: #ccb7ff;
 }
 
 .project {
