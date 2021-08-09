@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-@import '../../variables/_variables.scss';
-@import '../../mixin/mixin.scss';
+@import '../../variables/_variables';
+@import '../../mixin/mixin';
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
 /*
@@ -35,9 +35,10 @@ button {
   &:active {
     color: $hovercolor_special;
   }
-  &:hover {
-    color: green;
-  }
+  // &:hover {
+  //   // color: green;
+  //   // 버튼 호버 시 그린컬러가 나와 주석처리했습니다.
+  // }
 }
 h2,
 h4 {
