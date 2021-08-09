@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap");
 /* 반응형 */
 /* 반응형 */
+/* 반응형 */
 /*main scss*/
 /*header*/
 /*footer*/
-/* 반응형 */
 * {
   margin: 0;
   padding: 0;
@@ -55,13 +55,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
 }
 
 @media (max-width: 1024px) {
@@ -1310,6 +1312,7 @@ body {
   position: relative;
   background-color: #eedeff;
   margin: 0 auto;
+  z-index: 1;
   /* article 6-1. 텍스트 부분 */
   /* article 6-2. 슬라이드 + 버튼 */
 }
@@ -1606,4 +1609,3 @@ body {
 .footer__menu li a {
   color: #333;
 }
-/*# sourceMappingURL=main.css.map */

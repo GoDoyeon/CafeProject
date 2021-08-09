@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 @import '../../variables/variables';
 @import '../../mixin/mixin.scss';
@@ -286,72 +287,3 @@ body {
   @include footer;
 }
 
-// @media screen and (max-width: 768px) {
-//   .project-content{
-//     &__box {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between;
-//       &--left {
-//         img {
-//           padding: 0;
-//         }
-//       }
-//       &--right {
-//         top: 0;
-//       }
-//     }
-//   }
-
-// }
-// @media screen and (max-width:1024px) {
-//   .project-main {
-//     &__logo {
-//       img {
-//         width: 24%;
-//       }
-//     }
-//     &__txt {
-//       width: 100%;
-//       span {
-//         font-size: 1.4rem;
-//       }
-//     }
-//   }
-//   .project-content {
-//     &__txt--name {
-//       font-size: 2rem;
-//     }
-//     &__subtxt {
-//       width: 100%;
-//       font-size: 1.4rem;
-//     }
-//   }
-//   .project-page {
-//     &__txt {
-//       font-size: 2rem;
-//     }
-//     &__subtxt {
-//       font-size: 1.4rem;
-//     }
-//   }
-//   .project-team__profile {
-//     display: flex;
-//     flex-direction: column;
-//     &--img {
-//       margin: 10px 0;
-//     }
-//     &--content {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       padding: 2rem;
-//     }
-//   }
-//   .name {
-//     font-size: 1.6rem;
-//     &__part {
-//       font-size: 1rem;
-//     }
-//   }
-// }

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
 @import '../mixin/mixin.scss';
 @import '../variables/variables.scss';
@@ -47,7 +48,6 @@ body {
 }
 
 // Header
-
 .header {
   @include header;
 }
@@ -810,6 +810,7 @@ body {
   position: relative;
   background-color: $maincolor;
   margin: 0 auto;
+  z-index: 1;
 
   @include tablet {
     height: 80rem;
