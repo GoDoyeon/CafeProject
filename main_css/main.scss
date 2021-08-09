@@ -52,7 +52,6 @@ body {
   @include header;
 }
 
-
 /* section2 */
 .main__home {
   padding-top: 5rem;
@@ -74,11 +73,11 @@ body {
     //border: 1px solid red;
     // width: 70%;
     width: 100%;
-    font-family: "Nanum Gothic", sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     line-height: 30px;
     justify-content: center;
     text-align: center;
-    @include mobile{
+    @include mobile {
       width: 30rem;
       margin: auto;
     }
@@ -87,7 +86,7 @@ body {
       @include tablet {
         font-size: 2.5rem;
       }
-      @include mobile{
+      @include mobile {
         font-size: 1.3rem;
       }
     }
@@ -99,7 +98,7 @@ body {
       @include tablet {
         font-size: 3.5rem;
       }
-      @include mobile{
+      @include mobile {
         font-size: 2.3rem;
       }
     }
@@ -120,7 +119,7 @@ body {
     height: 65rem;
   }
   .horoscope__tit {
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     display: block;
     margin: 0 auto;
     height: 35rem; // 210+80+150 = 440px
@@ -131,7 +130,7 @@ body {
       height: 20rem;
       padding-top: 4rem;
     }
-    @include mobile{
+    @include mobile {
       width: 30rem;
       height: 15rem;
       padding-top: 2rem;
@@ -145,7 +144,7 @@ body {
         padding: 0;
         font-size: 3rem;
       }
-      @include mobile{
+      @include mobile {
         padding: 0;
         font-size: 2rem;
       }
@@ -161,7 +160,7 @@ body {
       @include tablet {
         padding: 0;
       }
-      @include mobile{
+      @include mobile {
         padding: 0;
         font-size: 1.3rem;
       }
@@ -176,7 +175,7 @@ body {
     width: 100%;
     display: block;
     /* 별점 높은 순 사진 리스트 부분 */
-    @include mobile{
+    @include mobile {
       height: 50rem;
     }
     .horoscope__wrapper {
@@ -194,7 +193,7 @@ body {
         width: 70rem;
         left: 0;
       }
-      @include mobile{ 
+      @include mobile {
         width: 30rem;
         height: 40rem;
         left: 0;
@@ -205,11 +204,11 @@ body {
         //border: 1px solid #979797;
         position: relative;
         // 이미지 호버 시 나오는 카페 설명 부분
-        @include mobile{
+        @include mobile {
           height: 40rem;
         }
-        .horoscope__img{
-          @include mobile{
+        .horoscope__img {
+          @include mobile {
             width: 30rem;
             height: 35rem;
           }
@@ -223,22 +222,16 @@ body {
           display: block;
           width: 100%;
           transition: all 0.3s ease;
-          
-          
+
           .cafe__name {
             display: block;
             font-size: 5rem;
-            @include mobile{
-              font-size: 3.6rem;
-            }
           }
           .cafe__type {
             display: block;
+
             margin-top: 2rem;
             font-size: 3rem;
-            @include mobile{
-              font-size: 2rem;
-            }
           }
         }
         &__img {
@@ -269,7 +262,7 @@ body {
       left: 3rem;
       position: absolute;
       bottom: -13rem;
-      @include mobile{
+      @include mobile {
         top: 0;
         left: 0;
         bottom: 0;
@@ -293,7 +286,7 @@ body {
         background-color: $maincolor;
         color: #fff;
       }
-      @include mobile{
+      @include mobile {
         width: 5rem;
         height: 5rem;
         font-size: 1rem;
@@ -301,7 +294,6 @@ body {
         top: 50%;
         margin-top: -7.8rem;
       }
-      
     }
   }
 }
@@ -312,7 +304,7 @@ body {
   @include tablet {
     height: 65rem;
   }
-  @include mobile{
+  @include mobile {
     height: 50rem;
   }
   .scenery__box {
@@ -321,7 +313,7 @@ body {
     @include tablet {
       height: 65rem;
     }
-    @include mobile{
+    @include mobile {
       height: 50rem;
     }
 
@@ -340,13 +332,13 @@ body {
 
         .scenery__bg__bigSlide1 {
           @include scenery__bg__Slide;
-          background: url("../img/05/left/L_content_1_1.png") center no-repeat;
+          background: url('../img/05/left/L_content_1_1.png') center no-repeat;
           background-size: cover;
         }
 
         .scenery__bg__bigSlide2 {
           @include scenery__bg__Slide;
-          background: url("../img/05/left/L_content_2_1.png") left top no-repeat;
+          background: url('../img/05/left/L_content_2_1.png') left top no-repeat;
           background-size: cover;
         }
       }
@@ -364,7 +356,7 @@ body {
           height: 40rem;
           margin-top: -25rem;
         }
-        @include mobile{
+        @include mobile {
           width: 10rem;
           height: 20rem;
           margin-top: -14rem;
@@ -381,21 +373,21 @@ body {
               width: 40rem;
               height: 20rem;
             }
-            @include mobile{
+            @include mobile {
               width: 20rem;
               height: 10rem;
             }
 
             .scenery__bg__smallSlide1 {
               @include scenery__bg__smallSlide;
-              background: url("../img/05/left/L_scenery1_1_bg.png") center
+              background: url('../img/05/left/L_scenery1_1_bg.png') center
                 no-repeat;
               background-size: cover;
             }
 
             .scenery__bg__smallSlide2 {
               @include scenery__bg__smallSlide;
-              background: url("../img/05/left/L_scenery_2_1_bg.png") center
+              background: url('../img/05/left/L_scenery_2_1_bg.png') center
                 no-repeat;
               background-size: cover;
             }
@@ -409,7 +401,7 @@ body {
             width: 20rem;
             height: 20rem;
           }
-          @include mobile{
+          @include mobile {
             width: 10rem;
             height: 10rem;
           }
@@ -417,7 +409,7 @@ body {
             width: 34rem;
             height: 34rem;
             position: absolute;
-            background: url("../img/05/left/L_text_2_1.png") center no-repeat;
+            background: url('../img/05/left/L_text_2_1.png') center no-repeat;
             background-size: cover;
             opacity: 1;
             transition: opacity 1s;
@@ -425,7 +417,7 @@ body {
               width: 20rem;
               height: 20rem;
             }
-            @include mobile{
+            @include mobile {
               width: 10rem;
               height: 10rem;
             }
@@ -434,7 +426,7 @@ body {
             width: 34rem;
             height: 34rem;
             position: absolute;
-            background: url("../img/05/left/L_text_1_1.png") center no-repeat;
+            background: url('../img/05/left/L_text_1_1.png') center no-repeat;
             background-size: cover;
             opacity: 0;
             transition: opacity 1s;
@@ -491,10 +483,10 @@ body {
           width: 15rem;
           font-size: 2rem;
           text-align: center;
-          @include tablet{
+          @include tablet {
             width: 13rem;
           }
-          @include mobile{
+          @include mobile {
             width: 8rem;
             font-size: 1.3rem;
           }
@@ -516,13 +508,13 @@ body {
 
         .scenery__bg__bigSlide1 {
           @include scenery__bg__Slide;
-          background: url("../img/05/right/R_content_1_1.png") center no-repeat;
+          background: url('../img/05/right/R_content_1_1.png') center no-repeat;
           background-size: cover;
         }
 
         .scenery__bg__bigSlide2 {
           @include scenery__bg__Slide;
-          background: url("../img/05/right/R_content_2_1.png") center no-repeat;
+          background: url('../img/05/right/R_content_2_1.png') center no-repeat;
           background-size: cover;
         }
       }
@@ -562,7 +554,7 @@ body {
             width: 34rem;
             height: 34rem;
             position: absolute;
-            background: url("../img/05/right/R_text_2_1.png") center no-repeat;
+            background: url('../img/05/right/R_text_2_1.png') center no-repeat;
             background-size: cover;
             opacity: 1;
             transition: opacity 1s;
@@ -579,7 +571,7 @@ body {
             width: 34rem;
             height: 34rem;
             position: absolute;
-            background: url("../img/05/right/R_text_1_1.png") center no-repeat;
+            background: url('../img/05/right/R_text_1_1.png') center no-repeat;
             background-size: cover;
             opacity: 0;
             transition: opacity 1s;
@@ -612,14 +604,14 @@ body {
 
             .scenery__bg__smallSlide1 {
               @include scenery__bg__smallSlide;
-              background: url("../img/05/right/R_scenery1_1_bg.png") center
+              background: url('../img/05/right/R_scenery1_1_bg.png') center
                 no-repeat;
               background-size: cover;
             }
 
             .scenery__bg__smallSlide2 {
               @include scenery__bg__smallSlide;
-              background: url("../img/05/right/R_scenery2_1_bg.png.png") center
+              background: url('../img/05/right/R_scenery2_1_bg.png.png') center
                 no-repeat;
               background-size: cover;
             }
@@ -635,10 +627,10 @@ body {
   height: 1080px;
   position: relative;
   overflow: hidden;
-  @include tablet{
+  @include tablet {
     height: 60rem;
   }
-  @include mobile{
+  @include mobile {
     height: 60rem;
   }
 
@@ -649,12 +641,12 @@ body {
     margin: 0 auto;
     line-height: 30px;
     letter-spacing: 2px;
-    @include tablet{
+    @include tablet {
       width: 70rem;
       height: 25rem;
       padding: 8rem 0px;
     }
-    @include mobile{
+    @include mobile {
       width: 30rem;
       height: 25rem;
       padding: 8rem 0px;
@@ -664,20 +656,19 @@ body {
   .tit {
     font-size: 4rem;
     margin-bottom: 3rem;
-    @include tablet{
+    @include tablet {
       font-size: 3rem;
     }
-    @include mobile{
+    @include mobile {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
-
   }
   .sub__tit {
     font-size: 1.6rem;
 
     font-family: 'Frank Ruhl Libre', serif;
-    @include mobile{
+    @include mobile {
       font-size: 1.3rem;
     }
   }
@@ -687,12 +678,12 @@ body {
     height: 58rem;
     position: relative;
     overflow: hidden;
-    background: url("../img/06/best_1_1.png") center no-repeat;
+    background: url('../img/06/best_1_1.png') center no-repeat;
     background-size: cover;
-    @include tablet{
+    @include tablet {
       height: 35rem;
     }
-    @include mobile{
+    @include mobile {
       height: 35rem;
     }
 
@@ -701,13 +692,13 @@ body {
       height: 58rem;
       position: absolute;
       top: 0rem;
-      background: url("../img/06/bg.png") center no-repeat;
+      background: url('../img/06/bg.png') center no-repeat;
       background-size: cover;
       transition: 0.5s ease-out;
-      @include tablet{
+      @include tablet {
         height: 35rem;
       }
-      @include mobile{
+      @include mobile {
         height: 35rem;
       }
     }
@@ -724,12 +715,12 @@ body {
     left: 60%;
     box-shadow: 10px 10px 15px $boxshadow;
 
-    @include tablet{
+    @include tablet {
       width: 25rem;
       height: 36rem;
       top: 8rem;
     }
-    @include mobile{
+    @include mobile {
       width: 13rem;
       height: 20rem;
       top: 15rem;
@@ -741,16 +732,16 @@ body {
       height: 55rem;
       position: absolute;
       top: 55rem;
-      background: url("../img/06/best2.png") top no-repeat;
+      background: url('../img/06/best2.png') top no-repeat;
       background-size: cover;
       transition: 0.5s ease-out;
 
-      @include tablet{
+      @include tablet {
         width: 25rem;
         height: 36rem;
         top: 36rem;
       }
-      @include mobile{
+      @include mobile {
         width: 13rem;
         height: 20rem;
         top: 20rem;
@@ -771,11 +762,11 @@ body {
     margin: 22rem;
     transition: 0.2s ease-in;
 
-    @include tablet{
+    @include tablet {
       width: 13rem;
       height: 13rem;
       padding-top: 4.7rem;
-      top:38rem;
+      top: 38rem;
       left: 60%;
       margin: 0;
       margin-left: 17rem;
@@ -785,21 +776,20 @@ body {
       width: 8rem;
       height: 8rem;
       padding-top: 3rem;
-      top:33rem;
+      top: 33rem;
       left: 60%;
       margin: 0;
       margin-left: 5rem;
-
     }
 
     p {
       width: 15rem;
       font-size: 2rem;
       text-align: center;
-      @include tablet{
+      @include tablet {
         width: 13rem;
       }
-      @include mobile{
+      @include mobile {
         width: 8rem;
         font-size: 1.3rem;
       }
@@ -821,22 +811,22 @@ body {
   background-color: $maincolor;
   margin: 0 auto;
 
-  @include tablet{
+  @include tablet {
     height: 80rem;
   }
-  @include mobile{
+  @include mobile {
     height: 60rem;
   }
   /* article 6-1. 텍스트 부분 */
   .newCafe__tit {
     // border: 1px solid black;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     padding: 15rem 0 8rem 0;
     text-align: center;
-    @include tablet{
+    @include tablet {
       padding: 8rem 0;
     }
-    @include mobile{
+    @include mobile {
       padding: 3.5rem 0 3rem 0;
     }
     .tit {
@@ -845,10 +835,10 @@ body {
       font-weight: 400;
       font-size: 4rem;
       margin-bottom: 5rem;
-      @include tablet{
+      @include tablet {
         font-size: 3rem;
       }
-      @include mobile{
+      @include mobile {
         font-size: 2rem;
         margin-bottom: 3rem;
       }
@@ -864,7 +854,7 @@ body {
       font-size: 1.6rem;
       border: none;
       color: $textcolor;
-      @include mobile{
+      @include mobile {
         padding: 1rem 3rem;
         font-size: 1.3rem;
       }
@@ -886,10 +876,10 @@ body {
     width: 79rem;
     margin: 0 auto;
     display: block;
-    @include tablet{
+    @include tablet {
       width: 100%;
     }
-    @include mobile{
+    @include mobile {
       width: 100%;
     }
 
@@ -899,10 +889,10 @@ body {
       &:hover {
         color: #333;
       }
-      @include tablet{
+      @include tablet {
         right: 0;
       }
-      @include mobile{
+      @include mobile {
         right: 0;
       }
     }
@@ -912,10 +902,10 @@ body {
       &:hover {
         color: $textcolor;
       }
-      @include tablet{
+      @include tablet {
         left: 0;
       }
-      @include mobile{
+      @include mobile {
         left: 0;
       }
     }
@@ -925,17 +915,17 @@ body {
     /* 뉴 카페 이미지 슬라이드 */
     .swiper-container {
       height: 100%;
-      @include tablet{
+      @include tablet {
         width: 70rem;
       }
-      @include mobile{
+      @include mobile {
         width: 100%;
       }
-      .swiper-wrapper{
-        @include tablet{
+      .swiper-wrapper {
+        @include tablet {
           width: 58.4rem;
         }
-        @include mobile{
+        @include mobile {
           width: 30rem;
         }
       }
@@ -947,7 +937,6 @@ body {
       justify-content: center;
       border-radius: 5px;
       box-sizing: border-box; /* 이 설정을 하지 않으면 슬라이드드가 틀어짐 */
-
     }
   }
 }
