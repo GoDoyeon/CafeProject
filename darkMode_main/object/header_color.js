@@ -13,6 +13,8 @@ let header = {
     }
   },
 
+  /* 버튼 */
+
   setBtnBgColor: function(color){
     let darkModeBtn = document.querySelector(".header .header__btn");
     darkModeBtn.style.background = color;
@@ -26,6 +28,13 @@ let header = {
   setBtnIcon: function(color){
     let btnIcon = document.querySelector(".header .fa-moon");
     btnIcon.style.color = color;
+  },
+
+  /* when tablet & mobile version */
+  setMenuBg: function(color){
+    let menu = document.querySelector('.active');
+    menu.style.background = color;
+
   },
 }
 

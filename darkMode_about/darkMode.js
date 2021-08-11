@@ -37,10 +37,14 @@ darkModeBtn.addEventListener('mouseout', function(){
 function nightDayHandler(){
   let currentPos = document.documentElement.scrollTop;
   let mainHomeHeight = document.querySelector('.main__home').clientHeight;
+  let header_menu = document.querySelector('.header__menu');
   if(darkModeBtn.value === 'night'){
     /* 헤더 */
     if(currentPos>mainHomeHeight){
       header.setBgColor('#292a2d');
+    }
+    if(header_menu.classList.contains('active')){
+      header.setMenuBg('#292a2d');
     }
     header.setFontColor('#F1F1F1');
     header.setBtnBgColor('#3D4044');
