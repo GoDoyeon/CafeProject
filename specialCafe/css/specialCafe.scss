@@ -133,6 +133,7 @@ h4 {
       @include mobile {
         height: 7rem;
       }
+
       ul {
         width: 95rem;
         height: 19rem;
@@ -151,7 +152,6 @@ h4 {
           height: 7rem;
         }
         li {
-          width: 22rem;
           position: relative;
           display: inline-block;
           height: 4rem;
@@ -177,15 +177,19 @@ h4 {
             }
           }
         }
+        li:not(.rooftopCafe){
+          margin-left: 2rem;
+        }
       }
       /* 밑에 줄*/
       .underline {
-        width: 22rem;
+        width: 19rem;
         height: 5rem;
-        position: absolute;
+        display: block;
         background: $hovercolor_special;
         top: 16.4rem;
-        left: 0;
+        left: 2rem;
+        position: absolute;
         @include tablet {
           display: none;
         }
@@ -193,6 +197,7 @@ h4 {
           display: none;
         }
       }
+      
     }
   }
   // 메뉴 이미지 부분

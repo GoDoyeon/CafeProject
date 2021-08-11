@@ -37,11 +37,14 @@ darkModeBtn.addEventListener('mouseout', function(){
 function nightDayHandler(){
   let currentPos = document.documentElement.scrollTop;
   let mainHomeHeight = document.querySelector('.main__home').clientHeight;
+  let header_menu = document.querySelector('.header__menu');
   if(darkModeBtn.value === 'night'){
     /* 헤더 */
     if(currentPos>mainHomeHeight){
       header.setBgColor('#292a2d');
     }
+    header.setMenuBg('#292a2d59');//헤더 mobile, tablet 메뉴
+    
     header.setFontColor('#F1F1F1');
     header.setBtnBgColor('#3D4044');
     header.setBtnFontColor('#f4f4f4');
@@ -64,7 +67,6 @@ function nightDayHandler(){
 
     /* footer */
     footer.setAtagColor('#F1F1F1');
-    footer.setBgColor('#292a2d');
 
     darkModeBtn.value = 'day';
   }else{
@@ -72,6 +74,9 @@ function nightDayHandler(){
     if(currentPos>mainHomeHeight){
       header.setBgColor('white');
     }
+    
+    header.setMenuBg('#ffffffcc');//헤더 mobile, tablet 메뉴
+    
     header.setFontColor('#333');
     header.setBtnBgColor('#f4f4f4');
     header.setBtnFontColor('#333');
@@ -94,7 +99,6 @@ function nightDayHandler(){
   
     /* footer */
     footer.setAtagColor('#333');
-    footer.setBgColor('white');
 
     darkModeBtn.value = 'night';
 

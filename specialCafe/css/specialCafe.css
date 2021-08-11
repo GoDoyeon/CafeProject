@@ -202,7 +202,6 @@ h4 {
 }
 
 .content__menu .wrap ul li {
-  width: 22rem;
   position: relative;
   display: inline-block;
   height: 4rem;
@@ -238,13 +237,18 @@ h4 {
   }
 }
 
+.content__menu .wrap ul li:not(.rooftopCafe) {
+  margin-left: 2rem;
+}
+
 .content__menu .wrap .underline {
-  width: 22rem;
+  width: 19rem;
   height: 5rem;
-  position: absolute;
+  display: block;
   background: #8d91eb;
   top: 16.4rem;
-  left: 0;
+  left: 2rem;
+  position: absolute;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -573,7 +577,7 @@ h4 {
     flex-direction: column;
     width: 100%;
     margin: 30px 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #ffffffcc;
   }
   .header__menu li {
     width: 100%;
@@ -814,3 +818,4 @@ h4 {
   margin: 0 0.8rem;
   border-radius: 20px;
 }
+/*# sourceMappingURL=specialCafe.css.map */
