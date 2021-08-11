@@ -32,7 +32,7 @@ let header = {
 
   /* when tablet & mobile version */
   setMenuBg: function(color){
-    let menu = document.querySelector('.active');
+    let menu = document.querySelector('.header__menu');
     menu.style.background = color;
 
   },
