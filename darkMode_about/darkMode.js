@@ -64,7 +64,6 @@ function nightDayHandler(){
 
     /* footer */
     footer.setAtagColor('#F1F1F1');
-    footer.setBgColor('#292a2d');
 
     darkModeBtn.value = 'day';
   }else{
@@ -94,7 +93,6 @@ function nightDayHandler(){
   
     /* footer */
     footer.setAtagColor('#333');
-    footer.setBgColor('white');
 
     darkModeBtn.value = 'night';
 

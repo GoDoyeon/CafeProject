@@ -7,6 +7,7 @@ let footer={
       i=i+1;
     }
   },
+  
 }
 
 export default footer;

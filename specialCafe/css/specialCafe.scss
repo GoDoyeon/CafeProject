@@ -191,7 +191,7 @@ h4 {
         left: 2rem;
         position: absolute;
         @include tablet {
-          display: block;
+          display: none;
         }
         @include mobile {
           display: none;
