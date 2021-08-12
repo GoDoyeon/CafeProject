@@ -54,7 +54,7 @@ body {
   &__inner {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 6rem;
+    padding: 0 3rem;
   }
   &-main {
     width: 100%;
@@ -256,6 +256,10 @@ body {
   &-name {
     margin: 0.6rem 0;
     font-size: 1.4rem;
+    width: 100%;
+    @include mobileAndTablet {
+      text-align: center;
+    }
   }
   &-name:nth-child(1) {
     display: flex;
