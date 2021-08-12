@@ -548,7 +548,7 @@ h4 {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main_detail_info .detailed__info .detailed__wrap .detailed__container {
     padding: 0;
-    width: 150%;
+    width: 100%;
   }
 }
 
@@ -559,6 +559,10 @@ h4 {
     padding-bottom: 1rem;
     padding: 0;
     height: 100%;
+    width: 34rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -572,21 +576,13 @@ h4 {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main_detail_info .detailed__info .detailed__wrap .detailed__container {
-    width: 200%;
+  .main_detail_info .detailed__info .detailed__wrap .detailed__container li {
+    width: 25rem;
+    height: 25rem;
     margin: 1rem auto;
   }
-  .main_detail_info .detailed__info .detailed__wrap .detailed__container + .main_detail_info .detailed__info .detailed__wrap .detailed__container {
+  .main_detail_info .detailed__info .detailed__wrap .detailed__container li + .main_detail_info .detailed__info .detailed__wrap .detailed__container li {
     margin-left: 0.5rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .main_detail_info .detailed__info .detailed__wrap .detailed__container {
-    width: 34rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -597,12 +593,6 @@ h4 {
   background-size: cover;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 {
-    width: 25rem;
-  }
-}
-
 .main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_theme {
   font-size: 4rem;
   font-family: 'Dancing Script', cursive;
@@ -610,10 +600,25 @@ h4 {
   line-height: 13rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_theme {
+    font-size: 2rem;
+    height: 8rem;
+    line-height: 6rem;
+  }
+}
+
 .main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_name {
   font-size: 4rem;
   text-align: center;
   line-height: 6rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_name {
+    font-size: 2rem;
+    height: 5rem;
+  }
 }
 
 .main_detail_info .detailed__info .detailed__wrap .caption {
