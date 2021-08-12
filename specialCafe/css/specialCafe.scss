@@ -340,8 +340,7 @@ h4 {
     }
     .detailed__information {
       //detailed__information
-      //width: 70rem;
-      // height: 10rem;
+
       margin: auto;
       width: 100%;
       text-align: center;
@@ -355,8 +354,6 @@ h4 {
       @include mobile {
         font-size: 2.5rem;
         height: 3rem;
-        // margin: 0 auto;
-        // text-align: center;
       }
     }
   }
@@ -379,7 +376,6 @@ h4 {
         font-size: 1.2rem;
         width: 6rem;
         left: 2rem;
-        // width: 40rem;
         padding: 0;
         padding: 0;
       }
@@ -390,7 +386,6 @@ h4 {
         font-size: 1.2rem;
         width: 6rem;
         left: 2rem;
-        // width: 40rem;
         padding: 0;
         padding: 0;
       }
@@ -401,7 +396,6 @@ h4 {
     }
 
     .detailed__wrap {
-      //width: 123rem;
       margin: auto;
       padding-bottom: 6rem;
       width: 100%;
@@ -425,7 +419,7 @@ h4 {
         flex-flow: row wrap;
         @include tablet {
           padding: 0;
-          width: 150%;
+          width: 100%;
         }
         @include mobile {
           margin: 0 auto;
@@ -433,6 +427,10 @@ h4 {
           padding-bottom: 1rem;
           padding: 0;
           height: 100%;
+          width: 34rem;
+          margin-bottom: 2rem;
+          margin-left: auto;
+          margin-right: auto;
         }
         li {
           width: 38rem;
@@ -443,45 +441,41 @@ h4 {
           // background: url('../../img/detail_img/rooftop/regentsky/0.png');
           // background: url('../detail_img/rooftop/regentsky/0.png');
           box-shadow: 0 0 5rem $boxshadow;
-        }
-        @include tablet {
-          width: 200%;
-          margin: 1rem auto;
-          & + & {
-            margin-left: 0.5rem;
+          @include tablet {
+            width: 25rem;
+            height: 25rem;
+            margin: 1rem auto;
+            & + & {
+              margin-left: 0.5rem;
+            }
           }
-        }
-        @include mobile {
-          width: 34rem;
-          margin-bottom: 2rem;
-          margin-left: auto;
-          margin-right: auto;
         }
         .img5 {
           background: white;
           padding-top: 7rem;
           background-repeat: no-repeat;
           background-size: cover;
-          @include tablet {
-            // //width: 34rem;
-            width: 25rem;
-            // margin: 0;
 
-            // // margin-bottom: 2rem;
-            // // margin-left: auto;
-            // // margin-right: auto;
-          }
           .cafe_theme {
             font-size: 4rem;
             font-family: 'Dancing Script', cursive;
             text-align: center;
             line-height: 13rem;
+            @include tablet {
+              font-size: 2rem;
+              height: 8rem;
+              line-height: 6rem;
+            }
           }
 
           .cafe_name {
             font-size: 4rem;
             text-align: center;
             line-height: 6rem;
+            @include tablet {
+              font-size: 2rem;
+              height: 5rem;
+            }
           }
         }
       }
