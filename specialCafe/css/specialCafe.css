@@ -549,6 +549,7 @@ h4 {
   .main_detail_info .detailed__info .detailed__wrap .detailed__container {
     padding: 0;
     width: 100%;
+    margin: 0 1rem;
   }
 }
 
@@ -577,12 +578,9 @@ h4 {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .main_detail_info .detailed__info .detailed__wrap .detailed__container li {
-    width: 25rem;
-    height: 25rem;
-    margin: 1rem auto;
-  }
-  .main_detail_info .detailed__info .detailed__wrap .detailed__container li + .main_detail_info .detailed__info .detailed__wrap .detailed__container li {
-    margin-left: 0.5rem;
+    width: 23rem;
+    height: 23rem;
+    margin: 1rem;
   }
 }
 
@@ -603,8 +601,8 @@ h4 {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_theme {
     font-size: 2rem;
-    height: 8rem;
-    line-height: 6rem;
+    height: 4rem;
+    line-height: 3rem;
   }
 }
 
@@ -617,12 +615,12 @@ h4 {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_name {
     font-size: 2rem;
-    height: 5rem;
   }
 }
 
 .main_detail_info .detailed__info .detailed__wrap .caption {
-  width: 126rem;
+  padding: 0 11rem 0 11rem;
+  width: 120rem;
   height: 25rem;
   background: white;
   padding: 2rem;
@@ -630,7 +628,20 @@ h4 {
           box-shadow: 0 0 5rem #000000a8;
   color: #333;
   margin: 2rem auto;
-  padding: 0 11rem 0 11rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main_detail_info .detailed__info .detailed__wrap .caption {
+    width: 73rem;
+    margin: 2rem;
+    padding: 2rem 5rem 2rem 5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main_detail_info .detailed__info .detailed__wrap .caption {
+    padding: 2rem;
+  }
 }
 
 .main_detail_info .detailed__info .detailed__wrap .caption .main_tit {

@@ -420,6 +420,7 @@ h4 {
         @include tablet {
           padding: 0;
           width: 100%;
+          margin: 0 1rem;
         }
         @include mobile {
           margin: 0 auto;
@@ -442,12 +443,9 @@ h4 {
           // background: url('../detail_img/rooftop/regentsky/0.png');
           box-shadow: 0 0 5rem $boxshadow;
           @include tablet {
-            width: 25rem;
-            height: 25rem;
-            margin: 1rem auto;
-            & + & {
-              margin-left: 0.5rem;
-            }
+            width: 23rem;
+            height: 23rem;
+            margin: 1rem;
           }
         }
         .img5 {
@@ -463,8 +461,8 @@ h4 {
             line-height: 13rem;
             @include tablet {
               font-size: 2rem;
-              height: 8rem;
-              line-height: 6rem;
+              height: 4rem;
+              line-height: 3rem;
             }
           }
 
@@ -474,12 +472,12 @@ h4 {
             line-height: 6rem;
             @include tablet {
               font-size: 2rem;
-              height: 5rem;
             }
           }
         }
       }
       .caption {
+        padding: 0 11rem 0 11rem;
         width: 120rem;
         height: 25rem;
         background: white;
@@ -487,8 +485,14 @@ h4 {
         box-shadow: 0 0 5rem $boxshadow;
         color: $textcolor;
         margin: 2rem auto;
-        padding: 0 11rem 0 11rem;
-
+        @include tablet {
+          width: 73rem;
+          margin: 2rem;
+          padding: 2rem 5rem 2rem 5rem;
+        }
+        @include mobile {
+          padding: 2rem;
+        }
         .main_tit {
           font-size: 3rem;
           font-family: 'Dancing Script', cursive;
