@@ -480,13 +480,14 @@ h4 {
         }
       }
       .caption {
-        width: 126rem;
+        width: 120rem;
         height: 25rem;
         background: white;
         padding: 2rem;
         box-shadow: 0 0 5rem $boxshadow;
         color: $textcolor;
         margin: 2rem auto;
+        padding: 0 11rem 0 11rem;
 
         .main_tit {
           font-size: 3rem;
