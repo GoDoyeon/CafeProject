@@ -39,7 +39,9 @@ darkModeBtn.addEventListener("mouseout", function () {
 function nightDayHandler() {
   let currentPos = document.documentElement.scrollTop;
   let mainHomeHeight = document.querySelector(".main__home").clientHeight;
+  let button_value = document.querySelector(".header__btn .header__btn--right");
   if (darkModeBtn.value === "night") {
+    button_value.innerHTML = "라이트모드";
     /* 헤더 */
     if (currentPos > mainHomeHeight) {
       header.setBgColor("#292a2d");
@@ -89,6 +91,7 @@ function nightDayHandler() {
 
     darkModeBtn.value = "day";
   } else {
+    button_value.innerHTML = "다크모드";
     /* 헤더 */
     if (currentPos > mainHomeHeight) {
       header.setBgColor("white");
