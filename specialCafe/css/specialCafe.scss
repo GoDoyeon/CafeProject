@@ -405,6 +405,7 @@ h4 {
         padding-bottom: 2rem;
       }
       @include mobile {
+        width: 30rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
       }
@@ -416,15 +417,9 @@ h4 {
 
         }
         @include mobile {
-          margin: 0 auto;
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          padding: 0;
           height: 100%;
-          width: 34rem;
-          margin-bottom: 2rem;
-          margin-left: auto;
-          margin-right: auto;
+          width: 30rem;
+
         }
         li {
           width: 38rem;
@@ -432,10 +427,15 @@ h4 {
           margin: 0rem 3rem 3rem 0rem;
           float: left;
           box-shadow: 0 0 5rem $boxshadow;
+
           @include tablet {
             width: 23rem;
             height: 23rem;
-            
+          }
+          @include mobile{
+            width: 30rem;
+            height: 30rem;
+
           }
         }
         .img9{
@@ -446,8 +446,6 @@ h4 {
         .img5 {
           background: white;
           padding-top: 7rem;
-          background-repeat: no-repeat;
-          background-size: cover;
 
           .cafe_theme {
             font-size: 4rem;
@@ -458,6 +456,10 @@ h4 {
               font-size: 2rem;
               height: 4rem;
               line-height: 3rem;
+            }
+            @include mobile{
+              height: 8rem;
+              line-height: 5rem;
             }
           }
 
@@ -485,6 +487,7 @@ h4 {
           width: 70rem;
         }
         @include mobile {
+          width: 30rem;
           padding: 2rem;
         }
 
@@ -524,6 +527,10 @@ h4 {
           width: 100%;
           height: 3rem;
           margin-top: auto;
+          @include mobile{
+            height: 5rem;
+            margin-top: 3rem;
+          }
 
           .cafe_link {
             font-size: 2rem;   
@@ -532,7 +539,10 @@ h4 {
               font-size: 1.5rem;
             }
             @include mobile {
+              clear: left;
+              margin-top: 0;
               font-size: 1.2rem;
+              padding-bottom: 1rem;
             }
           }
           .stars {
@@ -542,6 +552,7 @@ h4 {
               font-size: 1.5rem;
             }
             @include mobile {
+
               font-size: 1.2rem;
             }
           }  
