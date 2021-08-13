@@ -500,14 +500,15 @@ h4 {
 }
 
 .main_detail_info .detailed__info .detailed__wrap {
+  width: 123rem;
   margin: auto;
   padding-bottom: 6rem;
-  width: 100%;
   padding-top: 10rem;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .main_detail_info .detailed__info .detailed__wrap {
+    width: 70rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -521,19 +522,12 @@ h4 {
 }
 
 .main_detail_info .detailed__info .detailed__wrap .detailed__container {
-  width: 100%;
-  padding: 0 11rem 0 11rem;
-  max-width: 155rem;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row wrap;
+  padding-top: 10rem;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .main_detail_info .detailed__info .detailed__wrap .detailed__container {
-    padding: 0;
-    width: 100%;
-    margin: 0 1rem;
+    margin-left: 10.5rem;
   }
 }
 
@@ -554,7 +548,7 @@ h4 {
 .main_detail_info .detailed__info .detailed__wrap .detailed__container li {
   width: 38rem;
   height: 38rem;
-  margin: 1rem auto;
+  margin: 0rem 3rem 3rem 0rem;
   float: left;
   box-shadow: 0 0 5rem #000000a8;
 }
@@ -563,7 +557,12 @@ h4 {
   .main_detail_info .detailed__info .detailed__wrap .detailed__container li {
     width: 23rem;
     height: 23rem;
-    margin: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main_detail_info .detailed__info .detailed__wrap .detailed__container .img9 {
+    margin-left: 13rem;
   }
 }
 
@@ -611,14 +610,11 @@ h4 {
   padding: 2rem;
   box-shadow: 0 0 5rem #000000a8;
   color: #333;
-  margin: 2rem auto;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .main_detail_info .detailed__info .detailed__wrap .caption {
-    width: 73rem;
-    margin: 2rem;
-    padding: 2rem 5rem 2rem 5rem;
+    width: 70rem;
   }
 }
 
