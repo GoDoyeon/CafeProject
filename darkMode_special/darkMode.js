@@ -51,6 +51,8 @@ function nightDayHandler() {
     if (currentPos > mainHomeHeight) {
       header.setBgColor("#292a2d");
     }
+    header.setMenuBg("#46405860"); //헤더 mobile, tablet 메뉴
+
     header.setFontColor("#F1F1F1");
     header.setBtnBgColor("#3D4044");
     header.setBtnFontColor("#f4f4f4");
@@ -103,6 +105,8 @@ function nightDayHandler() {
     if (currentPos > mainHomeHeight) {
       header.setBgColor("white");
     }
+    header.setMenuBg("#ffffffcc"); //헤더 mobile, tablet 메뉴
+
     header.setFontColor("#333");
     header.setBtnBgColor("#f4f4f4");
     header.setBtnFontColor("#333");
