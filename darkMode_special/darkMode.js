@@ -6,32 +6,34 @@ import category from "../darkMode_special/object/categoryColor.js";
 import content from "../darkMode_special/object/content_color.js";
 import footer from "../darkMode_main/object/footer_color.js";
 
+/* 버튼 아이콘 */
+let moon = document.querySelector(".header .fa-moon");
+let sun = document.querySelector(".header .fa-sun");
+
 /* 버튼 이벤트*/
 let darkModeBtn = document.querySelector(".header .header__btn");
 darkModeBtn.addEventListener("click", nightDayHandler);
 
 darkModeBtn.addEventListener("mouseover", function () {
-  let btnIcon = document.querySelector(".header .fa-moon");
   if (darkModeBtn.value === "night") {
     darkModeBtn.style.background = "#3D4044";
-    btnIcon.style.color = "yellow";
+    moon.style.color = "yellow";
     darkModeBtn.style.color = "#f4f4f4";
   } else {
     darkModeBtn.style.background = "#f4f4f4";
-    btnIcon.style.color = "black";
+    sun.style.color = "green";
     darkModeBtn.style.color = "#333";
   }
 });
 
 darkModeBtn.addEventListener("mouseout", function () {
-  let btnIcon = document.querySelector(".header .fa-moon");
   if (darkModeBtn.value === "night") {
     darkModeBtn.style.background = "#f4f4f4";
-    btnIcon.style.color = "black";
+    moon.style.color = "black";
     darkModeBtn.style.color = "#333";
   } else {
     darkModeBtn.style.background = "#3D4044";
-    btnIcon.style.color = "yellow";
+    sun.style.color = "black";
     darkModeBtn.style.color = "#f4f4f4";
   }
 });
@@ -39,7 +41,12 @@ darkModeBtn.addEventListener("mouseout", function () {
 function nightDayHandler() {
   let currentPos = document.documentElement.scrollTop;
   let mainHomeHeight = document.querySelector(".main__home").clientHeight;
+  let button_value = document.querySelector(".header__btn .header__btn--right");
+
   if (darkModeBtn.value === "night") {
+    button_value.innerHTML = "라이트모드";
+    moon.style.display = "none";
+    sun.style.display = "block";
     /* 헤더 */
     if (currentPos > mainHomeHeight) {
       header.setBgColor("#292a2d");
@@ -89,6 +96,9 @@ function nightDayHandler() {
 
     darkModeBtn.value = "day";
   } else {
+    sun.style.display = "none";
+    moon.style.display = "block";
+    button_value.innerHTML = "다크모드";
     /* 헤더 */
     if (currentPos > mainHomeHeight) {
       header.setBgColor("white");

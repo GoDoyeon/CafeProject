@@ -151,6 +151,9 @@
         color: #fce303;
       }
     }
+    .fa-sun{
+      display: none;
+    }
     @include mobileAndTablet {
       position: absolute;
       right: 0;
