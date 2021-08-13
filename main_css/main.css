@@ -428,10 +428,22 @@ body {
   font-size: 5rem;
 }
 
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__name {
+    font-size: 3rem;
+  }
+}
+
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__type {
   display: block;
   margin-top: 2rem;
   font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+  .main__horoscope .horoscope__block .horoscope__wrapper .horoscope .horoscope__img__tit .cafe__type {
+    font-size: 2rem;
+  }
 }
 
 .main__horoscope .horoscope__block .horoscope__wrapper .horoscope__img {
@@ -767,7 +779,8 @@ body {
   .main__scenery .scenery__box .scenery__bg__right .scenery__bg__detail {
     width: 13rem;
     height: 13rem;
-    margin-top: 14rem;
+    left: 15rem;
+    margin-top: 10rem;
     padding-top: 4.7rem;
   }
 }
@@ -777,13 +790,8 @@ body {
     width: 8rem;
     height: 8rem;
     padding-top: 3rem;
-    top: 0;
-    left: 0;
-    margin: 0;
-    top: 40rem;
-    left: 40%;
-    margin: 0;
-    margin-left: 3rem;
+    margin-top: 3rem;
+    left: 7rem;
   }
 }
 
@@ -1018,6 +1026,7 @@ body {
   height: 1080px;
   position: relative;
   overflow: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

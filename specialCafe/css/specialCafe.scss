@@ -477,6 +477,8 @@ h4 {
         }
       }
       .caption {
+        display: flex;
+        flex-direction: column;
         padding: 0 11rem 0 11rem;
         width: 120rem;
         height: 25rem;
@@ -494,6 +496,7 @@ h4 {
           padding: 2rem;
         }
         .main_tit {
+
           font-size: 3rem;
           font-family: 'Dancing Script', cursive;
           line-height: 5rem;
@@ -518,7 +521,6 @@ h4 {
 
         .cafe_address {
           font-size: 2rem;
-          line-height: 3rem;
           @include tablet {
             font-size: 1.5rem;
           }
@@ -527,26 +529,36 @@ h4 {
           }
         }
 
-        .cafe_link {
-          font-size: 2rem;
-          @include tablet {
-            font-size: 1.5rem;
+        .bottom_info{
+          width: 100%;
+          height: 3rem;
+          margin-top: auto;
+          .cafe_link {
+            font-size: 2rem;
+            float: left;
+            
+            @include tablet {
+              font-size: 1.5rem;
+            }
+            @include mobile {
+              font-size: 1.2rem;
+            }
           }
-          @include mobile {
-            font-size: 1.2rem;
+  
+          .stars {
+            font-size: 2rem;
+            float: right;
+            
+            @include tablet {
+              font-size: 1.5rem;
+            }
+            @include mobile {
+              font-size: 1.2rem;
+            }
           }
         }
 
-        .stars {
-          font-size: 2.5rem;
-          text-align: right;
-          @include tablet {
-            font-size: 1.5rem;
-          }
-          @include mobile {
-            font-size: 1.2rem;
-          }
-        }
+        
       }
     }
   }
