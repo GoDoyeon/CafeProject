@@ -602,6 +602,8 @@ h4 {
 }
 
 .main_detail_info .detailed__info .detailed__wrap .caption {
+  display: flex;
+  flex-direction: column;
   padding: 0 11rem 0 11rem;
   width: 120rem;
   height: 25rem;
@@ -663,7 +665,6 @@ h4 {
 
 .main_detail_info .detailed__info .detailed__wrap .caption .cafe_address {
   font-size: 2rem;
-  line-height: 3rem;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -678,35 +679,42 @@ h4 {
   }
 }
 
-.main_detail_info .detailed__info .detailed__wrap .caption .cafe_link {
+.main_detail_info .detailed__info .detailed__wrap .caption .bottom_info {
+  width: 100%;
+  height: 3rem;
+  margin-top: auto;
+}
+
+.main_detail_info .detailed__info .detailed__wrap .caption .bottom_info .cafe_link {
   font-size: 2rem;
+  float: left;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main_detail_info .detailed__info .detailed__wrap .caption .cafe_link {
+  .main_detail_info .detailed__info .detailed__wrap .caption .bottom_info .cafe_link {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main_detail_info .detailed__info .detailed__wrap .caption .cafe_link {
+  .main_detail_info .detailed__info .detailed__wrap .caption .bottom_info .cafe_link {
     font-size: 1.2rem;
   }
 }
 
-.main_detail_info .detailed__info .detailed__wrap .caption .stars {
-  font-size: 2.5rem;
-  text-align: right;
+.main_detail_info .detailed__info .detailed__wrap .caption .bottom_info .stars {
+  font-size: 2rem;
+  float: right;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main_detail_info .detailed__info .detailed__wrap .caption .stars {
+  .main_detail_info .detailed__info .detailed__wrap .caption .bottom_info .stars {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 767px) {
-  .main_detail_info .detailed__info .detailed__wrap .caption .stars {
+  .main_detail_info .detailed__info .detailed__wrap .caption .bottom_info .stars {
     font-size: 1.2rem;
   }
 }
