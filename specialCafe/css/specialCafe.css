@@ -434,7 +434,7 @@ h4 {
   margin: auto;
   width: 100%;
   text-align: center;
-  font-size: 80px;
+  font-size: 5rem;
   font-family: 'Dancing Script', cursive;
 }
 
@@ -464,7 +464,7 @@ h4 {
   font-size: 3rem;
   background: #eedeff;
   border-radius: 30px;
-  bottom: 30rem;
+  bottom: 5rem;
   left: 2rem;
   box-shadow: 0 0 5rem #000000a8;
 }
@@ -575,7 +575,7 @@ h4 {
 }
 
 .main_detail_info .detailed__info .detailed__wrap .detailed__container .img5 .cafe_theme {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: 'Dancing Script', cursive;
   text-align: center;
   line-height: 13rem;
