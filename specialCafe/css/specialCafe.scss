@@ -140,6 +140,7 @@ h4 {
       }
       @include mobile {
         height: 7rem;
+        padding-left: 1rem;
       }
 
       ul {
@@ -150,13 +151,13 @@ h4 {
         margin-bottom: 0rem;
         display: block;
         @include tablet {
-          padding: 3rem 2rem 1rem 2rem;
+          padding: 3rem 1rem 1rem 0;
           font-size: 2rem;
           height: 12rem;
           width: 100%;
         }
         @include mobile {
-          padding: 2rem 1.5rem 2rem 0;
+          padding: 2rem 0 2rem 0;
           font-size: 1.4rem;
           height: 7rem;
         }
@@ -237,10 +238,10 @@ h4 {
       span {
         margin: 0 2rem 0 2rem;
         @include tablet {
-          margin: 0 1rem 0 1rem;
+          margin: 0;
         }
         @include mobile {
-          margin: 0 0.5rem 0 0.5rem;
+          margin: 0;
         }
         a {
           font-weight: bold;
@@ -414,12 +415,10 @@ h4 {
 
         @include tablet {
           margin-left: 10.5rem;
-
         }
         @include mobile {
           height: 100%;
           width: 30rem;
-
         }
         li {
           width: 38rem;
@@ -432,14 +431,13 @@ h4 {
             width: 23rem;
             height: 23rem;
           }
-          @include mobile{
+          @include mobile {
             width: 30rem;
             height: 30rem;
-
           }
         }
-        .img9{
-          @include tablet{
+        .img9 {
+          @include tablet {
             margin-left: 13rem;
           }
         }
@@ -457,7 +455,7 @@ h4 {
               height: 4rem;
               line-height: 3rem;
             }
-            @include mobile{
+            @include mobile {
               height: 8rem;
               line-height: 5rem;
             }
@@ -523,18 +521,18 @@ h4 {
             font-size: 1.2rem;
           }
         }
-        .bottom_info{
+        .bottom_info {
           width: 100%;
           height: 3rem;
           margin-top: auto;
-          @include mobile{
+          @include mobile {
             height: 5rem;
             margin-top: 3rem;
           }
 
           .cafe_link {
-            font-size: 2rem;   
-            float: left; 
+            font-size: 2rem;
+            float: left;
             @include tablet {
               font-size: 1.5rem;
             }
@@ -546,16 +544,15 @@ h4 {
             }
           }
           .stars {
-            font-size: 2rem;    
+            font-size: 2rem;
             float: right;
             @include tablet {
               font-size: 1.5rem;
             }
             @include mobile {
-
               font-size: 1.2rem;
             }
-          }  
+          }
         }
       }
     }

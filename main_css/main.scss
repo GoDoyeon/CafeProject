@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
-@import "../mixin/mixin";
-@import "../variables/variables";
+@import '../mixin/mixin';
+@import '../variables/variables';
 
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Dancing Script', cursive;
@@ -222,11 +221,11 @@ body {
           display: block;
           width: 100%;
           transition: all 0.3s ease;
-         
+
           .cafe__name {
             display: block;
             font-size: 5rem;
-            @include mobile{
+            @include mobile {
               font-size: 3rem;
             }
           }
@@ -234,7 +233,7 @@ body {
             display: block;
             margin-top: 2rem;
             font-size: 3rem;
-            @include mobile{
+            @include mobile {
               font-size: 2rem;
             }
           }
@@ -814,7 +813,9 @@ body {
   background-color: $maincolor;
   margin: 0 auto;
   z-index: 1;
-
+  a {
+    color: $textcolor;
+  }
   @include tablet {
     height: 80rem;
   }
