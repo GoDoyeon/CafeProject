@@ -344,7 +344,7 @@ h4 {
       margin: auto;
       width: 100%;
       text-align: center;
-      font-size: 80px;
+      font-size: 5rem;
       font-family: 'Dancing Script', cursive;
       @include tablet {
         font-size: 3rem;
@@ -367,7 +367,7 @@ h4 {
       font-size: 3rem;
       background: $maincolor;
       border-radius: 30px;
-      bottom: 30rem;
+      bottom: 5rem;
       left: 2rem;
       box-shadow: 0 0 5rem $boxshadow;
       @include tablet {
@@ -455,7 +455,7 @@ h4 {
           background-size: cover;
 
           .cafe_theme {
-            font-size: 5rem;
+            font-size: 4rem;
             font-family: 'Dancing Script', cursive;
             text-align: center;
             line-height: 13rem;
@@ -496,7 +496,6 @@ h4 {
           padding: 2rem;
         }
         .main_tit {
-
           font-size: 3rem;
           font-family: 'Dancing Script', cursive;
           line-height: 5rem;
