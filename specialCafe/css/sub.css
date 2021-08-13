@@ -139,6 +139,10 @@ a {
   color: #fce303;
 }
 
+.header__btn .fa-sun {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .header__btn {
     position: absolute;
@@ -261,3 +265,4 @@ a {
 .footer__menu li a {
   color: #333;
 }
+/*# sourceMappingURL=sub.css.map */

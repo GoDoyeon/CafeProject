@@ -819,6 +819,10 @@ h4 {
   color: #fce303;
 }
 
+.header__btn .fa-sun {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .header__btn {
     position: absolute;
@@ -1016,3 +1020,4 @@ h4 {
   margin: 0 0.8rem;
   border-radius: 20px;
 }
+/*# sourceMappingURL=specialCafe.css.map */

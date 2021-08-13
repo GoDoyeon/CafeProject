@@ -40,8 +40,13 @@ function nightDayHandler() {
   let currentPos = document.documentElement.scrollTop;
   let mainHomeHeight = document.querySelector(".main__home").clientHeight;
   let button_value = document.querySelector(".header__btn .header__btn--right");
+  let moon = document.querySelector(".header .fa-moon");
+  let sun = document.querySelector(".header .fa-sun");
+
   if (darkModeBtn.value === "night") {
     button_value.innerHTML = "라이트모드";
+    moon.style.display = "none";
+    sun.style.display = "block";
     /* 헤더 */
     if (currentPos > mainHomeHeight) {
       header.setBgColor("#292a2d");
