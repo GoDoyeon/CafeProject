@@ -40,6 +40,8 @@ darkModeBtn.addEventListener("mouseout", function () {
 function nightDayHandler() {
   let currentPos = document.documentElement.scrollTop;
   let mainHomeHeight = document.querySelector(".main__home").clientHeight;
+  let button_value = document.querySelector(".header__btn .header__btn--right");
+
   if (darkModeBtn.value === "night") {
     button_value.innerHTML = "라이트모드";
     moon.style.display = "none";
