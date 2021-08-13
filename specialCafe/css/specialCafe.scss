@@ -396,9 +396,10 @@ h4 {
     }
 
     .detailed__wrap {
-      margin: auto;
+      margin: 0 auto;
       padding-bottom: 6rem;
       width: 100%;
+      //width: 120rem;
       padding-top: 10rem;
       @include tablet {
         padding-top: 2rem;
@@ -410,7 +411,7 @@ h4 {
       }
       .detailed__container {
         width: 100%;
-        padding: 0 11rem 0 11rem;
+        padding: 0 16rem 0 16rem;
         max-width: 155rem;
         margin: 0 auto;
         display: -webkit-flex;
@@ -528,14 +529,14 @@ h4 {
             font-size: 1.2rem;
           }
         }
-        .bottom_info{
+        .bottom_info {
           width: 100%;
           height: 3rem;
           margin-top: auto;
 
           .cafe_link {
-            font-size: 2rem;   
-            float: left; 
+            font-size: 2rem;
+            float: left;
             @include tablet {
               font-size: 1.5rem;
             }
@@ -544,7 +545,7 @@ h4 {
             }
           }
           .stars {
-            font-size: 2rem;    
+            font-size: 2rem;
             float: right;
             @include tablet {
               font-size: 1.5rem;
@@ -552,7 +553,7 @@ h4 {
             @include mobile {
               font-size: 1.2rem;
             }
-          }  
+          }
         }
       }
     }
