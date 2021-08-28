@@ -19,8 +19,8 @@
 <img width="1552" alt="스크린샷 2021-08-28 오후 3 12 24" src="https://user-images.githubusercontent.com/69631850/131208290-7f02f4c8-729f-47e1-9531-93c6698bcb43.png">
 
 ### 시연영상  [Youtube](https://youtu.be/GfNKDb4kKbY?t=0s)
-### 블로그 [Velog](https://velog.io/@97godo/React-React-%EB%A1%9C-kakao-%EC%B1%85-%EA%B2%80%EC%83%89-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0)
-
+### 블로그 [Velog](https://velog.io/@97godo/CafeStory)
+### 링크 [GitPage](https://godoyeon.github.io/CafeProject/)
 
 CafeStory는 다양한 이색 카페를 한 눈에 볼 수 있도록 모아놓은 사이트입니다. 
 HTML5, JavaScript, Scss를 사용하여 프로젝트를 진행하였습니다.
