@@ -920,6 +920,7 @@ body {
     /* 뉴 카페 이미지 슬라이드 */
     .swiper-container {
       height: 100%;
+      overflow: hidden;
       @include tablet {
         width: 70rem;
       }

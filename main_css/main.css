@@ -1480,6 +1480,7 @@ body {
 
 .main__newCafe .newCafe__block .swiper-container {
   height: 100%;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
